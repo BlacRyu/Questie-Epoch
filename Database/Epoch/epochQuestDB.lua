@@ -10,11 +10,11 @@ epochQuestData = {
 [9475] = {"Reclaiming the Eggs",nil,{{45019}},nil,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [26126] = {"Springsocket Eels",{{45549}},{{45549}},nil,36,nil,nil,{"Collect 10 Raw Springsocket Eels."},nil,{nil,nil,{{110001,10}}},nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26138] = {"Dark Iron Stater",nil,nil,nil,60,nil,2,{"Take Dark Iron Stater to Altadena in Booty Bay"},nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [26138] = {"Dark Iron Stater",nil,nil,55,60,nil,2,{"Take Dark Iron Stater to Altadena in Booty Bay"},nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26139] = {"Defias Ducat",nil,nil,nil,60,nil,2,{"Take the Defias Ducat to Altadena in Booty Bay."},nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [26139] = {"Defias Ducat",nil,nil,55,60,nil,2,{"Take the Defias Ducat to Altadena in Booty Bay."},nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26143] = {"Kaldorei Lune",nil,nil,nil,60,nil,2,{"Take the Kaldorei Lune to Altadena in Booty Bay."},nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [26143] = {"Kaldorei Lune",nil,nil,55,60,nil,2,{"Take the Kaldorei Lune to Altadena in Booty Bay."},nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [26148] = {"Legion Paisa",nil,{{9996}},nil,60,nil,nil,{"Take Legion Paisa to Altadena in Booty Bay."},nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [26153] = {"Dalaran Shilling",nil,nil,55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
@@ -32,7 +32,7 @@ epochQuestData = {
 [26178] = {"Razorbeak Friends",nil,{{46700}},nil,46,nil,2,{"Feed 7 Trained Razorbeaks."},nil,{{{2657,7,"Feed Trained Razorbeak"}}},nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [26179] = {"Hinterlands Hermit",{{45746}},{{45748}},nil,45,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26180] = {"Snapjaw Snacks",nil,nil,nil,45,nil,1,{"Collect 12 Royal Bite Reed, Collect 8 Grouper Steak"},nil,{nil,nil,{{63085,12,"Royal Bite Reed"},{63086,8,"Grouper Steak"}}},nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [26180] = {"Snapjaw Snacks",nil,nil,41,45,nil,1,{"Collect 12 Royal Bite Reed, Collect 8 Grouper Steak"},nil,{nil,nil,{{63085,12,"Royal Bite Reed"},{63086,8,"Grouper Steak"}}},nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26181] = {"Brother Joseph's Aid",{{382}},{{45775}},nil,25,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,44,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [26182] = {"Peril at the Farseer's Den",{{45774}},{{45774}},nil,28,nil,nil,{"Kill 7 Blackrock Mystic, Kill 7 Blackrock Sentry"},nil,nil,nil,nil,nil,nil,nil,nil,44,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [26183] = {"A Friend In Need",{{773}},{{2670}},nil,34,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
@@ -51,18 +51,18 @@ epochQuestData = {
 [26202] = {"The Twilight's Hammer",{{3702}},nil,nil,17,nil,nil,{"Kill 8 Twilight Thugs and 8 Twilight Disciples."},nil,{{{2523,8,"Twilight Thug"},{2525,8,"Twilight Disciple"}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 [26203] = {"Welcome to Auberdine",{{45035}},{{45036}},nil,11,nil,nil,{"Report to Quartermaster Nyana in Auberdine."},nil,nil,nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26204] = {"The Greymist Menace",nil,nil,nil,15,nil,2,{"Slay 6 Greymist Seer and 6 Greymist Coastrunner."},nil,{{{2203,6,"Greymist Seer"},{2202,6,"Greymist Coastrunner"}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [26204] = {"The Greymist Menace",nil,nil,12,15,nil,2,{"Slay 6 Greymist Seer and 6 Greymist Coastrunner."},nil,{{{2203,6,"Greymist Seer"},{2202,6,"Greymist Coastrunner"}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26205] = {"The Greymist Menace",nil,nil,nil,18,nil,2,{"Slay 6 Greymist Hunters and 6 Greymist Oracles."},nil,{{{60525,6,"Greymist Hunter"},{60526,6,"Greymist Oracle"}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [26205] = {"The Greymist Menace",nil,nil,15,18,nil,2,{"Slay 6 Greymist Hunters and 6 Greymist Oracles."},nil,{{{60525,6,"Greymist Hunter"},{60526,6,"Greymist Oracle"}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26208] = {"Wanted: Grizzletooth",nil,nil,nil,18,nil,nil,{"Kill Grizzletooth and bring his teeth to the bounty board."},nil,{{{14270,nil}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- [26208] = {"Wanted: Grizzletooth",nil,nil,15,18,nil,nil,{"Kill Grizzletooth and bring his teeth to the bounty board."},nil,{{{14270,nil}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 [26209] = {"Wildhammer Bones",{{5159}},{{5159}},nil,50,nil,2,{"Collect 10 Wildhammer Bones."},nil,{nil,nil,{{60555,10,"Wildhammer Bones"}}},nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [26210] = {"Job Opening: Guard Captain of Aerie Peak",{{5159}},{{5159}},nil,51,nil,2,{"Slay 20 Vilebranch Warriors, 20 Vilebranch Shadowcasters, 20 Vilebranch Hideskinners, and 20 Vilebranch Trolls."},nil,{{{2462,20,"Vilebranch Warrior"},{2464,20,"Vilebranch Shadowcaster"},{2643,20,"Vilebranch Hideskinner"},{4465,20,"Vilebranch Troll"}}},nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [26217] = {"Lost in the Lake",{{45044}},{{1938}},nil,16,nil,nil,nil,nil,{nil,nil,{{60137,1},{60138,1}}},nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 [26218] = {"Wreck of the Kestrel",{{2140}},{{2140}},nil,13,nil,nil,{"Investigate the wreck of the Kestrel."},nil,nil,nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [26243] = {"Blazing Gemstone",nil,nil,48,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
-[26245] = {"Demonfire",{{45069}},nil,nil,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26245] = {"Demonfire",{{45069}},nil,49,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [26266] = {"Dark Literature",nil,{{45093}},nil,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [26273] = {"Falling Stars",nil,nil,51,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
@@ -81,7 +81,7 @@ epochQuestData = {
 [26290] = {"Troll Relic",{{2488}},nil,nil,43,nil,nil,{"Locate a knowledgeable Lorespeaker within Orgrimmar."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26291] = {"Troll Relics",nil,{{45207}},nil,43,nil,nil,{"Collect 8 Troll Idols from around Stranglethorn Vale."},nil,{nil,nil,{{4426,8,"Troll Idol"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26292] = {"Tunnel Monster",nil,nil,nil,40,nil,nil,{"Slay the monster in the tunnel."},nil,{{{60461,"Monster slain"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [26292] = {"Tunnel Monster",nil,nil,36,40,nil,nil,{"Slay the monster in the tunnel."},nil,{{{60461,"Monster slain"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26293] = {"Fit For A King",{{46704}},{{46704}},nil,45,nil,2,{"Collect 16 Walker Branches."},nil,{{{7584,16,"Walker Branch"}},nil,{{61936,16,"Walker Branch"}}},nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [26294] = {"Fit For A King",nil,{{45211}},nil,45,nil,nil,{"Collect 8 Wetland Hemp."},nil,{[61937]={8,nil,{[357]={{50.6,46.2},{51.1,45},{78.6,48.2},{79.2,48.9},{73.7,48.5},{77.4,48.8},{77.5,43.8},{74.9,40.4}}}}},nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26295] = {"Fit For A King",{{45211}},{{45211}},nil,45,nil,1,{"Collect 20 Vial of Beast Blood"},nil,{nil,nil,{{63087,20,"Vial of Beast Blood"}}},nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
@@ -97,10 +97,10 @@ epochQuestData = {
 -- [26305] = {"Attunement to the Core",nil,nil,55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,25,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [26308] = {"Trial of the Willing",nil,{{11864}},nil,20,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,406,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26310] = {"Trial of the Willing",nil,nil,nil,25,nil,1,{"Slay Deor Levo, Reagle the Blessed, and Justicar Masule."},nil,{{{60562,1,"Deor Levo"},{60563,1,"Reagle the Blessed"},{60564,1,"Justicar Masule"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [26310] = {"Trial of the Willing",nil,nil,22,25,nil,1,{"Slay Deor Levo, Reagle the Blessed, and Justicar Masule."},nil,{{{60562,1,"Deor Levo"},{60563,1,"Reagle the Blessed"},{60564,1,"Justicar Masule"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26311] = {"Materials of the Light",nil,{{7792}},nil,21,nil,1,{"Deliver the letter and payment to Aturk the Anvil in Orgrimmar."},nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26312] = {"Materials of the Light",nil,nil,nil,22,nil,nil,{"Collect Corrupted Kor Gem, Springvale's Blessed Ingots, Zelemar's Hammer, and Silver Hand Medallion."},nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- [26312] = {"Materials of the Light",nil,nil,19,22,nil,nil,{"Collect Corrupted Kor Gem, Springvale's Blessed Ingots, Zelemar's Hammer, and Silver Hand Medallion."},nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 [26317] = {"Atal'ai Tablets",nil,{{45285}},nil,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [26318] = {"Invocation of The Blood God",nil,nil,41,45,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
@@ -124,13 +124,13 @@ epochQuestData = {
 [26374] = {"Call to Skirmish: Arathi Highlands",{{12920}},{{12920}},nil,37,nil,nil,{"Kill 5 Alliance."},nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [26376] = {"Call to Skirmish: Swamp of Sorrows",{{9019}},{{9019}},nil,38,nil,nil,{"Kill 5 Alliance."},nil,nil,nil,nil,nil,nil,nil,nil,8,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26377] = {"Call to Skirmish: Badlands",nil,nil,nil,43,nil,nil,{"Kill 5 Horde."},nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- [26377] = {"Call to Skirmish: Badlands",nil,nil,39,43,nil,nil,{"Kill 5 Horde."},nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [26378] = {"Call to Skirmish: Badlands",nil,nil,42,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26381] = {"Call to Skirmish: Stranglethorn Vale",nil,nil,nil,43,nil,nil,{"Kill 5 Horde."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- [26381] = {"Call to Skirmish: Stranglethorn Vale",nil,nil,39,43,nil,nil,{"Kill 5 Horde."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26382] = {"Call to Skirmish: Stranglethorn Vale",nil,nil,nil,40,nil,3,{"Report to the battleground for Stranglethorn Vale skirmish."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
+-- [26382] = {"Call to Skirmish: Stranglethorn Vale",nil,nil,36,40,nil,3,{"Report to the battleground for Stranglethorn Vale skirmish."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
 [26383] = {"Call to Skirmish: Tanaris",{{7823}},{{7823}},nil,42,nil,nil,{"Kill 5 Horde."},nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [26384] = {"Call to Skirmish: Tanaris",{{46226}},{{46226}},nil,45,nil,1,{"Kill 5 Alliance."},nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26410] = {"Taming the Beast",{{45475}},nil,nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
@@ -152,13 +152,13 @@ epochQuestData = {
 [26505] = {"Letter to Ravenholdt",{{2276}},{{2439}},nil,36,nil,2,{"Take the letter from Magistrate Henry Maleb to Lord Jorach Ravenholdt at Ravenholdt Manor in the Alterac Mountains."},nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [26506] = {"The Strahnbrad Courier",nil,{{6768}},nil,36,nil,2,{"Collect the Coded Syndicate Documents."},nil,{nil,nil,{{62300,1,"Coded Syndicate Documents"}}},nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [26509] = {"Suspicious Activity in the Uplands",nil,{{6768}},nil,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
-[26511] = {"The Perenolde Legacy",{{2317}},{{6768}},nil,38,nil,nil,{"Report the news of Aliden Perenolde's death and Elysa's request to search for General Hath to Lord Ravenholdt."},nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26511] = {"The Perenolde Legacy",{{2317}},{{6768}},34,38,nil,nil,{"Report the news of Aliden Perenolde's death and Elysa's request to search for General Hath to Lord Ravenholdt."},nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 [26512] = {"The Perenolde Legacy",nil,{{2378}},nil,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [26513] = {"The Perenolde Legacy",nil,{{10782}},nil,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [26516] = {"Dark Council",{{2276}},nil,nil,40,nil,nil,{"Take the Argus Spellbook to Lord Jorach Ravenholdt at Ravenholdt Manor in Alterac Mountains."},nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26517] = {"Dark Council",nil,{{6768}},nil,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26518] = {"The Ensorcelled Parchment",nil,nil,nil,40,nil,nil,{"Find the Ensorcelled Parchment."},nil,{nil,nil,{{62310,1,"Ensorcelled Parchment"}}},nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [26518] = {"The Ensorcelled Parchment",nil,nil,36,40,nil,nil,{"Find the Ensorcelled Parchment."},nil,{nil,nil,{{62310,1,"Ensorcelled Parchment"}}},nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26519] = {"Felicity's Deciphering",{{6768}},{{45526}},nil,40,nil,nil,{"Take the Ensorcelled Parchment to Felicity for deciphering."},nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [26520] = {"[Epoch] Quest 26520",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
@@ -221,7 +221,7 @@ epochQuestData = {
 [26599] = {"Feeding the Troops",{{5393}},nil,nil,50,nil,nil,{"Collect 10 Sulfurous Meat."},nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [26600] = {"Alchemy is the Answer",{{5393}},nil,nil,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26601] = {"The Clay Cleanse",nil,nil,nil,50,nil,nil,{"Collect 7 Red Clay."},nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- [26601] = {"The Clay Cleanse",nil,nil,45,50,nil,nil,{"Collect 7 Red Clay."},nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [26602] = {"Ready for Distribution",nil,nil,45,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [26603] = {"Scout Morgria",{{46344}},{{46345}},nil,50,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
@@ -279,7 +279,7 @@ epochQuestData = {
 [26698] = {"Hand of Azora",{{45700}},{{45702}},nil,13,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [26700] = {"Hand of Azora",{{46800}},{{6171}},nil,14,nil,2,{"Using the Defias Clues, locate Tannos in Westfall."},nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26701] = {"Hand of Azora",nil,nil,nil,15,nil,2,{"Clear the Gold Coast Quarry."},nil,nil,nil,nil,nil,{26702},nil,nil,40,nil,nil,nil,nil,26702,2,0,nil,nil,nil,nil,nil,nil},
+-- [26701] = {"Hand of Azora",nil,nil,12,15,nil,2,{"Clear the Gold Coast Quarry."},nil,nil,nil,nil,nil,{26702},nil,nil,40,nil,nil,nil,nil,26702,2,0,nil,nil,nil,nil,nil,nil},
 [26702] = {"Hand of Azora",nil,{{313}},nil,15,nil,2,{"Return to Theocritus at Tower of Azora."},nil,nil,nil,nil,{26701},{26703},nil,nil,40,nil,nil,nil,nil,26703,2,0,26701,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [26705] = {"Riders In The Night",nil,nil,25,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
@@ -297,7 +297,7 @@ epochQuestData = {
 -- [26718] = {"Until Death Do Us Part",nil,nil,nil,1,nil,nil,{"[Needs data collection]"},nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [26719] = {"Until Death Do Us Part",{{45734}},nil,nil,21,nil,nil,{"Obtain a Red Rose."},nil,{nil,nil,{{3419,"Red Rose"}}},nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26723] = {"Wanted: Plagued Shambler",nil,nil,nil,30,nil,nil,{"Slay the Plagued Shambler."},nil,{{{45751,"Plagued Shambler"}}},nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [26723] = {"Wanted: Plagued Shambler",nil,nil,26,30,nil,nil,{"Slay the Plagued Shambler."},nil,{{{45751,"Plagued Shambler"}}},nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26738] = {"Memories of Eastweald",{{45749}},{{45749}},nil,57,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [26744] = {"Open for Business",{{12384}},{{11063}},nil,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [26764] = {"We Have the Technology",{{45769}},nil,nil,55,nil,nil,{"Use Engineer Flikswitch's technology."},nil,nil,nil,nil,nil,nil,nil,nil,139,nil,nil,nil,nil,nil,nil,2,nil,nil,nil,nil,nil,nil},
@@ -359,29 +359,29 @@ epochQuestData = {
 [26867] = {"A Suspicious Delivery",{{46570}},{{46570}},nil,44,nil,nil,{"Investigate suspicious shipments"},nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [26868] = {"Grampy Stoutforge",{{14624}},{{45834}},nil,46,nil,nil,{"Speak with Grampy Stoutforge in Searing Gorge."},nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26872] = {"Urgent Delivery",nil,nil,nil,15,nil,nil,{"Deliver the urgent package."},nil,nil,nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [26872] = {"Urgent Delivery",nil,nil,12,15,nil,nil,{"Deliver the urgent package."},nil,nil,nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26873] = {"The Missing Initiate",nil,{{2121}},nil,18,nil,nil,{"Find the missing initiate and report back to Shadow Priest Allister."},nil,nil,nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26874] = {"Supply Run",nil,nil,nil,16,nil,nil,{"Complete the supply run."},nil,nil,nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [26874] = {"Supply Run",nil,nil,13,16,nil,nil,{"Complete the supply run."},nil,nil,nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26875] = {"The Missing Initiate",{{45840}},{{45841}},nil,18,nil,nil,{"Find Sage Greenhorn in Silverpine Forest."},nil,nil,nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26876] = {"Tomes of Interest",nil,nil,nil,18,nil,nil,{"Collect 5 Old Tomes from the area."},nil,{nil,nil,{{62718,5,"Old Tome"}}},nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [26876] = {"Tomes of Interest",nil,nil,15,18,nil,nil,{"Collect 5 Old Tomes from the area."},nil,{nil,nil,{{62718,5,"Old Tome"}}},nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26877] = {"Tomes of Interest",{{45841}},{{45841}},nil,18,nil,nil,{"Slay 4 Sickly Refugees and collect 5 Gilnean Tomes."},nil,{nil,nil,{{62727,"Gilnean Tome",5}}},nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [26879] = {"Swifthoof's Message",{{11748}},{{2519}},nil,34,nil,nil,{"Take Samantha Swifthoof's Message to Kin'weelay at Grom'gol in Stranglethorn Vale."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26880] = {"A Salve for Samantha",nil,nil,nil,34,nil,nil,{"Create a salve for Samantha's wounds."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [26880] = {"A Salve for Samantha",nil,nil,30,34,nil,nil,{"Create a salve for Samantha's wounds."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26883] = {"A Salve for Samantha",nil,{{11748}},nil,34,nil,nil,{"Take the Finished Salve to Samantha Swifthoof, who wanders the main road through Stranglethorn Vale."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26884] = {"Looting the Looters",{{45844}},nil,nil,36,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26885] = {"My Friend, The Skullsplitter",{{45846}},nil,nil,36,nil,nil,{"Speak with Thu'tek and return his Spirit Charm to Nimboya."},nil,nil,nil,nil,nil,{26886},nil,nil,33,nil,nil,nil,nil,26886,8,0,nil,nil,nil,nil,nil,nil},
 [26886] = {"My Friend, The Skullsplitter",{{45845}},{{45845}},36,36,nil,nil,{"Return to Lorespeaker Itzli at Grom'gol with Thu'tek's Spirit Charm."},nil,nil,nil,nil,{26885},nil,nil,nil,33,nil,nil,nil,nil,nil,8,0,26885,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26887] = {"My Friend, The Skullsplitter",nil,nil,nil,36,nil,nil,{"Complete the Skullsplitter ritual."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [26887] = {"My Friend, The Skullsplitter",nil,nil,32,36,nil,nil,{"Complete the Skullsplitter ritual."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26888] = {"My Friend, The Skullsplitter",{{48195}},nil,nil,36,nil,1,{"Collect Blood Brazier from the ritual site."},nil,{nil,nil,{{62744,1,"Blood Brazier"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26889] = {"My Friend, The Skullsplitter",{{45846}},{{46738}},nil,36,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26890] = {"My Friend, The Skullsplitter",nil,nil,nil,36,nil,nil,{"Complete the ritual with Mezzphog."},nil,{{{60459,"Ritual Completed"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [26890] = {"My Friend, The Skullsplitter",nil,nil,32,36,nil,nil,{"Complete the ritual with Mezzphog."},nil,{{{60459,"Ritual Completed"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26891] = {"Pilfering the Reef",nil,nil,nil,39,nil,nil,{"Pilfer treasures from the reef."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [26891] = {"Pilfering the Reef",nil,nil,35,39,nil,nil,{"Pilfer treasures from the reef."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26892] = {"Beastial Allies",nil,{{7853}},nil,41,nil,1,{"Slay 8 Mistvale Poachers","Loot Requisition Orders"},nil,{{{45851,8}},nil,{{62749,1,"Requisition Orders"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [26893] = {"Revantusk Voodoo",nil,nil,45,50,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
@@ -401,13 +401,13 @@ epochQuestData = {
 [26904] = {"The Janky Helmet",{{48086}},{{9317}},nil,42,nil,nil,{"Experiment on 10 Elder Mistvale Gorillas and bring the Janky Helmet to Scooty in Booty Bay."},nil,{{{1557,10,"Elder Mistvale Gorilla experimented on"}},nil,{{63212,"The Janky Helmet"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26905] = {"The Janky Helmet",{{9317}},{{48086}},nil,42,nil,nil,{"Bring the Janky Helmet to the Venture Co. Tinkerer."},nil,{nil,nil,{{63212,"The Janky Helmet"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26906] = {"The Tablet of Zuul'daia",nil,nil,nil,36,nil,nil,{"Find the Tablet of Zuul'daia."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [26906] = {"The Tablet of Zuul'daia",nil,nil,32,36,nil,nil,{"Find the Tablet of Zuul'daia."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26907] = {"Wild Tulip",nil,{{45869}},nil,41,nil,nil,{"Find the Chest of Memories for Chel Moonwood."},nil,{nil,nil,{{62765,"Chest of Memories"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26908] = {"Wild Tulip",{{45869}},nil,nil,41,nil,nil,{"Find Daniels Spice Box and Tulip's Music Box."},nil,{nil,nil,{{62766,"Daniels Spice Box"},{62767,"Tulip's Music Box"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26910] = {"Wild Tulip",nil,nil,nil,41,nil,2,{"Collect Daniels Pendant and Tulip's Pendant."},nil,{nil,nil,{{62771,1,"Daniels Pendant"},{62769,1,"Tulip's Pendant"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [26910] = {"Wild Tulip",nil,nil,37,41,nil,2,{"Collect Daniels Pendant and Tulip's Pendant."},nil,{nil,nil,{{62771,1,"Daniels Pendant"},{62769,1,"Tulip's Pendant"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26911] = {"Wild Tulip",nil,nil,nil,41,nil,2,{"Witness Chel Moonwood's Ritual."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [26911] = {"Wild Tulip",nil,nil,37,41,nil,2,{"Witness Chel Moonwood's Ritual."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [26912] = {"Deathstrike Remedy",{{983}},nil,nil,40,nil,nil,{"Collect 10 Vials of Deathstrike Venom."},nil,{nil,nil,{{62768,10,"Vial of Deathstrike Venom"}}},nil,nil,nil,nil,nil,nil,38,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26914] = {"Ocniir's Beloved Rods",{{45875}},{{45875}},nil,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [26915] = {"Zul'jin's Experiment",{{45873}},{{45873}},nil,42,nil,nil,{"Collect the Troll Ritual Oil and return to Zul'jin."},nil,{nil,nil,{{62769,"Troll Ritual Oil"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
@@ -415,7 +415,7 @@ epochQuestData = {
 [26919] = {"Karabor Fire Stew",{{45877}},{{45877}},nil,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [26921] = {"Splintered Leadership",{{46613}},{{46613}},nil,18,nil,nil,{"Kill gnoll leaders"},nil,nil,nil,nil,nil,nil,nil,nil,44,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26922] = {"Demons In Stranglethorn",nil,nil,nil,43,nil,nil,{"Investigate demon activity in Stranglethorn Vale."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [26922] = {"Demons In Stranglethorn",nil,nil,39,43,nil,nil,{"Investigate demon activity in Stranglethorn Vale."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26924] = {"WANTED: Tamura",nil,{{1775}},nil,40,nil,1,{"Collect Head of Tamura."},nil,{nil,nil,{{62794,1,"Head of Tamura"}}},nil,nil,nil,nil,nil,nil,8,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [26925] = {"Message for the Historian",nil,nil,nil,1,nil,nil,{"[Needs data collection]"},nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
@@ -429,7 +429,7 @@ epochQuestData = {
 [26932] = {"Encroaching Worgs",{{1738}},{{1738}},nil,8,nil,nil,{"Slay 5 Starving Worgs."},nil,{{{45893,5,"Starving Worg"}}},nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [26933] = {"Etched Scroll",{{1569}},{{45894}},nil,1,nil,nil,{"Read the Etched Scroll and speak to your class trainer, Apolos Deathshot."},nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26934] = {"Filling the Armory",nil,nil,nil,9,nil,1,{"Collect 6 Case of Ore."},nil,{nil,nil,{{60446,6,"Case of Ore"}}},nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [26934] = {"Filling the Armory",nil,nil,7,9,nil,1,{"Collect 6 Case of Ore."},nil,{nil,nil,{{60446,6,"Case of Ore"}}},nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [26936] = {"Northshore Mine",{{45887},nil},{{45885},nil},9,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,159,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
 [26937] = {"Missing Courier",{{1500}},{{38895}},nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
@@ -441,7 +441,7 @@ epochQuestData = {
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [26941] = {"[Epoch] Quest 26941",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26942] = {"Ancient Artifact",nil,nil,nil,11,nil,nil,{"Recover the ancient artifact."},nil,nil,nil,nil,nil,nil,nil,nil,141,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- [26942] = {"Ancient Artifact",nil,nil,9,11,nil,nil,{"Recover the ancient artifact."},nil,nil,nil,nil,nil,nil,nil,nil,141,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 [26951] = {"A Matter of Timeways",{{10667}},nil,nil,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [26953] = {"A Tattered Acceptance Letter",nil,{{9078}},nil,47,nil,1,{"Obtain A Tattered Acceptance Letter."},nil,{nil,nil,{{62823,1,"A Tattered Acceptance Letter"}}},nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
@@ -479,7 +479,7 @@ epochQuestData = {
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [26992] = {"[Epoch] Quest 26992",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [26993] = {"The Killing Fields",nil,nil,nil,10,nil,2,{"Rusty Harvest Golem slain: 10/10"},nil,{{{60963,10,"Rusty Harvest Golem"}}},nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [26993] = {"The Killing Fields",nil,nil,8,10,nil,2,{"Rusty Harvest Golem slain: 10/10"},nil,{{{60963,10,"Rusty Harvest Golem"}}},nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [26994] = {"The Killing Fields",{{237}},{{233}},nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [26995] = {"The Killing Fields",{{233}},{{233}},nil,12,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27000] = {"A Temporary Victory",{{45942}},{{2104}},nil,31,nil,nil,{"Deliver news of the Burndural Victory to Captain Stoutfist."},nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
@@ -511,7 +511,7 @@ epochQuestData = {
 [27044] = {"The Experiment's Conclusion",nil,{{45981}},nil,27,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27045] = {"Rumbles Of The Earth",{{45990}},{{45990}},nil,23,nil,nil,{"Question 6 Peons about the rumbling earth."},nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27047] = {"Rumbles of the Earth",nil,nil,nil,23,nil,1,{"Collect Sturdy Reed and Glass Shards."},nil,{nil,nil,{{63078,6,"Sturdy Reed"},{63079,4,"Glass Shards"}}},nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [27047] = {"Rumbles of the Earth",nil,nil,20,23,nil,1,{"Collect Sturdy Reed and Glass Shards."},nil,{nil,nil,{{63078,6,"Sturdy Reed"},{63079,4,"Glass Shards"}}},nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [27048] = {"Rumbles Of The Earth",nil,nil,20,23,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27049] = {"Rumbles Of The Earth",{{45990}},{{45981}},nil,23,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
@@ -576,7 +576,7 @@ epochQuestData = {
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [27141] = {"[Epoch] Quest 27141",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27143] = {"The Timbermaw Alliance",nil,nil,nil,52,nil,nil,{"Form an alliance with the Timbermaw."},nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [27143] = {"The Timbermaw Alliance",nil,nil,47,52,nil,nil,{"Form an alliance with the Timbermaw."},nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [27151] = {"[Epoch] Quest 27151",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
@@ -606,27 +606,27 @@ epochQuestData = {
 [27177] = {"Operation: Northwatch Hold",{{46061}},{{3391}},nil,20,nil,1,{"Collect Crate of Assorted Armor."},nil,{nil,nil,{{63050,1,"Crate of Assorted Armor"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [27195] = {"Straight to the Teeth",{{46065}},{{46065}},nil,18,nil,nil,{"Collect 10 Hecklefang Teeth."},nil,nil,nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27196] = {"The Kolkar Report",nil,nil,nil,15,nil,nil,{"Bring Kolkar Report to Thork at The Crossroads."},nil,nil,nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- [27196] = {"The Kolkar Report",nil,nil,12,15,nil,nil,{"Bring Kolkar Report to Thork at The Crossroads."},nil,nil,nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 [27197] = {"The Merchant's Daughter",{{7161}},{{7161}},nil,17,nil,nil,{"Obtain Box of Treasure."},nil,{nil,nil,{{63070,"Box of Treasure"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27198] = {"The Missing Lorespeakers",nil,nil,nil,22,nil,1,{"Collect 8 Tauren Lore Scrolls"},nil,{nil,nil,{{63092,8,"Tauren Lore Scrolls"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [27198] = {"The Missing Lorespeakers",nil,nil,19,22,nil,1,{"Collect 8 Tauren Lore Scrolls"},nil,{nil,nil,{{63092,8,"Tauren Lore Scrolls"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27200] = {"Shadow Priest's Task",nil,nil,nil,20,nil,nil,{"Complete the Shadow Priest's task."},nil,nil,nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [27200] = {"Shadow Priest's Task",nil,nil,17,20,nil,nil,{"Complete the Shadow Priest's task."},nil,nil,nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [27201] = {"The Triad Scrolls",{{46066}},{{46066}},nil,30,nil,1,{"Collect The Triad: Founding of Thunder Bluff, Founding of Camp Mojache, and Founding of Sun Rock Retreat."},nil,{nil,nil,{{63082,1,"Founding of Thunder Bluff"},{63083,1,"Founding of Camp Mojache"},{63084,1,"Founding of Sun Rock Retreat"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [27203] = {"The Obsidian Relic",nil,{{4201}},nil,22,nil,1,{"Return the Obsidian Relic to Ziz Fizziks."},nil,nil,nil,nil,nil,nil,nil,nil,406,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27204] = {"WANTED: Deepskin",nil,nil,nil,14,nil,1,{"Kill Deepskin."},nil,{{{60874,"Deepskin"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [27204] = {"WANTED: Deepskin",nil,nil,12,14,nil,1,{"Kill Deepskin."},nil,{{{60874,"Deepskin"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [27205] = {"My Sister Isabetta",nil,{{3616}},nil,14,nil,nil,{"Find information about Isabetta."},nil,nil,nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 [27206] = {"My Sister Isabetta",{{46067}},{{3666}},nil,14,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27207] = {"My Sister Isabetta",nil,nil,nil,14,nil,2,{"Travel to Westfall and tell Evangeline Wheeland about the fire and Isabetta Wheeland's death."},nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [27207] = {"My Sister Isabetta",nil,nil,12,14,nil,2,{"Travel to Westfall and tell Evangeline Wheeland about the fire and Isabetta Wheeland's death."},nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27208] = {"My Sister Isabetta",nil,nil,nil,15,nil,2,{"Kill Omar Dorn and get the Defias Key."},nil,{{{46069,"Omar Dorn"}},nil,{{63084,"Defias Key"}}},nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [27208] = {"My Sister Isabetta",nil,nil,12,15,nil,2,{"Kill Omar Dorn and get the Defias Key."},nil,{{{46069,"Omar Dorn"}},nil,{{63084,"Defias Key"}}},nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [27209] = {"My Sister Isabetta",{{46068}},nil,nil,16,nil,2,{"Find the Birth Certificate."},nil,{nil,nil,{{63085,"Birth Certificate"}}},nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [27210] = {"A Hidden Record",{{46068}},{{1646}},nil,16,nil,2,{"Bring Evangeline's Note to Baros Alexton at Cathedral Square in Stormwind."},nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [27211] = {"A Hidden Record",{{1646}},{{10782}},nil,16,nil,2,{"Bring the Birth Certificate to Royal Factor Bathrilor in Stormwind."},nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27212] = {"A Hidden Record",nil,nil,nil,16,nil,2,{"Report to Captain Morgan."},nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [27212] = {"A Hidden Record",nil,nil,13,16,nil,2,{"Report to Captain Morgan."},nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [27217] = {"Auntie VanCleef",nil,{{311}},nil,20,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [27219] = {"Auntie VanCleef",nil,{{777}},nil,25,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [27220] = {"Auntie VanCleef",nil,{{46071}},nil,25,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
@@ -644,7 +644,7 @@ epochQuestData = {
 [27247] = {"Gloombreak Mesa",{{4046}},{{4489}},nil,30,nil,1,{"Take the Tablet of the Earth to Kai'li Grimtotem at Gloombreak Mesa in Desolace."},nil,nil,nil,nil,nil,nil,nil,nil,88,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [27248] = {"A Message for Ghostwalker Post",nil,{{10428}},nil,30,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27253] = {"Massive Profits",nil,nil,nil,39,nil,nil,{"Collect 3 Fossilised Gallbladders."},nil,{nil,nil,{{63117,3,"Fossilised Gallbladder"}}},nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [27253] = {"Massive Profits",nil,nil,35,39,nil,nil,{"Collect 3 Fossilised Gallbladders."},nil,{nil,nil,{{63117,3,"Fossilised Gallbladder"}}},nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [27254] = {"Reagents For The Undercity",{{46090}},{{46090}},nil,33,nil,nil,{"Collect 10 Hatefury Claws and 10 Hatefury Horns for Annie Grim."},nil,{nil,nil,{{6246,10,"Hatefury Claw"},{6247,10,"Hatefury Horn"}}},nil,nil,nil,{27255},nil,nil,405,nil,nil,nil,nil,27255,8,0,nil,nil,nil,nil,nil,nil},
 [27255] = {"Reagents For The Undercity",{{46090}},{{5641}},nil,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27256] = {"Reagents For The Undercity",{{46090}},{{46000}},nil,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
@@ -655,12 +655,12 @@ epochQuestData = {
 -- [27267] = {"A Village In Need",nil,nil,nil,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27268] = {"Delivery to Vornal",nil,{{3304}},nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27273] = {"Sha'gri",nil,nil,nil,9,nil,nil,{"Slay the Spirit of Sha'gri."},nil,{{{60561,"Spirit of Sha'gri"}}},nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [27273] = {"Sha'gri",nil,nil,7,9,nil,nil,{"Slay the Spirit of Sha'gri."},nil,{{{60561,"Spirit of Sha'gri"}}},nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [27274] = {"The Cursed Fleet",{{3139}},{{3188}},nil,8,nil,1,{"Slay 8 Kul Tiras Deckhands and 3 Kul Tiras Admirals."},nil,{{{46104,8,"Kul Tiras Deckhand"},{46103,3,"Kul Tiras Admiral"}}},nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [27275] = {"WANTED: Dustpaw",nil,{{11378}},nil,6,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27276] = {"Supervisor Hink",nil,{{3230}},nil,9,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27277] = {"Scythemaw Standstill",nil,nil,nil,9,nil,nil,{"Slay 10 Bloodtalon Scythemaw."},nil,{{{3123,10,"Bloodtalon Scythemaw"}}},nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [27277] = {"Scythemaw Standstill",nil,nil,7,9,nil,nil,{"Slay 10 Bloodtalon Scythemaw."},nil,{{{3123,10,"Bloodtalon Scythemaw"}}},nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [27282] = {"Wanted: Dragon Killers",nil,{{2502}},nil,39,nil,2,{"Eliminate the dragon killers."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [27291] = {"Wanted: King Krool",{{4500}},nil,nil,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27293] = {"The Downed Zeppelin",nil,{{46121}},nil,40,nil,1,{"Interact with the Gizmorium Shipping Crate."},nil,nil,nil,nil,nil,nil,nil,nil,8,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
@@ -672,13 +672,13 @@ epochQuestData = {
 [27304] = {"Containing the Contamination",{{10924}},nil,nil,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27306] = {"The Garden of Jadefire Glen",{{10920}},nil,nil,50,nil,nil,{"Collect Kelek's Weeder","Collect Kelek's Trowel","Collect Kelek's Bucket"},nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27307] = {"The Shrine of the Deceiver",nil,nil,nil,52,nil,nil,{"Investigate the Shrine of the Deceiver."},nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [27307] = {"The Shrine of the Deceiver",nil,nil,47,52,nil,nil,{"Investigate the Shrine of the Deceiver."},nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [27309] = {"Mementos of the Third War",{{46127}},{{46127}},nil,52,nil,nil,{"Take Box of Grisly Mementos to Thrall in Orgrimmar."},nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 [27312] = {"Gordunni Thieves",{{8145}},{{7875}},nil,44,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27313] = {"Meat!",{{46129}},nil,nil,43,nil,2,{"Collect 6 Ironfur Meat and 6 Ape Meat."},nil,{nil,nil,{{63182,6,"Ironfur Meat"},{63183,6,"Ape Meat"}}},nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
-[27314] = {"Freedom for All Creatures",{{46130}},{{46130}},nil,47,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
-[27315] = {"Doling Justice",{{46131}},{{46131}},nil,47,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
-[27316] = {"Doling Justice",{{46131}},{{7807}},nil,47,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27314] = {"Freedom for All Creatures",{{46130}},{{46130}},43,47,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27315] = {"Doling Justice",{{46131}},{{46131}},43,47,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27316] = {"Doling Justice",{{46131}},{{7807}},43,47,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27322] = {"Convincing the Denied",nil,{{46135}},nil,49,nil,nil,{"Convince those in denial."},nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [27323] = {"A Reflection of Death",nil,{{46135}},nil,49,nil,nil,{"Face your mortality."},nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [27324] = {"Dead and Gone",nil,{{46135}},nil,49,nil,nil,{"Lay the dead to rest."},nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
@@ -741,18 +741,18 @@ epochQuestData = {
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [27444] = {"Aerie Peak's Last Stand",nil,nil,43,47,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [27451] = {"Lorespeaker Vanza",nil,{{1443}},nil,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
-[27452] = {"Dead Message",{{46233}},{{46234}},nil,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
-[27453] = {"Dead Message",{{46234}},{{46233}},nil,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27452] = {"Dead Message",{{46233}},{{46234}},42,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27453] = {"Dead Message",{{46234}},{{46233}},42,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27458] = {"The Search for the Tomb",nil,{{46233}},nil,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [27460] = {"Quel'Danil Assistance",nil,nil,40,44,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [27462] = {"Waste Removal",nil,{{46237}},nil,42,nil,2,{"Oil Spills Removed: 6/6"},nil,{nil,nil,nil,nil,nil,{{1,"Oil Spills Removed",6}}},nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27463] = {"Warden's Summons",nil,nil,nil,52,nil,nil,{"Answer the Warden's summons."},nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- [27463] = {"Warden's Summons",nil,nil,47,52,nil,nil,{"Answer the Warden's summons."},nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [27470] = {"Razorbeak Friends",nil,nil,41,45,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27477] = {"Attack on the Gnarlpine",nil,nil,nil,8,nil,nil,{"Slay 4 Gnarlpine Ambushers","Slay 4 Gnarlpine Warriors","Slay 4 Gnarlpine Defenders","Slay 4 Gnarlpine Shamans"},nil,{{{2151,4,"Gnarlpine Ambusher"},{2013,4,"Gnarlpine Warrior"},{2010,4,"Gnarlpine Defender"},{2009,4,"Gnarlpine Shaman"}}},nil,nil,nil,nil,nil,nil,141,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [27477] = {"Attack on the Gnarlpine",nil,nil,6,8,nil,nil,{"Slay 4 Gnarlpine Ambushers","Slay 4 Gnarlpine Warriors","Slay 4 Gnarlpine Defenders","Slay 4 Gnarlpine Shamans"},nil,{{{2151,4,"Gnarlpine Ambusher"},{2013,4,"Gnarlpine Warrior"},{2010,4,"Gnarlpine Defender"},{2009,4,"Gnarlpine Shaman"}}},nil,nil,nil,nil,nil,nil,141,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [27478] = {"Attack on the Gnarlpine",{{6781}},{{6781}},nil,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27479] = {"Bloodfeather Eggs",{{3606}},{{3606}},nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27480] = {"Corruption in Shadowglen",{{46257}},{{46257}},nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
@@ -764,12 +764,12 @@ epochQuestData = {
 [27488] = {"Bad News Has Horns",{{4048}},{{4048}},nil,28,nil,nil,{"Collect 3 Secret Notes from Thousand Needles."},nil,{nil,nil,{{12765,"Secret Note #1"},{12766,"Secret Note #2"},{12768,"Secret Note #3"}}},nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 [27489] = {"Canyon Patrol",{{10428}},{{10428}},nil,27,nil,nil,{"Kill 8 Pesterhide Hyenas."},nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27490] = {"Crag Stalking",nil,nil,nil,27,nil,nil,{"Complete crag stalking objectives."},nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- [27490] = {"Crag Stalking",nil,nil,24,27,nil,nil,{"Complete crag stalking objectives."},nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 [27491] = {"Driving License Approval",{{46265}},nil,nil,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [27492] = {"Fresh Water Delivery",nil,{{4630}},nil,31,nil,nil,{"Dispense 10 water."},nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 [27494] = {"Earthen Delight",{{46268}},nil,nil,32,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27495] = {"Serpent's Bite",nil,nil,nil,26,nil,1,{"Collect 8 Deadly Venom Glands"},nil,{nil,nil,{{63080,8,"Deadly Venom Glands"}}},nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- [27495] = {"Serpent's Bite",nil,nil,23,26,nil,1,{"Collect 8 Deadly Venom Glands"},nil,{nil,nil,{{63080,8,"Deadly Venom Glands"}}},nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [27496] = {"Feed the Fire",{{46270}},nil,nil,34,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [27497] = {"Striking Back At The Galak",{{10638}},{{10638}},nil,28,nil,1,{"Collect Blizh's Head"},nil,{nil,nil,{{63081,1,"Blizh's Head"}}},nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [27498] = {"Khan Ablinh",{{10537}},{{10428}},nil,29,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
@@ -777,21 +777,21 @@ epochQuestData = {
 [27500] = {"The Sacred Flame",{{4048}},{{4048}},nil,27,nil,nil,{"Scout the centaur artifact location at the Cloven Hoof."},nil,nil,nil,nil,nil,{27501},nil,nil,400,nil,nil,nil,nil,27501,8,0,nil,nil,nil,nil,nil,nil},
 [27503] = {"Why Oh Wyvern",{{11826}},nil,nil,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27504] = {"Kristy's Delivery Service",nil,nil,nil,30,nil,nil,{"Complete Kristy's delivery service."},nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- [27504] = {"Kristy's Delivery Service",nil,nil,26,30,nil,nil,{"Complete Kristy's delivery service."},nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 [27508] = {"Research Salvation",nil,{{9270}},nil,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27509] = {"The Un'Goro Hunt",{{46278}},{{46278}},47,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27510] = {"The Un'Goro Hunt",nil,{{46278}},nil,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27517] = {"Storm, Earth, Wind, and Fire",{{45143}},{{10302}},nil,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27518] = {"Storm, Earth, Wind, and Fire",{{45143}},{{45143}},nil,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27521] = {"Storm, Earth, Wind, and Fire",nil,nil,nil,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- [27521] = {"Storm, Earth, Wind, and Fire",nil,nil,49,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27533] = {"One of These Things is Not Like the Others",nil,{{46287}},nil,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [27544] = {"A Gift for the Spiritseer",nil,nil,51,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,215,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [27545] = {"A Door to the Past",nil,nil,51,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27575] = {"Nightmare Seeds",nil,nil,nil,58,nil,nil,{"Discover the Odor's Source and collect 8 Nightmare Seeds."},nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,nil,2,nil,nil,nil,nil,nil,nil},
+-- [27575] = {"Nightmare Seeds",nil,nil,53,58,nil,nil,{"Discover the Odor's Source and collect 8 Nightmare Seeds."},nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,nil,2,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [27580] = {"Shadow of the Vilehorn",nil,nil,53,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27623] = {"Commission for Locke Okarr",{{45982}},nil,nil,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
@@ -800,7 +800,7 @@ epochQuestData = {
 [27665] = {"Commission for Deathguard Simmer",nil,{{1495}},nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27682] = {"Commission for Rok Orhan",{{7777}},{{7777}},nil,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [27882] = {"Battle of Warsong Gulch",nil,nil,nil,21,nil,nil,{"Win the Battle of Warsong Gulch."},nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- [27882] = {"Battle of Warsong Gulch",nil,nil,18,21,nil,nil,{"Win the Battle of Warsong Gulch."},nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [27883] = {"Battle of Warsong Gulch",nil,nil,55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,2,nil,nil,nil,nil,nil,nil},
 [27890] = {"A Matter of Life and Death",{{10880}},nil,nil,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
@@ -822,7 +822,7 @@ epochQuestData = {
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [28049] = {"The Rite of the Wilds",nil,nil,51,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,215,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [28063] = {"Commission for Tomas",nil,nil,nil,5,nil,2,{"Collect 10 Brilliant Smallfish."},nil,{nil,nil,{{6291,10,"Brilliant Smallfish"}}},nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [28063] = {"Commission for Tomas",nil,nil,3,5,nil,2,{"Collect 10 Brilliant Smallfish."},nil,{nil,nil,{{6291,10,"Brilliant Smallfish"}}},nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [28064] = {"Commission for Gubber Blump",{{10216}},{{10216}},nil,10,nil,2,{"Collect 10 Boiled Clams for Gubber Blump."},nil,{nil,nil,{{5525,10,"Boiled Clam"}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 [28072] = {"Commission for Captain Steelgut",nil,{{2769}},nil,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [28073] = {"Commission for Captain Hecklebury Smotts",{{48167}},{{48167}},nil,30,nil,nil,{"Complete Captain Hecklebury Smotts' commission."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
@@ -848,7 +848,7 @@ epochQuestData = {
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [28475] = {"[Epoch] Quest 28475",nil,nil,17,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [28476] = {"Commission for Watcher Dodds",nil,nil,nil,20,nil,nil,{"Commission quest for Watcher Dodds."},nil,nil,nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- [28476] = {"Commission for Watcher Dodds",nil,nil,17,20,nil,nil,{"Commission quest for Watcher Dodds."},nil,nil,nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 [28482] = {"Commission for Gavik Grimesail",{{45336}},nil,nil,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [28483] = {"[Epoch] Quest 28483",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
@@ -875,7 +875,7 @@ epochQuestData = {
 [28562] = {"Commission for Jeena Featherbow",{{3605}},{{3610}},nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [28563] = {"Commission for Chief Archaeologist Greywhisker",{{3605}},{{2912}},nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [28564] = {"Commission for Scout Galiaan",nil,nil,nil,20,nil,2,{"Collect 2 Dark Leather Boots."},nil,{nil,nil,{{2317,2,"Dark Leather Boots"}}},nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [28564] = {"Commission for Scout Galiaan",nil,nil,17,20,nil,2,{"Collect 2 Dark Leather Boots."},nil,{nil,nil,{{2317,2,"Dark Leather Boots"}}},nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [28565] = {"Commission for Protector Evangeline",nil,{{45712}},nil,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [28570] = {"Commission for Kaela Shadowspear",{{46181}},{{11756}},nil,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [28573] = {"Commission for Verner Osgood",{{2697}},{{2697}},nil,30,nil,nil,{"Complete Verner Osgood's commission."},nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
@@ -892,9 +892,9 @@ epochQuestData = {
 [28614] = {"Commission for Skuerto",nil,{{2789}},nil,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [28617] = {"Commission for Bibbly F'utzbuckle",{{11438}},{{11438}},nil,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [28619] = {"Lair of the Abyssal",nil,nil,nil,48,nil,2,{"Enter the Lair of the Abyssal."},nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [28619] = {"Lair of the Abyssal",nil,nil,44,48,nil,2,{"Enter the Lair of the Abyssal."},nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [28620] = {"The Hermit's Wisdom",nil,nil,nil,48,nil,2,{"Seek the hermit's wisdom."},nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- [28620] = {"The Hermit's Wisdom",nil,nil,44,48,nil,2,{"Seek the hermit's wisdom."},nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [28623] = {"Commission for Master Smith Burninate",{{14624}},nil,nil,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [28626] = {"Commission for Deathguard Linnea",{{1495}},{{1495}},nil,5,nil,1,{"Collect 20 Light Leather."},nil,{nil,nil,{{2318,20,"Light Leather"}}},nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 [28634] = {"Commission for Yarr Hammerstone",{{1256}},nil,nil,5,nil,nil,{"Collect 20 Rough Stone."},nil,{nil,nil,{{2835,20,"Rough Stone"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
@@ -903,10 +903,10 @@ epochQuestData = {
 -- [28648] = {"[Epoch] Quest 28648",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [28654] = {"Commission for Kelek Skykeeper",{{10920}},nil,nil,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [28657] = {"Nature's Balance",nil,nil,nil,15,nil,nil,{"Restore nature's balance."},nil,nil,nil,nil,nil,nil,nil,nil,141,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- [28657] = {"Nature's Balance",nil,nil,12,15,nil,nil,{"Restore nature's balance."},nil,nil,nil,nil,nil,nil,nil,nil,141,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 [28660] = {"Commission for Sebastian Meloche",{{3555}},nil,nil,5,nil,1,{"Collect 5 Silver Bars."},nil,{nil,nil,{{2842,5,"Silver Bar"}}},nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [28675] = {"Commission for Veron Amberstill",nil,nil,nil,10,nil,3,{"Collect 2 Linen Bags."},nil,{nil,nil,{{4238,2,"Linen Bag"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
+-- [28675] = {"Commission for Veron Amberstill",nil,nil,8,10,nil,3,{"Collect 2 Linen Bags."},nil,{nil,nil,{{4238,2,"Linen Bag"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
 [28676] = {"Commission for Marleth Barleybrew",{{1703}},nil,nil,10,nil,3,{"Collect 1 Heavy Linen Gloves."},nil,{nil,nil,{{5633,1,"Heavy Linen Gloves"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
 [28722] = {"The Darkspear Tribe",{{46834}},{{46834}},nil,1,nil,nil,{"Report to the Darkspear tribe."},nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [28723] = {"Thievin' Crabs",{{46834}},{{46718}},nil,2,nil,nil,{"Slay 10 Amethyst Crabs."},nil,{{{46835,10,"Amethyst Crab"}}},nil,nil,{28722},nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
@@ -953,9 +953,9 @@ epochQuestData = {
 [28764] = {"The Loa of Death",{{47106}},{{47106}},4,5,nil,nil,{"Commune with the Loa of Death."},nil,{{{4001003,"Commune with Shrine of Sha'gri"}}},nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [28765] = {"Tidal Menace",{{47101}},{{47101}},3,4,nil,nil,{"Stop the tidal menace."},nil,{{{47105,"Tidal Lurker"}}},nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [28766] = {"Pouch of Strange Shells",nil,nil,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- [28766] = {"Pouch of Strange Shells",nil,nil,3,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
--- [28767] = {"The Naga Menace",nil,nil,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- [28767] = {"The Naga Menace",nil,nil,3,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [28768] = {"Fel Elf Slayer",{{46295}},{{46295}},nil,60,nil,nil,{"Kill the Fel Elf Slayer."},nil,{{{46390,nil}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 [28902] = {"No Room for Sympathy",{{46836}},{{46836}},nil,2,nil,nil,{"Kill 8 Irradiated Oozes and 4 Infected Gnomes."},nil,{{{46839,8,"Irradiated Ooze"},{46838,4,"Infected Gnome"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
 [28903] = {"Encrypted Memorandum",{{46836}},{{46882}},nil,1,nil,nil,{"Read the Encrypted Memorandum then speak to Windle Fusespring at G.E.A.R. in Dun Morogh."},nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},

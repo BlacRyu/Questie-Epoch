@@ -3086,7 +3086,7 @@ function QuestieDataCollector:ShowExportWindow(questId)
         headerText = headerText .. "                  HOW TO SUBMIT YOUR REPORT                     \n" 
         headerText = headerText .. "════════════════════════════════════════════════════════════════\n\n"
         headerText = headerText .. "1. Copy all text below (Ctrl+C to copy)\n"
-        headerText = headerText .. "2. Go to: https://github.com/trav346/Questie/issues\n"
+        headerText = headerText .. "2. Go to: https://github.com/trav346/Questie-Epoch/issues\n"
         headerText = headerText .. "3. Click 'New Issue'\n"
         headerText = headerText .. "4. Title: Missing Quest Data: [Brief Description]\n"
         headerText = headerText .. "5. Paste the copied text and click 'Submit new issue'\n\n"
@@ -3131,7 +3131,7 @@ function QuestieDataCollector:CalculateCharacterSlices(totalChars, maxChars)
     headerText = headerText .. "                  HOW TO SUBMIT YOUR REPORT                     \n" 
     headerText = headerText .. "════════════════════════════════════════════════════════════════\n\n"
     headerText = headerText .. "1. Copy all text below (Ctrl+C to copy)\n"
-    headerText = headerText .. "2. Go to: https://github.com/trav346/Questie/issues\n"
+    headerText = headerText .. "2. Go to: https://github.com/trav346/Questie-Epoch/issues\n"
     headerText = headerText .. "3. Click 'New Issue'\n"
     headerText = headerText .. "4. Title: Missing Quest Data - Part X of Y\n"
     headerText = headerText .. "5. Paste the copied text and click 'Submit new issue'\n\n"
@@ -3371,7 +3371,7 @@ function QuestieDataCollector:ShowStagedExportWindow(totalQuests, maxPerPage, to
                 urlBox:SetWidth(400)
                 urlBox:SetHeight(20)
                 urlBox:SetFontObject(GameFontHighlight)
-                urlBox:SetText("https://github.com/trav346/Questie/issues")
+                urlBox:SetText("https://github.com/trav346/Questie-Epoch/issues")
                 urlBox:SetAutoFocus(false)
                 urlBox:SetScript("OnEditFocusGained", function(self)
                     self:HighlightText()
@@ -3382,7 +3382,7 @@ function QuestieDataCollector:ShowStagedExportWindow(totalQuests, maxPerPage, to
                 end)
                 urlBox:SetScript("OnTextChanged", function(self, userInput)
                     if userInput then
-                        self:SetText("https://github.com/trav346/Questie/issues")
+                        self:SetText("https://github.com/trav346/Questie-Epoch/issues")
                         self:HighlightText()
                     end
                 end)
@@ -3952,7 +3952,7 @@ function QuestieDataCollector:ExportQuest(questId)
     export = export .. "                  HOW TO SUBMIT YOUR REPORT                     \n"
     export = export .. "════════════════════════════════════════════════════════════════\n\n"
     export = export .. "1. Copy all text below (Ctrl+C to copy)\n"
-    export = export .. "2. Go to: https://github.com/trav346/Questie/issues\n"
+    export = export .. "2. Go to: https://github.com/trav346/Questie-Epoch/issues\n"
     export = export .. "3. Click 'New Issue'\n"
     export = export .. "4. Title: Missing Quest: " .. (questData.name or "Unknown") .. " (ID: " .. questId .. ")\n"
     export = export .. "5. Paste this entire report in the description\n"
@@ -5029,7 +5029,7 @@ function QuestieDataCollector:ExportBatchPart(partNumber)
     exportText = exportText .. "                  HOW TO SUBMIT THIS PART                       \n"
     exportText = exportText .. "════════════════════════════════════════════════════════════════\n\n"
     exportText = exportText .. "1. Copy all text below (Ctrl+C to copy)\n"
-    exportText = exportText .. "2. Go to: https://github.com/trav346/Questie/issues\n"
+    exportText = exportText .. "2. Go to: https://github.com/trav346/Questie-Epoch/issues\n"
     exportText = exportText .. "3. Click 'New Issue'\n"
     exportText = exportText .. "4. Title: Batch Submission - Part " .. partNumber .. " of " .. totalParts .. "\n"
     exportText = exportText .. "5. Paste this entire report in the description\n"
