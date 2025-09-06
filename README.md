@@ -5,23 +5,40 @@ If you find this version of Questie with data collection helpful, consider [buyi
 
 ---
 
-# Questie for Project Epoch
-NOTE: Data submissions prior to v1.1.1 will soon be deprecated.
+# Questie for Project Epoch v1.2.0
 
 **An actively maintained version of Questie for Project Epoch with enhanced data collection capabilities.**
 
+## 🎯 Major Database Expansion
+**1,346 Epoch Quests!**
+- The Epoch quest database has grown from 560 quests with broken/missing data to 1,346 quests (140% increase!)
+- Processed 1,153 community submissions from GitHub. Thank you to everyone who has and is continuing to submit!
+- **Top Contributors:**
+  1. BluePiru - 68 submissions 🥇
+  2. Lightshard86 - 63 submissions 🥈
+  3. fleekx - 43 submissions 🥉
+  4. MikeDelta95 - 41 submissions
+  5. mijagaming08-png - 40 submissions
 
-### 🎯 **Data Collection System** *(Unique Feature)*
-- **Missing Quest Detection**: Automatically detects quests not in database
-- **Real-time Data Capture**: Records quest objectives, NPCs, items, and locations as you play
-- **Progress Tracking**: Captures detailed progress locations with mob kill information
-- **Community Contributions**: Easy export system for submitting data to improve the database
+## 🗺️ New Features
 
-### ⚙️ **Customization Options**
-- **Minimap Button**: Quick access to settings and data export
-- **Slash Commands**: `/questie` for settings, `/qdc` for data collection
-- **Visual Options**: Customize marker icons, colors, and display preferences
-- **Performance Tuning**: Adjustable update frequencies and memory optimization
+### Level-Appropriate Quest Filtering
+- Map now only shows quests you can realistically obtain and complete
+- Most erroneous quests should no longer appear in wrong locations or for inappropriate levels
+- Cleaner map with only relevant quests for your level
+
+### Smart Quest Data Export
+- **Automatic Pagination**: Large submissions automatically split into multiple pages
+- **Character Counter**: Shows real-time usage (e.g., "45.2k/59.0k chars")
+- **Smart Slicing**: Respects GitHub's 65,536 character limit
+- **Unified Interface**: All exports use the same modern staged window
+
+### Quest Completeness Indicators
+**Categories shown as prefixes in quest tracker:**
+- **[EpochDB Missing]**: Quest not in database, created runtime stub for tracking
+- **[EpochDB Minimal]**: Bare minimum data (name only), needs significant collection
+- **[EpochDB Partial]**: Has some data (NPCs or objectives) but incomplete
+- **No prefix**: Complete quest with all necessary data to function properly
 
 ## 📦 Installation
 
@@ -60,10 +77,10 @@ NOTE: Data submissions prior to v1.1.1 will soon be deprecated.
 - **No Performance Impact**: Lightweight system that doesn't affect gameplay
 
 ### **How to Contribute**
- **Play Normally**: Accept and complete quests as usual
-**Export Data**: Use `/qdc export` when quest is complete
-**Submit to GitHub**: Create issue at [GitHub Issues](https://github.com/trav346/Questie/issues)
-**Help the Community**: Your data helps everyone get better quest information
+1. **Play Normally**: Accept and complete quests as usual
+2. **Export Data**: Use `/qdc export` when quest is complete
+3. **Submit to GitHub**: Create issue at [GitHub Issues](https://github.com/trav346/Questie/issues)
+4. **Help the Community**: Your data helps everyone get better quest information
 
 ### **Known Compatibility**
 - ✅ For map zooming you'll want to get https://warperia.com/addon-wotlk/magnify/
@@ -84,13 +101,16 @@ NOTE: Data submissions prior to v1.1.1 will soon be deprecated.
 
 ## 📈 Version History
 
-### **Latest: v1.1.1** *(Current)*
-- 🐛 Fixed coordinate formatting crashes
-- 🐛 Fixed QuestieSlash command errors  
-- 🚀 Enhanced objective tracking with mob kill correlation
-- 📍 Improved progress location display matching v1.0.68 quality
+### **Latest: v1.2.0** *(Current)*
+- 🎯 Added 786 new quests from 1,153 community submissions
+- 🗺️ Smarter level-appropriate quest filtering
+- 📤 Smart pagination for large quest data exports
+- 📊 Quest completeness indicators in tracker
+- 🐛 Fixed 513 quests missing level requirements
+- 🐛 Fixed export window nil errors and crashes
 
 ### **Previous Releases**
+- **v1.1.1**: Fixed coordinate crashes, enhanced objective tracking
 - **v1.1.0**: Data collection overhaul, completed quest sync
 - **v1.0.68**: Enhanced objective tracking, turn-in NPC fixes
 - **v1.0.63**: Initial Project Epoch compatibility
@@ -99,10 +119,11 @@ NOTE: Data submissions prior to v1.1.1 will soon be deprecated.
 
 ## 📊 Database Statistics
 
-**Current Epoch Quest Coverage**: **757 quests** and growing!
-- 🎉 **Recent Achievement**: Integrated 173 legacy quest submissions from community
-- 📈 **30% Database Growth**: Thanks to 875 GitHub quest submissions from dedicated players
-- 🌟 **Community Success**: 97% validation success rate on legacy data processing
+**Current Epoch Quest Coverage**: **1,346 quests** and growing!
+- 🎉 **Recent Achievement**: Added 786 new quests from community submissions
+- 📈 **140% Database Growth**: From 560 to 1,346 quests thanks to 1,153 GitHub submissions
+- 🌟 **Community Success**: 158 unique contributors with 100% validation before application
+- 📊 **Total Database**: 14,673 quests across Epoch, Classic, and WotLK
 
 *Special thanks to every player who took time to submit quest data - you've made Questie significantly better for everyone!*
 
@@ -112,9 +133,9 @@ NOTE: Data submissions prior to v1.1.1 will soon be deprecated.
 - **@esurm**: Original Questie author and data collection system
 - **@desizt**: Data collection enhancements and testing
 - **@Bennylavaa**: Extensive testing and bug reporting
-- **Project Epoch Community**: 875+ quest data submissions over the past week - incredible dedication!
-- **All GitHub Contributors**: Every quest submission helped build our database of 757 quests
-- **Legacy Data Heroes**: Special recognition for v1.0.68 era players who provided foundational quest data
+- **Top Quest Contributors**: BluePiru, Lightshard86, fleekx, MikeDelta95, mijagaming08-png
+- **Project Epoch Community**: 1,153 quest data submissions from 158 unique contributors!
+- **All GitHub Contributors**: Every quest submission helped build our database of 1,346 quests
 
 ### **Support Development**
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support%20Development-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/trav346)
