@@ -4,13 +4,14 @@
 
 ### Added
 
-- **Processed 1,153 GitHub Quest Submissions** - Massive database update from community data
-  - Added 535 new quests from GitHub issue submissions
-  - Updated 419 existing quests with complete data (NPCs, objectives, coordinates)
-  - Added 460 new NPCs with proper IDs and spawn locations
-  - Updated 410 existing NPCs with corrected service flags and locations
-  - All data validated through quality assurance pipeline before applying
-  - Processed and closed all open quest data submission issues
+- **Added 786 New Quests from GitHub Submissions** - Major database expansion
+  - Successfully processed 1,153 GitHub quest submissions
+  - Added 786 completely new quests to the database
+  - Database grew from 560 to 1,346 total quests
+  - All existing quest data preserved unchanged
+  - Full pipeline validation completed before application
+  - Fixed critical bugs in lua_formatter (newline escaping)
+  - Implemented comprehensive validation checks
 
 ### Fixed
 
