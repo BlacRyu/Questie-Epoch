@@ -15,7 +15,8 @@
   - All exports now use the same modern staged export interface
   - Character count tracking shown for all submissions
   - Automatic pagination when content exceeds GitHub's 65k character limit
-  - Removed redundant "Large export detected" warnings - window handles this automatically
+  - "Large submission detected" notice only shows when data is actually sliced into multiple pages
+  - Removed redundant warnings - window handles character limits automatically
 
 - **Fixed Remaining spawnList nil Error** - Fixes GitHub issue #1279
   - Added defensive check to `_UnloadAlreadySpawnedIcons` function at line 1579

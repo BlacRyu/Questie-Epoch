@@ -3451,6 +3451,15 @@ function QuestieDataCollector:ShowStagedExportWindow(totalQuests, maxPerPage, to
     frame.useCharacterSlicing = useCharacterSlicing
     frame.sliceInfo = sliceInfo
     
+    -- Show/hide the "Large submission detected" notice based on whether we have multiple pages
+    if frame.notice then
+        if totalPages > 1 then
+            frame.notice:Show()
+        else
+            frame.notice:Hide()
+        end
+    end
+    
     -- Set up navigation button handlers
     frame.prevButton:SetScript("OnClick", function()
         if frame.currentPage > 1 then

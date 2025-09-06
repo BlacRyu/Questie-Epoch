@@ -779,7 +779,7 @@ epochQuestData = {
 -- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
 -- [27504] = {"Kristy's Delivery Service",nil,nil,nil,30,nil,nil,{"Complete Kristy's delivery service."},nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
 [27508] = {"Research Salvation",nil,{{9270}},nil,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
-[27509] = {"The Un'Goro Hunt",{{46278}},{{46278}},nil,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27509] = {"The Un'Goro Hunt",{{46278}},{{46278}},47,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27510] = {"The Un'Goro Hunt",nil,{{46278}},nil,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27517] = {"Storm, Earth, Wind, and Fire",{{45143}},{{10302}},nil,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
 [27518] = {"Storm, Earth, Wind, and Fire",{{45143}},{{45143}},nil,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
