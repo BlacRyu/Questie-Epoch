@@ -4,6 +4,19 @@
 
 ### Fixed
 
+- **Fixed Level Filter Breaking High-Level Quest Display** - Resolved issue where low-level players saw unacceptable quests
+  - Fixed loophole in `IsLevelRequirementsFulfilled` that allowed level 11 quests to show for level 1 players
+  - Quests with low required levels but high quest levels (like Hogger) now properly filtered
+  - Level filter now correctly enforces the +4 level maximum for LOWLEVEL_NONE mode
+  - Changed max quest display from +6 levels to +4 (quests turn red at +5 and often can't be accepted)
+  - Map is now much cleaner with only appropriate-level quests showing
+
+- **Fixed 513 Epoch Quests Missing Level Requirements** - Comprehensive database fix
+  - Updated comprehensive_level_fixer.py to properly parse all quest formats
+  - Fixed regex pattern that was only capturing partial quest entries
+  - Added proper brace-counting parser to handle nested structures
+  - 513 quests now have appropriate level requirements based on quest level
+
 - **Fixed Export Window Errors** - Multiple fixes for data export functionality
   - Fixed nil comparison error at line 3125 by removing undefined maxQuestsPerSubmission variable
   - Fixed ExportBatchPart "ShowExportText nil value" error from issue #1277 by creating export frame inline
