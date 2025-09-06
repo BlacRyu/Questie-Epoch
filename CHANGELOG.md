@@ -4,6 +4,19 @@
 
 ### Fixed
 
+- **Fixed Export Window Errors** - Multiple fixes for data export functionality
+  - Fixed nil comparison error at line 3125 by removing undefined maxQuestsPerSubmission variable
+  - Fixed ExportBatchPart "ShowExportText nil value" error from issue #1277 by creating export frame inline
+  - Fixed nil maxPerPage error in ShowStagedExportWindow by providing default value when triggered by quest count
+
+### Changed
+
+- **Unified Export Window** - Replaced old export window with staged export window for all exports
+  - All exports now use the same modern staged export interface
+  - Character count tracking shown for all submissions
+  - Automatic pagination when content exceeds GitHub's 65k character limit
+  - Removed redundant "Large export detected" warnings - window handles this automatically
+
 - **Fixed Remaining spawnList nil Error** - Fixes GitHub issue #1279
   - Added defensive check to `_UnloadAlreadySpawnedIcons` function at line 1579
   - Prevents "bad argument #1 to 'next' (table expected, got nil)" error
