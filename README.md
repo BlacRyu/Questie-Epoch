@@ -82,6 +82,19 @@ NOTE: Data submissions prior to v1.1.1 will soon be deprecated.
 3. **Report Bugs**: Create detailed issue reports with steps to reproduce
 4. **Discord Support**: Join Project Epoch Discord for community help
 
+## 📈 Version History
+
+### **Latest: v1.1.1** *(Current)*
+- 🐛 Fixed coordinate formatting crashes
+- 🐛 Fixed QuestieSlash command errors  
+- 🚀 Enhanced objective tracking with mob kill correlation
+- 📍 Improved progress location display matching v1.0.68 quality
+
+### **Previous Releases**
+- **v1.1.0**: Data collection overhaul, completed quest sync
+- **v1.0.68**: Enhanced objective tracking, turn-in NPC fixes
+- **v1.0.63**: Initial Project Epoch compatibility
+
 [View Full Changelog](CHANGELOG.md)
 
 ## 📊 Database Statistics
@@ -96,9 +109,14 @@ NOTE: Data submissions prior to v1.1.1 will soon be deprecated.
 ## 🙏 Credits & Support
 
 ### **Special Thanks**
-- **@esurm**
-- **@desizt**
-- **@Bennylavaa**
+- **@esurm**: Original Questie author and data collection system
+- **@desizt**: Data collection enhancements and testing
+- **@Bennylavaa**: Extensive testing and bug reporting
 - **Project Epoch Community**: 875+ quest data submissions over the past week - incredible dedication!
 - **All GitHub Contributors**: Every quest submission helped build our database of 757 quests
 - **Legacy Data Heroes**: Special recognition for v1.0.68 era players who provided foundational quest data
+
+### **Support Development**
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support%20Development-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/trav346)
+
+If you find this enhanced version of Questie helpful, consider [buying me a coffee](https://buymeacoffee.com/trav346) to support continued development and maintenance!
