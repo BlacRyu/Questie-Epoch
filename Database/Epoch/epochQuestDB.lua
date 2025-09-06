@@ -1,1934 +1,1754 @@
-epochQuestDB = epochQuestDB or {}
+---@type QuestieDB
+local QuestieDB = QuestieLoader:ImportModule("QuestieDB")
 
--- Project Epoch Quest Database
--- Last updated: 2025-09-06T14:34:40.184544
--- Total entries: 1297
-
-[76] = {"The Jasperlode Mine",nil,{{240},
-[783] = {"A Threat Within",{{823},
-[1288] = {"Vimes's Report",{{4944},
-[1448] = {"In Search of The Temple",{{5384},
-[2995] = {"Batch Submission (0 quests)",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,406,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[3310] = {"locations",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[3539] = {"Batch Submission (0 quests)",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[4186] = {"The True Masters",nil,nil,54,54,nil,nil,{"Take Bolvar's Decree to Magistrate Solomon in Lakeshire."},
-[4551] = {"Batch Submission (0 quests)",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[6131] = {"Timbermaw Ally",{{11554},
-[6241] = {"Winterfall Activity",nil,nil,56,56,nil,nil,{"Winterfall Totemic slain: 6/6 (monster)"},
-[7279] = {2,nil,{[1]={{44.9,46.7},
-[9469] = {"Featherbeard's Endorsement",{{45019},
-[9471] = {"Preying on the Predators",{{5636},
-[9475] = {"Reclaiming the Eggs",nil,{{45019},
-[9476] = {"In Pursuit of Featherbeard",nil,nil,46,46,nil,nil,{"Warbling Altometer: 0/1"},
-[11123] = {"Inspecting the Ruins",{{4944},
-[11160] = {"Banner of the Stonemaul",{{23579},
-[11161] = {"The Essence of Enmity",{{23579},
-[13887] = {"Venomhide Eggs",{{11701},
-[14079] = {"Learn to Ride in Elwynn Forest",nil,nil,20,20,nil,nil,{"Return the pamphlet to Randal Hunter at Eastvale Logging Camp in Elwynn Forest."},
-[14089] = {"Learn to Ride in Tirisfal Glades",nil,nil,40,40,nil,nil,{"Return the pamphlet to Velma Warnam at Brill in Tirisfal Glades."},
-[16227] = {"Batch Submission (0 quests)",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[24857] = {"Attack on Camp Narache",{{3229},
-[26126] = {"Springsocket Eels",{{45004},
-[26131] = {"Azsharan Shekel",nil,{{45018},
-[26133] = {"Kezan Dollar",{{2625},
-[26138] = {"Dark Iron Stater",{{7035},
-[26139] = {"Defias Ducat",nil,{{2917,6169},
-[26140] = {"Gnomish Guinea",{{31035},
-[26143] = {"Kaldorei Lune",nil,{{663,45018},
-[26148] = {"Legion Paisa",nil,{{9996},
-[26150] = {"Lordaeron Crown",nil,nil,60,60,nil,nil,{"1. Take the Lordaeron Crown to Altadena in Booty Bay. (log)"},
-[26153] = {"Dalaran Shilling",nil,nil,60,60,nil,nil,{"1. Take the Dalaran Shilling to Altadena in Booty Bay. (log)"},
-[26160] = {"Stormwind Farthing",nil,{{45018},
-[26161] = {"Meatloaf's Task",{{45716},
-[26166] = {"A Fatal Error",{{382},
-[26167] = {"A Sticky Situation",{{4782},
-[26168] = {"Can't Make An Omelette Without...",{{11813},
-[26169] = {"Can't Make An Omelette Without...",{{14736},
-[26170] = {"Clear The Shore",{{14740},
-[26171] = {"Falling Up To Grace",{{45021},
-[26172] = {"Falling Up To Grace",{{45021},
-[26173] = {"Falling Up To Grace",{{2688},
-[26174] = {"Falling Up To Grace",{{2688},
-[26175] = {"Falling Up To Grace",{{45021},
-[26176] = {"Falling Up To Grace",{{45021},
-[26177] = {"Razorbeak Friends",{{45026},
-[26178] = {"Razorbeak Friends",{{45026},
-[26179] = {"Hinterlands Hermit",{{45024},
-[26180] = {"Snapjaw Snacks",{{45023},
-[26181] = {"Snack Distribution",{{45023},
-[26182] = {"An Offering Of Peace",nil,nil,45,45,nil,nil,{"1. Turtle \"Nugget\": 3/8 (item)
-     Item:  (ID: 18567)
-     Progress locations:
-       - [82.2, 51.2] in The Hinterlands - Looted Turtle \"Nugget\" from Black Skeletal Horse
-       - [82.2, 51.2] in The Hinterlands - Looted Turtle \"Nugget\" from Black Skeletal Horse
-       - [81.2, 53.2] in The Hinterlands - Looted Turtle \"Nugget\" from Black Skeletal Horse
-       - [81.2, 53.2] in The Hinterlands - Looted Turtle \"Nugget\" from Black Skeletal Horse
-       - [80.2, 60.5] in The Hinterlands - Looted Turtle \"Nugget\" from Black Skeletal Horse
-       - [80.2, 60.5] in The Hinterlands - Looted Turtle \"Nugget\" from Black Skeletal Horse"},
-[26183] = {"An Offering Of Peace",{{45023},
-[26184] = {"An Offering Of Peace",{{45023},
-[26185] = {"Lard's Lost Beads",{{14731},
-[26186] = {"Parts From Afar",{{45030},
-[26187] = {"Parts From Afar",{{11145},
-[26188] = {"Stalking the Stalkers",{{5636},
-[26189] = {"Prime Slime",{{45031},
-[26190] = {"Prime Slime",{{14739},
-[26191] = {"A Vicious Vocation",{{11812},
-[26192] = {"Primitive Pummeling",{{11812},
-[26193] = {"Savage Slam",{{11812},
-[26194] = {"Owlkin Leadership",{{11812},
-[26195] = {"Owlkin Leadership",{{14741,4465},
-[26196] = {"Turtle Power",{{4782},
-[26198] = {"Wanted: Foulcrest",{{2923,45019},
-[26199] = {"Wanted: Foulcrest",{{14739,14738},
-[26200] = {"Balancing the Forest",{{2930},
-[26201] = {"Balancing the Forest",nil,{{3650},
-[26202] = {"The Twilight's Hammer",{{3702},
-[26203] = {"Welcome to Auberdine",{{45035},
-[26204] = {"The Greymist Menace",{{45038},
-[26205] = {"The Greymist Menace",{{45038},
-[26206] = {"Shoalbeard",{{45038},
-[26208] = {"Wanted: Grizzletooth",nil,nil,18,18,nil,nil,{"1. Grizzletooth slain: 0/1 (monster)"},
-[26209] = {"Wildhammer Bones",{{5635},
-[26210] = {"Job Opening: Guard Captain of Aerie Peak",{{5635,7865},
-[26211] = {"Tactical Strike",{{5635},
-[26212] = {"The Voodoo They Do",{{45043},
-[26213] = {"Howin's Favorite Fishing Hole",{{11810},
-[26214] = {"Howin's Favorite Fishing Hole",nil,nil,50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[26215] = {"Howin's Favorite Fishing Hole",nil,nil,50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[26216] = {"Howin's Favorite Fishing Hole",nil,nil,50,50,nil,nil,{"1. Return to Aerie Peak with Howin's Favorite Lure. (log)"},
-[26217] = {"Lost in the Lake",{{45044,45841},
-[26218] = {"Wreck of the Kestrel",{{2140},
-[26243] = {"Blazing Gemstone",{{7036},
-[26244] = {"Obtaining Obsidian",{{45069},
-[26245] = {"Demonfire",{{45069},
-[26246] = {"Dragonfire",{{45069},
-[26247] = {"Searing Armaments",{{45069},
-[26266] = {"Dark Literature",{{45093},
-[26268] = {"Rewriting Curses",nil,nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[26269] = {"Soul Fuel",nil,nil,53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[26273] = {"Falling Stars",nil,nil,56,56,nil,nil,{"1. Starfall Crystal: 0/10 (item)
-     Item:  (ID: 13863)"},
-[26276] = {"Operation: Phalanx",{{8909},
-[26277] = {"Shaman of the Flame",{{45143},
-[26278] = {"The Firelord's Lieutenants",nil,nil,56,56,nil,nil,{"1. Lord Roccor slain: 1/1 (monster)
-  2. Ambassador Flamelash slain: 0/1 (monster)"},
-[26279] = {"The Gooder Stuff",{{9177},
-[26280] = {"The Wayward Student",{{5516},
-[26281] = {"An Eternal Flame",{{2276,6122},
-[26282] = {"An Old Debt",{{677,45206},
-[26283] = {"Azothan Relic",{{674},
-[26284] = {"Azothan Relics",{{2916},
-[26285] = {"Deeg's Lost Pipe",{{2488,2635,46438,1776},
-[26286] = {"Kill the Foreman",{{2498},
-[26287] = {"Prismatic Scales",{{2495},
-[26288] = {"Reclaiming Tools",{{5411,677,2635,1776},
-[26289] = {"Renegade Naga",{{8617,677,45190,674},
-[26290] = {"Troll Relic",{{3322,674},
-[26291] = {"Troll Relics",{{45207},
-[26292] = {"Tunnel Monster",{{45208,677,46438},
-[26293] = {"Fit For A King",{{45211},
-[26294] = {"Fit For A King",{{45211},
-[26295] = {"Fit For A King",{{45211},
-[26296] = {"Fit For A King",{{45211},
-[26297] = {"Fit For A King",{{45211},
-[26298] = {"Fit For A King",{{45211},
-[26299] = {"Fit For A King",nil,{{45211},
-[26300] = {"Fit For A King",{{45211},
-[26302] = {"The Source Of Corruption",nil,{{45221},
-[26303] = {"Attunement to the Core",{{14387},
-[26304] = {"Attunement to the Core",{{13278},
-[26305] = {"Attunement to the Core",nil,nil,60,60,nil,nil,{"1. Keenice's Frozen Core: 0/1 (item)
-     Containers/Objects:
-       - Heart of the Mountain at [0, 0] in Blackrock Depths
-       - Lead Surveyor's Mantle at [0, 0] in Blackrock Depths
-       - Pattern: Chimeric Boots at [0, 0] in Blackrock Depths
-       - Hold Shift + Drag: at [0, 0] in Blackrock Depths
-       - Disenchant at [0, 0] in Blackrock Depths
-       - Ribbly's Boomstick at [0, 0] in Blackrock Depths
-     Progress locations:
-       - [65.5, 35.7] in Burning Steppes
-       - [65.9, 36.2] in Burning Steppes
-       - [66.6, 36] in Burning Steppes
-       - [70.9, 37.7] in Burning Steppes
-       - [80.1, 47.7] in Burning Steppes
-       - [69.7, 30] in Burning Steppes
-       - [66.5, 35.8] in Burning Steppes
-       - [66.5, 35.8] in Burning Steppes
-       - [59.1, 35.8] in Burning Steppes
-       - [58.2, 38] in Burning Steppes
-       - [59.9, 37.9] in Burning Steppes
-       - [0, 0] in Blackrock Depths
-       - [0, 0] in Blackrock Depths
-       - [46.8, 67.6] in Blackrock Mountain
-       - [46.8, 67.6] in Blackrock Mountain
-       - [47, 68.5] in Blackrock Mountain
-       - [0, 0] in Blackrock Depths
-       - [0, 0] in Blackrock Depths
-       - [0, 0] in Blackrock Depths
-       - [0, 0] in Blackrock Depths
-       - [0, 0] in Blackrock Depths
-       - [0, 0] in Blackrock Depths
-       - [0, 0] in Blackrock Depths
-       - [0, 0] in Blackrock Depths
-       - [0, 0] in Blackrock Depths
-       - [0, 0] in Blackrock Depths
-       - [0, 0] in Blackrock Depths
-  2. Torid's Fiery Core: 0/1 (item)"},
-[26308] = {"Trial of the Willing",{{45243},
-[26310] = {"Trial of the Willing",nil,nil,25,25,nil,nil,{"1. Deor Levo slain: 0/1 (monster)
-  2. Reagle the Blessed slain: 0/1 (monster)
-  3. Justicar Masule slain: 0/1 (monster)"},
-[26311] = {"Materials of the Light",{{45242},
-[26312] = {"Materials of the Light",nil,nil,22,22,nil,nil,{"1. Corrupted Kor Gem: 0/1 (item)
-     Item:  (ID: 871)
-  2. Springvale's Blessed Ingots: 1/1 (item)
-     Item:  (ID: 871)
-  3. Zelemar's Hammer: 0/1 (item)
-     Item:  (ID: 871)
-  4. Silver Hand Medallion: 1/1 (item)
-     Item: Silver Hand Medallion (ID: 61966)"},
-[26316] = {"Lorderon's Legal Legacy",{{45263},
-[26317] = {"Atal'ai Tablets",{{45285},
-[26318] = {"Invocation of The Blood God",nil,nil,48,48,nil,nil,{"1. Atal'ai Scroll: 0/4 (item)"},
-[26319] = {"A Legacy of Knowledge",nil,nil,60,60,nil,nil,{": 0/1"},
-[26321] = {"An Unfinished Task",{{45313},
-[26322] = {"An Unfinished Task",{{45327},
-[26323] = {"An Unfinished Task",nil,{{2921,9298},
-[26331] = {"Plundering Pirates",{{2769},
-[26332] = {"Plundering Pirates",{{3453},
-[26337] = {"The Necromancer and the Scion",{{4572},
-[26338] = {"The Possible Fall of Baradin Hold",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[26339] = {"The Possible Fall of Baradin Hold",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[26340] = {"The Possible Fall of Baradin Hold",nil,nil,60,60,nil,nil,{"1. Glagut slain: 1/1 (monster)
-     Mobs tracked:
-       - Glagut (ID: 45080)
-         [0, 0] in Baradin Hold
-     Progress locations:
-       - [0, 0] in Baradin Hold
-  2. Calypso slain: 1/1 (monster)
-     Mobs tracked:
-       - Calypso (ID: 45006)
-         [0, 0] in Baradin Hold
-     Progress locations:
-       - [0, 0] in Baradin Hold
-  3. Pirate Lord Blackstone slain: 1/1 (monster)
-     Mobs tracked:
-       - Rat (ID: 4075)
-         [0, 0] in Scholomance
-       - Pirate Lord Blackstone (ID: 45017)
-         [0, 0] in Baradin Hold
-     Progress locations:
-       - [0, 0] in Baradin Hold"},
-[26341] = {"The Possible Fall of Baradin Hold",{{10540},
-[26343] = {"To All the Demons I Used to Love",nil,nil,60,60,nil,nil,{"1.   slain: 0/1 (monster)
-  2.   slain: 0/1 (monster)"},
-[26347] = {"The Good News",nil,{{45345},
-[26349] = {"The Bad News",nil,{{5387},
-[26352] = {"The Bad News Again",nil,{{2916},
-[26362] = {"Call to Skirmish: Stonetalon Mountains",nil,nil,36,36,nil,nil,{"1. Alliance Killed: 3/5 (monster)"},
-[26364] = {"Call to Skirmish: Ashenvale",nil,{{45799},
-[26366] = {"Call to Skirmish: Hillsbrad Foothills",nil,nil,22,22,nil,nil,{"1. Alliance Killed: 0/5 (monster)"},
-[26368] = {"Call to Skirmish: Thousand Needles",nil,nil,35,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[26369] = {"Call to Skirmish: Alterac Mountains",nil,nil,39,39,nil,nil,{"Horde Killed: 0/5"},
-[26370] = {"Call to Skirmish: Alterac Mountains",nil,nil,43,43,nil,nil,{"1. Alliance Killed: 5/5 (monster)
-     Progress locations:
-       - [43.5, 47.4] in Alterac Mountains
-       - [51.3, 52.4] in Alterac Mountains
-       - [49.9, 56.9] in Alterac Mountains
-       - [56.7, 45.5] in Alterac Mountains
-       - [55.8, 48.9] in Alterac Mountains"},
-[26372] = {"Call to Skirmish: Desolace",nil,nil,41,41,nil,nil,{"1. Alliance Killed: 0/5 (monster)"},
-[26373] = {"Call to Skirmish: Arathi Highlands",nil,nil,39,39,nil,nil,{"Horde Killed: 5/5"},
-[26374] = {"Call to Skirmish: Arathi Highlands",{{12920},
-[26375] = {"Call to Skirmish: Swamp of Sorrows",nil,nil,40,40,nil,nil,{"1. Horde Killed: 0/5 (monster)"},
-[26376] = {"Call to Skirmish: Swamp of Sorrows",{{9019},
-[26377] = {"Call to Skirmish: Badlands",nil,nil,43,43,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1537,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[26378] = {"Call to Skirmish: Badlands",nil,nil,43,43,nil,nil,{"1. Alliance Killed: 0/5 (monster)"},
-[26379] = {"Call to Skirmish: The Hinterlands",nil,nil,50,50,nil,nil,{"1. Horde Killed: 0/5 (monster)"},
-[26380] = {"Call to Skirmish: The Hinterlands",{{250166},
-[26381] = {"Call to Skirmish: Stranglethorn Vale",{{733},
-[26382] = {"Call to Skirmish: Stranglethorn Vale",nil,nil,48,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[26383] = {"Call to Skirmish: Tanaris",{{7823},
-[26384] = {"Call to Skirmish: Tanaris",{{46226},
-[26390] = {"Call to Skirmish: Un'Goro Crater",nil,nil,51,51,nil,nil,{"1. Alliance Killed: 5/5 (monster)
-     Progress locations:
-       - [39.8, 59] in Un'Goro Crater
-       - [41, 2.8] in Un'Goro Crater
-       - [44, 19] in Un'Goro Crater
-       - [44, 7.8] in Un'Goro Crater
-       - [44.5, 9.9] in Un'Goro Crater"},
-[26393] = {"Call to Skirmish: Western Plaguelands",nil,nil,55,55,nil,nil,{"1. Horde Killed: 0/5 (monster)"},
-[26397] = {"Call to Skirmish: Eastern Plaguelands",nil,nil,55,55,nil,nil,{"1. Horde Killed: 0/5 (monster)"},
-[26402] = {"Call to Skirmish: Feralas",{{8115},
-[26403] = {"Call to Skirmish: Winterspring",nil,nil,55,55,nil,nil,{"1. Horde Killed: 0/5 (monster)"},
-[26404] = {"Call to Skirmish: Winterspring",{{250188},
-[26405] = {"Call to Skirmish: Dustwallow Marsh",{{4456},
-[26406] = {"Call to Skirmish: Dustwallow Marsh",{{4501,4884},
-[26407] = {"Call to Skirmish: Blasted Lands",nil,nil,57,57,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[26410] = {"Taming the Beast",{{45475},
-[26411] = {"Taming the Beast",{{45475},
-[26412] = {"Taming the Beast",{{45475},
-[26413] = {"Training the Beast",{{45475},
-[26414] = {"Tattered Letter",{{197},
-[26422] = {"Ritual of Refreshment",nil,nil,60,60,nil,nil,{"1. Notes on Arcane Refreshment: 0/1 (item)
-     Item: Notes on Arcane Refreshment (ID: 61984)
-     Containers/Objects:
-       - War Master Voone at [0, 0] in Blackrock Spire
-       - Bijou's Belongings at [0, 0] in Blackrock Spire
-       - Spire Spider Egg at [0, 0] in Blackrock Spire
-       - Empty Worg Pup Cage at [0, 0] in Blackrock Spire
-     Progress locations:
-       - [0, 0] in Scholomance - Looted Notes on Arcane Refreshment from Jandice Barov
-       - [0, 0] in Blackrock Spire
-       - [0, 0] in Blackrock Spire
-       - [0, 0] in Blackrock Spire
-       - [0, 0] in Blackrock Spire
-       - [0, 0] in Blackrock Spire
-       - [0, 0] in Blackrock Spire
-       - [0, 0] in Blackrock Spire
-       - [0, 0] in Blackrock Spire"},
-[26441] = {"A Noble Steed",nil,nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[26453] = {"Our Bodies Forsaken",{{45242},
-[26455] = {"Seeking Redemption",{{45383},
-[26456] = {"Our Bodies Forsaken",{{45242},
-[26457] = {"Our Bodies Forsaken",{{5665},
-[26458] = {"Our Bodies Forsaken",{{5665},
-[26459] = {"Our Bodies Forsaken",{{45242},
-[26460] = {"Our Bodies Forsaken",{{45502},
-[26461] = {"Our Bodies Forsaken",{{45501},
-[26463] = {"The Bulwark",{{45242},
-[26467] = {"Those Unrecovered",{{45506},
-[26472] = {"In Favor of the Sun",{{45512},
-[26476] = {"A Cloak of Shadows",nil,{{2543},
-[26477] = {"A Cloak of Shadows",nil,{{2789,12939},
-[26478] = {"Deep Earth Rune",nil,nil,1,1,nil,nil,{"1. Read the Deep Earth Rune and speak to Ulfarn Boldbraid in Coldridge Valley. (log)"},
-[26480] = {"Call of Earth",nil,{{45514},
-[26481] = {"Call of Earth",nil,{{836},
-[26482] = {"Call of Earth",nil,{{12738},
-[26484] = {"Call of Fire",{{45519},
-[26485] = {"Call of Fire",{{45520},
-[26486] = {"Call of Fire",{{45520},
-[26487] = {"Call of Fire",nil,nil,11,11,nil,nil,{"1. Bring the Torch of Eternal Flame to Orgorn Strongbrow at South Gate Outpost in Dun Morogh. (log)"},
-[26488] = {"Call of Water",nil,nil,20,20,nil,nil,nil,nil,{nil,nil,{{0,1},
-[26489] = {"Call of Water",nil,{{45521},
-[26490] = {"Call of Water",{{45521},
-[26491] = {"Call of Water",nil,nil,21,21,nil,nil,{": 0/1"},
-[26492] = {"Call of Water",nil,nil,22,22,nil,nil,{": 0/1"},
-[26493] = {"Call of Water",{{250213},
-[26494] = {"Call of Water",{{5895},
-[26499] = {"Magical Materiel",{{2543},
-[26500] = {"A Strange Tome",{{2543},
-[26502] = {"Rare Books",{{2277},
-[26503] = {"Rare Books",nil,{{2277},
-[26504] = {"Syndicate Documents",{{2276},
-[26505] = {"Letter to Ravenholdt",{{2276},
-[26506] = {"The Strahnbrad Courier",{{6768},
-[26507] = {"Suspicious Activity in the Uplands",nil,{{6768},
-[26508] = {"Suspicious Activity in the Uplands",{{6768},
-[26509] = {"Suspicious Activity in the Uplands",{{6768},
-[26510] = {"Lord Aliden Perenolde",{{6768},
-[26511] = {"The Perenolde Legacy",{{2317},
-[26512] = {"The Perenolde Legacy",nil,{{2378},
-[26513] = {"The Perenolde Legacy",nil,{{10782},
-[26514] = {"The Perenolde Legacy",{{10782},
-[26515] = {"The Perenolde Legacy",nil,{{45787},
-[26516] = {"Dark Council",{{2276},
-[26517] = {"Dark Council",nil,{{6768},
-[26518] = {"The Ensorcelled Parchment",{{2625},
-[26519] = {"Felicity's Deciphering",{{6768},
-[26520] = {"The Bloodstone Devices",nil,{{2276},
-[26521] = {"The Argus Wake",{{2316},
-[26522] = {"The Argus Wake",nil,nil,40,40,nil,nil,{"1. Head of Nagaz: 0/1 (item)"},
-[26523] = {"The Ensorcelled Parchment",nil,{{2229},
-[26524] = {"To Ravenholdt Manor",nil,{{2465,3544},
-[26525] = {"Felicity's Deciphering",{{6768},
-[26526] = {"The Bloodstone Devices",{{45526},
-[26527] = {"The Bloodstone Devices",{{45526},
-[26528] = {"All Signs Point to Desolace",nil,{{45527},
-[26529] = {"The Argus Wake in Desolace",nil,{{45527},
-[26530] = {"The Argus Wake in Desolace",nil,{{45527},
-[26531] = {"The Argus Wake in Desolace",{{45527},
-[26532] = {"The Argus Wake in Desolace",nil,{{45528},
-[26533] = {"The End of the Argus Wake",{{45528},
-[26535] = {"Letter to Stromgarde",{{46897},
-[26537] = {"The Mordis Key",{{2555},
-[26538] = {"The Barony Mordis",{{2378},
-[26539] = {"The Barony Mordis",{{2429},
-[26540] = {"Threats from Abroad",{{45546},
-[26541] = {"Threats from Abroad",{{45546},
-[26542] = {"A Rare Variety",{{2364},
-[26543] = {"Watermelon Punch",{{2364},
-[26544] = {"Who Likes Apples?",{{3544,3983},
-[26545] = {"Who Likes Watermelons?",{{3544},
-[26546] = {"To The Hills",{{2706},
-[26547] = {"To The Hills",{{45549},
-[26548] = {"Cooling Waters",{{45548},
-[26549] = {"A Painful Dousing",{{45548},
-[26550] = {"An Audience With Water",{{45548},
-[26551] = {"Close The Vents",{{45547},
-[26552] = {"Offering Of Feathers",{{45547},
-[26553] = {"An Audience With Air",{{45547},
-[26554] = {"Assistance Of Air",{{45555},
-[26555] = {"Cooling The Fury",{{45547},
-[26556] = {"Return To Fire",{{45547},
-[26557] = {"Convening The Council",{{45548},
-[26558] = {"The Rumbling Fields",{{45564},
-[26559] = {"Save The Animals",{{45567},
-[26560] = {"When Life Gives You... Berries?",{{45564},
-[26568] = {"Shadowberry Pie",{{9501},
-[26569] = {"Unusual Rations",{{2818},
-[26570] = {"Waterlogged Journal",{{250230,2255,2277,2276,2366},
-[26571] = {"The Southern Hills",{{45548},
-[26572] = {"Furious Flaying",{{250231,46559},
-[26573] = {"Blazing Hills Berserkers",{{250231,46559},
-[26574] = {"Bindings Of My Brethren",{{250231,46559},
-[26575] = {"The Dark Shamans",{{45587,45585},
-[26576] = {"The Dark Shamans",nil,{{45548},
-[26577] = {"A Fine Potion",{{45592},
-[26578] = {"A Fine Potion",{{45592},
-[26579] = {"A Fine Potion",{{45592},
-[26580] = {"A Lost Treasure",{{45594},
-[26581] = {"A Lost Treasure",{{45594},
-[26582] = {"Amulet Shakedown",{{45206},
-[26583] = {"Excavation Investigation",{{45598},
-[26584] = {"Binkle's Justice",{{45597},
-[26585] = {"Ore for Gapple",{{45598},
-[26586] = {"Primitive Relic",{{45599},
-[26587] = {"Primitive Relic",{{45598},
-[26588] = {"Trapped Miners",{{5394},
-[26589] = {"Trapped Miners",{{45601},
-[26590] = {"Trapped Miners",{{45601},
-[26591] = {"The Strange Ore",nil,{{45600},
-[26592] = {"The Strange Ore",{{45600},
-[26593] = {"The Indurium Matrix",{{45600},
-[26594] = {"WANTED: Scorchmaw",{{250236,46574,46570},
-[26597] = {"An Old Man's Request",{{7740},
-[26598] = {"Collecting on Debt",{{8178},
-[26599] = {"Feeding the Troops",{{5393},
-[26600] = {"Alchemy is the Answer",{{5393},
-[26601] = {"The Clay Cleanse",{{8178},
-[26602] = {"Ready for Distribution",nil,{{5393},
-[26603] = {"Scout Morgria",{{7623},
-[26609] = {"Felstone Mines",nil,nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[26611] = {"Rest for the Wicked",nil,nil,53,53,nil,nil,{"1. Escort Nightstalker Ross out of Felstone Fortress. (event)
-     Progress locations:
-       - [48.1, 12.1] in Eastern Plaguelands - Discovery: Ranger slain: 1/8
-       - [48.2, 12.1] in Eastern Plaguelands - Discovery: Pathstrider slain: 1/8
-       - [48.2, 12.2] in Eastern Plaguelands - Discovery: Ranger slain: 2/8
-       - [48.6, 11.6] in Eastern Plaguelands - Discovery: Ranger slain: 3/8
-       - [48.7, 11.5] in Eastern Plaguelands - Discovery: Woodsman slain: 1/8
-       - [48.6, 11.6] in Eastern Plaguelands - Discovery: Pathstrider slain: 2/8
-       - [48.7, 11.6] in Eastern Plaguelands - Discovery: Woodsman slain: 2/8
-       - [48.3, 13.8] in Eastern Plaguelands - Discovery: Woodsman slain: 3/8
-       - [48.3, 13.8] in Eastern Plaguelands - Discovery: Ranger slain: 4/8
-       - [48.3, 14.3] in Eastern Plaguelands - Discovery: Ranger slain: 5/8
-       - [48.3, 14.3] in Eastern Plaguelands - Discovery: Ranger slain: 6/8
-       - [48.3, 13.7] in Eastern Plaguelands - Discovery: Pathstrider slain: 3/8
-       - [48.3, 13.7] in Eastern Plaguelands - Discovery: Ranger slain: 7/8
-       - [48.3, 13.6] in Eastern Plaguelands - Discovery: Pathstrider slain: 4/8
-       - [48.3, 13.6] in Eastern Plaguelands - Discovery: Woodsman slain: 4/8
-       - [48.3, 13.9] in Eastern Plaguelands - Discovery: Woodsman slain: 5/8
-       - [47.5, 14.1] in Eastern Plaguelands - Discovery: Quel'Thalas Registry: 1/1
-       - [46.2, 12.6] in Eastern Plaguelands - Discovery: Woodsman slain: 6/8
-       - [46.2, 12.6] in Eastern Plaguelands - Discovery: Woodsman slain: 7/8
-       - [46.2, 12.9] in Eastern Plaguelands - Discovery: Woodsman slain: 8/8
-       - [46.6, 15.4] in Eastern Plaguelands - Discovery: Ranger slain: 8/8
-       - [46.4, 15.4] in Eastern Plaguelands - Discovery: Pathstrider slain: 5/8
-       - [46.7, 11.7] in Eastern Plaguelands - Discovery: Pathstrider slain: 6/8
-       - [48.3, 11.3] in Eastern Plaguelands - Discovery: Pathstrider slain: 7/8
-       - [48.3, 13.6] in Eastern Plaguelands - Discovery: Pathstrider slain: 8/8
-       - [22, 68.4] in Eastern Plaguelands - Discovery: Patch of Duskwing's Fur: 1/1
-       - [24.7, 79.7] in Eastern Plaguelands - Discovery: Taelan's Hammer: 1/1"},
-[26612] = {"Prayers Answered",{{45609},
-[26613] = {"Aid for Nethergarde",{{45611},
-[26614] = {"Gathering Intelligence",{{5385},
-[26615] = {"The Bigger Picture",{{5385},
-[26616] = {"Eyes of Our Own",{{5385},
-[26617] = {"Felstone Mines",nil,nil,52,52,nil,nil,nil,nil,{nil,nil,{{0,1},
-[26618] = {"Parched and Parcel",{{45613},
-[26619] = {"It Ain't the Worst",nil,nil,52,52,nil,nil,{"1. Felstone Grog: 0/24 (item)
-     Item: Felstone Grog (ID: 60761)
-     Containers/Objects:
-       - Runecloth at [74.1, 61.3] in Blasted Lands
-     Progress locations:
-       - [73.7, 50.1] in Blasted Lands - Looted Felstone Grog from Felstone Merchant
-       - [73.7, 50.1] in Blasted Lands
-       - [73.7, 50.1] in Blasted Lands - Item collection
-       - [74.3, 46.3] in Blasted Lands - Looted Felstone Grog from Felstone Rogue
-       - [74.3, 46.3] in Blasted Lands - Item collection from Felstone Rogue (ID: 45632)
-       - [74.3, 46.3] in Blasted Lands
-       - [73.6, 47] in Blasted Lands - Looted Felstone Grog from Felstone Merchant
-       - [73.6, 47.1] in Blasted Lands - Looted Felstone Grog from Felstone Acolyte
-       - [73.6, 47.1] in Blasted Lands - Item collection
-       - [73.6, 47.1] in Blasted Lands
-       - [74.1, 61.3] in Blasted Lands - Item collection from Devin the Cook (ID: 45625)
-       - [74.1, 61.3] in Blasted Lands - Looted Felstone Grog from Devin the Cook
-       - [74.1, 61.3] in Blasted Lands
-       - [68, 54.3] in Blasted Lands - Looted Felstone Grog from Felstone Brute
-       - [68, 54.3] in Blasted Lands - Item collection
-       - [68, 54.3] in Blasted Lands"},
-[26620] = {"Water for the Weary",{{45605},
-[26621] = {"Resurgent Evil",nil,nil,53,53,nil,nil,{"1. Talk to High Sorcerer Andromath in the Wizard's Sanctum of Stormwind's Mage Quarter. (log)"},
-[26622] = {"Sunken Treasure",{{5992},
-[26626] = {"An Unlikely Ally",{{8022},
-[26627] = {"The Best of the Worst",{{45093},
-[26628] = {"The Foundation Crumbles",{{45093},
-[26629] = {"True Believers",{{45093},
-[26630] = {"The Sting of Betrayal",nil,nil,52,52,nil,nil,{"1.  : 0/1 (item)
-     Item: Izalnir's Belongings (ID: 62431)
-     Progress locations:
-       - [73.4, 53.2] in Blasted Lands - Item collection from Felstone Acolyte (ID: 46581)
-  2.  : 0/1 (item)
-     Item: Izalnir's Glyph (ID: 62417)
-     Progress locations:
-       - [72.5, 54.3] in Blasted Lands - Item collection"},
-[26631] = {"The Thorn in My Side",nil,nil,52,52,nil,nil,{"1.  : 0/1 (item)
-     Item: Seiana's Glyph (ID: 62418)
-     Progress locations:
-       - [64.6, 59.5] in Blasted Lands - Item collection from Seiana Brightglen (ID: 45634)"},
-[26632] = {"Glyph of the Warlord",{{45093},
-[26633] = {"Arming Ashfall",nil,{{45636},
-[26634] = {"Tired o' them Orcs!",nil,nil,55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[26635] = {"The Blazing Hydra",{{45636},
-[26636] = {"Hitting Where it Hurts",{{45636},
-[26637] = {"Absent Discourse",{{45642},
-[26638] = {"Bracers that Bind",{{45069},
-[26639] = {"Assistance Required",{{45069},
-[26640] = {"Infernal Runes",nil,nil,53,53,nil,nil,{"1. Infernal Rune: 0/15 (item)
-     Item: Infernal Rune (ID: 62439)
-     Progress locations:
-       - [78.1, 45.2] in Burning Steppes - Looted Infernal Rune from Firegut Ogre Mage
-       - [42.3, 35.9] in Burning Steppes - Looted Infernal Rune from Blackrock Warlock
-       - [40.5, 35.6] in Burning Steppes - Looted Infernal Rune from Blackrock Warlock
-       - [41.2, 33.6] in Burning Steppes - Looted Infernal Rune from Blackrock Warlock
-       - [42.8, 36.7] in Burning Steppes - Looted Infernal Rune from Blackrock Warlock
-       - [42.7, 38.4] in Burning Steppes - Looted Infernal Rune from Blackrock Warlock
-       - [41, 35] in Burning Steppes - Looted Infernal Rune from Blackrock Warlock
-       - [43.4, 34.2] in Burning Steppes - Looted Infernal Rune from Blackrock Warlock
-       - [38.7, 56.4] in Burning Steppes - Looted Infernal Rune from Blackrock Sorcerer
-       - [17, 29.4] in Burning Steppes - Looted Infernal Rune from Blackrock Warlock
-       - [17.6, 30.2] in Burning Steppes - Looted Infernal Rune from Blackrock Warlock
-       - [42.7, 38.9] in Burning Steppes - Looted Infernal Rune from Blackrock Warlock
-       - [43.1, 37] in Burning Steppes - Looted Infernal Rune from Blackrock Sorcerer
-       - [40.8, 32.9] in Burning Steppes - Looted Infernal Rune from Blackrock Sorcerer
-       - [41.7, 35.3] in Burning Steppes - Looted Infernal Rune from Blackrock Warlock
-       - [41, 33.2] in Burning Steppes - Looted Infernal Rune from Blackrock Warlock"},
-[26641] = {"Called Forth",{{45642},
-[26642] = {"Meeran's Missing",{{45644},
-[26643] = {"Is it Ogre?",{{46597},
-[26644] = {"The Cavern",nil,{{45645},
-[26645] = {"Meeran's Escape",{{45645},
-[26646] = {"Spies Among Us",{{45646},
-[26647] = {"Law of the Lawless",nil,nil,55,55,nil,nil,{"1. Agent Killed (event)"},
-[26648] = {"Root of the Issue",nil,nil,55,55,nil,nil,{"1. Igvir's Necklace: 0/1 (item)"},
-[26649] = {"Golem Grabbing",{{45650},
-[26650] = {"Building Upon Giants",nil,nil,55,55,nil,nil,{"1. Resonator Crystal: 1/1 (item)
-     Progress locations:
-       - [67.6, 36.4] in Burning Steppes - Looted Resonator Crystal from War Reaver
-  2. Filled Runic Bottle: 1/1 (item)
-     Item: Filled Runic Bottle (ID: 62457)
-     Progress locations:
-       - [42.3, 36] in Burning Steppes - Item collection"},
-[26651] = {"Charging the Core",{{45650},
-[26652] = {"The Right Kind of Oil",{{45650},
-[26653] = {"The Art of Golemancy",{{45650},
-[26654] = {"Fireguts",{{45658},
-[26655] = {"Neverstill",nil,nil,52,52,nil,nil,{"1. Misty Core: 0/1 (item)"},
-[26658] = {"The Caretaker's Behest",{{45660},
-[26662] = {"The Ironforge Airfield",{{1572},
-[26663] = {"The Ironforge Airfield",{{1573},
-[26664] = {"Assisting Nonere",{{45673},
-[26665] = {"Assisting Nonere",{{45673},
-[26666] = {"Assisting Topsy",{{45676},
-[26667] = {"Assisting Topsy",{{45676},
-[26668] = {"Assisting Wizzle",{{45677},
-[26670] = {"The Ironforge Airfield",{{45670},
-[26675] = {"Breaking the Ice",nil,{{1373},
-[26676] = {"A Lost Brother...",{{1273},
-[26677] = {"Elemental Prisoners",nil,{{45690},
-[26679] = {"Keeping Us Warm",nil,{{1247},
-[26680] = {"Lost Rams",{{1261},
-[26683] = {"Undead Horsemanship",nil,nil,40,40,nil,nil,{"Apprentice Riding Learned: 1/1"},
-[26684] = {"Ram Riding",{{4772},
-[26686] = {"Mechanostrider Piloting",{{7954},
-[26687] = {"Ore for Grumnal",{{1360},
-[26688] = {"Recovering History",{{1354},
-[26689] = {"Barroom Blitz",{{240},
-[26690] = {"Barroom Blitz",{{45704},
-[26691] = {"Barroom Blitz",{{253},
-[26692] = {"Barroom Blitz",{{45704},
-[26693] = {"Barroom Blitz",{{45713},
-[26694] = {"Barroom Blitz",{{45715},
-[26695] = {"Barroom Blitz",nil,{{240,313},
-[26696] = {"Hand of Azora",{{313},
-[26697] = {"Hand of Azora",{{45700},
-[26698] = {"Hand of Azora",{{45700},
-[26699] = {"Hand of Azora",{{45702},
-[26700] = {"Hand of Azora",{{45702},
-[26701] = {"Hand of Azora",{{45712},
-[26702] = {"Hand of Azora",{{45700},
-[26703] = {"Hand of Azora",nil,{{313},
-[26704] = {"Riders In The Night",nil,{{264},
-[26705] = {"Riders In The Night",nil,{{45701},
-[26706] = {"Riders In The Night",nil,{{45301},
-[26707] = {"Riders In The Night",nil,{{264,45703},
-[26709] = {"Riders In The Night",nil,nil,28,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[26710] = {"Riders In The Night",nil,{{264},
-[26711] = {"Life In Death",{{45731},
-[26712] = {"Life In Death",{{45731},
-[26713] = {"Life In Death",{{45731},
-[26714] = {"The Handmaiden's Fall",nil,{{2112},
-[26715] = {"The Handmaiden's Fall",{{2112},
-[26716] = {"The Handmaiden's Fall",{{2112},
-[26717] = {"The Handmaiden's Fall",nil,{{2112},
-[26718] = {"Until Death Do Us Part",nil,{{45734,663,1416},
-[26719] = {"Until Death Do Us Part",{{45734},
-[26720] = {"Until Death Do Us Part",nil,{{45734},
-[26721] = {"Until Death Do Us Part",nil,{{45734},
-[26722] = {"Until Death Do Us Part",nil,{{45733},
-[26723] = {"Wanted: Plagued Shambler",nil,nil,30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[26724] = {"Black Magic",nil,nil,58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[26725] = {"Black Magic",nil,nil,58,58,nil,nil,{"1. Black Magic Tome: 0/3 (item)
-     Item:  (ID: 14814)
-     Containers/Objects:
-       - Scarlet Outpost at [50.6, 39.7] in Western Plaguelands
-       - Pure Elwynn Soil Sample at [43.1, 36] in Western Plaguelands
-       - Evil Bat Eye at [26.9, 66.5] in Eastern Plaguelands
-     Progress locations:
-       - [25.8, 79.1] in Eastern Plaguelands
-       - [50.6, 39.7] in Western Plaguelands
-       - [44.6, 35.9] in Western Plaguelands
-       - [43.1, 36] in Western Plaguelands
-       - [44.8, 35.4] in Western Plaguelands
-       - [44.9, 34.9] in Western Plaguelands
-       - [44.9, 33.1] in Western Plaguelands
-       - [65.7, 76.3] in Western Plaguelands
-       - [51.1, 43.5] in Western Plaguelands
-       - [26.9, 66.5] in Eastern Plaguelands
-       - [83.4, 71.1] in Tirisfal Glades
-       - [43.6, 84] in Western Plaguelands
-       - [51.6, 81] in Western Plaguelands
-       - [68.3, 75.2] in Western Plaguelands"},
-[26728] = {"Field Trip",{{45745},
-[26729] = {"Field Trip",{{45745},
-[26735] = {"Memories of Eastweald",{{45749},
-[26736] = {"Memories of Eastweald",nil,{{45749},
-[26737] = {"Memories of Eastweald",nil,{{45749},
-[26738] = {"Memories of Eastweald",{{45749},
-[26739] = {"Memories of Eastweald",nil,{{45749},
-[26740] = {"Memories of Eastweald",{{45749},
-[26741] = {"Memories of Eastweald",nil,nil,58,58,nil,nil,{"1. Stratholme Relic of the Past: 0/10 (item)
-     Item:  (ID: 12871)
-     Containers/Objects:
-       - Umi's Mechanical Yeti at [51, 26.8] in Tanaris
-       - Coal at [61.7, 38.5] in Winterspring
-       - Blank Parchment at [61.2, 38.9] in Winterspring
-       - Leaded Vial at [60.7, 37.7] in Winterspring
-     Progress locations:
-       - [51, 26.8] in Tanaris
-       - [43.6, 9.3] in Un'Goro Crater
-       - [45.1, 25.4] in Feralas
-       - [61.5, 38.5] in Winterspring
-       - [42.5, 43.6] in Winterspring
-       - [42.5, 43.9] in Winterspring
-       - [42, 44.5] in Winterspring
-       - [41.1, 42.8] in Winterspring
-       - [39.6, 43.7] in Winterspring
-       - [42.5, 43.1] in Winterspring
-       - [40.4, 43.1] in Winterspring
-       - [39.8, 43.8] in Winterspring
-       - [39.9, 43.8] in Winterspring
-       - [42.3, 42.9] in Winterspring
-       - [40.1, 42.9] in Winterspring
-       - [40, 43] in Winterspring
-       - [39.6, 43.8] in Winterspring
-       - [41.4, 42] in Winterspring
-       - [65.9, 34.5] in Winterspring
-       - [65.9, 34.3] in Winterspring
-       - [65.9, 34.8] in Winterspring
-       - [66.6, 34.3] in Winterspring
-       - [66.7, 34.1] in Winterspring
-       - [67.7, 34.2] in Winterspring
-       - [67, 35.3] in Winterspring
-       - [67.3, 35.3] in Winterspring
-       - [67.3, 35.5] in Winterspring
-       - [69.2, 38.4] in Winterspring
-       - [67.7, 37.9] in Winterspring
-       - [67.7, 37.9] in Winterspring
-       - [69, 38.2] in Winterspring
-       - [67.1, 37.5] in Winterspring
-       - [69.3, 38.4] in Winterspring
-       - [66, 38] in Winterspring
-       - [65.5, 37.8] in Winterspring
-       - [65.3, 37.4] in Winterspring
-       - [66.9, 37.3] in Winterspring
-       - [66.9, 37.3] in Winterspring
-       - [67.8, 35.9] in Winterspring
-       - [67, 39.7] in Winterspring
-       - [67.6, 37.9] in Winterspring
-       - [49.9, 11] in Winterspring
-       - [61.7, 38.5] in Winterspring
-       - [61.7, 38.5] in Winterspring
-       - [61.7, 38.5] in Winterspring
-       - [61.7, 38.5] in Winterspring
-       - [61.7, 38.5] in Winterspring
-       - [61.7, 38.5] in Winterspring
-       - [61.7, 38.5] in Winterspring
-       - [61.7, 38.5] in Winterspring
-       - [61.7, 38.5] in Winterspring
-       - [61.7, 38.5] in Winterspring
-       - [61.2, 38.9] in Winterspring
-       - [61.2, 38.9] in Winterspring
-       - [61.2, 38.9] in Winterspring
-       - [61.2, 38.9] in Winterspring
-       - [61.2, 38.9] in Winterspring
-       - [61.2, 38.9] in Winterspring
-       - [61.2, 38.9] in Winterspring
-       - [61.2, 38.9] in Winterspring
-       - [61.2, 38.9] in Winterspring
-       - [61.2, 38.9] in Winterspring
-       - [60.7, 37.7] in Winterspring
-       - [60.7, 37.7] in Winterspring
-       - [60.7, 37.7] in Winterspring
-       - [60.7, 37.7] in Winterspring
-       - [36.1, 40.5] in Winterspring"},
-[26744] = {"Open for Business",{{12384},
-[26750] = {"Killing the Competition",nil,{{12384},
-[26751] = {"Door to Door Marketing",nil,{{12384},
-[26756] = {"The Land Beyond the Forest",nil,nil,58,58,nil,nil,{"1. Ranger Larya slain: 1/1 (monster)
-     Mobs tracked:
-       - Ranger Larya (ID: 45760)
-         [80.7, 33.1] in Eastern Plaguelands
-     Progress locations:
-       - [80.2, 35.6] in Eastern Plaguelands"},
-[26757] = {"Where No Shadows Fall",nil,nil,58,58,nil,nil,{"1. Take the Letter from Larya to Adon in the Eastern Plaguelands. (log)"},
-[26758] = {"The Nature of the Beast",{{45763},
-[26760] = {"The Plaguewood Cauldrons",{{11057},
-[26762] = {"The Plaguewood Cauldrons",{{11056},
-[26764] = {"We Have the Technology",{{45769},
-[26765] = {"We Have the Technology",{{45769},
-[26766] = {"We Have the Technology",nil,{{45769},
-[26767] = {"We Have the Technology",{{45769},
-[26768] = {"Just Desserts",{{45773},
-[26769] = {"Just Desserts",{{45773},
-[26770] = {"Just Desserts",{{45773},
-[26771] = {"Lost Equipment",{{45774,45777},
-[26772] = {"Necromancy and You",{{46294},
-[26773] = {"Horse Riding",{{4732},
-[26774] = {"Spider Elixir",{{45775},
-[26775] = {"Tend to the Wounded",{{45775},
-[26776] = {"Swiftpaw",{{11940},
-[26777] = {"The Soaked Barrel",nil,{{9296},
-[26778] = {"Find the Brother",{{9296},
-[26779] = {"A Brother's Disgust",{{952},
-[26780] = {"A Mage's Advice",{{6778},
-[26781] = {"Linus Stone Tips",{{328},
-[26782] = {"Brewing Brethren",{{328},
-[26783] = {"No Regrets! Well, Maybe Some",{{45783},
-[26784] = {"Mountainstout Ale",{{45780},
-[26785] = {"A Friend Indeed",{{45780},
-[26786] = {"Vandalism in Stormwind",{{482},
-[26787] = {"Vandalism in Stormwind",nil,nil,40,40,nil,nil,{"1. Clue #1 Obtained: 1/1 (monster)
-     Progress locations:
-       - [35.7, 39.8] in Stormwind City
-  2. Clue #2 Obtained: 1/1 (monster)
-     Progress locations:
-       - [34.9, 39.5] in Stormwind City
-  3. Clue #3 Obtained: 1/1 (monster)
-     Progress locations:
-       - [35.7, 37.1] in Stormwind City"},
-[26788] = {"Vandalism in Stormwind",nil,nil,40,40,nil,nil,{"1. Bartenders Questioned: 1/1 (monster)
-     Progress locations:
-       - [70.6, 39.6] in Stormwind City
-  2. Strange Medallion: 0/1 (item)
-     Item:  (ID: 16737)
-     Progress locations:
-       - [70.6, 39.6] in Stormwind City - Looted Strange Medallion from Shady Character"},
-[26789] = {"Vandalism in Stormwind",nil,nil,40,40,nil,nil,{"1. Travel to Southshore to find Major Helmsworthy and learn more about the Alteraci Legion. (log)"},
-[26790] = {"The Lost Banners",{{45789},
-[26791] = {"The Lost Banners",nil,nil,40,40,nil,nil,{"1.  : 0/1 (item)
-     Item: Alterac Banner of Honor (ID: 62612)
-     Progress locations:
-       - [36.5, 52.4] in Alterac Mountains - Item collection
-  2.  : 0/1 (item)
-     Item: Dalaran Banner of Honor (ID: 62613)
-     Progress locations:
-       - [43.6, 88.7] in Hillsbrad Foothills - Item collection
-  3.  : 0/1 (item)
-     Item: Stromgarde Banner of Honor (ID: 62614)
-     Progress locations:
-       - [26.6, 66] in Arathi Highlands - Item collection"},
-[26792] = {"The Lost Banners",nil,nil,40,40,nil,nil,{"1. Take Major Helmsworthy's Compensation to Derek Bradford at Stormwind Harbor in Stormwind City. (log)"},
-[26793] = {"The Lost Banners",nil,nil,40,40,nil,nil,{"1. Speak to Detective Marlowe at Stormwind Harbor in Stormwind City. (log)"},
-[26794] = {"Wanted: Big Blue",{{45798,45797},
-[26795] = {"A Lost Warrior",{{2229},
-[26797] = {"A Lost Warrior",{{45799},
-[26798] = {"A Scout in Need",{{45800},
-[26799] = {"A Scout in Need",{{45800},
-[26800] = {"A Scout in Need",{{45801},
-[26801] = {"A Scout in Need",{{45801},
-[26802] = {"Venom Medicine",{{2363},
-[26803] = {"Breaking the Armory",{{2378},
-[26804] = {"Burnt to a Crisp",{{2770},
-[26805] = {"Decorating the Inn",{{2352},
-[26806] = {"Defense of Southshore",{{45800},
-[26817] = {"Justice Left Undone",{{2276},
-[26818] = {"Oars O'er the Bay",{{3182},
-[26819] = {"Purging the Land of Lions",{{2263},
-[26820] = {"Hillsbrad Assault",{{2215},
-[26821] = {"Hillsbrad Defense",{{2215},
-[26822] = {"Hillsbrad Assault",{{2276},
-[26823] = {"Hillsbrad Defense",{{2276},
-[26824] = {"WANTED: Archmage Zygor",{{2278},
-[26825] = {"Syndicate Magic",{{2711},
-[26826] = {"Syndicate Personnel",{{2215},
-[26827] = {"Durnholde Extermination",nil,nil,24,24,nil,nil,{"1. Syndicate Taskmaster slain: 0/10 (monster)
-  2. Syndicate Overseer slain: 0/10 (monster)"},
-[26828] = {"Mudsnout Concoction",{{2380},
-[26829] = {"Venom to the Syndicate",{{2380},
-[26830] = {"WANTED: Beve Perenolde",{{2430},
-[26831] = {"Syndicate Plans",{{2263},
-[26833] = {"Wildthorn Cure",{{45818},
-[26834] = {"Assistance to Jenna",{{2263},
-[26838] = {"A Proper Sendoff",nil,{{1682},
-[26839] = {"Horde Report",nil,{{1340},
-[26841] = {"Lost Artifacts",{{1214},
-[26842] = {"Medicinal Restocking",{{1473},
-[26843] = {"Securing the Loch",{{2510},
-[26844] = {"The Strange Idol",{{1345},
-[26845] = {"WANTED: Mother Tessa",{{250335},
-[26846] = {"One Of Each",{{45825},
-[26847] = {"Ardo's Dirtpaw",{{45825},
-[26848] = {"Clyde's Special Thread",{{777},
-[26849] = {"Gnoll Patrol",{{2697},
-[26850] = {"Eye for an Eye",{{382},
-[26851] = {"Intel on Morganth",{{3096},
-[26852] = {"Kargath's Stolen Supplies",{{5394},
-[26854] = {"Twilight Tactics",{{14634},
-[26855] = {"Twilight Tactics",{{14634},
-[26856] = {"Twilight Tactics",nil,nil,45,45,nil,nil,{"1. Twilight Emissary Mo'gali slain: 1/1 (monster)
-     Mobs tracked:
-       - Twilight Emissary Mo'gali (ID: 45828)
-         [24.5, 75.8] in Searing Gorge
-     Progress locations:
-       - [20, 76.2] in Searing Gorge
-  2. Overseer Weft slain: 1/1 (monster)
-     Mobs tracked:
-       - Overseer Weft (ID: 45829)
-         [23.7, 75.9] in Searing Gorge
-     Progress locations:
-       - [20.2, 76.3] in Searing Gorge
-  3. Twilight Alliance Documents: 0/1 (item)
-     Item: Twilight Alliance Documents (ID: 62689)
-     Progress locations:
-       - [20.2, 76.3] in Searing Gorge - Looted Twilight Alliance Documents from Overseer Weft"},
-[26857] = {"Documents to Ironforge!",{{14634},
-[26858] = {"The Thorium Brotherhood",{{45827},
-[26859] = {"The Elements, Corrupted",{{45830},
-[26860] = {"The Grimesilt Digsite",{{9079},
-[26861] = {"Searing Spirits",nil,{{14634,9079},
-[26862] = {"The Shadowforge Librarian",{{9078},
-[26863] = {"The Shadowforge Librarian",{{3979},
-[26864] = {"Do Slavers Keep Records?",{{45833},
-[26867] = {"A Suspicious Delivery",{{46570},
-[26868] = {"Grampy Stoutforge",{{14624},
-[26872] = {"Ravenclaw Ichor",{{1974},
-[26873] = {"The Missing Initiate",{{45841},
-[26874] = {"The Missing Initiate",{{45840},
-[26875] = {"The Missing Initiate",{{45840},
-[26876] = {"Tomes of Interest",{{45841},
-[26877] = {"Tomes of Interest",{{45841},
-[26878] = {"Tomes of Interest",{{45841},
-[26879] = {"Swifthoof's Message",nil,{{2519},
-[26880] = {"A Salve for Samantha",{{2519},
-[26881] = {"A Salve for Samantha",{{2519},
-[26882] = {"A Salve for Samantha",{{2856},
-[26883] = {"A Salve for Samantha",{{2856},
-[26884] = {"Looting the Looters",{{45844},
-[26885] = {"My Friend, The Skullsplitter",{{45846},
-[26886] = {"My Friend, The Skullsplitter",{{45845},
-[26887] = {"My Friend, The Skullsplitter",{{45846},
-[26888] = {"My Friend, The Skullsplitter",{{45846},
-[26889] = {"My Friend, The Skullsplitter",{{45846},
-[26890] = {"My Friend, The Skullsplitter",{{46738},
-[26891] = {"Pilfering the Reef",{{1146},
-[26892] = {"Beastial Allies",{{45850,1557},
-[26893] = {"Beastial Allies",{{45850},
-[26894] = {"Beastial Allies",{{45850},
-[26895] = {"The Ring of Strength: Brokenhorn",{{45857},
-[26896] = {"The Ring of Strength: The Twins",{{45857},
-[26897] = {"The Ring of Strength: Stonegaze",{{45857},
-[26898] = {"The Ring of Strength: Winston",{{45857},
-[26899] = {"The Ring of Strength: Dekked",{{45857},
-[26900] = {"The Ring of Strength: The Final Challenge",{{45857},
-[26901] = {"Shark Fin Stew",{{1382},
-[26902] = {"Stop The Shrinking",{{1422},
-[26903] = {"Stop The Shrinking",nil,{{2519},
-[26904] = {"The Janky Helmet",{{1152,677},
-[26905] = {"The Janky Helmet",{{7853},
-[26906] = {"The Tablet of Zuul'daia",{{2498},
-[26907] = {"Wild Tulip",{{45869},
-[26908] = {"Wild Tulip",{{45869},
-[26909] = {"Wild Tulip",{{45869},
-[26910] = {"Wild Tulip",nil,{{45869},
-[26911] = {"Wild Tulip",{{45869},
-[26912] = {"Deathstrike Remedy",{{983},
-[26913] = {"Ocniir's Beloved Rods",{{45875},
-[26914] = {"Ocniir's Beloved Rods",{{45875},
-[26915] = {"Horrors of the Swamp",{{1775},
-[26916] = {"Karabor Stew",{{45877},
-[26917] = {"Eight-Legged Fillets",{{45877},
-[26918] = {"A Real Kick",{{45877},
-[26919] = {"Karabor Fire Stew(ID: 26919)",{{45877},
-[26920] = {"Skins of the Swamp",{{11874},
-[26921] = {"Skins of the Swamp",nil,nil,40,40,nil,nil,{"1. Sturdy Crocolisk Skin: 8/8 (item)
-     Item: Sturdy Crocolisk Skin (ID: 62787)
-     Progress locations:
-       - [76.3, 1.9] in Swamp of Sorrows - Looted Sturdy Crocolisk Skin from Sawtooth Snapper
-       - [86.4, 34.5] in Swamp of Sorrows - Looted Sturdy Crocolisk Skin from Sawtooth Snapper
-       - [87.2, 38.6] in Swamp of Sorrows - Looted Sturdy Crocolisk Skin from Sawtooth Snapper
-       - [82.8, 30.4] in Swamp of Sorrows - Looted Sturdy Crocolisk Skin from Sawtooth Snapper
-       - [83, 35.9] in Swamp of Sorrows - Looted Sturdy Crocolisk Skin from Sawtooth Snapper
-       - [83.1, 36] in Swamp of Sorrows - Looted Sturdy Crocolisk Skin from Sawtooth Snapper
-       - [79.6, 30.7] in Swamp of Sorrows - Looted Sturdy Crocolisk Skin from Sawtooth Snapper
-       - [82.6, 25.7] in Swamp of Sorrows - Looted Sturdy Crocolisk Skin from Sawtooth Snapper
-  2. Rugged Panther Skin: 8/8 (item)
-     Item: Rugged Panther Skin (ID: 62788)
-     Progress locations:
-       - [83.2, 59.2] in Swamp of Sorrows - Looted Rugged Panther Skin from Shadow Panther
-       - [93, 44.4] in Swamp of Sorrows - Looted Rugged Panther Skin from Shadow Panther
-       - [88.6, 36.4] in Swamp of Sorrows - Looted Rugged Panther Skin from Shadow Panther
-       - [74, 25.3] in Swamp of Sorrows - Looted Rugged Panther Skin from Shadow Panther
-       - [88.4, 36.7] in Swamp of Sorrows - Looted Rugged Panther Skin from Shadow Panther
-       - [92.8, 44.4] in Swamp of Sorrows - Looted Rugged Panther Skin from Shadow Panther
-       - [86.9, 28.8] in Swamp of Sorrows - Looted Rugged Panther Skin from Shadow Panther
-       - [83.9, 58.9] in Swamp of Sorrows - Looted Rugged Panther Skin from Shadow Panther"},
-[26922] = {"Swamp Reed",{{983},
-[26923] = {"Wanted: Spinnaret",nil,{{45876},
-[26924] = {"WANTED: Tamura",{{1775},
-[26925] = {"Message for the Historian",{{45885},
-[26926] = {"A Box of Relics",{{45887},
-[26927] = {"A Box of Relics",{{45887},
-[26928] = {"Arugal Ambush",{{45888},
-[26929] = {"Arugal Ambush",{{45888},
-[26930] = {"Arugal Ambush",{{45888},
-[26931] = {"Arugal Ambush",{{45890},
-[26932] = {"Encroaching Worgs",{{1738},
-[26933] = {"Etched Scroll",{{1569},
-[26934] = {"Filling the Armory",{{2136},
-[26936] = {"Northshore Mine",{{45887},
-[26937] = {"Northshore Mine",{{45885},
-[26938] = {"[Epoch] Quest 26938",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
-[26939] = {"Peace in Death",{{45898},
-[26940] = {"Reclaim the Mine",nil,nil,10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[26941] = {"Scarlet Intelligence",{{1746},
-[26942] = {"Stillwater Eels",nil,{{45902,1499},
-[26951] = {"A Matter of Timeways",{{10667},
-[26952] = {"Timeways Diverge?",nil,nil,60,60,nil,nil,{"Temporal Disturbances Probed: 0/1"},
-[26953] = {"A Tattered Acceptance Letter",{{5635},
-[26958] = {"Hero Worship",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[26959] = {"Hero Worship",{{11878},
-[26963] = {"First Day of School",{{45910},
-[26964] = {"Observing the Dress Code",nil,{{45917},
-[26965] = {"Observing the Dress Code",nil,{{45917},
-[26966] = {"Second Day of School",{{45910},
-[26967] = {"Scourge Botany",{{45914},
-[26968] = {"Scourge Botany",{{45914},
-[26969] = {"Scourge Botany",{{45914},
-[26970] = {"Cooking with Carrion",{{45917},
-[26971] = {"Cooking with Carrion",nil,{{45917},
-[26972] = {"Extra Credit",nil,nil,54,54,nil,nil,{"1. Shadow-Resistant Notebook: 0/4 (item)"},
-[26973] = {"Advanced Alchemy",nil,nil,54,54,nil,nil,{"1. Weeping Cave Ooze Sample: 0/3 (item)"},
-[26974] = {"Advanced Alchemy",{{45914},
-[26975] = {"Advanced Alchemy",{{45918},
-[26976] = {"History 101",{{45920},
-[26977] = {"History 101",nil,nil,53,53,nil,nil,{"1. Speak to the Ghost of Alexei Barov: 1/1 (monster)
-     Mobs tracked:
-       - Ghost of Alexei Barov (ID: 45915)
-         [53.9, 80.9] in Western Plaguelands
-     Progress locations:
-       - [53.8, 80.8] in Western Plaguelands"},
-[26978] = {"History 101",{{45915},
-[26979] = {"Senior Prank",{{45922},
-[26980] = {"Senior Prank",{{45922},
-[26981] = {"Senior Prank",{{45922},
-[26982] = {"Last Day of School",{{45910},
-[26983] = {"Invitation for Tirion Fordring",{{45920},
-[26984] = {"Field Trip",{{45910},
-[26985] = {"[Epoch] Quest 26985",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
-[26986] = {"Academic Enrollment",{{45924},
-[26987] = {"Homecoming",{{45940},
-[26988] = {"A Stubborn Man",{{45939},
-[26989] = {"Thumbs Up, Man Down",{{45940},
-[26990] = {"Riverpaw Rampage",{{490},
-[26991] = {"Riverpaw Rampage",nil,nil,14,14,nil,nil,{"1. Riverpaw Mongrel slain: 0/8 (monster)
-  2. Riverpaw Herbalist slain: 0/8 (monster)"},
-[26992] = {"Riverpaw Rampage",nil,nil,16,16,nil,nil,{"1. Riverpaw Bandit slain: 0/8 (monster)
-  2. Riverpaw Taskmaster slain: 0/8 (monster)"},
-[26993] = {"The Killing Fields",{{237},
-[26994] = {"The Killing Fields",{{237},
-[26995] = {"The Killing Fields",{{233},
-[26996] = {"The Killing Fields",{{233},
-[26997] = {"The Killing Fields",{{233},
-[26998] = {"WANTED: Gnarfang the Marauder",{{489},
-[26999] = {"Nek'rosh Must Die",{{45943},
-[27000] = {"A Temporary Victory",{{45942},
-[27001] = {"Guldar Gamble",{{2104},
-[27002] = {"Report to the Front Lines",{{45942},
-[27003] = {"Calm and Collected",{{45946},
-[27004] = {"Push Them Back",{{45946},
-[27005] = {"Spoils of War",{{45946},
-[27006] = {"Eye of Zulumar",{{45946},
-[27007] = {"Where It Hurts",{{45943},
-[27008] = {"Butchers of Burndural",{{45943},
-[27009] = {"Evacuation Report",{{45953},
-[27010] = {"Evacuation Report",{{45942},
-[27011] = {"Golem Gyroscope",{{45956},
-[27012] = {"Golem Gyroscope",{{45954},
-[27014] = {"Ram Ranch Rescue",{{45953},
-[27015] = {"Drastic Measures",{{45963},
-[27016] = {"Drastic Measures",{{45963},
-[27017] = {"Highlands Hightail",{{45953},
-[27018] = {"Till The Work Is Done",{{45957},
-[27019] = {"Finding Hero",{{45959},
-[27020] = {"Let's Get Outta Here",{{45967},
-[27021] = {"Message to Menethil",{{45969},
-[27023] = {"The Whelp Wranglers",{{45943},
-[27024] = {"Annals of Hajiri",{{45976},
-[27030] = {"CHOP!",{{45981},
-[27031] = {"Destroy the Legion",{{45982},
-[27032] = {"Destroy the Legion",{{45983},
-[27033] = {"Diabolical Plans",nil,{{45982},
-[27034] = {"Never Again!",nil,{{45982},
-[27036] = {"Never Again!",nil,{{45983},
-[27037] = {"Direct Reprisal",nil,{{45976},
-[27038] = {"Forsaken Looters",{{3663},
-[27039] = {"Practical Science",{{45981},
-[27040] = {"Practical Science",{{45984},
-[27041] = {"Practical Science",{{45984},
-[27042] = {"Improved Swiftness Potion",{{45986},
-[27043] = {"Ethical Quandary",{{45985},
-[27044] = {"The Experiment's Conclusion",nil,{{45981},
-[27045] = {"Rumbles Of The Earth",{{45990},
-[27046] = {"Rumbles Of The Earth",{{45990},
-[27047] = {"Rumbles of the Earth",{{45990},
-[27048] = {"Rumbles Of The Earth",{{45990},
-[27049] = {"Rumbles Of The Earth",{{45990},
-[27050] = {"Rumbles Of The Earth",{{45994},
-[27051] = {"Rumbles Of The Earth",{{45990},
-[27052] = {"Rumbles Of The Earth",{{45990},
-[27053] = {"Solarsal Report",{{4807},
-[27055] = {"Heart of the Ancient",nil,{{12696},
-[27056] = {"Return to Thrall",{{3338},
-[27057] = {"Waves in the Ether",{{4949},
-[27058] = {"Waves in the Ether",{{45982},
-[27061] = {"Waves in the Ether",nil,{{45982},
-[27063] = {"The New Demon Seed",{{4949},
-[27064] = {"The New Demon Seed",{{45982},
-[27065] = {"The New Demon Seed",{{45982},
-[27067] = {"Trip to Shadowprey",nil,nil,31,31,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[27068] = {"A Piece of De Action",{{46006},
-[27069] = {"A Piece of De Action",{{46006},
-[27070] = {"A Piece of De Action",nil,nil,52,52,nil,nil,{"1. Tough Lobstrok Sinew: 0/1 (item)
-     Item: Tough Lobstrok Sinew (ID: 62923)
-     Progress locations:
-       - [62.7, 62.2] in Azshara - Looted Tough Lobstrok Sinew from Muckluck"},
-[27074] = {"Demonic Intruders",{{46009},
-[27075] = {"Demonic Intruders",{{46009},
-[27076] = {"Descendants of Exiles",{{46011},
-[27077] = {"Distilling Slime",{{46008},
-[27080] = {"Foul Effigies",{{46009},
-[27081] = {"How to Make Friends with a Furbolg",{{46012},
-[27082] = {"How to Make Friends with a Furbolg",{{46012},
-[27083] = {"Threats to Wobble Hollow",{{46018},
-[27084] = {"Threats to Wobble Hollow",{{46018},
-[27085] = {"Threats to Wobble Hollow",{{46018},
-[27086] = {"Leader of the Spitelash",{{46018},
-[27087] = {"Looting the Temple of Arkkoran",{{46020},
-[27088] = {"Looting the Temple of Arkkoran",{{46020},
-[27089] = {"Looting the Temple of Arkkoran",{{46008},
-[27090] = {"Azshara's Legacy",{{8379},
-[27091] = {"Azshara's Legacy",nil,{{46008},
-[27092] = {"Azshara's Legacy",nil,{{46006,46008},
-[27093] = {"Azshara's Legacy",nil,{{8379,8395},
-[27094] = {"Azshara's Legacy",nil,{{46019},
-[27095] = {"Azshara's Legacy",nil,{{8379},
-[27096] = {"Azshara's Legacy",nil,{{46008},
-[27097] = {"Message for Wobble Hollow",{{46011},
-[27098] = {"Message to Scout Dura",{{10306},
-[27102] = {"Report to High Executor Derrington",{{46021},
-[27103] = {"Report to Dispatch Commander Ruag",{{46021},
-[27104] = {"Report to Scout Dura",{{7777},
-[27106] = {"The Gnoll Stronghold",{{240},
-[27107] = {"Noble Relations",{{46085},
-[27114] = {"Salvaging the Sea",{{5991,46022},
-[27115] = {"Salvaging the Shore",{{46022},
-[27116] = {"Salvaging the Salvagers",{{46022},
-[27118] = {"Scouting the Temple of Arkkoran",{{46020},
-[27119] = {"Shipwreck on the Horizon",{{46026},
-[27120] = {"Spoils of De Ancient Land",{{46006},
-[27121] = {"Spoils of De Ancient Land",nil,nil,52,52,nil,nil,{"Mistwing Pelt: 0/10"},
-[27126] = {"The Furbolg -- Goblin Trade Network",{{46025},
-[27127] = {"The Furbolg -- Goblin Trade Network",{{8420},
-[27128] = {"The Furbolg -- Goblin Trade Network",nil,{{8139},
-[27129] = {"The Furbolg - Goblin Trade Network",nil,{{3945,46025,8496},
-[27130] = {"The Furbolg -- Goblin Trade Network",{{3945},
-[27131] = {"The Furbolg -- Goblin Trade Network",{{45206},
-[27132] = {"The Furbolg - Goblin Trade Network",nil,{{46025},
-[27133] = {"Thieves!",{{8378},
-[27134] = {"Just To Be Safe",{{8382},
-[27135] = {"On the Brink",{{46034},
-[27136] = {"The Horizon Scout",{{8380},
-[27137] = {"The Horizon Scout",nil,{{8478},
-[27138] = {"Trying, But Not That Hard",nil,nil,52,52,nil,nil,{"1. Do Your Best: 1/1 (monster)
-     Progress locations:
-       - [62.3, 45] in Azshara"},
-[27139] = {"The Horizon Scout",{{8478},
-[27140] = {"The Leyline Compass",{{46875},
-[27141] = {"The Shattered Strand Commander",nil,nil,52,52,nil,nil,nil,nil,{nil,nil,{{0,1},
-[27142] = {"The Shattered Strand Commander",nil,nil,52,52,nil,nil,{"Tidepriestess Aquila slain: 0/1 (monster)"},
-[27143] = {"The Timbermaw Alliance",nil,{{6651},
-[27144] = {"The Timbermaw Alliance",{{6651},
-[27145] = {"The Timbermaw Alliance",{{46044},
-[27146] = {"The Timbermaw Alliance",{{6651},
-[27147] = {"The Winter Ahead",nil,{{8405,46045},
-[27148] = {"The Winter Ahead",{{46045},
-[27149] = {"The Winter Ahead",{{46045},
-[27150] = {"The Winter Ahead",{{46045},
-[27151] = {"The Hungry Gnome",{{46046},
-[27152] = {"The Hungry Gnome",{{46046},
-[27153] = {"The Hungry Gnome",{{46046},
-[27154] = {"The Hungry Gnome",nil,{{46046},
-[27155] = {"Threats to Valormok",{{8586},
-[27156] = {"Threats to Valormok",{{8586},
-[27157] = {"Threats to Valormok",{{8586},
-[27158] = {"Threats to Valormok",{{8586},
-[27159] = {"Threats to Valormok",nil,nil,52,52,nil,nil,{"Giants slain: 0/5 (monster)"},
-[27160] = {"Valormok Mine Reports",{{8576},
-[27161] = {"Whistle While You Work",{{8576},
-[27162] = {"Valormok Report to Orgrimmar",{{8576},
-[27163] = {"Wanted: Blue Dragons",{{46018,46046},
-[27164] = {"Wanted: Cliff Giants",{{12957},
-[27165] = {"Burning Blade Signets",{{3429},
-[27166] = {"Consumed by Hatred",{{3310,3432},
-[27167] = {"Foreign Technology",{{3478},
-[27168] = {"Lost in Battle",{{3432},
-[27169] = {"Searching the Wreckage",{{3432},
-[27170] = {"Out of My Hands",{{3432},
-[27171] = {"Retrieving the Orb",{{46057},
-[27172] = {"Infusing the Orb",{{46057},
-[27173] = {"Report to Mankrik",{{46057},
-[27174] = {"Finding Nadia",{{3432},
-[27175] = {"Opening the Cage",{{46056},
-[27176] = {"The Good News",{{46056},
-[27177] = {"Operation: Northwatch Hold",{{46061},
-[27195] = {"Straight to the Teeth",{{46065},
-[27196] = {"The Kolkar Report",{{3272,3432},
-[27197] = {"The Merchant's Daughter",{{7161},
-[27198] = {"The Missing Lorespeakers",{{46066},
-[27199] = {"The Missing Lorespeakers",{{250415},
-[27200] = {"The Missing Lorespeakers",{{46066},
-[27201] = {"The Triad Scrolls",{{46066},
-[27202] = {"The Obsidian Relic",{{3376},
-[27203] = {"The Obsidian Relic",{{3341},
-[27204] = {"WANTED: Deepskin",{{3338},
-[27205] = {"My Sister Isabetta",{{45038},
-[27206] = {"My Sister Isabetta",{{46067},
-[27207] = {"My Sister Isabetta",{{45038},
-[27208] = {"My Sister Isabetta",nil,nil,15,15,nil,nil,{"1. Omar Dorn slain: 1/1 (monster)
-     Mobs tracked:
-       - Omar Dorn (ID: 46069)
-         [29.5, 50] in Westfall
-     Progress locations:
-       - [30, 49.8] in Westfall
-  2. Defias Key: 0/1 (item)
-     Item: Defias Key (ID: 63084)
-     Progress locations:
-       - [32.4, 43.8] in Westfall
-       - [30, 47.5] in Westfall
-       - [30, 49.8] in Westfall
-       - [30, 49.8] in Westfall - Looted Defias Key from Omar Dorn
-       - [30, 49.8] in Westfall
-       - [29.5, 50] in Westfall
-       - [31.3, 44.7] in Westfall
-       - [31.5, 44.7] in Westfall
-       - [31.5, 44.7] in Westfall
-       - [31.2, 43.8] in Westfall"},
-[27209] = {"My Sister Isabetta",{{46068},
-[27210] = {"A Hidden Record",{{46068},
-[27211] = {"A Hidden Record",{{1646},
-[27212] = {"Auntie VanCleef",{{1646},
-[27213] = {"Auntie VanCleef",nil,nil,18,18,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[27214] = {"Auntie VanCleef",nil,nil,18,18,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[27215] = {"Auntie VanCleef",{{46068},
-[27216] = {"Auntie VanCleef",{{273},
-[27217] = {"Auntie VanCleef",{{10782},
-[27218] = {"Auntie VanCleef",nil,{{1284,2086,2094},
-[27219] = {"Auntie VanCleef",{{46070},
-[27220] = {"Auntie VanCleef",{{46071},
-[27221] = {"Auntie VanCleef",{{46071},
-[27222] = {"Lost But Not Forgotten",nil,{{1646},
-[27223] = {"Personal Possessions",{{46076},
-[27224] = {"Rampaging Golems",{{46076},
-[27225] = {"The Ersotta Stone",{{458,6250},
-[27226] = {"The Ersotta Stone",{{3979},
-[27227] = {"The Storeta Stone",{{2913},
-[27228] = {"The Troesta Stone",{{2913},
-[27229] = {"The Odd Relic",nil,{{2912,3661},
-[27230] = {"A Gnome in Need",{{45219},
-[27231] = {"A Gnome in Need",{{45219},
-[27232] = {"A Gnome in Need",{{46079},
-[27233] = {"A Gnome in Need",{{46079},
-[27234] = {"A Gnome in Need",{{46079},
-[27235] = {"A Gnome in Need",{{45219},
-[27236] = {"A Gnome in Need",{{46078},
-[27237] = {"An End To Dread",{{46083},
-[27238] = {"An Imp's Bidding",{{46000},
-[27239] = {"An Imp's Bidding",{{46000},
-[27240] = {"An Imp's Bidding",{{46000},
-[27241] = {"Shadowbreak Ravine",nil,{{46000},
-[27242] = {"Shadowbreak Ravine",{{46000},
-[27243] = {"Crazed Carrion",{{46086},
-[27244] = {"Drysnap Delicacy",{{8152},
-[27247] = {"Gloombreak Mesa",{{4046},
-[27248] = {"A Message for Ghostwalker Post",nil,{{10428},
-[27253] = {"Massive Profits",{{11438},
-[27254] = {"Reagents For The Undercity",{{46090},
-[27255] = {"Reagents For The Undercity",{{46090},
-[27256] = {"Reagents For The Undercity",{{46090},
-[27257] = {"Reagants For The Undercity",{{46090},
-[27258] = {"Remnants Of The Nether",{{46091},
-[27259] = {"Supplies for Squigglecord",{{8150},
-[27260] = {"Pleading To Return",{{46093},
-[27261] = {"Pleading To Return",{{46093},
-[27262] = {"The Freshest Oil",{{46094},
-[27263] = {"The Kindest Act",{{46086},
-[27264] = {"Wanted: Keiko",{{12031,46093},
-[27265] = {"Wanted: Wilfiz Silverbit",{{45219},
-[27266] = {"A Touch of Lightning",{{46099},
-[27267] = {"A Village In Need",{{46100},
-[27268] = {"Delivery to Vornal",{{46100},
-[27272] = {"Wolf Riding",{{4752},
-[27273] = {"Sha'gri",{{10578},
-[27274] = {"The Cursed Fleet",{{3139},
-[27275] = {"WANTED: Dustpaw",{{47140,9796},
-[27276] = {"Supervisor Hink",{{3142,3122},
-[27277] = {"Scythemaw Standstill",{{46107},
-[27280] = {"Airheart Must Go",{{4791},
-[27281] = {"Airheart Must Go",{{4964},
-[27282] = {"Wanted: Dragon Killers",{{4412},
-[27283] = {"Cast Away",{{46109},
-[27284] = {"Escaping Airheart",{{46111},
-[27285] = {"Escaping Airheart",{{46115},
-[27286] = {"Kill It With Fire",nil,nil,37,37,nil,nil,{"Darkmist Egg Sacks Burned: 0/8"},
-[27287] = {"Put Them Down",{{4791},
-[27288] = {"Put Them Down",{{4964},
-[27289] = {"Reinforcements From Afar",nil,{{4791},
-[27290] = {"Reinforcements From Afar",nil,{{4968},
-[27291] = {"Wanted: King Krool",{{4500,4926},
-[27292] = {"Wanted: King Krool",{{4964,4331},
-[27293] = {"The Downed Zeppelin",{{46122},
-[27294] = {"The Downed Zeppelin",{{46123},
-[27295] = {"Where In The World Is Beezil Linkspanner?",{{46121},
-[27296] = {"Grab The Goods",{{46121},
-[27297] = {"Defibrillated",{{46121},
-[27298] = {"Sniffotron MK IV",{{46121},
-[27299] = {"Sniff Him Out",{{46121},
-[27300] = {"Beezil And The Burning Blade",{{46120},
-[27302] = {"Burning Blade Dossier",{{46121},
-[27303] = {"Containing the Contamination",{{10924},
-[27304] = {"Containing the Contamination",{{10924},
-[27305] = {"Containing the Contamination",{{10924},
-[27306] = {"The Garden of Jadefire Glen",{{10920},
-[27307] = {"The Shrine of the Deceiver",{{46127},
-[27308] = {"Mementos of the Third War",{{46127},
-[27309] = {"Mementos of the Third War",{{46127},
-[27310] = {"Wanted: Kal'alash",{{9465},
-[27311] = {"Wanted: Kal'alash",{{10306},
-[27312] = {"Gordunni Thieves",{{8145},
-[27313] = {"Meat!",{{46129},
-[27314] = {"Freedom for All Creatures",{{46130},
-[27315] = {"Doling Justice",{{46131},
-[27316] = {"Doling Justice",{{46131},
-[27322] = {"Convincing the Denied",{{46135},
-[27323] = {"A Reflection of Death",{{46135},
-[27324] = {"Dead and Gone",{{46135},
-[27325] = {"Dental Records",{{46135},
-[27326] = {"Dental Records",{{46135},
-[27327] = {"Dental Records",{{46135},
-[27328] = {"Dental Records",{{46135},
-[27329] = {"Dental Records",{{46135},
-[27330] = {"Dental Records",{{46135},
-[27331] = {"Curious Groddoc",{{46135},
-[27332] = {"Curious Groddoc",nil,nil,50,50,nil,nil,{"1. Locate Trog's Corpse. (event)"},
-[27333] = {"Facing Oneself",nil,{{46135},
-[27334] = {"Facing Oneself",{{46135},
-[27335] = {"Wanted: Lost Ancient",nil,{{45211},
-[27336] = {"The Essence of Nightmares",{{46148},
-[27337] = {"In Elune's Light",{{46147},
-[27338] = {"The Stormrage Barrow Dens",{{11801},
-[27339] = {"Grimtotem Encroachment",{{2980},
-[27340] = {"Finding Mone",{{45503},
-[27341] = {"Finding Mone",{{46153},
-[27342] = {"Gnoll Rustlers",{{45497},
-[27344] = {"Kodo Riding",{{3690},
-[27345] = {"Sage Raintotem",nil,{{3055},
-[27346] = {"Stonebull Pollution",{{46156},
-[27347] = {"It's Never Too Coagu-late.",{{46156},
-[27350] = {"The Lost Calf",{{46159},
-[27351] = {"The Lost Calf",{{6776},
-[27354] = {"Wanted: Jasone",nil,{{2987},
-[27365] = {"Champion of Thunderaan",{{11805,46166},
-[27370] = {"Avenging What, Exactly?",{{46165},
-[27375] = {"Sister, Sister",{{46169},
-[27376] = {"Starve Them",{{12956},
-[27377] = {"The Wasp's Nest",{{12956},
-[27379] = {"Darai's Report",nil,nil,60,60,nil,nil,{"1. Darai's Report: 0/1 (item)"},
-[27385] = {"Oppress the Workers",{{46165},
-[27386] = {"Egg Smash!",{{11805},
-[27387] = {"Stingers from Stingers",{{46168},
-[27388] = {"Recover the Lost",{{46163},
-[27389] = {"Just One?",{{46173},
-[27392] = {"Gratitude Of The Expedition",{{46165},
-[27397] = {"A Trip to the Vale",{{12043},
-[27398] = {"Attack on the Mine",{{4082},
-[27400] = {"Mirkfallon Bracers",{{11864},
-[27402] = {"Ore for Sun Rock",{{4082},
-[27403] = {"Rumbles Of The Earth",nil,{{45995},
-[27404] = {"Rumbles Of The Earth",nil,{{45995},
-[27405] = {"Rumbles Of The Earth",{{45995},
-[27406] = {"Rumbles Of The Earth",nil,{{45995},
-[27407] = {"Rumbles Of The Earth",nil,{{4949},
-[27408] = {"Tinkering in the Vale",nil,nil,27,27,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[27409] = {"Twilight Fangs",{{5870},
-[27412] = {"Attack on the Foulweald",{{4079},
-[27413] = {"Report to Kaela",nil,nil,23,23,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[27417] = {"A Loa's Respect",{{46191},
-[27418] = {"A Loa's Respect",{{46191},
-[27419] = {"Boom! Boom! Boom!",{{46195},
-[27420] = {"Two-Legged Vultures",{{7771},
-[27421] = {"Lightfoot's Rescue",{{46197},
-[27422] = {"No One Drinks For Free",{{7882},
-[27423] = {"Scout's Honor",{{46209},
-[27424] = {"A Party Fractured",{{46198},
-[27425] = {"Worker's Rebellion",{{46198},
-[27426] = {"On Your Feet",{{46198},
-[27427] = {"Silithid Scramble",{{46198},
-[27428] = {"Bug Burnout",{{46198},
-[27429] = {"Urulg's Report",{{46198},
-[27430] = {"Supplying Anje'Watha",{{46212},
-[27431] = {"Find Wuti",{{46218},
-[27432] = {"A Chilly Stranger",{{46219},
-[27439] = {"The Great Brain Robbery",{{46221},
-[27440] = {"Hive Mind",{{46221},
-[27441] = {"Mind Blown",{{46221},
-[27442] = {"A Hive Cleared",{{46221},
-[27443] = {"Azeroth Space Society",{{46228},
-[27444] = {"The Perfect Fuel",{{46226},
-[27451] = {"Lorespeaker Vanza",nil,{{1443},
-[27452] = {"Dead Message",{{46233},
-[27453] = {"Dead Message",{{46234},
-[27454] = {"The Search for the Tomb",{{46233},
-[27455] = {"The Search for the Tomb",{{46233},
-[27456] = {"The Search for the Tomb",nil,{{46232},
-[27457] = {"The Search for the Tomb",{{46232},
-[27458] = {"The Search for the Tomb",nil,{{46233},
-[27459] = {"The Search for the Tomb",{{46233},
-[27460] = {"They Mostly Come At Night... Mostly",{{46236},
-[27462] = {"Waste Removal",{{46237},
-[27463] = {"Desperate Measures",nil,nil,42,42,nil,nil,{"1. Marai's \"Supplies\": 0/1 (item)"},
-[27466] = {"Tips Of Fire",{{46209},
-[27467] = {"Tips Of Fire",{{46245},
-[27468] = {"Tips Of Fire",{{46245},
-[27469] = {"Tips Of Fire",{{46245},
-[27470] = {"Water Co. Savior",{{46248},
-[27477] = {"Attack on the Gnarlpine",{{6781},
-[27478] = {"Attack on the Gnarlpine",{{6781},
-[27479] = {"Bloodfeather Eggs",{{3606},
-[27480] = {"Corruption in Shadowglen",{{46257},
-[27482] = {"Saber Riding",{{4753},
-[27483] = {"Demons In Fel Rock",{{3610},
-[27484] = {"Purifying the Essence",{{3610},
-[27485] = {"Herbal Medicine",{{3604},
-[27486] = {"Amber Memento",{{46260,2483},
-[27487] = {"Gathering Of Spirits",{{46261},
-[27488] = {"Bad News Has Horns",{{4048},
-[27489] = {"Canyon Patrol",{{10428},
-[27490] = {"Crag Stalking",{{10428},
-[27491] = {"Driving License Approval",{{46265},
-[27492] = {"Fresh Water Delivery",{{4630},
-[27493] = {"Podium Finish",{{4706},
-[27494] = {"Podium Finish",{{4453},
-[27495] = {"Serpent's Bite",{{10428},
-[27496] = {"Stitching Supplies",{{1695},
-[27497] = {"Striking Back At The Galak",{{10638},
-[27498] = {"Khan Ablinh",{{10537},
-[27499] = {"The Ghost of the Flats",{{4630},
-[27500] = {"The Sacred Flame",{{4048},
-[27501] = {"The Sacred Flame",{{4048},
-[27503] = {"Why Oh Wyvern",{{11826},
-[27504] = {"Kristy's Delivery Service",{{11826},
-[27508] = {"Research Salvation",{{9270},
-[27509] = {"The Un'Goro Hunt",{{46278},
-[27510] = {"The Un'Goro Hunt",{{46278},
-[27511] = {"The Un'Goro Hunt",{{46278},
-[27512] = {"The Un'Goro Hunt",{{46278},
-[27513] = {"Shizzle's Flyer Upgraded",{{9998},
-[27514] = {"Shizzle's Flyer Deluxe",{{9998},
-[27517] = {"Storm, Earth, Wind, and Fire",{{45143},
-[27518] = {"Storm, Earth, Wind, and Fire",{{45143},
-[27519] = {"Storm, Earth, Wind, and Fire",{{45143},
-[27520] = {"Storm, Earth, Wind, and Fire",{{45143},
-[27521] = {"Storm, Earth, Wind, and Fire",nil,{{45143},
-[27522] = {"The Legend of Aru-Talis",{{46287},
-[27523] = {"The Legend of Aru-Talis",{{46287},
-[27524] = {"The Legend of Aru-Talis",{{46288},
-[27525] = {"The Legend of Aru-Talis",{{46287},
-[27526] = {"The Legend of Aru-Talis",{{46287},
-[27527] = {"The Legend of Aru-Talis",{{46287},
-[27528] = {"The Southern Pylon",{{9117},
-[27529] = {"One of These Things is Not Like the Others",{{9117},
-[27530] = {"One of These Things is Not Like the Others",{{46288},
-[27531] = {"One of These Things is Not Like the Others",{{46288},
-[27532] = {"One of These Things is Not Like the Others",{{46288},
-[27533] = {"One of These Things is Not Like the Others",{{9117},
-[27534] = {"One of These Things is Not Like the Others",{{9271},
-[27535] = {"The Storm Gathers",{{9117},
-[27536] = {"The Storm Gathers",{{9117},
-[27537] = {"The Storm Gathers",{{46165},
-[27538] = {"The Storm Gathers",{{9117},
-[27541] = {"Toxic Tolerance",nil,nil,60,60,nil,nil,{"1. Splashed with Venomhide blood: 20/20 (monster)
-     Progress locations:
-       - [68.3, 57.7] in Un'Goro Crater
-       - [68.2, 56.4] in Un'Goro Crater
-       - [68, 53.9] in Un'Goro Crater
-       - [68, 53.9] in Un'Goro Crater
-       - [67.8, 53.1] in Un'Goro Crater
-       - [68.3, 49.8] in Un'Goro Crater
-       - [67.5, 49.3] in Un'Goro Crater
-       - [70.9, 51.5] in Un'Goro Crater
-       - [70.9, 51.5] in Un'Goro Crater
-       - [71.2, 52.8] in Un'Goro Crater
-       - [71, 52.8] in Un'Goro Crater
-       - [69.4, 52.9] in Un'Goro Crater
-       - [69.5, 53.1] in Un'Goro Crater
-       - [69.5, 53.1] in Un'Goro Crater
-       - [69.5, 53.1] in Un'Goro Crater
-       - [68.2, 53.3] in Un'Goro Crater
-       - [68.3, 53.3] in Un'Goro Crater
-       - [68.2, 53] in Un'Goro Crater"},
-[27544] = {"A Gift for the Spiritseer",{{10307},
-[27545] = {"A Door to the Past",{{46295},
-[27546] = {"A Door to the Past",{{46295},
-[27551] = {"A Pound of Flesh",nil,nil,56,56,nil,nil,{"1. Chunk of Furbolg Flesh: 0/20 (item)
-     Item: Chunk of Furbolg Flesh (ID: 63447)
-     Containers/Objects:
-       - Winterfall Totemic at [33.3, 36.8] in Winterspring
-     Progress locations:
-       - [29.3, 36.9] in Winterspring - Looted Chunk of Furbolg Flesh from Winterfall Totemic
-       - [29.3, 36.9] in Winterspring
-       - [29.3, 36.9] in Winterspring
-       - [29.8, 36.3] in Winterspring - Looted Chunk of Furbolg Flesh from Winterfall Totemic
-       - [29.8, 36.3] in Winterspring
-       - [29.8, 36.3] in Winterspring
-       - [29.8, 36.3] in Winterspring
-       - [30, 35.7] in Winterspring - Looted Chunk of Furbolg Flesh from Winterfall Pathfinder
-       - [30, 35.7] in Winterspring
-       - [30, 35.7] in Winterspring
-       - [30.8, 36.7] in Winterspring - Looted Chunk of Furbolg Flesh from Winterfall Pathfinder
-       - [30.8, 36.7] in Winterspring
-       - [30.8, 36.7] in Winterspring
-       - [31.2, 36.3] in Winterspring - Looted Chunk of Furbolg Flesh from Winterfall Pathfinder
-       - [31.2, 36.3] in Winterspring
-       - [31.2, 36.3] in Winterspring
-       - [30.8, 36.6] in Winterspring - Looted Chunk of Furbolg Flesh from Winterfall Den Watcher
-       - [30.8, 36.6] in Winterspring
-       - [30.8, 36.6] in Winterspring
-       - [30.9, 34.9] in Winterspring - Looted Chunk of Furbolg Flesh from Winterfall Pathfinder
-       - [30.9, 34.9] in Winterspring
-       - [30.9, 34.9] in Winterspring
-       - [31.3, 34.9] in Winterspring - Looted Chunk of Furbolg Flesh from Winterfall Pathfinder
-       - [31.3, 34.9] in Winterspring
-       - [31.3, 34.9] in Winterspring
-       - [32.2, 37] in Winterspring - Looted Chunk of Furbolg Flesh from Winterfall Pathfinder
-       - [32.2, 37] in Winterspring
-       - [32.2, 37] in Winterspring
-       - [32.4, 37.2] in Winterspring - Looted Chunk of Furbolg Flesh from Winterfall Totemic
-       - [32.4, 37.2] in Winterspring
-       - [32.4, 37.2] in Winterspring
-       - [32.4, 37.2] in Winterspring
-       - [32.8, 36.9] in Winterspring - Looted Chunk of Furbolg Flesh from Winterfall Totemic
-       - [32.8, 36.9] in Winterspring
-       - [32.9, 36.9] in Winterspring
-       - [33.3, 36.8] in Winterspring
-  2. Large Furbolg Bone: 0/15 (item)
-     Progress locations:
-       - [29.3, 36.9] in Winterspring - Looted Large Furbolg Bone from Winterfall Totemic
-       - [29.8, 36.3] in Winterspring - Looted Large Furbolg Bone from Winterfall Totemic
-       - [30, 35.7] in Winterspring - Looted Large Furbolg Bone from Winterfall Pathfinder
-       - [30.8, 36.7] in Winterspring - Looted Large Furbolg Bone from Winterfall Pathfinder
-       - [31.2, 36.3] in Winterspring - Looted Large Furbolg Bone from Winterfall Pathfinder
-       - [30.8, 36.6] in Winterspring - Looted Large Furbolg Bone from Winterfall Den Watcher
-       - [30.9, 34.9] in Winterspring - Looted Large Furbolg Bone from Winterfall Pathfinder
-       - [31.3, 34.9] in Winterspring - Looted Large Furbolg Bone from Winterfall Pathfinder
-       - [32.2, 37] in Winterspring - Looted Large Furbolg Bone from Winterfall Pathfinder
-       - [32.4, 37.2] in Winterspring - Looted Large Furbolg Bone from Winterfall Totemic
-  3. Wrinkled Furbolg Brain: 0/4 (item)
-     Progress locations:
-       - [29.8, 36.3] in Winterspring - Looted Wrinkled Furbolg Brain from Winterfall Totemic
-       - [30, 35.7] in Winterspring - Item collection from Winterfall Pathfinder (ID: 7442)
-       - [32.4, 37.2] in Winterspring - Looted Wrinkled Furbolg Brain from Winterfall Totemic
-       - [32.9, 36.9] in Winterspring - Looted Wrinkled Furbolg Brain from Winterfall Totemic
-       - [33.3, 36.8] in Winterspring - Looted Wrinkled Furbolg Brain from Winterfall Totemic"},
-[27552] = {"Sinister Supplies",{{46300},
-[27553] = {"A Life's Work",{{46300},
-[27554] = {"Suffering the Suffering",{{46300},
-[27555] = {"A Task Never Finished",{{46300},
-[27558] = {"Biz with The Fizz",{{46308},
-[27559] = {"Quality Reagents",{{46309},
-[27560] = {"Wraithroar",{{46309},
-[27561] = {"The Fizz",{{46309},
-[27562] = {"A Fine... Product?",{{46309},
-[27563] = {"The Universal Language",{{46308},
-[27564] = {"To Delevan's Aid",{{46308},
-[27565] = {"A Rod of Reagents",{{46306},
-[27566] = {"In Moonlit Mourning",{{46306},
-[27567] = {"Road to Teles'aran",{{46315},
-[27568] = {"Words in Stone",{{46313},
-[27569] = {"A Scribe's Work",{{46313},
-[27570] = {"The Illusory Key",{{46314},
-[27571] = {"Unknown Magic",{{46314},
-[27572] = {"The Arcanaeum",{{46313},
-[27573] = {"Decadent Desires",{{250526},
-[27574] = {"Lost Souls",{{46316},
-[27575] = {"Nightmare Seeds",nil,{{46319},
-[27576] = {"Malvor's Guidance",{{46319},
-[27577] = {"Pure as the Moon",{{12025},
-[27578] = {"Return to Aharu",{{12025},
-[27579] = {"Planting Dreams",nil,nil,58,58,nil,nil,{"1. Dream Seeds planted: 5/5 (monster)
-     Progress locations:
-       - [60.5, 15.1] in Winterspring
-       - [60.9, 15.1] in Winterspring
-       - [60.6, 16.5] in Winterspring
-       - [60.1, 15.4] in Winterspring
-       - [60, 15.2] in Winterspring"},
-[27580] = {"Shadow of the Vilehorn",{{46319},
-[27596] = {"Commission for Warg Deepwater",nil,nil,20,20,nil,nil,{"1. Elixir of Water Breathing: 0/5 (item)"},
-[27597] = {"Commission for Marek Ironheart",nil,nil,20,20,nil,nil,{"1. Swim Speed Potion: 0/5 (item)"},
-[27599] = {"Commission for Gerald Crawley",{{3090},
-[27613] = {"Commission for Lorekeeper Raintotem",{{11047},
-[27615] = {"Commission for Gordo",{{1518},
-[27623] = {"Commission for Locke Okarr",{{45982},
-[27624] = {"Commission for Apothecary Lydon",{{2216},
-[27625] = {"Commission for Elu",{{10377},
-[27626] = {"Commission for Witch Doctor Jin'Zil",nil,nil,30,30,nil,nil,{"1. Lesser Mana Potion: 0/5 (item)
-     Item: Lesser Mana Potion (ID: 3385)
-     Progress locations:
-       - [62, 51.3] in Ashenvale
-       - [27, 11.5] in Stonetalon Mountains - Looted Lesser Mana Potion from Mirkfallon Dryad
-       - [27, 11.5] in Stonetalon Mountains
-       - [26.8, 10.7] in Stonetalon Mountains - Item collection
-       - [37.2, 46.6] in Thousand Needles
-       - [31.5, 46.9] in Thousand Needles
-       - [31.8, 49.4] in Thousand Needles
-       - [31.8, 52.2] in Thousand Needles
-       - [33.6, 52.9] in Thousand Needles
-       - [34.8, 52] in Thousand Needles
-       - [36.1, 49.5] in Thousand Needles
-       - [47.3, 58.1] in Thunder Bluff - Item collection from Chesmu (ID: 8356)
-       - [47.3, 58.1] in Thunder Bluff - Item collection from Chesmu (ID: 8356)"},
-[27627] = {"Commission for Nimboya",{{2497},
-[27629] = {"Commission for Takata Steelblade",nil,nil,40,40,nil,nil,{"Elixir of Fortitude: 5/5"},
-[27630] = {"Commission for Thunderheart",nil,{{5411},
-[27631] = {"Commission for Drum Fel",nil,nil,40,40,nil,nil,{"Greater Healing Potion: 0/5"},
-[27655] = {"Commission for Major Helmsworthy",nil,nil,40,40,nil,nil,{"1. Green Iron Hauberk: 0/1 (item)
-     Containers/Objects:
-       - Shadowberry Bush at [91.1, 73.4] in Arathi Highlands
-       - Shadowberry Bush at [91.3, 75.4] in Arathi Highlands
-       - Shadowberry Bush at [90.3, 75] in Arathi Highlands
-     Progress locations:
-       - [91.1, 73.4] in Arathi Highlands
-       - [91.1, 73.4] in Arathi Highlands
-       - [91.1, 73.7] in Arathi Highlands
-       - [91.7, 74] in Arathi Highlands
-       - [91.6, 74.1] in Arathi Highlands
-       - [91.6, 74.2] in Arathi Highlands
-       - [91.3, 75.6] in Arathi Highlands
-       - [91.3, 75.4] in Arathi Highlands
-       - [90.7, 75.9] in Arathi Highlands
-       - [90.8, 75.9] in Arathi Highlands
-       - [90.6, 75.7] in Arathi Highlands
-       - [90.3, 75] in Arathi Highlands
-       - [90.3, 74.1] in Arathi Highlands
-       - [90.3, 74.1] in Arathi Highlands
-       - [90.3, 74.1] in Arathi Highlands
-       - [90.7, 74.5] in Arathi Highlands
-       - [91.4, 73.3] in Arathi Highlands
-       - [92.3, 68.8] in Arathi Highlands
-       - [93.2, 67.7] in Arathi Highlands
-       - [90.2, 73.5] in Arathi Highlands
-       - [89.6, 73.7] in Arathi Highlands"},
-[27656] = {"Commission for Caretaker Alaric",{{2789},
-[27659] = {"Commission for High Chief Ungarl",nil,{{5385},
-[27660] = {"Commission for Mylini Frostmoon",nil,nil,50,50,nil,nil,{"1. Mithril Coif: 0/1 (item)
-  2.  : 0/1 (item)"},
-[27661] = {"Commission for Lar Prowltusk",{{3167},
-[27662] = {"Commission for Supervisor Hink",nil,nil,10,10,nil,nil,{"1. Copper Battle Axe: 2/2 (item)
-     Item: Copper Battle Axe (ID: 3488)
-     Progress locations:
-       - [51.9, 40.1] in Durotar - Item collection"},
-[27665] = {"Commission for Deathguard Simmer",nil,{{1495},
-[27682] = {"Commission for Rok Orhan",{{7777},
-[27685] = {"Commission for Dreka'Sur",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[27880] = {"Fight for Warsong Gulch",{{14733},
-[27882] = {"Battle of Warsong Gulch",{{14781},
-[27883] = {"Battle of Warsong Gulch",{{14781},
-[27884] = {"The Will to Survive",{{2198},
-[27885] = {"The Will to Survive",nil,nil,60,60,nil,nil,{"1. Rotten Organ: 0/30 (item)"},
-[27890] = {"A Matter of Life and Death",{{10880},
-[27891] = {"A Matter of Life and Death",{{4046},
-[27896] = {"A Sign in the Stars",{{2198},
-[27898] = {"A Sign in the Stars",nil,{{4721},
-[27899] = {"A Sign in the Stars",{{4721},
-[27900] = {"The Earthmother Provides",nil,nil,60,60,nil,nil,{"1. Dark Whisper slain: 0/10 (monster)
-  2. Heart of An'she: 0/1 (item)
-  3. Heart of Mu'sha: 0/1 (item)"},
-[27906] = {"Bound by Blood and Honor",{{10879},
-[27921] = {"Aponi's Request",{{10880,10881},
-[27922] = {"Troubling Rumors",{{46366},
-[27927] = {"Memories of Honor and Blood",{{10880,10881},
-[27928] = {"Memories of Honor and Blood",{{3144},
-[27929] = {"Memories of Honor and Blood",{{3144},
-[27930] = {"Memories of Honor and Blood",{{3144},
-[27941] = {"Crafted from Crawlers",nil,{{7867},
-[27953] = {"The Magic of Technology",{{2198},
-[27960] = {"The Shatterspear Festival",{{2198},
-[27961] = {"The Shatterspear Festival",{{10879},
-[27962] = {"The Shatterspear Festival",nil,nil,60,60,nil,nil,{"1. Participate in the Axe Throwing Contest: 1/1 (monster)
-     Containers/Objects:
-       - Hold Shift + Drag: at [68.8, 23] in Darkshore
-     Progress locations:
-       - [68.8, 23] in Darkshore"},
-[28033] = {"The Rite of the Fields",nil,nil,60,60,nil,nil,{"1. Plaguelands Flytrap Sample: 1/1 (item)
-     Item: Plaguelands Flytrap Sample (ID: 64985)
-     Progress locations:
-       - [0, 0] in Scholomance - Looted Plaguelands Flytrap Sample from Ras Frostwhisper"},
-[28034] = {"The Rite of the Hunt",{{6034},
-[28035] = {"The Rite of the Hunt",nil,nil,60,60,nil,nil,{"1. Refined Deeprock Salt: 1/5 (item)
-     Item: Refined Deeprock Salt (ID: 15409)
-     Containers/Objects:
-       - Moontouched Feather at [58.7, 23.9] in Winterspring
-       - Moontouched Feather at [58.1, 32.8] in Winterspring
-       - Moontouched Feather at [63.2, 38.4] in Winterspring
-     Progress locations:
-       - [58.7, 23.9] in Winterspring
-       - [58.1, 32.8] in Winterspring
-       - [63.2, 38.4] in Winterspring
-       - [63.3, 38.3] in Winterspring
-       - [63.2, 38.3] in Winterspring
-       - [63.2, 38.3] in Winterspring
-       - [63.2, 38.3] in Winterspring
-       - [63.2, 38.3] in Winterspring
-       - [63.2, 38.3] in Winterspring
-       - [63.2, 38.3] in Winterspring
-       - [46.9, 81.4] in Western Plaguelands
-       - [47.1, 81] in Western Plaguelands
-       - [47.7, 81.2] in Western Plaguelands
-       - [48.2, 81] in Western Plaguelands
-       - [48.2, 81] in Western Plaguelands
-  2. Rugged Armor Kit: 0/20 (item)"},
-[28042] = {"The Rite of the Mountains",{{4256},
-[28043] = {"The Rite of the Mountains",{{46892},
-[28044] = {"The Rite of the Mountains",{{46892},
-[28045] = {"The Rite of the Mountains",nil,nil,60,60,nil,nil,{"1. Filled Dark Iron Crucible: 0/1 (item)
-     Item:  (ID: 60674)"},
-[28049] = {"The Rite of the Wilds",{{7089,6034},
-[28050] = {"The Rite of the Wilds",nil,nil,60,60,nil,nil,{"1. Black Dragonscale: 0/1 (item)
-  2. Blue Dragonscale: 0/1 (item)
-  3. Red Dragonscale: 0/1 (item)
-  4. Green Dragonscale: 0/1 (item)"},
-[28063] = {"Commission for Tomas",{{1430},
-[28064] = {"Commission for Gubber Blump",{{10216},
-[28068] = {"Commission for Karl Boran",{{1242},
-[28072] = {"Commission for Captain Steelgut",{{2769},
-[28073] = {"Commission for Captain Hecklebury Smotts",{{2500},
-[28074] = {"Commission for Narain Soothfancy",nil,{{4453},
-[28075] = {"Commission for Simone Cantrell",nil,{{45527},
-[28077] = {"Commission for Dirk Windrattle",{{45604},
-[28078] = {"Commission for Pyall Silentstride",{{3067},
-[28080] = {"Commission for Larhka",{{5871},
-[28082] = {"Commission for Karang Amakkar",{{12757},
-[28083] = {"Commission for Kirge Sternhorn",{{3418},
-[28086] = {"Commission for Deathstalker Lesh",nil,{{4949,12837,4046},
-[28087] = {"Commission for Kitta Firewind",nil,nil,10,10,nil,nil,{"1. Runed Copper Rod: 1/1 (item)
-     Progress locations:
-       - [65, 70.6] in Elwynn Forest - Item collection from Kitta Firewind (ID: 11072)
-       - [64.9, 70.6] in Elwynn Forest - Item collection from Kitta Firewind (ID: 11072)"},
-[28350] = {"Commission for Marshal Haggard",{{5484},
-[28366] = {"The Rite of the Medicant",{{3373},
-[28367] = {"The Rite of the Medicant",{{3144},
-[28373] = {"The Rite of the Medicant",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[28374] = {"The Rite of the Medicant",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[28375] = {"Commission for Deputy Rainer",nil,nil,10,10,nil,nil,{"1.  : 0/1 (item)
-     Progress locations:
-       - [64.9, 70.6] in Elwynn Forest - Item collection from Kitta Firewind (ID: 11072)
-       - [64.9, 70.6] in Elwynn Forest - Item collection from Kitta Firewind (ID: 11072)"},
-[28383] = {"Commission for Terenthis",{{3693},
-[28397] = {"Commission for Wilhelmina Wobblesmith",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[28401] = {"Commission for Lorekeeper Raintotem",nil,{{2121},
-[28402] = {"Commission for Magatha Grimtotem",{{11071},
-[28403] = {"Commission for Constance Brisboise",nil,{{3522},
-[28404] = {"Commission for Merril Wendyl",nil,{{45505},
-[28409] = {"Commission for Sage Elkhoof",{{3418},
-[28410] = {"Commission for Gann Stonespire",nil,{{46056},
-[28413] = {"Commission for Hagar Lightninghoof",nil,{{2216},
-[28417] = {"Commission for Annie Grim",nil,nil,40,40,nil,nil,{"1. Greater Mystic Wand: 0/1 (item)"},
-[28444] = {"Commission for Howin Kindfeather",nil,nil,40,40,nil,nil,{"1. Mithril Tube: 0/5 (item)
-     Containers/Objects:
-       - Expose Armor at [36.7, 45.4] in The Hinterlands
-       - Vanish at [36.9, 46.2] in The Hinterlands
-       - Eviscerate at [36.9, 46.2] in The Hinterlands
-       - XP Bar at [25.9, 53.3] in The Hinterlands
-     Progress locations:
-       - [36.7, 45.4] in The Hinterlands
-       - [36.9, 46.2] in The Hinterlands
-       - [36.9, 46.2] in The Hinterlands
-       - [36.6, 45.6] in The Hinterlands
-       - [31.1, 52.7] in The Hinterlands
-       - [26.7, 53.8] in The Hinterlands
-       - [25.9, 53.3] in The Hinterlands
-       - [25.9, 53.3] in The Hinterlands
-       - [23.6, 49.4] in The Hinterlands
-       - [29.7, 55.1] in The Hinterlands
-       - [37, 57.5] in The Hinterlands
-       - [36.3, 59.3] in The Hinterlands
-       - [38, 59] in The Hinterlands"},
-[28460] = {"Commission for Blusht",{{3433},
-[28462] = {"Commission for Tok'Kar",{{8176},
-[28465] = {"Commission for Commander Aggro'gosh",{{7406},
-[28469] = {"Commission for Katoom the Angler",{{14740},
-[28470] = {"Commission for Remi Coldeye",{{46236},
-[28475] = {"Commission for Archaeologist Everit",{{2913},
-[28476] = {"Commission for Watcher Dodds",nil,nil,20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[28477] = {"Commission for Amy Davenport",{{777},
-[28479] = {"Commission for Rendow",{{1695},
-[28480] = {"Commission for Innkeeper Finmir",nil,{{45881},
-[28481] = {"Commission for Bethan Bluewater",nil,nil,40,40,nil,nil,{"1. Mageweave Bandage: 0/20 (item)"},
-[28482] = {"Commission for Gavik Grimesail",{{45336},
-[28483] = {"Commission for High Chief Ungarl",{{46009},
-[28484] = {"Commission for Leakey Cartspark",nil,{{46288},
-[28486] = {"Commission for Vira Younghoof",{{5939},
-[28487] = {"Commission for Rane Yorick",{{1952},
-[28489] = {"Commission for Kaliyah Stormshew",{{46065},
-[28491] = {"Commission for Elu",{{10377},
-[28492] = {"Commission for Bengor",{{7643},
-[28493] = {"Commission for Blaise Montgomery",{{11752},
-[28494] = {"Commission for Jason Mathers",{{383},
-[28495] = {"Commission for Protector Gariel",{{490},
-[28497] = {"Commission for Warg Deepwater",{{1683},
-[28498] = {"Commission for Sentinel Onaeya",nil,nil,10,10,nil,nil,{"1. Raw Sagefish: 0/20 (item)
-     Item:  (ID: 60755)"},
-[28499] = {"Commission for Kilxx",{{3497},
-[28500] = {"Commission for Old Man Heming",{{2626},
-[28501] = {"Commission for Smeed Scrabblescrew",{{11596},
-[28513] = {"Commission for Killian Sanatha",nil,{{5748},
-[28516] = {"Commission for Wik'Tar",{{12962},
-[28519] = {"Commission for Alanna Raveneye",{{3604},
-[28520] = {"Commission for Vyrin Swiftwind",nil,{{1156,490},
-[28521] = {"Commission for Lornan Goldleaf",{{6887},
-[28525] = {"Commission for Apprentice Honeywell",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[28526] = {"Commission for Lorna Stonebrand",nil,{{47042},
-[28530] = {"Commission for Indon Cliffreach",{{45549},
-[28531] = {"Commission for Logannas",{{8157},
-[28534] = {"Commission for Hornizz Brimbuzzle",{{6019},
-[28535] = {"Commission for Joakim Sparkroot",{{45206},
-[28536] = {"Commission for Alchemist Pestlezugg",{{5594},
-[28539] = {"Commission for Taskmaster Scrange",{{14626},
-[28545] = {"Commission for Leo Sarn",nil,nil,10,10,nil,nil,{"Mageroyal: 20/20"},
-[28548] = {"Commission for Je'neu Sancrea",nil,nil,20,20,nil,nil,{"1. Bruiseweed: 20/20 (item)"},
-[28550] = {"Commission for Aranae Venomblood",{{2390},
-[28551] = {"Commission for Hagar Lightninghoof",nil,{{10539},
-[28552] = {"Commission for Rogvar",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[28555] = {"Commission for Tor'gan",nil,nil,40,40,nil,nil,{"Goldthorn: 0/20"},
-[28560] = {"Commission for Orgorn Strongbrow",{{1466},
-[28561] = {"Commission for Grif Wildheart",{{1466},
-[28562] = {"Commission for Jeena Featherbow",{{3605},
-[28563] = {"Commission for Chief Archaeologist Greywhisker",{{3605},
-[28564] = {"Commission for Scout Galiaan",nil,{{878},
-[28565] = {"Commission for Protector Evangeline",nil,{{45712},
-[28570] = {"Commission for Kaela Shadowspear",{{46181},
-[28573] = {"Commission for Verner Osgood",{{2697},
-[28574] = {"Commission for Einar Stonegrip",nil,{{482},
-[28576] = {"Commission for Bibbly F'utzbuckle",{{8150},
-[28578] = {"Commission for Chief Engineer Urul",{{45030},
-[28579] = {"Commission for Security Chief Bilgewhizzle",{{7882},
-[28580] = {"Commission for Gregan Brewspewer",{{7852},
-[28581] = {"Commission for Chromie",nil,{{10667},
-[28582] = {"Commission for Leakey Cartspark",nil,{{46288},
-[28583] = {"Commission for Thotar",{{5811},
-[28584] = {"Commission for Rokar Bladeshadow",{{5811},
-[28589] = {"Commission for Sage Greenhorn",nil,nil,20,20,nil,nil,{"Dark Leather Boots: 0/2"},
-[28590] = {"Commission for Mura Runetotem",nil,nil,20,20,nil,nil,{"Fine Leather Cloak: 1/1"},
-[28591] = {"Commission for Falla Sagewind",{{5767},
-[28592] = {"Commission for Gazrog",nil,nil,20,20,nil,nil,{"Fine Leather Tunic: 0/1"},
-[28593] = {"Commission for Mahren Skyseer",nil,nil,20,20,nil,nil,{"1. Light Leather Pants: 0/2 (item)
-     Item: Light Leather Pants (ID: 7282)
-     Progress locations:
-       - [51.7, 26] in The Barrens - Looted Light Leather from Savannah Huntress
-       - [44.1, 50] in The Barrens - Looted Light Leather from Wandering Barrens Giraffe
-       - [49.8, 55.1] in The Barrens - Looted Light Leather from Hecklefang Snarler
-       - [51.8, 55.4] in Wailing Caverns - Looted Light Leather from Deviate Creeper
-       - [51.8, 54.7] in Wailing Caverns - Looted Light Leather from Deviate Coiler
-       - [0, 0] in Wailing Caverns - Looted Light Leather from Deviate Guardian
-       - [0, 0] in Wailing Caverns - Looted Light Leather from Deviate Ravager
-       - [0, 0] in Wailing Caverns - Looted Light Leather from Deviate Crocolisk
-       - [0, 0] in Wailing Caverns - Looted Light Leather from Deviate Crocolisk
-       - [0, 0] in Wailing Caverns - Looted Light Leather from Kresh
-       - [0, 0] in Wailing Caverns - Looted Light Leather from Deviate Crocolisk
-       - [0, 0] in Wailing Caverns - Looted Light Leather from Deviate Adder
-       - [0, 0] in Wailing Caverns - Looted Light Leather from Deviate Viper
-       - [0, 0] in Wailing Caverns - Looted Light Leather from Deviate Python
-       - [0, 0] in Wailing Caverns - Looted Light Leather from Deviate Python
-       - [0, 0] in Wailing Caverns - Looted Light Leather from Deviate Viper
-       - [0, 0] in Wailing Caverns - Looted Light Leather from Deviate Crocolisk
-       - [0, 0] in Wailing Caverns - Looted Light Leather from Deviate Crocolisk
-       - [0, 0] in Wailing Caverns - Looted Light Leather from Deviate Crocolisk
-       - [0, 0] in Wailing Caverns - Looted Light Leather from Nyx
-       - [0, 0] in Wailing Caverns - Looted Light Leather from Deviate Venomwing
-       - [0, 0] in Wailing Caverns - Looted Light Leather from Deviate Dreadfang"},
-[28595] = {"Commission for Kadrak",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[28597] = {"Commission for Starn",{{9551},
-[28598] = {"Commission for Darn Talongrip",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[28607] = {"Commission for Kamari",nil,nil,50,50,nil,nil,{"1. Nightscape Boots: 0/2 (item)
-     Item:  (ID: 2519)"},
-[28608] = {"Commission for Gert Leathersunder",nil,nil,5,5,nil,nil,{"1. Light Hide: 3/5 (item)
-     Item: Light Hide (ID: 783)
-     Progress locations:
-       - [47.6, 52.3] in Dun Morogh - Item collection from Gert Leathersunder (ID: 46622)"},
-[28609] = {"Commission for Radnaal Maneweaver",{{6287},
-[28614] = {"Commission for Skuerto",{{2789},
-[28615] = {"Commission for Nioma",{{8160},
-[28617] = {"Commission for Bibbly F'utzbuckle",{{11438},
-[28618] = {"Commission for Joakim Sparkroot",{{45206},
-[28619] = {"Commission for Quinn",{{11756},
-[28620] = {"Commission for Viggo",{{45211},
-[28621] = {"Commission for Taronn Redfeather",nil,{{10921},
-[28622] = {"Commission for Deleigi",{{46850},
-[28623] = {"Commission for Master Smith Burninate",{{14624},
-[28624] = {"Commission for Tzakaja",{{46315},
-[28625] = {"Commission for Yonn Deepcut",{{6290},
-[28626] = {"Commission for Deathguard Linnea",{{1495},
-[28627] = {"Commission for Feran Strongwind",nil,nil,10,10,nil,nil,{"1. Medium Leather: 0/20 (item)"},
-[28628] = {"Commission for Motega Firemane",{{10428},
-[28629] = {"Commission for Grunt Zuul",nil,nil,30,30,nil,nil,{"1. Green Whelp Scale: 0/5 (item)
-     Containers/Objects:
-       - Swamp Reed at [15.6, 40.6] in Swamp of Sorrows
-       - Blindweed at [12.8, 39.6] in Swamp of Sorrows
-       - Swamp Reed at [12, 36.9] in Swamp of Sorrows
-       - Swamp Reed at [10.8, 35.6] in Swamp of Sorrows
-       - Swamp Reed at [9, 36.2] in Swamp of Sorrows
-       - Swamp Reed at [7.8, 33.3] in Swamp of Sorrows
-     Progress locations:
-       - [15.6, 40.6] in Swamp of Sorrows
-       - [12.8, 39.6] in Swamp of Sorrows
-       - [12, 36.9] in Swamp of Sorrows
-       - [10.8, 35.6] in Swamp of Sorrows
-       - [9, 36.2] in Swamp of Sorrows
-       - [7.8, 33.3] in Swamp of Sorrows"},
-[28631] = {"Commission for Tunkk",nil,nil,30,30,nil,nil,{"1. Raptor Hide: 0/5 (item)
-     Item:  (ID: 62331)
-     Containers/Objects:
-       - Raptor Hide at [50.5, 67.6] in Arathi Highlands
-     Progress locations:
-       - [50.5, 67.6] in Arathi Highlands - Looted Raptor Hide from Highland Fleshstalker
-       - [50.5, 67.6] in Arathi Highlands - Item collection from Highland Fleshstalker (ID: 2561)
-       - [50.5, 67.6] in Arathi Highlands
-       - [45.8, 76.2] in Arathi Highlands - Looted Raptor Hide from Highland Fleshstalker
-       - [47.8, 81.8] in Arathi Highlands - Looted Raptor Hide from Highland Fleshstalker
-       - [47.8, 81.8] in Arathi Highlands - Item collection from Highland Fleshstalker (ID: 2561)
-       - [47.8, 81.8] in Arathi Highlands
-       - [51.1, 64.2] in Arathi Highlands - Looted Raptor Hide from Highland Fleshstalker
-       - [51.1, 64.2] in Arathi Highlands - Item collection
-       - [51.1, 64.2] in Arathi Highlands"},
-[28632] = {"Commission for Smith Slagtree",{{14737},
-[28634] = {"Commission for Yarr Hammerstone",{{1256},
-[28644] = {"Commission for Dibi Squigglecord",{{45219},
-[28647] = {"Commission for Strumner Flintheel",{{5508},
-[28648] = {"Commission for Wilson Wobblesmith",{{46026},
-[28649] = {"Commission for Wenikee Boltbucket",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[28650] = {"Commission for McGavan",{{7794},
-[28652] = {"Commission for Trenton Lighthammer",{{7804},
-[28654] = {"Commission for Kelek Skykeeper",{{10920},
-[28657] = {"Commission for Supervisor Hink",{{3175},
-[28659] = {"Commission for Deathguard Linnea",nil,nil,5,5,nil,nil,nil,nil,{nil,nil,{{0,1},
-[28660] = {"Commission for Sebastian Meloche",{{3555},
-[28661] = {"Commission for Traugh",nil,nil,5,5,nil,nil,{"Silver Ore: 0/10"},
-[28666] = {"Commission for Grimnal",{{980},
-[28671] = {"Commission for Smith Slagtree",{{14737},
-[28675] = {"Commission for Veron Amberstill",nil,nil,10,10,nil,nil,{"1. Linen Bag: 0/2 (item)
-     Item: Linen Bag (ID: 4238)"},
-[28676] = {"Commission for Marleth Barleybrew",{{1703},
-[28681] = {"Commission for Balthule Shadowstrike",nil,nil,20,20,nil,nil,{"1. Pearl-clasped Cloak: 0/1 (item)
-     Item:  (ID: 65343)
-     Progress locations:
-       - [64.3, 21.7] in Darnassus - Item collection from Elynna (ID: 4168)"},
-[28682] = {"Commission for Archaeologist Everit",{{4185},
-[28683] = {"Commission for Mountaineer Cobbleflint",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[28684] = {"Commission for Mountaineer Haggil",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[28715] = {"Commission for Shadowmage Vivian Lagrave",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+epochQuestData = {
+[783] = {"A Threat Within",{{823}},{{197}},nil,1,nil,nil,{"Speak with Marshal McBride."},nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,7,8,0,nil,nil,nil,nil,nil,nil},
+[1288] = {"Vimes's Report",{{4944}},{{4967}},34,38,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[11160] = {"Banner of the Stonemaul",{{23579}},{{23579}},35,39,0,nil,{"Retrieve the Stonemaul Banner and bring it to Brogg at Brogg's Hollow."},nil,{nil,nil,{{33086}}},nil,nil,{11158},nil,nil,nil,15,nil,nil,nil,nil,nil,8},
+[11161] = {"The Essence of Enmity",{{23579}},{{23579}},35,39,0,nil,{"Bring 10 Black Dragonkin Essences to Brogg at Brogg's Hollow."},nil,{nil,nil,{{33087}}},33088,nil,{11158},nil,nil,nil,15},
+[9469] = {"Featherbeard's Endorsement",{{45019}},{{45030}},42,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[9475] = {"Reclaiming the Eggs",nil,{{45019}},42,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26126] = {"Springsocket Eels",{{45549}},{{45549}},32,36,nil,nil,{"Collect 10 Raw Springsocket Eels."},nil,{nil,nil,{{110001,10}}},nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26138] = {"Dark Iron Stater",nil,nil,55,60,nil,2,{"Take Dark Iron Stater to Altadena in Booty Bay"},nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26139] = {"Defias Ducat",nil,nil,55,60,nil,2,{"Take the Defias Ducat to Altadena in Booty Bay."},nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26143] = {"Kaldorei Lune",nil,nil,55,60,nil,2,{"Take the Kaldorei Lune to Altadena in Booty Bay."},nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26148] = {"Legion Paisa",nil,{{9996}},55,60,nil,nil,{"Take Legion Paisa to Altadena in Booty Bay."},nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26153] = {"Dalaran Shilling",nil,nil,55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26161] = {"Meatloaf's Task",{{45716}},{{45716}},12,15,nil,nil,{"Kill 10 Redridge Gnoll, Kill 7 Redridge Brute, Kill 3 Redridge Shaman"},nil,nil,nil,nil,nil,nil,nil,nil,44,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26166] = {"A Fatal Error",{{382}},{{382}},22,25,nil,nil,{"Kill Champion Mot, Kill Champion Wyrmak"},nil,nil,nil,nil,nil,nil,nil,nil,44,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26167] = {"Infiltrating the Black Rock",{{382}},{{382}},22,25,nil,nil,{"Kill 6 Blackrock Champion, Kill 4 Blackrock Sorcerer, Kill 5 Blackrock Warden"},nil,nil,nil,nil,nil,nil,nil,nil,44,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26168] = {"Can't Make An Omelette Without...",{{11813}},{{4782}},41,45,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26169] = {"Can't Make An Omelette Without...",{{14736}},{{14736}},41,45,nil,nil,{"Collect 12 Shadraspawn Eggs."},nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26170] = {"Clear The Shore",{{14740}},{{14740}},45,49,nil,1,{"Slay 10 Salty Shore Swimmers."},nil,{{{60527,10,"Salty Shore Swimmer"}}},nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26171] = {"A Just Reward",{{45732}},{{45731}},28,32,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26174] = {"Southshore Sympathizers",{{2711}},{{2711}},23,26,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26175] = {"Falling Up To Grace",{{47175}},{{47175}},44,48,nil,2,{"Test the parachute."},nil,{{{60525,"Parachute Tested"}}},nil,nil,nil,{26176},nil,nil,47,nil,nil,nil,nil,26176,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26177] = {"Razorbeak Friends",nil,nil,42,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26178] = {"Razorbeak Friends",nil,{{46700}},42,46,nil,2,{"Feed 7 Trained Razorbeaks."},nil,{{{2657,7,"Feed Trained Razorbeak"}}},nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26179] = {"Hinterlands Hermit",{{45746}},{{45748}},41,45,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26180] = {"Snapjaw Snacks",nil,nil,41,45,nil,1,{"Collect 12 Royal Bite Reed, Collect 8 Grouper Steak"},nil,{nil,nil,{{63085,12,"Royal Bite Reed"},{63086,8,"Grouper Steak"}}},nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26181] = {"Brother Joseph's Aid",{{382}},{{45775}},22,25,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,44,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26182] = {"Peril at the Farseer's Den",{{45774}},{{45774}},25,28,nil,nil,{"Kill 7 Blackrock Mystic, Kill 7 Blackrock Sentry"},nil,nil,nil,nil,nil,nil,nil,nil,44,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26183] = {"A Friend In Need",{{773}},{{2670}},30,34,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26184] = {"Proof of Demise",{{1422}},{{1422}},32,36,nil,nil,{"Kill Kurzen forces and collect ears"},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26185] = {"Lard's Lost Beads",{{14731}},{{14731}},45,50,nil,nil,{"Find Lard's Lost Beads."},nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26186] = {"Parts From Afar",{{45019}},{{11145}},42,46,nil,2,{"Bring the Basket of Treats to Myolor Sunderfury in Ironforge to exchange for Siege Engine Parts."},nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26187] = {"Parts From Afar",{{11145}},{{48251}},42,46,nil,nil,{"Bring the Box of Siege Engine Parts back to Chief Engineer Urul in Aerie Peak."},nil,nil,nil,nil,{26186},nil,nil,nil,47,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26188] = {"Beneath The Scarlet Grounds",{{4223}},{{4223}},36,40,nil,nil,{"Explore underground areas and defeat cultists"},nil,nil,nil,nil,nil,nil,nil,nil,139,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26190] = {"Gloomleaf Powder",{{45777}},{{45777}},46,51,nil,nil,{"Collect 8 Gloomleaf Powder from Diseased Wolves"},nil,nil,nil,nil,nil,nil,nil,nil,50,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26195] = {"Delivery for Deke Grindel",{{45784}},{{45785}},31,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26196] = {"Turtle Power",{{4782}},{{4782}},44,48,nil,2,{"Collect 10 Lean Turtle Flanks."},nil,{nil,nil,{{60550,10,"Lean Turtle Flank"}}},nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26199] = {"Horde Courier",nil,nil,44,48,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26200] = {"Balancing the Forest",nil,{{2930}},10,12,nil,2,{"Slay 5 Young Moonkin and 10 Moonkin."},nil,{{{2163,5,"Young Moonkin"},{2042,10,"Moonkin"}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26201] = {"Balancing the Forest",nil,{{3650}},12,14,nil,2,{"Moonkin Oracle slain: 3/3, Raging Moonkin slain: 10/10"},nil,{{{2164,3,"Moonkin Oracle"},{2165,10,"Raging Moonkin"}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26202] = {"The Twilight's Hammer",{{3702}},nil,14,17,nil,nil,{"Kill 8 Twilight Thugs and 8 Twilight Disciples."},nil,{{{2523,8,"Twilight Thug"},{2525,8,"Twilight Disciple"}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26203] = {"Welcome to Auberdine",{{45035}},{{45036}},9,11,nil,nil,{"Report to Quartermaster Nyana in Auberdine."},nil,nil,nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26204] = {"The Greymist Menace",nil,nil,12,15,nil,2,{"Slay 6 Greymist Seer and 6 Greymist Coastrunner."},nil,{{{2203,6,"Greymist Seer"},{2202,6,"Greymist Coastrunner"}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26205] = {"The Greymist Menace",nil,nil,15,18,nil,2,{"Slay 6 Greymist Hunters and 6 Greymist Oracles."},nil,{{{60525,6,"Greymist Hunter"},{60526,6,"Greymist Oracle"}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26208] = {"Wanted: Grizzletooth",nil,nil,15,18,nil,nil,{"Kill Grizzletooth and bring his teeth to the bounty board."},nil,{{{14270,nil}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26209] = {"Wildhammer Bones",{{5159}},{{5159}},45,50,nil,2,{"Collect 10 Wildhammer Bones."},nil,{nil,nil,{{60555,10,"Wildhammer Bones"}}},nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26210] = {"Job Opening: Guard Captain of Aerie Peak",{{5159}},{{5159}},46,51,nil,2,{"Slay 20 Vilebranch Warriors, 20 Vilebranch Shadowcasters, 20 Vilebranch Hideskinners, and 20 Vilebranch Trolls."},nil,{{{2462,20,"Vilebranch Warrior"},{2464,20,"Vilebranch Shadowcaster"},{2643,20,"Vilebranch Hideskinner"},{4465,20,"Vilebranch Troll"}}},nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26217] = {"Lost in the Lake",{{45044}},{{1938}},13,16,nil,nil,nil,nil,{nil,nil,{{60137,1},{60138,1}}},nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26218] = {"Wreck of the Kestrel",{{2140}},{{2140}},11,13,nil,nil,{"Investigate the wreck of the Kestrel."},nil,nil,nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26243] = {"Blazing Gemstone",nil,nil,48,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26245] = {"Demonfire",{{45069}},nil,49,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26266] = {"Dark Literature",nil,{{45093}},45,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26273] = {"Falling Stars",nil,nil,51,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26277] = {"Shaman of the Flame",nil,nil,49,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26279] = {"The Gooder Stuff",nil,{{9177}},52,57,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26281] = {"An Eternal Flame",nil,{{1719}},17,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26282] = {"An Old Debt",nil,{{45206}},38,42,nil,2,{"Slay Supervisor Grimgash."},nil,{{{60328,"Supervisor Grimgash"}}},nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26283] = {"Azothan Relic",{{674}},{{46261}},39,43,nil,2,{"Locate a knowledgeable Historian within Ironforge."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26284] = {"Azothan Relics",{{2916}},{{2916}},39,43,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1537,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26285] = {"Deeg's Lost Pipe",{{2488}},{{2500}},36,40,nil,2,{"Obtain Deeg's Lost Pipe."},nil,{{{45187,1,"Murklurk"}},nil,{{61920,1,"Deeg's Lost Pipe"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26286] = {"Kill the Foreman",{{2498}},{{2498}},39,43,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26287] = {"Prismatic Scales",{{2488}},{{2488}},36,40,nil,nil,{"Fish for Prismatic Scales in the waters around Grom'gol Base Camp."},nil,{nil,nil,{{62115,"Prismatic Scales"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26288] = {"Reclaiming Tools",nil,{{45787}},39,43,nil,2,{"Collect 20 Recovered Tools."},nil,{nil,nil,{{13136,20,"Recovered Tools"}}},nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26289] = {"Renegade Naga",nil,{{674}},38,42,nil,3,{"Slay 8 Tidewater Oracles.","Slay 8 Tidewater Warriors.","Slay Gnash."},nil,{{{4711,8,"Tidewater Oracle"},{4712,8,"Tidewater Warrior"},{4713,1,"Gnash"}}},nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
+[26290] = {"Troll Relic",{{2488}},nil,39,43,nil,nil,{"Locate a knowledgeable Lorespeaker within Orgrimmar."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26291] = {"Troll Relics",nil,{{45207}},39,43,nil,nil,{"Collect 8 Troll Idols from around Stranglethorn Vale."},nil,{nil,nil,{{4426,8,"Troll Idol"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26292] = {"Tunnel Monster",nil,nil,36,40,nil,nil,{"Slay the monster in the tunnel."},nil,{{{60461,"Monster slain"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26293] = {"Fit For A King",{{46704}},{{46704}},41,45,nil,2,{"Collect 16 Walker Branches."},nil,{{{7584,16,"Walker Branch"}},nil,{{61936,16,"Walker Branch"}}},nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26294] = {"Fit For A King",nil,{{45211}},41,45,nil,nil,{"Collect 8 Wetland Hemp."},nil,{[61937]={8,nil,{[357]={{50.6,46.2},{51.1,45},{78.6,48.2},{79.2,48.9},{73.7,48.5},{77.4,48.8},{77.5,43.8},{74.9,40.4}}}}},nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26295] = {"Fit For A King",{{45211}},{{45211}},41,45,nil,1,{"Collect 20 Vial of Beast Blood"},nil,{nil,nil,{{63087,20,"Vial of Beast Blood"}}},nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26296] = {"Fit For A King",{{45211}},{{45211}},41,45,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26297] = {"Fit For A King",nil,{{45211}},43,47,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26298] = {"Fit For A King",{{45211}},{{45211}},43,47,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26299] = {"Fit For A King",nil,{{45211}},43,47,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26300] = {"Fit For A King",{{45211}},{{45211}},43,47,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26302] = {"The Source Of Corruption",nil,{{45221}},46,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26303] = {"Attunement to the Core",{{14387}},{{13278}},55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,25,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26304] = {"Attunement to the Core",{{13278}},nil,55,60,nil,nil,{"Collect Firebloom, Elemental Fire, Elemental Water, and Wintersbite."},nil,{nil,nil,{{4625,1,"Firebloom"},{7068,1,"Elemental Fire"},{7070,1,"Elemental Water"},{3819,1,"Wintersbite"}}},nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26305] = {"Attunement to the Core",nil,nil,55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,25,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26308] = {"Trial of the Willing",nil,{{11864}},17,20,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,406,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26310] = {"Trial of the Willing",nil,nil,22,25,nil,1,{"Slay Deor Levo, Reagle the Blessed, and Justicar Masule."},nil,{{{60562,1,"Deor Levo"},{60563,1,"Reagle the Blessed"},{60564,1,"Justicar Masule"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26311] = {"Materials of the Light",nil,{{7792}},18,21,nil,1,{"Deliver the letter and payment to Aturk the Anvil in Orgrimmar."},nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26312] = {"Materials of the Light",nil,nil,19,22,nil,nil,{"Collect Corrupted Kor Gem, Springvale's Blessed Ingots, Zelemar's Hammer, and Silver Hand Medallion."},nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26317] = {"Atal'ai Tablets",nil,{{45285}},44,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26318] = {"Invocation of The Blood God",nil,nil,41,45,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26321] = {"An Unfinished Task",nil,{{7572}},55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26323] = {"An Unfinished Task",nil,{{9298}},55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,nil,2,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26332] = {"[Epoch] Quest 26332",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26341] = {"The Possible Fall of Baradin Hold",nil,{{11936}},55,60,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,28,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26362] = {"Call to Skirmish: Stonetalon Mountains",nil,nil,32,36,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,406,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26364] = {"Call to Skirmish: Ashenvale",nil,nil,21,24,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26366] = {"Call to Skirmish: Hillsbrad Foothills",nil,nil,19,22,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26368] = {"Call to Skirmish: Thousand Needles",nil,nil,31,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26370] = {"Call to Skirmish: Alterac Mountains",nil,nil,31,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26372] = {"Call to Skirmish: Desolace",nil,nil,31,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26374] = {"Call to Skirmish: Arathi Highlands",{{12920}},{{12920}},33,37,nil,nil,{"Kill 5 Alliance."},nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26376] = {"Call to Skirmish: Swamp of Sorrows",{{9019}},{{9019}},34,38,nil,nil,{"Kill 5 Alliance."},nil,nil,nil,nil,nil,nil,nil,nil,8,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26377] = {"Call to Skirmish: Badlands",nil,nil,39,43,nil,nil,{"Kill 5 Horde."},nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26378] = {"Call to Skirmish: Badlands",nil,nil,42,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26381] = {"Call to Skirmish: Stranglethorn Vale",nil,nil,39,43,nil,nil,{"Kill 5 Horde."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26382] = {"Call to Skirmish: Stranglethorn Vale",nil,nil,36,40,nil,3,{"Report to the battleground for Stranglethorn Vale skirmish."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
+[26383] = {"Call to Skirmish: Tanaris",{{7823}},{{7823}},38,42,nil,nil,{"Kill 5 Horde."},nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26384] = {"Call to Skirmish: Tanaris",{{46226}},{{46226}},41,45,nil,1,{"Kill 5 Alliance."},nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26410] = {"Taming the Beast",{{45475}},nil,8,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26414] = {"Tattered Letter",{{197}},{{45479}},nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26453] = {"Our Bodies Forsaken",{{45242}},nil,10,12,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26455] = {"Seeking Redemption",nil,nil,nil,1,nil,nil,{"[Needs data collection]"},nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26457] = {"Our Bodies Forsaken",nil,{{45885}},11,13,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26458] = {"Our Bodies Forsaken",nil,{{45242}},11,13,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26461] = {"Our Bodies Forsaken",nil,nil,nil,1,nil,nil,{"[Needs data collection]"},nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26472] = {"In Favor of the Sun",{{45512}},{{45513}},nil,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26478] = {"Deep Earth Rune",{{658}},{{658}},nil,1,nil,nil,{"Obtain a Deep Earth Rune."},nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26484] = {"Call of Fire",{{45519}},nil,8,10,nil,2,{"Bring the Torch of the Dormant Flame to Juldugs Firetale in Loch Modan."},nil,nil,nil,nil,nil,{26485},nil,nil,1,nil,nil,nil,nil,26485,2,0,nil,nil,nil,nil,nil,nil},
+[26485] = {"Call of Fire",{{45520}},{{45520}},9,11,nil,2,{"Obtain Fire Tar from Stonesplinter Scout and Reagent Pouch from Dark Iron Spy."},nil,{{{1162,"Stonesplinter Scout"},{1169,"Dark Iron Spy"}},nil,{{5026,"Fire Tar"},{6652,"Reagent Pouch"}}},nil,nil,{26484},{26486},nil,nil,38,nil,nil,nil,nil,26486,2,0,26484,nil,nil,nil,nil,nil},
+[26499] = {"Magical Materiel",{{2543}},nil,31,35,nil,nil,{"Collect 30 Magic Materiel."},nil,{nil,nil,{{62503,30,"Magic Materiel"}}},nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26502] = {"Rare Books",{{2277}},{{2277}},38,42,nil,2,{"Collect Tales from Tel'Abim, Collect Night Stars By Longitude"},nil,{nil,nil,{{63090,1,"Tales from Tel'Abim"},{63091,1,"Night Stars By Longitude"}}},nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26504] = {"Syndicate Documents",{{2276}},{{2228}},29,33,nil,2,{"Collect Syndicate documents and deliver them to Lieutenant Farren Orinelle."},nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26505] = {"Letter to Ravenholdt",{{2276}},{{2439}},32,36,nil,2,{"Take the letter from Magistrate Henry Maleb to Lord Jorach Ravenholdt at Ravenholdt Manor in the Alterac Mountains."},nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26506] = {"The Strahnbrad Courier",nil,{{6768}},32,36,nil,2,{"Collect the Coded Syndicate Documents."},nil,{nil,nil,{{62300,1,"Coded Syndicate Documents"}}},nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26509] = {"Suspicious Activity in the Uplands",nil,{{6768}},34,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26511] = {"The Perenolde Legacy",{{2317}},{{6768}},34,38,nil,nil,{"Report the news of Aliden Perenolde's death and Elysa's request to search for General Hath to Lord Ravenholdt."},nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26512] = {"The Perenolde Legacy",nil,{{2378}},34,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26513] = {"The Perenolde Legacy",nil,{{10782}},34,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26516] = {"Dark Council",{{2276}},nil,36,40,nil,nil,{"Take the Argus Spellbook to Lord Jorach Ravenholdt at Ravenholdt Manor in Alterac Mountains."},nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26517] = {"Dark Council",nil,{{6768}},36,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26518] = {"The Ensorcelled Parchment",nil,nil,36,40,nil,nil,{"Find the Ensorcelled Parchment."},nil,{nil,nil,{{62310,1,"Ensorcelled Parchment"}}},nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26519] = {"Felicity's Deciphering",{{6768}},{{45526}},36,40,nil,nil,{"Take the Ensorcelled Parchment to Felicity for deciphering."},nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26520] = {"[Epoch] Quest 26520",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26521] = {"The Argus Wake",nil,{{2317}},36,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26522] = {"The Argus Wake",{{2391}},{{2391}},36,40,nil,nil,{"Recover 6 Argus Moonstones from Dun Garok."},nil,{nil,nil,{{45825,6}}},nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26523] = {"The Ensorcelled Parchment",nil,nil,36,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26524] = {"To Ravenholdt Manor",nil,{{3544}},36,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26526] = {"The Bloodstone Devices",{{2934}},{{2934}},36,40,nil,nil,{"Use the Dalaran Status Report to summon the Dalaran Archmage at the Dalaran Crater. Slay the Archmage and recover the Bloodstone Device. Return to Keeper Bel'varil."},nil,{nil,nil,{{45827,1}}},nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26527] = {"The Bloodstone Devices",{{45526}},{{45526}},36,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26528] = {"All Signs Point to Desolace",nil,{{45527}},36,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26529] = {"The Argus Wake",{{45527}},{{45527}},38,42,nil,nil,{"Felicity Perenolde wants you to acquire 10 Pinches of Bone Marrow from the skeletons in the Kodo Graveyard."},nil,{nil,nil,{{62691,nil}}},nil,nil,nil,{26530},nil,nil,405,nil,nil,nil,nil,26530,8,0,nil,nil,nil,nil,nil,nil},
+[26530] = {"The Argus Wake in Desolace",nil,{{45527}},38,42,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26531] = {"The Argus Wake in Desolace",{{45527}},{{45527}},38,42,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26532] = {"The Argus Wake",{{45528}},{{45528}},40,44,nil,nil,{"Felicity Perenolde wants you to interrogate Zala'thria."},nil,{{{45530,"Zala'thria interrogated"}}},nil,nil,{26531},{26533},nil,nil,405,nil,nil,nil,nil,26533,8,0,26531,nil,nil,nil,nil,nil},
+[26533] = {"The End of the Argus Wake",{{45528}},{{45539}},40,44,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26537] = {"The Mordis Key",nil,{{2278}},36,40,nil,nil,{"Deliver the Mordis Key to Melisara."},nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26538] = {"The Barony Mordis",{{2378}},{{2378}},40,40,nil,nil,{"Baron Valimar Mordis slain"},nil,{{{45543,1,"Baron Valimar Mordis"}}},nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26539] = {"The Barony Mordis",nil,nil,36,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26540] = {"Threats from Abroad",{{45546}},{{6579}},28,32,nil,2,{"Slay 10 Murloc Lake Hunters and 8 Murloc Lake Oracles."},nil,{{{45544,10,"Murloc Lake Hunter slain"},{45545,8,"Murloc Lake Oracle slain"}}},nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26541] = {"Threats from Abroad",nil,nil,28,32,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26542] = {"A Rare Variety",{{2364}},{{2364}},31,35,nil,nil,{"Collect 6 rare specimens."},nil,{nil,nil,{{11630}}},nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26543] = {"Watermelon Punch",{{2364}},nil,36,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26544] = {"Who Likes Apples?",{{3544}},{{3544}},31,35,nil,1,{"Collect 6 Wintercrisp Apple Seeds."},nil,{nil,nil,{{62329,6,"Wintercrisp Apple Seeds"}}},nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26545] = {"Who Likes Watermelons?",{{2388}},{{2388}},36,40,nil,nil,{"Find and capture the infamous Goobis McChow using the watermelon lure provided by Derak Nightfall. Found alive or dead. Bring him to the Magistrate's chair."},nil,{nil,{{45859,1}},nil},nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26547] = {"To The Hills",nil,nil,33,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26548] = {"Cooling Waters",{{45548}},{{45548}},33,37,nil,2,{"Collect 8 Cooled Aqual Essence."},nil,{nil,nil,{{62330,8,"Cooled Aqual Essence"}}},nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26549] = {"A Painful Dousing",{{45548}},{{45548}},33,37,nil,2,{"Collect 8 Raging Bindings."},nil,{{{45552,"Raging Cinders"}},nil,{{62332,8,"Raging Bindings"}}},nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26550] = {"An Audience With Water",{{45548}},{{45547}},33,37,nil,2,{"Seek an audience with Aquamentus."},nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26551] = {"Close The Vents",{{45547}},{{45547}},33,37,nil,2,{"Close 8 Steam Vents."},nil,{nil,{{4001061,8,"Steam Vents closed"}}},nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26554] = {"Assistance Of Air",{{45555}},{{45547}},33,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26555] = {"Cooling The Fury",nil,{{45547}},33,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26558] = {"The Rumbling Fields",nil,{{45564}},34,38,nil,2,{"Slay 7 Frantic Earth and 7 Rambling Earth."},nil,{{{45565,7,"Frantic Earth"},{45566,7,"Rambling Earth"}}},nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26560] = {"When Life Gives You... Berries?",nil,{{45564}},34,38,nil,2,{"Collect 8 Bushel of Shadowberry."},nil,{nil,nil,{{62338,8,"Bushel of Shadowberry"}}},nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26569] = {"Unusual Rations",nil,{{2818}},33,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26570] = {"Waterlogged Journal",nil,nil,nil,1,nil,nil,{"[Needs data collection]"},nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26575] = {"The Dark Shamans",nil,nil,35,39,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26576] = {"The Dark Shamans",nil,{{45548}},35,39,nil,2,{"Collect Drezco's Head and Enwi's Head."},nil,{nil,nil,{{62354,1,"Drezco's Head"},{62355,1,"Enwi's Head"}}},nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26577] = {"[Epoch] Quest 26577",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26579] = {"A Fine Potion",{{45592}},{{2920}},36,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26580] = {"A Lost Treasure",nil,{{2888}},33,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26582] = {"Amulet Shakedown",{{45206}},{{2860}},39,43,nil,2,{"Collect 10 Dustbelcher Amulets."},nil,{nil,nil,{{62365,10,"Dustbelcher Amulet"}}},nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26585] = {"Ore for Gapple",nil,{{45598}},37,41,nil,1,{"Collect 8 Case of Mithril."},nil,{nil,nil,{{62369,8,"Case of Mithril"}}},nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26586] = {"Primitive Relic",nil,{{45598}},36,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26587] = {"Primitive Relic",nil,{{9078}},36,40,nil,1,{"Take the Primitive Relic to the dwarves near Hammertoe's Digsite."},nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26588] = {"Trapped Miners",{{45601}},{{45601}},36,40,nil,nil,{"Free the trapped miners."},nil,nil,nil,nil,nil,{26589},nil,nil,3,nil,nil,nil,nil,26589,2,0,nil,nil,nil,nil,nil,nil},
+[26591] = {"The Strange Ore",{{45601}},{{45601}},38,42,nil,nil,{"Investigate the Strange Ore."},nil,nil,nil,nil,{26590},{26592},nil,nil,3,nil,nil,nil,nil,26592,2,0,26590,nil,nil,nil,nil,nil},
+[26592] = {"The Strange Ore",{{46326}},{{46327}},38,42,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26593] = {"The Indurium Matrix",{{45600}},{{7172}},41,45,nil,1,{"Obtain the Indurium Matrix."},nil,{nil,nil,{{62373,"Indurium Matrix"}}},nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26594] = {"[Epoch] Quest 26594",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26597] = {"An Old Man's Request",{{7740}},{{7740}},23,26,nil,nil,{"Bring the head of Klaven Mortwake to Old Man Thistle in Darnassus."},nil,{{{7053,nil}},nil,{{30832,nil,"Klaven Mortwake's Head"}}},nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26598] = {"Collecting on Debt",{{8178}},nil,47,52,nil,nil,{"Collect Twisted Staff, Elaborate Timepiece, and Magic Drum."},nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26599] = {"Feeding the Troops",{{5393}},nil,45,50,nil,nil,{"Collect 10 Sulfurous Meat."},nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26600] = {"Alchemy is the Answer",{{5393}},nil,45,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26601] = {"The Clay Cleanse",nil,nil,45,50,nil,nil,{"Collect 7 Red Clay."},nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26602] = {"Ready for Distribution",nil,nil,45,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26603] = {"Scout Morgria",{{46344}},{{46345}},45,50,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26611] = {"Rest for the Wicked",nil,nil,48,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26614] = {"Gathering Intelligence",{{5385}},nil,46,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26615] = {"The Bigger Picture",{{5385}},nil,48,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26616] = {"Eyes of Our Own",{{5385}},nil,48,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26617] = {"Felstone Mines",nil,nil,47,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,28,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26618] = {"Parched and Parcel",{{45613}},nil,47,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26619] = {"It Ain't the Worst",nil,nil,47,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26621] = {"Resurgent Evil",nil,nil,48,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26622] = {"Sunken Treasure",nil,nil,47,52,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26626] = {"An Unlikely Ally",{{8022}},nil,45,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26628] = {"The Foundation Crumbles",nil,nil,46,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26629] = {"True Believers",nil,nil,46,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26630] = {"The Sting of Betrayal",nil,nil,47,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26631] = {"The Thorn in My Side",nil,nil,47,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26632] = {"Glyph of the Warlord",nil,nil,48,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26633] = {"Arming Ashfall",nil,nil,48,53,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26636] = {"Hitting Where it Hurts",nil,nil,52,57,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26639] = {"Assistance Required",{{46100}},nil,48,53,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26641] = {"Called Forth",{{45647}},nil,50,55,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26645] = {"Meeran's Escape",{{45645}},{{45644}},47,52,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26662] = {"The Ironforge Airfield",{{1572}},{{45670}},14,17,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26663] = {"The Ironforge Airfield",{{1573}},{{45670}},14,17,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26664] = {"Assisting Nonere",{{45673}},{{45676}},14,17,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26665] = {"Assisting Nonere",nil,{{45676}},14,17,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26666] = {"Assisting Topsy",{{45676}},{{45676}},14,17,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26670] = {"The Ironforge Airfield",nil,nil,14,17,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1537,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26676] = {"A Lost Brother...",{{1273}},{{1376}},7,9,nil,2,{"Find Beldin Steelgrill and report about the lost brother."},nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26679] = {"Keeping Us Warm",nil,{{1247}},5,7,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26680] = {"Lost Rams",{{1261}},{{1261}},7,9,nil,nil,{"Return 3 lost rams to Amberstill Ranch."},nil,{{{60001,3,"Rams returned to Amberstill Ranch"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26684] = {"Ram Riding",{{4772}},nil,36,40,nil,nil,{"Learn Apprentice Riding from Ultham Ironhorn."},nil,{{{60002,"Apprentice Riding Learned"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26687] = {"Ore for Grumnal",{{1360}},{{1360}},8,10,nil,nil,{"Collect 10 Kinetic Ore."},nil,{nil,nil,{{62201,10,"Kinetic Ore"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26689] = {"Barroom Blitz",{{240}},{{261}},10,12,nil,2,{"Deal with the barroom troublemakers."},nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26691] = {"Barroom Blitz",{{253}},{{45704}},10,12,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26692] = {"Barroom Blitz",nil,{{45713}},10,12,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26693] = {"Barroom Blitz",{{45713}},{{45715}},10,12,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26694] = {"Barroom Blitz",nil,{{240}},10,12,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26696] = {"Hand of Azora",nil,{{45700}},11,13,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26697] = {"Hand of Azora",{{45700}},nil,11,13,nil,2,{"Collect Defias Notes I, III, and IV."},nil,{nil,nil,{{62957,"Defias Notes - I"},{62958,"Defias Notes - III"},{62959,"Defias Notes - IV"}}},nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26698] = {"Hand of Azora",{{45700}},{{45702}},11,13,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26700] = {"Hand of Azora",{{46800}},{{6171}},12,14,nil,2,{"Using the Defias Clues, locate Tannos in Westfall."},nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26701] = {"Hand of Azora",nil,nil,12,15,nil,2,{"Clear the Gold Coast Quarry."},nil,nil,nil,nil,nil,{26702},nil,nil,40,nil,nil,nil,nil,26702,2,0,nil,nil,nil,nil,nil,nil},
+[26702] = {"Hand of Azora",nil,{{313}},12,15,nil,2,{"Return to Theocritus at Tower of Azora."},nil,nil,nil,nil,{26701},{26703},nil,nil,40,nil,nil,nil,nil,26703,2,0,26701,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26705] = {"Riders In The Night",nil,nil,25,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26706] = {"Riders In The Night",nil,{{45301}},25,28,nil,2,{"Investigate Manor Mistmantle."},nil,nil,nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26707] = {"Riders In The Night",nil,{{264}},25,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26710] = {"Riders In The Night",nil,{{264}},27,31,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26711] = {"Life In Death",{{45731}},{{273}},22,25,nil,nil,{"Collect 8 Brightwood Bloom."},nil,{nil,nil,{{62530,nil}}},nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26712] = {"Life In Death",nil,{{45731}},22,25,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26713] = {"Life In Death",{{45731}},{{45731}},22,25,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26714] = {"The Handmaiden's Fall",nil,{{2112}},25,28,nil,nil,nil,nil,nil,nil,nil,nil,{26715},nil,nil,10,nil,nil,nil,nil,26715,8,0,nil,nil,nil,nil,nil,nil},
+[26715] = {"The Handmaiden's Fall",{{2112}},{{2112}},25,28,nil,nil,{"Collect Stolen Fresh Bread and a Cask of Brightwood White."},nil,{nil,{{187600,nil,"Leftover Bread"},{187601,nil,"Cask of Brightwood White"}},{{62535,nil,"Stolen Fresh Bread"},{62536,nil,"Cask of Brightwood White"}}},nil,nil,{26714},nil,nil,nil,10,nil,nil,nil,nil,nil,8,0,26714,nil,nil,nil,nil,nil},
+[26716] = {"The Handmaiden's Fall",nil,{{2112}},25,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26717] = {"The Handmaiden's Fall",nil,{{2112}},25,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26718] = {"Until Death Do Us Part",nil,nil,nil,1,nil,nil,{"[Needs data collection]"},nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26719] = {"Until Death Do Us Part",{{45734}},nil,18,21,nil,nil,{"Obtain a Red Rose."},nil,{nil,nil,{{3419,"Red Rose"}}},nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26723] = {"Wanted: Plagued Shambler",nil,nil,26,30,nil,nil,{"Slay the Plagued Shambler."},nil,{{{45751,"Plagued Shambler"}}},nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26738] = {"Memories of Eastweald",{{45749}},{{45749}},52,57,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26744] = {"Open for Business",{{12384}},{{11063}},50,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26764] = {"We Have the Technology",{{45769}},nil,50,55,nil,nil,{"Use Engineer Flikswitch's technology."},nil,nil,nil,nil,nil,nil,nil,nil,139,nil,nil,nil,nil,nil,nil,2,nil,nil,nil,nil,nil,nil},
+[26766] = {"The Warging Way",{{46292}},{{46292}},53,58,nil,nil,{"Kill 15 Worgen Infiltrators."},nil,{{{46374,nil}}},nil,nil,nil,nil,nil,nil,1497,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26767] = {"Like Fish In A Barrel",{{46292}},{{46292}},53,58,nil,nil,{"Kill Howling Keena, Gnash, and Rogan Thunderhorn."},nil,{{{46375,nil},{46376,nil},{46377,nil}}},nil,nil,nil,nil,nil,nil,1497,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26768] = {"Barrel Down",{{46292}},{{46292}},53,58,nil,nil,{"Destroy the Worgen explosives."},nil,{nil,{{187980,nil},{187981,nil},{187982,nil}}},nil,nil,nil,nil,nil,nil,1497,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26769] = {"Gnarlier Than Thou",{{46292}},{{46292}},54,59,nil,nil,{"Slay the Old Gnarled Root."},nil,{{{46379,nil}}},nil,nil,nil,nil,nil,nil,1497,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26770] = {"Just Desserts",{{45773}},{{313}},6,8,nil,nil,{"Present Sarah's cake to Theocritus."},nil,nil,nil,nil,{28904},nil,nil,nil,12,nil,nil,nil,nil,nil,8,0,28904,nil,nil,nil,nil,nil},
+[26771] = {"The High Isle of Fel High Elves",{{46293}},{{46293}},55,60,nil,nil,{"Kill 15 Fel High Elves and collect 5 books: Book of Lost Souls, Book of Dark Magic, Book of Forbidden Knowledge, Book of Elven Torture, and Book of Deadly Poisons."},nil,{{{46381,nil},{46382,nil},{46383,nil},{46384,nil},{46385,nil},{46386,nil}},nil,{{62836,nil},{62837,nil},{62838,nil},{62839,nil},{62840,nil}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26772] = {"Necromancy and You",{{46294}},{{46294}},55,60,nil,nil,{"Kill 15 Undead and the Necromancer Overlord in the cave on High Isle."},nil,{{{46387,nil},{46388,nil},{46389,nil},{46390,nil}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26773] = {"[Epoch] Quest 26773",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26774] = {"Spider Elixir",{{45775}},{{45775}},7,9,nil,nil,{"Free 4 Webbed Miners and collect 4 Mine Spider Mandibles."},nil,{{{60801,4,"Webbed Miners freed"}},nil,{{62825,"Mine Spider Mandible",4}}},nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26775] = {"Tend to the Wounded",{{45775}},{{45775}},8,10,nil,nil,{"Cure 5 Poisoned Miners."},nil,{{{60800,5,"Poisoned Miners cured"}}},nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26776] = {"Swiftpaw",{{11940}},{{11940}},4,6,77,nil,{"Bring Swiftpaw's Snout to Merissa Stilwell outside Northshire Abbey."},nil,{nil,nil,{{60388,nil}}},nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26777] = {"The Soaked Barrel",nil,{{9296}},1,1,77,nil,{"Find the source of the barrel via 12 Red Burlap Bandana discoveries."},nil,nil,nil,nil,nil,{26778},nil,nil,12,nil,nil,nil,nil,26778,8,0,nil,nil,nil,nil,nil,nil},
+[26778] = {"Find the Brother",{{9296}},{{9296}},nil,1,nil,nil,{"Find Brother Wilhelm."},nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26779] = {"A Brother's Disgust",{{952}},{{952}},3,5,nil,nil,{"Report Brother Paxton's disgust."},nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26780] = {"A Mage's Advice",{{6778}},{{295}},3,5,nil,2,{"Seek the mage's advice in Goldshire."},nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26781] = {"Linus Stone Tips",{{45779}},{{253}},4,6,nil,nil,{"Deliver the Stone Tips to William Pestle."},nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26782] = {"Brewing Brethren",{{328}},{{45783}},4,6,nil,2,{"Reach the top of Northshire Falls."},nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26784] = {"Mountainstout Ale",{{45780}},{{45780}},4,6,nil,nil,{"Collect 6 Glistening Falls Water and 6 Northshire Reed."},nil,{nil,nil,{{62607,6,"Glistening Falls Water"},{62608,6,"Northshire Reed"}}},nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26785] = {"A Friend Indeed",{{45782}},{{45782}},4,6,nil,nil,{"Help Dromul's friend with their task."},nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26794] = {"Wanted: Big Blue",{nil,{45797}},nil,6,8,nil,2,{"Obtain Big Blue's Wing."},nil,{nil,nil,{{62619,1,"Big Blue's Wing"}}},nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26795] = {"A Lost Warrior",nil,{{6446}},21,24,nil,1,{"Find the lost warrior."},nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26797] = {"A Lost Warrior",{{45799}},{{2229}},21,24,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26798] = {"A Scout in Need",nil,{{2382}},21,24,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26799] = {"A Scout in Need",{{45800}},{{2263}},21,24,nil,2,{"Report to Marshal Redpath in Southshore."},nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26801] = {"A Scout in Need",{{45449}},{{2380}},21,24,nil,2,{"Rescue Scout Vernado."},nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26802] = {"Venom Medicine",{{2363}},{{2363}},20,23,nil,nil,{"Collect 8 Venom Sacs."},nil,{nil,nil,{{11630}}},nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26806] = {"Defense of Southshore",{{45800}},{{45800}},19,22,nil,2,{"Collect Emily's Report, Paxton's Report, and Tristan's Report."},nil,{nil,nil,{{62596,1,"Emily's Report"},{62597,1,"Paxton's Report"},{62598,1,"Tristan's Report"}}},nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26817] = {"Justice Left Undone",nil,{{2378}},30,34,nil,nil,{"Kill Grandpa Vishas in Alterac Mountains."},nil,{{{3985,"Grandpa Vishas"}}},nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26822] = {"Hillsbrad Assault",nil,nil,26,29,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26823] = {"Hillsbrad Defense",nil,nil,26,29,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26831] = {"Syndicate Plans",nil,nil,23,26,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26838] = {"A Proper Sendoff",nil,{{1682}},12,14,nil,2,{"Bury Bhondur's bones."},nil,nil,nil,nil,nil,nil,nil,nil,38,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26839] = {"Horde Report",nil,{{1340}},15,18,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26841] = {"Lost Artifacts",{{1214}},{{1214}},15,18,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26844] = {"The Strange Idol",nil,{{1356}},15,18,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26847] = {"Ardo's Dirtpaw",{{45825}},{{903}},21,24,nil,nil,{"Retrieve Ardo's Dirtpaw and bring it to Guard Howe."},nil,{nil,nil,{{62679,"Ardo's Dirtpaw"}}},nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26849] = {"Gnoll Patrol",{{2697}},{{2697}},21,24,nil,nil,{"Slay 7 Shadowhide Brutes and 7 Shadowhide Warriors."},nil,{{{568,7,"Shadowhide Warrior"},{46153,7,"Shadowhide Brute"}}},nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26851] = {"Intel on Morganth",nil,{{344}},16,19,nil,2,{"Deliver note to Magistrate Solomon."},nil,nil,nil,nil,nil,nil,nil,nil,49,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26852] = {"Scouring the Desert",{{45964}},{{45964}},41,45,nil,nil,{"Clear the Ogre areas and retrieve the Crown of Kradel"},nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26854] = {"Twilight Tactics",{{46559}},{{46559}},41,45,nil,nil,{"Kill Twilight forces and gather plans"},nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26855] = {"The Brothers Blighthammer",{{46560}},{{46560}},40,44,nil,nil,{"Rescue brother from Dark Iron captors"},nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26856] = {"Twilight Tactics",nil,nil,nil,1,nil,nil,{"[Needs data collection]"},nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26857] = {"Thorium Point Politics",{{46562}},{{14625}},42,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26858] = {"The Thorium Brotherhood",{{45827}},{{14634}},40,44,nil,nil,{"Collect 10 Firebloom from Searing Gorge and bring them to Lookout Captain Lolo Longstriker."},nil,{nil,nil,{{4625,10}}},nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26859] = {"Return to Thorium Point",{{14625}},{{46562}},42,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26860] = {"The Grimesilt Digsite",{{46563}},{{46563}},40,44,nil,nil,{"Complex excavation with multiple containers"},nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26861] = {"The Fate of the Earthfurrow Clan",{{46564}},{{46564}},40,44,nil,nil,{"Investigate the clan's disappearance"},nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26862] = {"Lost for Ages",{{46565}},{{46565}},40,44,nil,nil,{"Recover stolen relics from Dark Iron dwarves"},nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26863] = {"Our Only Option",{{46561}},{{46561}},40,44,nil,nil,{"Destroy Dark Iron supplies"},nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26864] = {"Do Slavers Keep Records?",nil,{{45833}},42,46,nil,nil,{"Collect Slaver's Records from Dark Iron Taskmasters and bring them to Bhurind Stoutforge."},nil,{nil,nil,{{63195,1}}},nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26867] = {"A Suspicious Delivery",{{46570}},{{46570}},40,44,nil,nil,{"Investigate suspicious shipments"},nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26868] = {"Grampy Stoutforge",{{14624}},{{45834}},42,46,nil,nil,{"Speak with Grampy Stoutforge in Searing Gorge."},nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26872] = {"Urgent Delivery",nil,nil,12,15,nil,nil,{"Deliver the urgent package."},nil,nil,nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26873] = {"The Missing Initiate",nil,{{2121}},15,18,nil,nil,{"Find the missing initiate and report back to Shadow Priest Allister."},nil,nil,nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26874] = {"Supply Run",nil,nil,13,16,nil,nil,{"Complete the supply run."},nil,nil,nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26875] = {"The Missing Initiate",{{45840}},{{45841}},15,18,nil,nil,{"Find Sage Greenhorn in Silverpine Forest."},nil,nil,nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26876] = {"Tomes of Interest",nil,nil,15,18,nil,nil,{"Collect 5 Old Tomes from the area."},nil,{nil,nil,{{62718,5,"Old Tome"}}},nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26877] = {"Tomes of Interest",{{45841}},{{45841}},15,18,nil,nil,{"Slay 4 Sickly Refugees and collect 5 Gilnean Tomes."},nil,{nil,nil,{{62727,"Gilnean Tome",5}}},nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26879] = {"Swifthoof's Message",{{11748}},{{2519}},30,34,nil,nil,{"Take Samantha Swifthoof's Message to Kin'weelay at Grom'gol in Stranglethorn Vale."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26880] = {"A Salve for Samantha",nil,nil,30,34,nil,nil,{"Create a salve for Samantha's wounds."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26883] = {"A Salve for Samantha",nil,{{11748}},30,34,nil,nil,{"Take the Finished Salve to Samantha Swifthoof, who wanders the main road through Stranglethorn Vale."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26884] = {"Looting the Looters",{{45844}},nil,32,36,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26885] = {"My Friend, The Skullsplitter",{{45846}},nil,32,36,nil,nil,{"Speak with Thu'tek and return his Spirit Charm to Nimboya."},nil,nil,nil,nil,nil,{26886},nil,nil,33,nil,nil,nil,nil,26886,8,0,nil,nil,nil,nil,nil,nil},
+[26886] = {"My Friend, The Skullsplitter",{{45845}},{{45845}},36,36,nil,nil,{"Return to Lorespeaker Itzli at Grom'gol with Thu'tek's Spirit Charm."},nil,nil,nil,nil,{26885},nil,nil,nil,33,nil,nil,nil,nil,nil,8,0,26885,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26887] = {"My Friend, The Skullsplitter",nil,nil,32,36,nil,nil,{"Complete the Skullsplitter ritual."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26888] = {"My Friend, The Skullsplitter",{{48195}},nil,32,36,nil,1,{"Collect Blood Brazier from the ritual site."},nil,{nil,nil,{{62744,1,"Blood Brazier"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26889] = {"My Friend, The Skullsplitter",{{45846}},{{46738}},32,36,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26890] = {"My Friend, The Skullsplitter",nil,nil,32,36,nil,nil,{"Complete the ritual with Mezzphog."},nil,{{{60459,"Ritual Completed"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26891] = {"Pilfering the Reef",nil,nil,35,39,nil,nil,{"Pilfer treasures from the reef."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26892] = {"Beastial Allies",nil,{{7853}},37,41,nil,1,{"Slay 8 Mistvale Poachers","Loot Requisition Orders"},nil,{{{45851,8}},nil,{{62749,1,"Requisition Orders"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26893] = {"Revantusk Voodoo",nil,nil,45,50,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26895] = {"The Ring of Strength: Brokenhorn",nil,nil,39,43,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26896] = {"The Ring of Strength: The Twins",nil,nil,39,43,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26897] = {"The Ring of Strength: Stonegaze",{{45857}},nil,39,43,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26898] = {"The Ring of Strength: Winston",nil,nil,39,43,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26899] = {"The Ring of Strength: Dekked",{{45857}},nil,39,43,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26900] = {"The Ring of Strength: Warlord Rhurg",nil,nil,39,43,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26901] = {"Shark Fin Stew",nil,{{2464}},32,36,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26902] = {"Stop The Shrinking",nil,{{2700}},31,35,nil,nil,{"Adventurers Freed: 0/8"},nil,{nil,nil,nil,nil,nil,{{1,"Adventurers Freed",8}}},nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26903] = {"Ironband's Excavation",{{1356}},{{1345}},6,8,nil,nil,{"Report to Magmar Fellhew."},nil,nil,nil,nil,nil,nil,nil,nil,38,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26904] = {"The Janky Helmet",{{48086}},{{9317}},38,42,nil,nil,{"Experiment on 10 Elder Mistvale Gorillas and bring the Janky Helmet to Scooty in Booty Bay."},nil,{{{1557,10,"Elder Mistvale Gorilla experimented on"}},nil,{{63212,"The Janky Helmet"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26905] = {"The Janky Helmet",{{9317}},{{48086}},38,42,nil,nil,{"Bring the Janky Helmet to the Venture Co. Tinkerer."},nil,{nil,nil,{{63212,"The Janky Helmet"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26906] = {"The Tablet of Zuul'daia",nil,nil,32,36,nil,nil,{"Find the Tablet of Zuul'daia."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26907] = {"Wild Tulip",nil,{{45869}},37,41,nil,nil,{"Find the Chest of Memories for Chel Moonwood."},nil,{nil,nil,{{62765,"Chest of Memories"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26908] = {"Wild Tulip",{{45869}},nil,37,41,nil,nil,{"Find Daniels Spice Box and Tulip's Music Box."},nil,{nil,nil,{{62766,"Daniels Spice Box"},{62767,"Tulip's Music Box"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26910] = {"Wild Tulip",nil,nil,37,41,nil,2,{"Collect Daniels Pendant and Tulip's Pendant."},nil,{nil,nil,{{62771,1,"Daniels Pendant"},{62769,1,"Tulip's Pendant"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26911] = {"Wild Tulip",nil,nil,37,41,nil,2,{"Witness Chel Moonwood's Ritual."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26912] = {"Deathstrike Remedy",{{983}},nil,36,40,nil,nil,{"Collect 10 Vials of Deathstrike Venom."},nil,{nil,nil,{{62768,10,"Vial of Deathstrike Venom"}}},nil,nil,nil,nil,nil,nil,38,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26914] = {"Ocniir's Beloved Rods",{{45875}},{{45875}},33,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26915] = {"Zul'jin's Experiment",{{45873}},{{45873}},38,42,nil,nil,{"Collect the Troll Ritual Oil and return to Zul'jin."},nil,{nil,nil,{{62769,"Troll Ritual Oil"}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26918] = {"Plainstrider Menace",{{3615}},{{3615}},8,10,nil,nil,{"Bring 10 Greater Plainstrider Beaks to Kodo Wrangler Grish."},nil,{nil,nil,{{21510,10,"Greater Plainstrider Beak"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26919] = {"Karabor Fire Stew",{{45877}},{{45877}},37,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26921] = {"Splintered Leadership",{{46613}},{{46613}},15,18,nil,nil,{"Kill gnoll leaders"},nil,nil,nil,nil,nil,nil,nil,nil,44,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26922] = {"Demons In Stranglethorn",nil,nil,39,43,nil,nil,{"Investigate demon activity in Stranglethorn Vale."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26924] = {"WANTED: Tamura",nil,{{1775}},36,40,nil,1,{"Collect Head of Tamura."},nil,{nil,nil,{{62794,1,"Head of Tamura"}}},nil,nil,nil,nil,nil,nil,8,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26925] = {"Message for the Historian",nil,nil,nil,1,nil,nil,{"[Needs data collection]"},nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26926] = {"A Box of Relics",{{45887}},{{45887}},7,9,nil,nil,{"Collect Box of Collected Relics from Northshore Mine."},nil,{nil,nil,{{60445,1,"Box of Collected Relics"}}},nil,nil,nil,nil,nil,nil,159,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26927] = {"A Box of Relics",nil,nil,nil,1,nil,nil,{"[Needs data collection]"},nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26928] = {"Arugal Ambush",{{45888}},{{45888}},9,11,nil,1,{"Collect Deathguard Orders."},nil,{nil,nil,{{62798,"Deathguard Orders"}}},nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26929] = {"Arugal Ambush",{{45888}},{{45888}},9,11,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26930] = {"The Corpulent Watcher",{{5688}},{{5688}},8,10,nil,nil,{"Kill the level 13 Corpulent Watcher"},nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26931] = {"Return to Coleman",{{5688}},{{1500}},8,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26932] = {"Encroaching Worgs",{{1738}},{{1738}},6,8,nil,nil,{"Slay 5 Starving Worgs."},nil,{{{45893,5,"Starving Worg"}}},nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26933] = {"Etched Scroll",{{1569}},{{45894}},nil,1,nil,nil,{"Read the Etched Scroll and speak to your class trainer, Apolos Deathshot."},nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26934] = {"Filling the Armory",nil,nil,7,9,nil,1,{"Collect 6 Case of Ore."},nil,{nil,nil,{{60446,6,"Case of Ore"}}},nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26936] = {"Northshore Mine",{{45887},nil},{{45885},nil},9,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,159,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26937] = {"Missing Courier",{{1500}},{{38895}},8,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26938] = {"[Epoch] Quest 26938",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26939] = {"Peace in Death",nil,nil,nil,1,nil,nil,{"[Needs data collection]"},nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26940] = {"[Epoch] Quest 26940",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26941] = {"[Epoch] Quest 26941",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26942] = {"Ancient Artifact",nil,nil,9,11,nil,nil,{"Recover the ancient artifact."},nil,nil,nil,nil,nil,nil,nil,nil,141,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26951] = {"A Matter of Timeways",{{10667}},nil,55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26953] = {"A Tattered Acceptance Letter",nil,{{9078}},43,47,nil,1,{"Obtain A Tattered Acceptance Letter."},nil,{nil,nil,{{62823,1,"A Tattered Acceptance Letter"}}},nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26958] = {"Hero Worship",nil,nil,55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,2,nil,nil,nil,nil,nil,nil},
+[26959] = {"Hero Worship",{{11878}},nil,55,60,nil,nil,{"Collect 20 Fletching Feathers."},nil,nil,nil,nil,nil,nil,nil,nil,139,nil,nil,nil,nil,nil,nil,2,nil,nil,nil,nil,nil,nil},
+[26963] = {"First Day of School",{{46322}},{{46322}},48,53,nil,2,{"Speak to different NPCs at the school"},nil,{{{46323,nil},{46329,nil},{46326,nil},{46327,nil}}},nil,nil,nil,{26964},nil,nil,28,nil,nil,nil,nil,26964,2,0,nil,nil,nil,nil,nil,nil},
+[26964] = {"Observing the Dress Code",{{46322}},{{46326}},48,53,nil,nil,{"Bring 8 Putrid Spider Silk to Isabelle Pickman at Caer Darrow."},nil,{nil,nil,{{62759,nil}}},nil,nil,{26963},{26965},nil,nil,28,nil,nil,nil,nil,26965,8,0,26963,nil,nil,nil,nil,nil},
+[26965] = {"Observing the Dress Code",{{46326}},{{46326}},48,53,nil,nil,{"Kill Sharlot and bring her Spinneret to Isabelle Pickman."},nil,{nil,nil,{{62760,nil}}},nil,nil,{26964},{26966},nil,nil,28,nil,nil,nil,nil,26966,8,0,26964,nil,nil,nil,nil,nil},
+[26966] = {"Second Day of School",{{46322}},{{46322}},48,53,nil,nil,{"Equip the Scholomance Academy Tabard."},nil,nil,nil,nil,{26965},nil,nil,nil,28,nil,nil,nil,nil,nil,nil,0,26965,nil,nil,nil,nil,nil},
+[26967] = {"Scourge Botany",{{46323}},{{46323}},49,54,nil,nil,{"Obtain 6 Fungus Samples from the Weeping Cave and bring them to Doctor Atwood."},nil,{nil,nil,{{62762,nil}}},nil,nil,{26966},{26968},nil,nil,28,nil,nil,nil,nil,26968,8,0,nil,nil,nil,nil,nil,nil},
+[26970] = {"Cooking with Carrion",{{46326}},{{46326}},48,53,nil,nil,{"Gather 4 Exceptionally Large Eggs from Carrion Vultures and bring them to Isabelle Pickman."},nil,{nil,nil,{{62768,nil}}},nil,nil,{26966},{26971},nil,nil,28,nil,nil,nil,nil,26971,8,0,nil,nil,nil,nil,nil,nil},
+[26972] = {"Extra Credit",{{46322}},{{46322}},49,54,nil,nil,{"Collect 4 Shadow-Resistant Notebooks from Scarlet Lumberjacks and bring them to Dean Blackwood."},nil,{nil,nil,{{62771,nil}}},nil,nil,{26966},nil,nil,nil,28,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[26973] = {"Advanced Alchemy",{{46323}},{{46323}},49,54,nil,nil,{"Use the Collection Syringe to get three samples of ooze from the Weeping Cave."},nil,nil,nil,nil,{26966},{26974},nil,nil,28,nil,nil,nil,{62756},26974,nil,1,nil,nil,nil,nil,nil,nil},
+[26975] = {"Advanced Alchemy",{{46327}},{{46323}},49,54,nil,nil,{"Protect Proctor Phillips as he completes the experiment."},nil,nil,nil,nil,{26974},nil,nil,nil,28,nil,nil,nil,nil,nil,nil,0,26974,nil,nil,nil,nil,nil},
+[26976] = {"History 101",{{46329}},{nil,{4001056}},48,53,nil,nil,{"Copy the text of the plaque in the basement of the Barov Sepulcher."},nil,nil,nil,nil,{26966},{26977},nil,nil,28,nil,nil,nil,nil,26977,nil,0,nil,nil,nil,nil,nil,nil},
+[26977] = {"History 101",{nil,{4001056}},nil,53,53,nil,nil,{"Speak to the Ghost of Alexei Barov."},nil,{{{46324,nil}}},nil,nil,{26976},{26978},nil,nil,28,nil,nil,nil,nil,26978,8,0,26976,nil,nil,nil,nil,nil},
+[26978] = {"History 101",{{46324}},{{46329}},48,53,nil,nil,{"Return to Professor Hanlon at Caer Darrow with this information."},nil,nil,nil,nil,{26977},nil,nil,nil,28,nil,nil,nil,nil,nil,nil,0,26977,nil,nil,nil,nil,nil},
+[26979] = {"Senior Prank",{{46331}},{{46331}},49,54,nil,nil,{"Get some dung from the Scarlet Outhouse along the road leading north to Hearthglen."},nil,{nil,nil,{{62779,nil}}},nil,nil,{26966},{26980},nil,nil,28,nil,nil,nil,nil,26980,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26982] = {"[Epoch] Quest 26982",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26983] = {"[Epoch] Quest 26983",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26984] = {"[Epoch] Quest 26984",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26985] = {"[Epoch] Quest 26985",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26986] = {"[Epoch] Quest 26986",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26987] = {"Homecoming",{{45939}},{{45939}},11,13,nil,nil,nil,nil,{nil,nil,{{62859,1}}},nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26988] = {"A Stubborn Man",{{45939}},{{45940}},11,13,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26989] = {"Thumbs Up, Man Down",{{45940}},{{45940}},12,15,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[26990] = {"Riverpaw Rampage",nil,{{233}},10,12,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26991] = {"[Epoch] Quest 26991",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26992] = {"[Epoch] Quest 26992",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [26993] = {"The Killing Fields",nil,nil,8,10,nil,2,{"Rusty Harvest Golem slain: 10/10"},nil,{{{60963,10,"Rusty Harvest Golem"}}},nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[26994] = {"The Killing Fields",{{237}},{{233}},8,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[26995] = {"The Killing Fields",{{233}},{{233}},10,12,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27000] = {"A Temporary Victory",{{45942}},{{2104}},27,31,nil,nil,{"Deliver news of the Burndural Victory to Captain Stoutfist."},nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27001] = {"Guldar Gamble",nil,nil,25,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27002] = {"Report to the Front Lines",nil,{{45946}},25,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27006] = {"Eye of Zulumar",nil,{{45943}},25,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27009] = {"Evacuation Report",nil,{{45942}},24,27,nil,nil,{"Deliver the final evacuation report to Mayor Oakmaster."},nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27011] = {"Golem Gyroscope",nil,{{264}},24,27,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27015] = {"Drastic Measures",{{45963}},{{45957}},24,27,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27016] = {"Drastic Measures",nil,nil,24,27,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27020] = {"With Friends Like These...",nil,nil,19,22,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27021] = {"Message to Menethil",nil,{{2086}},18,21,nil,nil,{"Deliver the Burndural Notice to Valstag Ironjaw."},nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27024] = {"Annals of Hajiri",{{45976}},{{3691}},19,22,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27030] = {"CHOP!",{{45981}},{{45981}},22,25,nil,nil,{"Protect Romgul as he lures Ashenvale Outrunners to attack him."},nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27031] = {"Destroy the Legion",{{45982}},nil,26,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27032] = {"Destroy the Legion",{{45983}},{{45983}},26,30,nil,nil,{"Kill demon forces"},nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27034] = {"Never Again!",nil,{{45982}},26,30,nil,nil,{"Slay Gorgannon and Diathorus the Seeker in Ashenvale."},nil,{{{17300,"Gorgannon"},{6072,"Diathorus the Seeker"}}},nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27036] = {"Never Again!",{{45983}},{{45983}},26,30,nil,nil,{"Kill Gorgannon and Diathorus the Seeker"},nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27037] = {"Direct Reprisal",nil,{{45976}},24,27,nil,nil,{"Slay Lady Sarevess."},nil,{{{4831,"Lady Sarevess"}}},nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27038] = {"Forsaken Looters",nil,{{3663}},17,20,nil,nil,{"Kill 5 Forsaken Scouts, 5 Forsaken Herbalists and 10 Forsaken Assassins."},nil,{{{3893,5,"Forsaken Scout"},{3733,5,"Forsaken Herbalist"},{3879,10,"Forsaken Assassin"}}},nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27039] = {"Practical Science",{{45981}},{{12696}},22,25,nil,1,{"Complete the practical science task."},nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27040] = {"Practical Science",{{45984}},{{45984}},22,25,nil,1,{"Test the Vile Concoction on 5 targets."},nil,{nil,nil,nil,nil,nil,{{1,"Vile Concoction Tested",5}}},nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27041] = {"Practical Science",{{45984}},{{45984}},23,26,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27042] = {"Improved Swiftness Potion",{{45986}},{{45986}},23,26,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27043] = {"Ethical Quandary",{{45985}},{{45984}},23,26,nil,1,{"Complete the ethical task."},nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27044] = {"The Experiment's Conclusion",nil,{{45981}},24,27,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27045] = {"Rumbles Of The Earth",{{45990}},{{45990}},20,23,nil,nil,{"Question 6 Peons about the rumbling earth."},nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27047] = {"Rumbles of the Earth",nil,nil,20,23,nil,1,{"Collect Sturdy Reed and Glass Shards."},nil,{nil,nil,{{63078,6,"Sturdy Reed"},{63079,4,"Glass Shards"}}},nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27048] = {"Rumbles Of The Earth",nil,nil,20,23,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27049] = {"Rumbles Of The Earth",{{45990}},{{45981}},20,23,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27050] = {"Rumbles Of The Earth",nil,{{45990}},20,23,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27051] = {"Rumbles Of The Earth",{{45990}},{{45990}},20,23,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27052] = {"Rumbles Of The Earth",nil,{{45995}},22,25,nil,1,{"Investigate the source of earth tremors in Stonetalon Mountains."},nil,{{{14192,1,"Source of tremors investigated"}}},nil,nil,nil,nil,nil,nil,406,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27053] = {"Solarsal Report",nil,{{45734}},24,27,nil,nil,{"Bring the report to someone in Astranaar."},nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27055] = {"Heart of the Ancient",nil,{{12696}},26,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27056] = {"Return to Thrall",{{3338}},{{4949}},12,15,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27057] = {"Waves in the Ether",{{4949}},{{5910}},12,15,nil,1,{"Report to Zankaja in Orgrimmar."},nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27058] = {"Waves in the Ether",{{45982}},nil,12,15,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27061] = {"Waves in the Ether",nil,{{45982}},14,17,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27063] = {"The New Demon Seed",{{4949}},{{45982}},26,29,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27064] = {"The New Demon Seed",{{45982}},{{45982}},26,29,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27065] = {"The New Demon Seed",{{45982}},{{45982}},26,29,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27067] = {"Trip to Shadowprey",nil,nil,27,31,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27074] = {"Demonic Intruders",{{46009}},nil,47,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27075] = {"[Epoch] Quest 27075",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27076] = {"Descendants of Exiles",nil,nil,46,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27077] = {"Distilling Slime",{{46008}},{{8586}},47,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27080] = {"[Epoch] Quest 27080",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27081] = {"How to Make Friends with a Furbolg",{{46012}},{{8420}},47,52,nil,nil,{"Learn how to befriend the furbolg."},nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27082] = {"How to Make Friends with a Furbolg",nil,{{46012}},47,52,nil,nil,{"Complete the first four steps with the furbolg."},nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27083] = {"[Epoch] Quest 27083",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27084] = {"[Epoch] Quest 27084",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27091] = {"Azshara's Legacy",nil,{{46008}},49,54,nil,nil,{"Discover Azshara's Legacy."},nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27092] = {"Azshara's Legacy",{{46006}},{{46008}},49,54,nil,nil,{"Collect 12 Makrinni Lobstrok Eyes."},nil,{nil,nil,{{62959,"Makrinni Lobstrok Eye",12}}},nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27093] = {"Azshara's Legacy",{{8395}},{{8379}},49,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27094] = {"Azshara's Legacy",nil,{{46019}},49,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27097] = {"Message for Wobble Hollow",{{46011}},{{7406}},44,48,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27103] = {"For the Warchief's Honor!",{{47191}},{{47191}},43,47,nil,nil,{"Kill 15 Alliance forces"},nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27104] = {"Report to Scout Dura",nil,{{8479}},44,48,nil,1,{"Report to Scout Dura at the forward camp in Searing Gorge."},nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27106] = {"The Gnoll Stronghold",{{240}},{{240}},12,15,nil,nil,{"Clear gnoll stronghold"},nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27107] = {"Noble Relations",{{46085}},{{928}},22,25,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27114] = {"[Epoch] Quest 27114",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27115] = {"[Epoch] Quest 27115",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27116] = {"[Epoch] Quest 27116",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27126] = {"[Epoch] Quest 27126",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27127] = {"[Epoch] Quest 27127",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27128] = {"Venomous Conclusions",{{1265}},{{1265}},12,14,nil,nil,{"Collect 10 Winter Wolf Pelts"},nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27129] = {"[Epoch] Quest 27129",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27130] = {"The Furbolg - Goblin Trade Network",{{3945}},{{45206}},47,52,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27131] = {"[Epoch] Quest 27131",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27132] = {"The Furbolg - Goblin Trade Network",nil,{{46025}},47,52,nil,nil,{"Talk to Trader Mallu at Blackmaw Village."},nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27133] = {"King Magni's Secret",{{2784}},{{1274}},8,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1537,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27136] = {"[Epoch] Quest 27136",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27137] = {"The Horizon Scout",nil,{{8478}},47,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27141] = {"[Epoch] Quest 27141",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27143] = {"The Timbermaw Alliance",nil,nil,47,52,nil,nil,{"Form an alliance with the Timbermaw."},nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27151] = {"[Epoch] Quest 27151",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27152] = {"[Epoch] Quest 27152",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27153] = {"[Epoch] Quest 27153",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27155] = {"Threats to Valormok",{{48179}},{{48180}},45,50,nil,nil,{"Kill Spitelash enemies"},nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27160] = {"Valormok Mine Reports",{{8576}},{{8576}},44,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27161] = {"Whistle While You Work",{{8576}},{{8576}},44,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27162] = {"Valormok Report to Orgrimmar",nil,{{4949}},44,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27163] = {"[Epoch] Quest 27163",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27164] = {"[Epoch] Quest 27164",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27165] = {"Burning Blade Signets",{{3429}},{{3429}},9,11,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27166] = {"Consumed by Hatred",{{3432}},{{3432}},12,14,nil,nil,{"Collect 10 Kolkar Heads."},nil,{nil,nil,{{63039,"Kolkar Head",10}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27167] = {"Foreign Technology",nil,{{3478}},16,19,nil,1,{"Obtain the Cognation Reconstructor."},nil,{nil,nil,{{63043,"Cognation Reconstructor"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27168] = {"Finding the Clues",{{3432}},{{3432}},12,14,nil,nil,{"Search for clues about Mankrik's wife in the Barrens."},nil,{nil,{{188623,"First Clue"},{188624,"Second Clue"},{188625,"Third Clue"}}},nil,nil,nil,{27169},nil,nil,17,nil,nil,nil,nil,27169,1,0,nil,nil,nil,nil,nil,nil},
+[27169] = {"Searching the Wreckage",{{3432}},{{3432}},12,15,nil,1,{"Find Mankrik's Village."},nil,{{{60577,"Find Mankrik's Village"}}},nil,nil,{27168},{27170},nil,nil,17,nil,nil,nil,nil,27170,1,0,27168,nil,nil,nil,nil,nil},
+[27170] = {"Out of My Hands",nil,{{46057}},12,15,nil,1,{"Report to Shin'Zil."},nil,nil,nil,nil,{27169},{27171},nil,nil,17,nil,nil,nil,nil,27171,1,0,27169,nil,nil,nil,nil,nil},
+[27171] = {"Retrieving the Orb",{{46057}},{{46057}},15,18,nil,1,{"Obtain Korgar's Orb."},nil,{nil,nil,{{63047,1,"Korgar's Orb"}}},nil,nil,{27170},{27172},nil,nil,17,nil,nil,nil,nil,27172,1,0,27170,nil,nil,nil,nil,nil},
+[27172] = {"Infusing the Orb",{{48110}},{{46057}},15,18,nil,1,{"Siphon 5 Essence of Lightning."},nil,{nil,nil,{{62345,5,"Essence of Lightning"}}},nil,nil,{27171},{27173},nil,nil,17,nil,nil,nil,nil,27173,1,0,27171,nil,nil,nil,nil,nil},
+[27173] = {"Report to Mankrik",{{46057}},{{3432}},15,18,nil,1,nil,nil,nil,nil,nil,{27172},nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,27172,nil,nil,nil,nil,nil},
+[27174] = {"Finding Nadia",{{3432}},{{5770}},17,20,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27175] = {"Opening the Cage",{{3432}},{{45205}},17,20,nil,1,{"Rescue Nadia."},nil,{{{60578,"Rescue Nadia"}}},nil,nil,{27174},{27176},nil,nil,17,nil,nil,nil,nil,27176,1,0,27174,nil,nil,nil,nil,nil},
+[27176] = {"The Good News",{{45205}},{{3432}},18,21,nil,1,{"Return to Mankrik."},nil,nil,nil,nil,{27175},nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,27175,nil,nil,nil,nil,nil},
+[27177] = {"Operation: Northwatch Hold",{{46061}},{{3391}},17,20,nil,1,{"Collect Crate of Assorted Armor."},nil,{nil,nil,{{63050,1,"Crate of Assorted Armor"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27195] = {"Straight to the Teeth",{{46065}},{{46065}},15,18,nil,nil,{"Collect 10 Hecklefang Teeth."},nil,nil,nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27196] = {"The Kolkar Report",nil,nil,12,15,nil,nil,{"Bring Kolkar Report to Thork at The Crossroads."},nil,nil,nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27197] = {"The Merchant's Daughter",{{7161}},{{7161}},14,17,nil,nil,{"Obtain Box of Treasure."},nil,{nil,nil,{{63070,"Box of Treasure"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27198] = {"The Missing Lorespeakers",nil,nil,19,22,nil,1,{"Collect 8 Tauren Lore Scrolls"},nil,{nil,nil,{{63092,8,"Tauren Lore Scrolls"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27200] = {"Shadow Priest's Task",nil,nil,17,20,nil,nil,{"Complete the Shadow Priest's task."},nil,nil,nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27201] = {"The Triad Scrolls",{{46066}},{{46066}},26,30,nil,1,{"Collect The Triad: Founding of Thunder Bluff, Founding of Camp Mojache, and Founding of Sun Rock Retreat."},nil,{nil,nil,{{63082,1,"Founding of Thunder Bluff"},{63083,1,"Founding of Camp Mojache"},{63084,1,"Founding of Sun Rock Retreat"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27203] = {"The Obsidian Relic",nil,{{4201}},19,22,nil,1,{"Return the Obsidian Relic to Ziz Fizziks."},nil,nil,nil,nil,nil,nil,nil,nil,406,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27204] = {"WANTED: Deepskin",nil,nil,12,14,nil,1,{"Kill Deepskin."},nil,{{{60874,"Deepskin"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27205] = {"My Sister Isabetta",nil,{{3616}},12,14,nil,nil,{"Find information about Isabetta."},nil,nil,nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27206] = {"My Sister Isabetta",{{46067}},{{3666}},12,14,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27207] = {"My Sister Isabetta",nil,nil,12,14,nil,2,{"Travel to Westfall and tell Evangeline Wheeland about the fire and Isabetta Wheeland's death."},nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27208] = {"My Sister Isabetta",nil,nil,12,15,nil,2,{"Kill Omar Dorn and get the Defias Key."},nil,{{{46069,"Omar Dorn"}},nil,{{63084,"Defias Key"}}},nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27209] = {"My Sister Isabetta",{{46068}},nil,13,16,nil,2,{"Find the Birth Certificate."},nil,{nil,nil,{{63085,"Birth Certificate"}}},nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27210] = {"A Hidden Record",{{46068}},{{1646}},13,16,nil,2,{"Bring Evangeline's Note to Baros Alexton at Cathedral Square in Stormwind."},nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27211] = {"A Hidden Record",{{1646}},{{10782}},13,16,nil,2,{"Bring the Birth Certificate to Royal Factor Bathrilor in Stormwind."},nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27212] = {"A Hidden Record",nil,nil,13,16,nil,2,{"Report to Captain Morgan."},nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27217] = {"Auntie VanCleef",nil,{{311}},17,20,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27219] = {"Auntie VanCleef",nil,{{777}},22,25,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27220] = {"Auntie VanCleef",nil,{{46071}},22,25,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27222] = {"Lost But Not Forgotten",nil,{{1646}},22,25,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27223] = {"Personal Possessions",{{46076}},{{46076}},15,18,nil,2,{"Collect Everit's Canteen, Everit's Notebook, Everit's Lantern, and Everit's Laundry."},nil,{nil,nil,{{63093,1,"Everit's Canteen"},{63094,1,"Everit's Notebook"},{63095,1,"Everit's Lantern"},{63096,1,"Everit's Laundry"}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27224] = {"Rampaging Golems",{{46076}},{{46076}},15,18,nil,2,{"Slay 6 Golems."},nil,{{{60570,6,"Golem"}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27225] = {"The Ersotta Stone",{{6250}},{{3979}},13,16,nil,2,{"Take the strange stone to the Hall of Explorers in Ironforge."},nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27226] = {"The Ersotta Stone",nil,{{1073}},13,16,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27227] = {"The Storeta Stone",{{2913}},{{2913}},17,20,nil,2,{"Collect 10 Storeta Fragments."},nil,{nil,nil,{{63100,10,"Storeta Fragment"}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27230] = {"A Gnome in Need",{{45613}},{{45613}},27,31,nil,nil,{"Collect an Undelivered Letter from a Burning Blade Courier."},nil,{nil,nil,{{63106,1,"Undelivered Letter"}}},nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27237] = {"An End To Dread",{{46083}},{{11438}},33,37,nil,nil,{"End the dread threat in the swamp."},nil,nil,nil,nil,nil,nil,nil,nil,38,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27238] = {"An Imp's Bidding",{{46000}},{{46000}},27,31,nil,nil,{"Slay 1 monster and collect Demonic Sextant."},nil,{nil,nil,{{63113,"Demonic Sextant"}}},nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27243] = {"Crazed Carrion",{{46086}},{{46086}},32,36,nil,nil,{"Deal with the crazed carrion birds."},nil,nil,nil,nil,nil,nil,nil,nil,38,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27244] = {"Drysnap Delicacy",nil,{{8152}},31,35,nil,1,{"Collect 10 Oversized Drysnap Claws."},nil,{nil,nil,{{63116,10,"Oversized Drysnap Claw"}}},nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27247] = {"Gloombreak Mesa",{{4046}},{{4489}},26,30,nil,1,{"Take the Tablet of the Earth to Kai'li Grimtotem at Gloombreak Mesa in Desolace."},nil,nil,nil,nil,nil,nil,nil,nil,88,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27248] = {"A Message for Ghostwalker Post",nil,{{10428}},26,30,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27253] = {"Massive Profits",nil,nil,35,39,nil,nil,{"Collect 3 Fossilised Gallbladders."},nil,{nil,nil,{{63117,3,"Fossilised Gallbladder"}}},nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27254] = {"Reagents For The Undercity",{{46090}},{{46090}},29,33,nil,nil,{"Collect 10 Hatefury Claws and 10 Hatefury Horns for Annie Grim."},nil,{nil,nil,{{6246,10,"Hatefury Claw"},{6247,10,"Hatefury Horn"}}},nil,nil,nil,{27255},nil,nil,405,nil,nil,nil,nil,27255,8,0,nil,nil,nil,nil,nil,nil},
+[27255] = {"Reagents For The Undercity",{{46090}},{{5641}},31,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27256] = {"Reagents For The Undercity",{{46090}},{{46000}},36,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27261] = {"Pleading To Return",{{46093}},nil,34,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27262] = {"The Freshest Oil",{{46094}},nil,32,36,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27266] = {"A Touch of Lightning",{{46099}},nil,8,10,nil,nil,{"Siphon 5 Essence of Lightning."},nil,{nil,nil,{{60558,5,"Essence of Lightning"}}},nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27267] = {"A Village In Need",nil,nil,nil,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27268] = {"Delivery to Vornal",nil,{{3304}},3,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27273] = {"Sha'gri",nil,nil,7,9,nil,nil,{"Slay the Spirit of Sha'gri."},nil,{{{60561,"Spirit of Sha'gri"}}},nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27274] = {"The Cursed Fleet",{{3139}},{{3188}},6,8,nil,1,{"Slay 8 Kul Tiras Deckhands and 3 Kul Tiras Admirals."},nil,{{{46104,8,"Kul Tiras Deckhand"},{46103,3,"Kul Tiras Admiral"}}},nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27275] = {"WANTED: Dustpaw",nil,{{11378}},4,6,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27276] = {"Supervisor Hink",nil,{{3230}},7,9,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27277] = {"Scythemaw Standstill",nil,nil,7,9,nil,nil,{"Slay 10 Bloodtalon Scythemaw."},nil,{{{3123,10,"Bloodtalon Scythemaw"}}},nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27282] = {"Wanted: Dragon Killers",nil,{{2502}},35,39,nil,2,{"Eliminate the dragon killers."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27291] = {"Wanted: King Krool",{{4500}},nil,37,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27293] = {"The Downed Zeppelin",nil,{{46121}},36,40,nil,1,{"Interact with the Gizmorium Shipping Crate."},nil,nil,nil,nil,nil,nil,nil,nil,8,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27298] = {"Sniffotron MK IV",nil,{{7564}},37,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27299] = {"Sniff Him Out",{{46121}},nil,37,41,nil,nil,{"Follow the Sniffotron MK IV to find Beezil."},nil,{{{60003,"Follow the Sniffotron MK IV"}}},nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27300] = {"Beezil And The Burning Blade",{{46120}},{{46121}},37,41,nil,nil,{"Report to Cys Craftcharge after speaking with Beezil Linkspanner."},nil,nil,nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27302] = {"Burning Blade Dossier",{{46121}},{{46123}},37,41,nil,nil,{"Bring Cys Craftcharge's Report to Watcher Wallace in Theramore."},nil,nil,nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27303] = {"Containing the Contamination",{{10924}},nil,46,51,nil,nil,{"Obtain Damaged Water Purifier."},nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27304] = {"Containing the Contamination",{{10924}},nil,48,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27306] = {"The Garden of Jadefire Glen",{{10920}},nil,45,50,nil,nil,{"Collect Kelek's Weeder","Collect Kelek's Trowel","Collect Kelek's Bucket"},nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27307] = {"The Shrine of the Deceiver",nil,nil,47,52,nil,nil,{"Investigate the Shrine of the Deceiver."},nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27309] = {"Mementos of the Third War",{{46127}},{{46127}},47,52,nil,nil,{"Take Box of Grisly Mementos to Thrall in Orgrimmar."},nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27312] = {"Gordunni Thieves",{{8145}},{{7875}},40,44,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27313] = {"Meat!",{{46129}},nil,39,43,nil,2,{"Collect 6 Ironfur Meat and 6 Ape Meat."},nil,{nil,nil,{{63182,6,"Ironfur Meat"},{63183,6,"Ape Meat"}}},nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27314] = {"Freedom for All Creatures",{{46130}},{{46130}},43,47,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27315] = {"Doling Justice",{{46131}},{{46131}},43,47,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27316] = {"Doling Justice",{{46131}},{{7807}},43,47,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27322] = {"Convincing the Denied",nil,{{46135}},45,49,nil,nil,{"Convince those in denial."},nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27323] = {"A Reflection of Death",nil,{{46135}},45,49,nil,nil,{"Face your mortality."},nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27324] = {"Dead and Gone",nil,{{46135}},45,49,nil,nil,{"Lay the dead to rest."},nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27325] = {"Dental Records",nil,{{46135}},45,49,nil,nil,{"Collect dental records."},nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27326] = {"Dental Records",{{46135}},{{46135}},45,49,nil,nil,{"Collect dental records."},nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27327] = {"Dental Records",{{46135}},{{46135}},45,49,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27328] = {"Dental Records",nil,{{46135}},45,49,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27329] = {"Dental Records",nil,{{46135}},45,49,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27330] = {"Dental Records",nil,{{46135}},45,49,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27331] = {"Curious Groddoc",nil,{{46135}},45,49,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27332] = {"Curious Groddoc",nil,nil,nil,1,nil,nil,{"[Needs data collection]"},nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27333] = {"Facing Oneself",nil,{{46135}},45,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27334] = {"Facing Oneself",nil,{{46135}},45,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27335] = {"Wanted: Lost Ancient",{{46129}},{{45211}},44,48,nil,nil,{"Hunt the Lost Ancient."},nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27339] = {"Grimtotem Encroachment",{{2980}},{{2980}},nil,4,nil,nil,{"Slay 4 Grimtotem Skirmishers and 4 Grimtotem Hectors."},nil,{{{46152,4,"Grimtotem Skirmisher"},{46151,4,"Grimtotem Hector"}}},nil,nil,nil,nil,nil,nil,215,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27351] = {"The Lost Calf",{{6776}},{{3233}},7,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27354] = {"Wanted: Jasone",nil,{{2987}},8,10,nil,1,{"Kill Jasone and bring his head to Eyahn Eagletalon."},nil,{{{46161,"Jasone"}},nil,{{63218,1,"Head of Jasone"}}},nil,nil,nil,nil,nil,nil,88,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27365] = {"Champion of Thunderaan",{{11805}},{{11805}},55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27370] = {"Avenging What, Exactly?",{{46165}},{{46165}},55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,139,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27392] = {"Gratitude Of The Expedition",{{46165}},{{46165}},55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27397] = {"A Trip to the Vale",{{12043}},{{4198}},24,27,nil,nil,{"Collect Charred Wood and Basilisk Tail."},nil,{nil,nil,{{63244,nil,"Charred Wood"},{63245,nil,"Basilisk Tail"}}},nil,nil,nil,nil,nil,nil,406,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27398] = {"Attack on the Mine",{{4082}},{{4082}},19,22,nil,nil,{"Slay 5 Windshear Geomancers","Slay 5 Windshear Overlords","Slay 10 Windshear Diggers"},nil,{{{4003,5,"Windshear Geomancer"},{4004,5,"Windshear Overlord"},{3999,10,"Windshear Digger"}}},nil,nil,nil,nil,nil,nil,406,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27400] = {"Mirkfallon Bracers",nil,{{11864}},20,23,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27403] = {"Rumbles Of The Earth",nil,{{45995}},23,26,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27404] = {"Rumbles Of The Earth",nil,{{45995}},25,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27406] = {"Rumbles Of The Earth",nil,{{45995}},25,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27407] = {"Rumbles Of The Earth",nil,{{4949}},25,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27408] = {"[Epoch] Quest 27408",nil,nil,17,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27409] = {"Twilight Fangs",{{5870}},{{5870}},21,24,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27417] = {"Vengeance for the Light",nil,nil,40,44,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27418] = {"Another Blow to the Horde",nil,nil,41,45,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27419] = {"In Pursuit of the Foolish",nil,nil,42,46,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27420] = {"Two-Legged Vultures",{{7771}},{{7771}},41,45,nil,nil,{"Collect Marvon's Pocket Watch, Marvon's Brimmed Hat, and Marvon's Ham Radio."},nil,{nil,nil,{{63284,1,"Marvon's Pocket Watch"},{63285,1,"Marvon's Brimmed Hat"},{63286,1,"Marvon's Ham Radio"}}},nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27421] = {"Honor Among Thieves",nil,nil,44,48,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27422] = {"No One Drinks For Free",{{7882}},{{7882}},37,41,nil,nil,{"Threaten 4 tardy bar patrons: Miki Smallsprocket, Inabit Wedgefeet, Stelx, and Gikkix."},nil,{{{45532,"Miki Smallsprocket threatened"},{45526,"Inabit Wedgefeet threatened"},{45536,"Stelx threatened"},{8137,"Gikkix threatened"}}},nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27423] = {"The Zandalari Threat",nil,nil,45,50,nil,3,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27426] = {"Shadra the Venom Queen",nil,nil,45,50,nil,3,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
+[27427] = {"Silithid Scramble",{{46198}},nil,44,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27428] = {"The Lost Tablets",nil,nil,44,48,nil,3,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27429] = {"Ancient Power",nil,nil,45,49,nil,3,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27430] = {"The Spider God's Blessing",nil,nil,45,50,nil,3,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27431] = {"Summoning Shadra",nil,nil,45,50,nil,3,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27439] = {"The Warchief's Command",nil,nil,45,50,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27441] = {"Mind Blown",nil,{{46221}},45,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27442] = {"A Hive Cleared",nil,{{46221}},45,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27443] = {"Azeroth Space Society",{{46228}},{{46120}},37,41,nil,nil,{"Deliver Kranz's message to Beezil Linkspanner in Dustwallow Marsh."},nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27444] = {"Aerie Peak's Last Stand",nil,nil,43,47,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27451] = {"Lorespeaker Vanza",nil,{{1443}},42,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27452] = {"Dead Message",{{46233}},{{46234}},42,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27453] = {"Dead Message",{{46234}},{{46233}},42,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27458] = {"The Search for the Tomb",nil,{{46233}},42,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27460] = {"Quel'Danil Assistance",nil,nil,40,44,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[27462] = {"Waste Removal",nil,{{46237}},38,42,nil,2,{"Oil Spills Removed: 6/6"},nil,{nil,nil,nil,nil,nil,{{1,"Oil Spills Removed",6}}},nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27463] = {"Warden's Summons",nil,nil,47,52,nil,nil,{"Answer the Warden's summons."},nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27470] = {"Razorbeak Friends",nil,nil,41,45,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27477] = {"Attack on the Gnarlpine",nil,nil,6,8,nil,nil,{"Slay 4 Gnarlpine Ambushers","Slay 4 Gnarlpine Warriors","Slay 4 Gnarlpine Defenders","Slay 4 Gnarlpine Shamans"},nil,{{{2151,4,"Gnarlpine Ambusher"},{2013,4,"Gnarlpine Warrior"},{2010,4,"Gnarlpine Defender"},{2009,4,"Gnarlpine Shaman"}}},nil,nil,nil,nil,nil,nil,141,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27478] = {"Attack on the Gnarlpine",{{6781}},{{6781}},7,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27479] = {"Bloodfeather Eggs",{{3606}},{{3606}},8,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27480] = {"Corruption in Shadowglen",{{46257}},{{46257}},3,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27483] = {"Demons In Fel Rock",nil,{{3610}},4,6,nil,nil,{"Investigate demon activity in Fel Rock."},nil,nil,nil,nil,nil,nil,nil,nil,141,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27484] = {"Purifying the Essence",nil,{{3610},nil},6,6,nil,nil,{"Collect 1 Purified Essence"},nil,{nil,nil,{{63354,1}},nil,nil,nil},nil,nil,nil,nil,nil,nil,141,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27485] = {"Herbal Medicine",{{3604}},{{3604}},6,8,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27486] = {"Amber Memento",{{46260}},{{46261}},31,35,nil,1,{"Solve the mystery of the amber memento."},nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27487] = {"Gathering Of Spirits",{{46261}},nil,31,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27488] = {"Bad News Has Horns",{{4048}},{{4048}},25,28,nil,nil,{"Collect 3 Secret Notes from Thousand Needles."},nil,{nil,nil,{{12765,"Secret Note #1"},{12766,"Secret Note #2"},{12768,"Secret Note #3"}}},nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27489] = {"Canyon Patrol",{{10428}},{{10428}},24,27,nil,nil,{"Kill 8 Pesterhide Hyenas."},nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27490] = {"Crag Stalking",nil,nil,24,27,nil,nil,{"Complete crag stalking objectives."},nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27491] = {"Driving License Approval",{{46265}},nil,31,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27492] = {"Fresh Water Delivery",nil,{{4630}},27,31,nil,nil,{"Dispense 10 water."},nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27494] = {"Earthen Delight",{{46268}},nil,28,32,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27495] = {"Serpent's Bite",nil,nil,23,26,nil,1,{"Collect 8 Deadly Venom Glands"},nil,{nil,nil,{{63080,8,"Deadly Venom Glands"}}},nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27496] = {"Feed the Fire",{{46270}},nil,30,34,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27497] = {"Striking Back At The Galak",{{10638}},{{10638}},25,28,nil,1,{"Collect Blizh's Head"},nil,{nil,nil,{{63081,1,"Blizh's Head"}}},nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27498] = {"Khan Ablinh",{{10537}},{{10428}},26,29,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27499] = {"Help The Help Help Others",{{46273}},nil,28,32,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[27500] = {"The Sacred Flame",{{4048}},{{4048}},24,27,nil,nil,{"Scout the centaur artifact location at the Cloven Hoof."},nil,nil,nil,nil,nil,{27501},nil,nil,400,nil,nil,nil,nil,27501,8,0,nil,nil,nil,nil,nil,nil},
+[27503] = {"Why Oh Wyvern",{{11826}},nil,25,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27504] = {"Kristy's Delivery Service",nil,nil,26,30,nil,nil,{"Complete Kristy's delivery service."},nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27508] = {"Research Salvation",nil,{{9270}},46,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27509] = {"The Un'Goro Hunt",{{46278}},{{46278}},47,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27510] = {"The Un'Goro Hunt",nil,{{46278}},47,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27517] = {"Storm, Earth, Wind, and Fire",{{45143}},{{10302}},47,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27518] = {"Storm, Earth, Wind, and Fire",{{45143}},{{45143}},47,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27521] = {"Storm, Earth, Wind, and Fire",nil,nil,49,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27533] = {"One of These Things is Not Like the Others",nil,{{46287}},47,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27544] = {"A Gift for the Spiritseer",nil,nil,51,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,215,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27545] = {"A Door to the Past",nil,nil,51,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27575] = {"Nightmare Seeds",nil,nil,53,58,nil,nil,{"Discover the Odor's Source and collect 8 Nightmare Seeds."},nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,nil,2,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27580] = {"Shadow of the Vilehorn",nil,nil,53,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27623] = {"Commission for Locke Okarr",{{45982}},nil,26,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27630] = {"Commission for Thunderheart",nil,{{5411}},36,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27659] = {"Commission for High Chief Ungarl",nil,{{5385}},45,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,19,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27665] = {"Commission for Deathguard Simmer",nil,{{1495}},8,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27682] = {"Commission for Rok Orhan",{{7777}},{{7777}},45,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27882] = {"Battle of Warsong Gulch",nil,nil,18,21,nil,nil,{"Win the Battle of Warsong Gulch."},nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27883] = {"Battle of Warsong Gulch",nil,nil,55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,2,nil,nil,nil,nil,nil,nil},
+[27890] = {"A Matter of Life and Death",{{10880}},nil,55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27891] = {"A Matter of Life and Death",nil,nil,55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27898] = {"A Sign in the Stars",nil,nil,55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27899] = {"A Sign in the Stars",{{4721}},nil,55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27921] = {"Aponi's Request",nil,nil,55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,215,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27922] = {"Troubling Rumors",nil,nil,55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27927] = {"Memories of Honor and Blood",nil,nil,55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[27941] = {"Crafted from Crawlers",nil,{{7867}},55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[27961] = {"The Shatterspear Festival",{{10879}},nil,55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1497,nil,nil,nil,nil,nil,nil,2,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [27962] = {"The Shatterspear Festival",nil,nil,55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28049] = {"The Rite of the Wilds",nil,nil,51,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,215,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28063] = {"Commission for Tomas",nil,nil,3,5,nil,2,{"Collect 10 Brilliant Smallfish."},nil,{nil,nil,{{6291,10,"Brilliant Smallfish"}}},nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28064] = {"Commission for Gubber Blump",{{10216}},{{10216}},8,10,nil,2,{"Collect 10 Boiled Clams for Gubber Blump."},nil,{nil,nil,{{5525,10,"Boiled Clam"}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[28072] = {"Commission for Captain Steelgut",nil,{{2769}},17,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28073] = {"Commission for Captain Hecklebury Smotts",{{48167}},{{48167}},26,30,nil,nil,{"Complete Captain Hecklebury Smotts' commission."},nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
+[28075] = {"Commission for Simone Cantrell",nil,{{45527}},26,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28077] = {"Commission for Dirk Windrattle",{{45604}},{{45604}},36,40,nil,nil,{"Bring 10 Dragonbreath Chili to Dirk Windrattle at Springsocket."},nil,{nil,nil,{{12217,10}}},nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[28080] = {"Commission for Larhka",nil,{{5871}},8,10,nil,nil,{"Collect 10 Boiled Clams."},nil,{nil,nil,{{5525,10,"Boiled Clams"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[28082] = {"Commission for Karang Amakkar",{{12757}},{{12757}},8,10,nil,1,{"Collect 10 Crab Cake."},nil,{nil,nil,{{2683,10,"Crab Cake"}}},nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[28083] = {"Commission for Kirge Sternhorn",{{3418}},{{3418}},8,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28086] = {"Commission for Deathstalker Lesh",nil,{{12837}},17,20,nil,1,{"Collect 10 Goblin Deviled Clams."},nil,{nil,nil,{{5527,10,"Goblin Deviled Clam"}}},nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[28350] = {"Commission for Marshal Haggard",{{5484}},{{14033}},22,25,nil,nil,{"Deliver the commission to Marshal Haggard at Eastvale Logging Camp."},nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28366] = {"The Rite of the Medicant",nil,nil,55,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,215,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28401] = {"Commission for Lorekeeper Raintotem",{{11071}},{{2121}},8,10,nil,nil,{"Collect Enchanted Guardian's Bracers and deliver to Shadow Priest Allister."},nil,{nil,nil,{{65368,nil,"Enchanted Guardian's Bracers"}}},nil,nil,nil,nil,nil,nil,1638,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28402] = {"Commission for Magatha Grimtotem",{{11071}},{{4046}},8,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28403] = {"Commission for Constance Brisboise",nil,nil,nil,1,nil,nil,{"[Needs data collection]"},nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28404] = {"Commission for Merril Wendyl",nil,{{45505}},8,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28409] = {"Commission for Sage Elkhoof",{{3418}},{{3447}},17,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28410] = {"Commission for Gann Stonespire",nil,{{46056}},17,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28413] = {"Commission for Hagar Lightninghoof",nil,{{2216}},26,30,nil,1,{"Obtain Staff of Affinity."},nil,{nil,nil,{{2880,1,"Staff of Affinity"}}},nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[28460] = {"Commission for Blusht",{{3433}},{{46330}},17,20,nil,nil,{"Collect 5 Practice Lock."},nil,{nil,nil,{{6712,5,"Practice Lock"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[28462] = {"Commission for Tok'Kar",{{8176}},nil,26,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28475] = {"[Epoch] Quest 28475",nil,nil,17,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28476] = {"Commission for Watcher Dodds",nil,nil,17,20,nil,nil,{"Commission quest for Watcher Dodds."},nil,nil,nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[28482] = {"Commission for Gavik Grimesail",{{45336}},nil,26,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28483] = {"[Epoch] Quest 28483",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28487] = {"Commission for Rane Yorick",{{1500}},{{1518}},8,10,nil,nil,{"Collect 3 Linen Bandage, Collect 1 Wool Bandage"},nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28489] = {"Commission for Kaliyah Stormshew",{{46065}},{{5767}},17,20,nil,1,{"Collect 20 Wool Bandages."},nil,{nil,nil,{{3530,20,"Wool Bandage"}}},nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[28495] = {"Commission for Protector Gariel",{{490}},nil,3,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28497] = {"Commission for Warg Deepwater",{{1683}},{{1683}},8,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28500] = {"Commission for Old Man Heming",{{2626}},{{2626}},26,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28501] = {"[Epoch] Quest 28501",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28513] = {"Commission for Killian Sanatha",nil,{{5748}},3,5,nil,1,{"Collect 20 Raw Slitherskin Mackerel."},nil,{nil,nil,{{6303,20,"Raw Slitherskin Mackerel"}}},nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[28516] = {"Commission for Wik'Tar",{{12962}},nil,8,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28519] = {"Commission for Alanna Raveneye",nil,{{2078}},3,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28520] = {"The Tortured Spirit",{{46644}},{{46644}},6,8,nil,nil,{"Collect 5 Lesser Mana Potion from murlocs"},nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28521] = {"Commission for Lornan Goldleaf",{{6887}},nil,17,20,nil,nil,{"Collect 20 Briarthorn for Lornan Goldleaf."},nil,{nil,nil,{{2450,20,"Briarthorn"}}},nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[28526] = {"Commission for Lorna Stonebrand",nil,{{47042}},26,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28530] = {"Commission for Indon Cliffreach",{{45549}},nil,36,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28531] = {"Commission for Logannas",{{8157}},{{8157}},45,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28535] = {"Commission for Joakim Sparkroot",{{45575}},{{45575}},45,50,nil,nil,{"Bring 20 Purple Lotus to Joakim Sparkroot."},nil,{nil,nil,{{8831,20}}},nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[28539] = {"Commission for Taskmaster Scrange",{{14626}},{{14626}},45,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28548] = {"Commission for Je'neu Sancrea",nil,nil,17,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28561] = {"Commission for Grif Wildheart",{{1466}},{{1231}},8,10,nil,nil,{"Collect 2 Small Leather Ammo Pouch."},nil,{[7279]={2,nil,{[1]={{44.9,46.7}}}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[28562] = {"Commission for Jeena Featherbow",{{3605}},{{3610}},8,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28563] = {"Commission for Chief Archaeologist Greywhisker",{{3605}},{{2912}},8,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28564] = {"Commission for Scout Galiaan",nil,nil,17,20,nil,2,{"Collect 2 Dark Leather Boots."},nil,{nil,nil,{{2317,2,"Dark Leather Boots"}}},nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28565] = {"Commission for Protector Evangeline",nil,{{45712}},17,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28570] = {"Commission for Kaela Shadowspear",{{46181}},{{11756}},26,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28573] = {"Commission for Verner Osgood",{{2697}},{{2697}},26,30,nil,nil,{"Complete Verner Osgood's commission."},nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
+[28574] = {"Commission for Einar Stonegrip",nil,{{482}},26,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28576] = {"Commission for Bibbly F'utzbuckle",{{8150}},{{11438}},36,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28584] = {"Commission for Rokar Bladeshadow",{{5811}},{{6446}},8,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28591] = {"[Epoch] Quest 28591",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28592] = {"[Epoch] Quest 28592",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28593] = {"[Epoch] Quest 28593",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28609] = {"Commission for Radnaal Maneweaver",{{6287}},{{6287}},3,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28614] = {"Commission for Skuerto",nil,{{2789}},26,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28617] = {"Commission for Bibbly F'utzbuckle",{{11438}},{{11438}},26,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28619] = {"Lair of the Abyssal",nil,nil,44,48,nil,2,{"Enter the Lair of the Abyssal."},nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28620] = {"The Hermit's Wisdom",nil,nil,44,48,nil,2,{"Seek the hermit's wisdom."},nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28623] = {"Commission for Master Smith Burninate",{{14624}},nil,45,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28626] = {"Commission for Deathguard Linnea",{{1495}},{{1495}},3,5,nil,1,{"Collect 20 Light Leather."},nil,{nil,nil,{{2318,20,"Light Leather"}}},nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[28634] = {"Commission for Yarr Hammerstone",{{1256}},nil,3,5,nil,nil,{"Collect 20 Rough Stone."},nil,{nil,nil,{{2835,20,"Rough Stone"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[28647] = {"Commission for Strumner Flintheel",nil,{{14634}},45,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28648] = {"[Epoch] Quest 28648",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28654] = {"Commission for Kelek Skykeeper",{{10920}},nil,45,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28657] = {"Nature's Balance",nil,nil,12,15,nil,nil,{"Restore nature's balance."},nil,nil,nil,nil,nil,nil,nil,nil,141,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[28660] = {"Commission for Sebastian Meloche",{{3555}},nil,3,5,nil,1,{"Collect 5 Silver Bars."},nil,{nil,nil,{{2842,5,"Silver Bar"}}},nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28675] = {"Commission for Veron Amberstill",nil,nil,8,10,nil,3,{"Collect 2 Linen Bags."},nil,{nil,nil,{{4238,2,"Linen Bag"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
+[28676] = {"Commission for Marleth Barleybrew",{{1703}},nil,8,10,nil,3,{"Collect 1 Heavy Linen Gloves."},nil,{nil,nil,{{5633,1,"Heavy Linen Gloves"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,3,0,nil,nil,nil,nil,nil,nil},
+[28722] = {"The Darkspear Tribe",{{46834}},{{46834}},nil,1,nil,nil,{"Report to the Darkspear tribe."},nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28723] = {"Thievin' Crabs",{{46834}},{{46718}},nil,2,nil,nil,{"Slay 10 Amethyst Crabs."},nil,{{{46835,10,"Amethyst Crab"}}},nil,nil,{28722},nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28725] = {"Shift into G.E.A.R.",{{46836}},{{46836}},nil,1,nil,nil,{"Kill 10 Underfed Troggs."},nil,{{{46837,10,"Underfed Trogg"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28726] = {"A Refugee's Quandary",{{47084}},{{47084}},nil,3,nil,nil,{"Help the refugee with their problem."},nil,{{{46900,5,"Frostmane Troll Scout"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28727] = {"Aid to the Refugees",{{47085}},{{47086}},nil,4,nil,nil,{"Provide aid to the displaced refugees."},nil,{nil,nil,{{60300,8,"Medical Supplies"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28728] = {"Glyphic Tablet",{{46718}},{{5884}},nil,1,nil,128,{"Deliver the Glyphic Tablet."},nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28729] = {"Guard Duty",{{47087}},{{47087}},3,5,nil,nil,{"Assist the Guard Captain with patrol duties."},nil,{{{46901,6,"Trogg Invader"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28730] = {"Securing the Perimeter",{{47087}},{{47087}},3,5,nil,nil,{"Help secure the area perimeter."},nil,{{{190001,"Inspect North Watchtower"},{190002,"Inspect East Watchtower"},{190003,"Inspect South Watchtower"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28731] = {"Orders from Command",{{47090}},{{47090}},3,5,nil,nil,{"Deliver orders from the command center."},nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28732] = {"Strategic Reconnaissance",{{47091}},{{47091}},3,5,nil,nil,{"Conduct reconnaissance of the area."},nil,{{{190004,"Scout the Frozen Lake"},{190005,"Scout the Eastern Approach"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[28733] = {"Supply Run",{{47091}},{{47091}},3,5,nil,nil,{"Gather necessary supplies for the operation."},nil,{nil,nil,{{60301,10,"Emergency Rations"},{60302,6,"Warm Blanket"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[28734] = {"Engineering Solutions",{{47092}},{{47093}},3,5,nil,nil,{"Deliver engineering plans to Hands Springsprocket."},nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[28739] = {"Azsharan Idols",{{46934}},nil,3,4,nil,nil,{"Collect 3 idols."},nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28740] = {"Tainted Tablet",nil,{{46934}},nil,1,nil,nil,{"Read Tainted Tablet and speak to Uwa."},nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28743] = {"A Tradesman's Tools",{{1104}},{{1104}},nil,3,nil,nil,{"Retrieve the tradesman's tools."},nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,1,0,nil,nil,nil,nil,nil,nil},
+[28747] = {"Emergency Supplies",{{47084}},{{47085}},nil,3,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28748] = {"Emergency Supplies",{{47085}},{{47086}},nil,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28749] = {"Frostmane Grotto",{{47087}},nil,nil,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28750] = {"Return of the King",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28751] = {"Recovery Work",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28752] = {"Your Seat Awaits",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28753] = {"Island Troll-kin",nil,nil,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28754] = {"Troll Skull Poker",nil,nil,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28755] = {"Smoked Boar Meat",nil,nil,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28756] = {"Missing Quest 28756",nil,nil,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28757] = {"Banana Bonanza",{{46718}},{{47100}},nil,3,nil,nil,{"Gather bananas."},nil,{nil,nil,{{60200,10,"Sun-Ripened Banana"}}},nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28758] = {"Shell Collection",{{47100}},{{47100}},3,4,nil,nil,{"Collect shells."},nil,{nil,nil,{{60201,8,"Conch Shell"}}},nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28759] = {"Claws of the Cat",{{47101}},{{47101}},nil,3,nil,nil,{"Obtain cat claws."},nil,{nil,nil,{{5635,10,"Sharp Claw"}}},nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28760] = {"Jinxed Trolls",{{47103}},{{47103}},3,4,nil,nil,{"Remove the jinx from trolls."},nil,{{{47104,5,"Jinxed Troll Cleansed"}}},nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28761] = {"Source of the Jinx",nil,nil,nil,3,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28762] = {"Report to Master Gadrin",nil,nil,nil,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28763] = {"Report to Razor Hill",nil,nil,nil,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28764] = {"The Loa of Death",{{47106}},{{47106}},4,5,nil,nil,{"Commune with the Loa of Death."},nil,{{{4001003,"Commune with Shrine of Sha'gri"}}},nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28765] = {"Tidal Menace",{{47101}},{{47101}},3,4,nil,nil,{"Stop the tidal menace."},nil,{{{47105,"Tidal Lurker"}}},nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28766] = {"Pouch of Strange Shells",nil,nil,3,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+-- DISABLED FOR DATA COLLECTION - Missing starter AND finisher NPCs
+-- [28767] = {"The Naga Menace",nil,nil,3,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil},
+[28768] = {"Fel Elf Slayer",{{46295}},{{46295}},55,60,nil,nil,{"Kill the Fel Elf Slayer."},nil,{{{46390,nil}}},nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[28902] = {"No Room for Sympathy",{{46836}},{{46836}},nil,2,nil,nil,{"Kill 8 Irradiated Oozes and 4 Infected Gnomes."},nil,{{{46839,8,"Irradiated Ooze"},{46838,4,"Infected Gnome"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28903] = {"Encrypted Memorandum",{{46836}},{{46882}},nil,1,nil,nil,{"Read the Encrypted Memorandum then speak to Windle Fusespring at G.E.A.R. in Dun Morogh."},nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28905] = {"Into the Scarlet Enclave",{{28945}},{{28945}},53,58,nil,nil,{"Travel to the Scarlet Enclave in Eastern Plaguelands and kill 12 Scarlet mobs."},nil,{{{25584,12,"Scarlet mobs"}}},nil,nil,nil,nil,nil,nil,139,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[28906] = {"A Sticky Situation",{{4782}},{{4782}},44,48,nil,2,{"Collect 10 Hinterlands Honey Ripple for Truk Wildbeard."},nil,{nil,nil,{{8684,10,"Hinterlands Honey Ripple"}}},nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,2,0,nil,nil,nil,nil,nil,nil},
+[28940] = {"Guard the Refugees",{{47087}},{{47087}},3,5,nil,nil,{"Protect the refugee camp from threats."},nil,{{{46902,4,"Frostmane Raider"}}},nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,8,0,nil,nil,nil,nil,nil,nil},
+[28769] = {"Etched Tablet",{{46718},nil,nil},{{3154},nil},1,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28767] = {"The Naga Menace",{{47101},nil,nil},{{47101},nil},5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28766] = {"Pouch of Strange Shells",{{47109},nil,nil},{{47101},nil},5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28763] = {"Report to Razor Hill",{{47105},nil,nil},{{3139},nil},5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28762] = {"Report to Master Gadrin",{{47103},nil,nil},{{3188,47096,47101},nil},5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28761] = {"Source of the Jinx",{{47103},nil,nil},{{47103},nil},4,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28756] = {"Trogg City",{{47085},nil,nil},{{47085},nil},3,3,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28755] = {"Spider Tank Parts",{{47092},nil,nil},nil,5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28754] = {"Letter for Teedee Scrapbolt",{{47090},nil,nil},{{47092},nil},5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28753] = {"Frozen Silk",{{47086},nil,nil},{{46622},nil},5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28752] = {"The Frostmane Report",{{47086},nil,nil},nil,5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28751] = {"The Frostmane Report",{{47087},nil,nil},{{47086},nil},5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28750] = {"The Stolen Spectacles",{{47087},nil,nil},nil,5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28746] = {"A Refugee's Quandary",{{8416},nil,nil},{{8416},nil},3,3,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28745] = {"The Frostmancer",{{786},nil,nil},nil,5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28744] = {"Elemental Unrest",{{786},nil,nil},{{786},nil},4,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28736] = {"Rune-Inscribed Tablet",{{46718},nil,nil},{{47078},nil},1,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28735] = {"Call of Earth",{{5891},nil,nil},nil,4,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28721] = {"Commission for Jediga",nil,nil,50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
 [28717] = {"Commission for Zakara",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
-[28722] = {"The Darkspear Tribe",{{46834},
-[28723] = {"Thievin' Crabs",{{46834},
-[28725] = {"Shift into G.E.A.R.",{{46836},
-[28726] = {"No Room for Sympathy",{{46836},
-[28727] = {"Glyphic Memorandum",{{46836},
-[28728] = {"Glyphic Tablet",{{46718},
-[28729] = {"Guard Duty",{{47087},
-[28730] = {"Securing the Perimeter",{{47087},
-[28731] = {"Encrypted Memorandum",{{46836},
-[28732] = {"Strategic Reconnaissance",{{47091},
-[28733] = {"Call of Earth",{{47096},
-[28734] = {"Call of Earth",{{47096},
-[28735] = {"Call of Earth",{{5891},
-[28736] = {"Rune-Inscribed Tablet",{{46718},
-[28739] = {"Azsharan Idols",{{46934},
-[28740] = {"Tainted Tablet",{{46718},
-[28743] = {"A Tradesman's Tools",nil,{{1104},
-[28744] = {"Elemental Unrest",{{786},
-[28745] = {"The Frostmancer",nil,nil,5,5,nil,nil,{"1. Grik'nir the Cold slain: 1/1 (monster)
-     Mobs tracked:
-       - Grik'nir the Cold (ID: 808)
-         [30, 79.6] in Dun Morogh
-     Progress locations:
-       - [30.4, 80.2] in Dun Morogh"},
-[28746] = {"A Refugee's Quandary",{{8416},
-[28747] = {"Emergency Supplies",{{47084},
-[28748] = {"Emergency Supplies",{{47085},
-[28749] = {"Frostmane Grotto",{{47087},
-[28750] = {"The Stolen Spectacles",{{47087},
-[28751] = {"The Frostmane Report",{{47087},
-[28752] = {"The Frostmane Report",{{47086},
-[28753] = {"Frozen Silk",{{47086},
-[28754] = {"Letter for Teedee Scrapbolt",{{47090},
-[28755] = {"Spider Tank Parts",{{47092},
-[28756] = {"Trogg City",{{47085},
-[28757] = {"Banana Bonanza",{{46718},
-[28758] = {"Shell Collection",{{47100},
-[28759] = {"Claws of the Cat",{{47101},
-[28760] = {"Jinxed Trolls",{{47103},
-[28761] = {"Source of the Jinx",{{47103},
-[28762] = {"Report to Master Gadrin",{{47103},
-[28763] = {"Report to Razor Hill",{{47105},
-[28764] = {"The Loa of Death",{{47106},
-[28765] = {"Tidal Menace",{{47101},
-[28766] = {"Pouch of Strange Shells",{{47109},
-[28767] = {"The Naga Menace",{{47101},
-[28768] = {"Etched Parchment",{{10176},
-[28769] = {"Etched Tablet",{{46718},
-[28902] = {"No Room for Sympathy",{{46836},
-[28903] = {"Encrypted Memorandum",{{46836},
-[28905] = {"Into the Scarlet Enclave",{{28945},
-[28906] = {"A Sticky Situation",{{4782},
-[28940] = {"Guard the Refugees",{{47087},
-[61937] = {8,nil,{[357]={{50.6,46.2},
+[28715] = {"Commission for Shadowmage Vivian Lagrave",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28698] = {"Commission for Tai'tasi",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28697] = {"Commission for Rezlak",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28684] = {"Commission for Mountaineer Haggil",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28683] = {"Commission for Mountaineer Cobbleflint",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28682] = {"Commission for Archaeologist Everit",{{4185},nil,nil},nil,20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28681] = {"Commission for Balthule Shadowstrike",nil,nil,20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28675] = {"Commission for Veron Amberstill",nil,nil,10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1537,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28671] = {"Commission for Smith Slagtree",{{14737},nil,nil},{{14737},nil},35,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28666] = {"Commission for Grimnal",{{980},nil,nil},nil,25,25,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,8,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28661] = {"Commission for Traugh",nil,nil,5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28659] = {"Commission for Deathguard Linnea",nil,nil,5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28657] = {"Commission for Supervisor Hink",{{3175},nil,nil},nil,5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28652] = {"Commission for Trenton Lighthammer",{{7804},nil,nil},nil,35,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28651] = {"Commission for Gapple",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28650] = {"Commission for McGavan",{{7794},nil,nil},{{7794},nil},25,25,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28649] = {"Commission for Wenikee Boltbucket",nil,nil,15,15,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28648] = {"Commission for Wilson Wobblesmith",{{46026},nil,nil},nil,50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28644] = {"Commission for Dibi Squigglecord",{{45219},nil,nil},nil,25,25,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28632] = {"Commission for Smith Slagtree",{{14737},nil,nil},nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28631] = {"Commission for Tunkk",nil,nil,30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28629] = {"Commission for Grunt Zuul",nil,nil,30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,8,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28628] = {"Commission for Motega Firemane",{{10428},nil,nil},nil,10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28627] = {"Commission for Feran Strongwind",nil,nil,10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28625] = {"Commission for Yonn Deepcut",{{6290},nil,nil},nil,5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,215,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28624] = {"Commission for Tzakaja",{{46315},nil,nil},nil,50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28622] = {"Commission for Deleigi",{{46850},nil,nil},{{46850},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28621] = {"Commission for Taronn Redfeather",nil,{{10921},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28620] = {"Commission for Viggo",{{45211},nil,nil},nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28619] = {"Commission for Quinn",{{11756},nil,nil},{{11756},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28618] = {"Commission for Joakim Sparkroot",{{45206},nil,nil},nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28615] = {"Commission for Nioma",{{8160},nil,nil},{{8160},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28608] = {"Commission for Gert Leathersunder",nil,nil,5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28607] = {"Commission for Kamari",nil,nil,50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28598] = {"Commission for Darn Talongrip",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28597] = {"Commission for Starn",{{9551},nil,nil},nil,30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28595] = {"Commission for Kadrak",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28593] = {"Commission for Mahren Skyseer",nil,nil,20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28592] = {"Commission for Gazrog",nil,nil,20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,718,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28591] = {"Commission for Falla Sagewind",{{5767},nil,nil},nil,20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,718,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28590] = {"Commission for Mura Runetotem",nil,nil,20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28589] = {"Commission for Sage Greenhorn",nil,nil,20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28583] = {"Commission for Thotar",{{5811},nil,nil},nil,10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28582] = {"Commission for Leakey Cartspark",nil,{{46288},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28581] = {"Commission for Chromie",nil,{{10667},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,28,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28580] = {"Commission for Gregan Brewspewer",{{7852},nil,nil},{{7775},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28579] = {"Commission for Security Chief Bilgewhizzle",{{7882},nil,nil},nil,50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28578] = {"Commission for Chief Engineer Urul",{{45030},nil,nil},{{45030},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28564] = {"Commission for Scout Galiaan",nil,{{878},nil},20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28560] = {"Commission for Orgorn Strongbrow",{{1466},nil,nil},{{45519},nil},10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1537,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28555] = {"Commission for Tor'gan",nil,nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28552] = {"Commission for Rogvar",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28551] = {"Commission for Hagar Lightninghoof",nil,{{10539},nil},30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28550] = {"Commission for Aranae Venomblood",{{2390},nil,nil},{{2988},nil},30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28548] = {"Commission for Je'neu Sancrea",nil,nil,20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28545] = {"Commission for Leo Sarn",nil,nil,10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28536] = {"Commission for Alchemist Pestlezugg",{{5594},nil,nil},{{5594},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28534] = {"Commission for Hornizz Brimbuzzle",{{6019},nil,nil},nil,30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28525] = {"Commission for Apprentice Honeywell",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28507] = {"Commission for Leakey Cartspark",nil,nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28501] = {"Commission for Smeed Scrabblescrew",{{11596},nil,nil},nil,30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28499] = {"Commission for Kilxx",{{3497},nil,nil},{{3497},nil},5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28498] = {"Commission for Sentinel Onaeya",nil,nil,10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28494] = {"Commission for Jason Mathers",{{383},nil,nil},{{383},nil},5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28493] = {"Commission for Blaise Montgomery",{{11752},nil,nil},nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28492] = {"Commission for Bengor",{{7643},nil,nil},{{7643},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,8,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28491] = {"Commission for Elu",{{10377},nil,nil},nil,30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28486] = {"Commission for Vira Younghoof",{{5939},nil,nil},{{3429},nil},5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,215,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28484] = {"Commission for Leakey Cartspark",nil,{{46288},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28483] = {"Commission for High Chief Ungarl",{{46009},nil,nil},nil,50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28481] = {"Commission for Bethan Bluewater",nil,nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28480] = {"Commission for Innkeeper Finmir",nil,{{45881},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,8,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28479] = {"Commission for Rendow",{{1695},nil,nil},nil,30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28477] = {"Commission for Amy Davenport",{{777},nil,nil},nil,20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,44,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28476] = {"Commission for Watcher Dodds",nil,nil,20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28475] = {"Commission for Archaeologist Everit",{{2913},nil,nil},nil,10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28470] = {"Commission for Remi Coldeye",{{46236},nil,nil},{{46236},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28469] = {"Commission for Katoom the Angler",{{14740},nil,nil},{{14740},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28465] = {"Commission for Commander Aggro'gosh",{{7406},nil,nil},{{2464},nil},30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28444] = {"Commission for Howin Kindfeather",nil,nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28417] = {"Commission for Annie Grim",nil,nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28403] = {"Commission for Constance Brisboise",nil,{{3522},nil},10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28397] = {"Commission for Wilhelmina Wobblesmith",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28383] = {"Commission for Terenthis",{{3693},nil,nil},{{3693},nil},20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28375] = {"Commission for Deputy Rainer",nil,nil,10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28374] = {"The Rite of the Medicant",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28373] = {"The Rite of the Medicant",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28367] = {"The Rite of the Medicant",{{3144},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28366] = {"The Rite of the Medicant",{{3373},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28087] = {"Commission for Kitta Firewind",nil,nil,10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28078] = {"Commission for Pyall Silentstride",{{3067},nil,nil},{{3067},nil},5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,215,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28074] = {"Commission for Narain Soothfancy",nil,{{4453},nil},30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28068] = {"Commission for Karl Boran",{{1242},nil,nil},nil,20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28063] = {"Commission for Tomas",{{1430},nil,nil},{{1430},nil},5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28050] = {"The Rite of the Wilds",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28049] = {"The Rite of the Wilds",{{6034,7089},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1657,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28045] = {"The Rite of the Mountains",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28044] = {"The Rite of the Mountains",{{46892},nil,nil},{{46892},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28043] = {"The Rite of the Mountains",{{46892},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28042] = {"The Rite of the Mountains",{{4256},nil,nil},{{46892},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1537,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28035] = {"The Rite of the Hunt",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28034] = {"The Rite of the Hunt",{{6034,11084},nil,nil},{{715},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1657,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[28033] = {"The Rite of the Fields",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27962] = {"The Shatterspear Festival",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27960] = {"The Shatterspear Festival",{{2198},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27953] = {"The Magic of Technology",{{2198},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27930] = {"Memories of Honor and Blood",{{3144},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27929] = {"Memories of Honor and Blood",{{3144},nil,nil},{{46353},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27928] = {"Memories of Honor and Blood",{{3144},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27927] = {"Memories of Honor and Blood",{{10880,10881},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27922] = {"Troubling Rumors",{{46366},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1638,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27921] = {"Aponi's Request",{{10880,10881},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27906] = {"Bound by Blood and Honor",{{10879},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1497,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27900] = {"The Earthmother Provides",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,215,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27898] = {"A Sign in the Stars",nil,{{4721},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27896] = {"A Sign in the Stars",{{2198},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27891] = {"A Matter of Life and Death",{{4046},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1638,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27885] = {"The Will to Survive",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27884] = {"The Will to Survive",{{2198},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27883] = {"Battle of Warsong Gulch",{{14781},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27882] = {"Battle of Warsong Gulch",{{14781},nil,nil},nil,18,18,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27880] = {"Fight for Warsong Gulch",{{14733},nil,nil},{{14733},nil},38,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27685] = {"Commission for Dreka'Sur",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27662] = {"Commission for Supervisor Hink",nil,nil,10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27661] = {"Commission for Lar Prowltusk",{{3167},nil,nil},{{3139},nil},10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27660] = {"Commission for Mylini Frostmoon",nil,nil,50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27656] = {"Commission for Caretaker Alaric",{{2789},nil,nil},nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27655] = {"Commission for Major Helmsworthy",nil,nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27631] = {"Commission for Drum Fel",nil,nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27629] = {"Commission for Takata Steelblade",nil,nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27627] = {"Commission for Nimboya",{{2497},nil,nil},{{2497},nil},30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27626] = {"Commission for Witch Doctor Jin'Zil",nil,nil,30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,406,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27625] = {"Commission for Elu",{{10377},nil,nil},{{10377},nil},30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27624] = {"Commission for Apothecary Lydon",{{2216},nil,nil},{{2216},nil},30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27615] = {"Commission for Gordo",{{1518},nil,nil},{{10666},nil},10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27613] = {"Commission for Lorekeeper Raintotem",{{11047},nil,nil},{{3233},nil},10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1638,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27599] = {"Commission for Gerald Crawley",{{3090},nil,nil},{{3090},nil},30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,44,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27597] = {"Commission for Marek Ironheart",nil,nil,20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27596] = {"Commission for Warg Deepwater",nil,nil,20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27591] = {"Commission for Sentinel Arynia Cloudsbreak",nil,nil,10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27590] = {"Commission for Moon Priestess Amara",nil,nil,10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27580] = {"Shadow of the Vilehorn",{{46319},nil,nil},nil,58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27579] = {"Planting Dreams",nil,nil,58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27578] = {"Return to Aharu",{{12025},nil,nil},nil,58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,493,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27577] = {"Pure as the Moon",{{12025},nil,nil},{{12025},nil},58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,493,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27576] = {"Malvor's Guidance",{{46319},nil,nil},{{46314},nil},58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27575] = {"Nightmare Seeds",nil,{{46319},nil},58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27574] = {"Lost Souls",{{46316},nil,nil},{{46316},nil},57,57,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27573] = {"Decadent Desires",{{250526},nil,nil},{{46313},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27572] = {"The Arcanaeum",{{46313},nil,nil},{{250526},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27571] = {"Unknown Magic",{{46314},nil,nil},{{46313},nil},58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27570] = {"The Illusory Key",{{46314},nil,nil},nil,58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27569] = {"A Scribe's Work",{{46313},nil,nil},nil,58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27568] = {"Words in Stone",{{46313},nil,nil},{{46313},nil},58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27567] = {"Road to Teles'aran",{{46315},nil,nil},{{46313},nil},58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27566] = {"In Moonlit Mourning",{{46306},nil,nil},{{46306},nil},59,59,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27565] = {"A Rod of Reagents",{{46306},nil,nil},nil,58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27564] = {"To Delevan's Aid",{{46308},nil,nil},{{46306},nil},58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27563] = {"The Universal Language",{{46308},nil,nil},{{46308},nil},57,57,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27562] = {"A Fine... Product?",{{46309},nil,nil},nil,56,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27561] = {"The Fizz",{{46309},nil,nil},nil,56,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27560] = {"Wraithroar",{{46309},nil,nil},{{46309},nil},56,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27559] = {"Quality Reagents",{{46309},nil,nil},{{46309},nil},56,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27558] = {"Biz with The Fizz",{{46308},nil,nil},{{46309,46313},nil},56,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27555] = {"A Task Never Finished",{{46300},nil,nil},nil,56,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27554] = {"Suffering the Suffering",{{46300},nil,nil},nil,56,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27553] = {"A Life's Work",{{46300},nil,nil},{{46300},nil},56,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27552] = {"Sinister Supplies",{{46300},nil,nil},{{46300},nil},56,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27551] = {"A Pound of Flesh",{{46300},nil,nil},{{46300},nil},56,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27546] = {"A Door to the Past",{{28961,46295},nil,nil},nil,56,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27545] = {"A Door to the Past",{{46295},nil,nil},nil,56,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27544] = {"A Gift for the Spiritseer",{{10307},nil,nil},nil,56,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27541] = {"Toxic Tolerance",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27538] = {"The Storm Gathers",{{9117},nil,nil},nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27537] = {"The Storm Gathers",{{46165},nil,nil},{{9117},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1377,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27536] = {"The Storm Gathers",{{9117},nil,nil},{{46165},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27535] = {"The Storm Gathers",{{9117},nil,nil},{{9117},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27534] = {"One of These Things is Not Like the Others",{{9271},nil,nil},{{9117},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27532] = {"One of These Things is Not Like the Others",{{46288},nil,nil},{{5769},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27531] = {"One of These Things is Not Like the Others",{{46288},nil,nil},{{46288},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27530] = {"One of These Things is Not Like the Others",{{46288},nil,nil},{{46288},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27529] = {"One of These Things is Not Like the Others",{{9117},nil,nil},{{9117,46288,7876,8496},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27528] = {"The Southern Pylon",{{9117},nil,nil},{{9117},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27527] = {"The Legend of Aru-Talis",{{46287},nil,nil},nil,54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27526] = {"The Legend of Aru-Talis",{{46287},nil,nil},{{7999,10267},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27525] = {"The Legend of Aru-Talis",{{46287},nil,nil},{{46287},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27524] = {"The Legend of Aru-Talis",{{46288},nil,nil},{{46288},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27523] = {"The Legend of Aru-Talis",{{46287},nil,nil},{{46287},nil},53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27522] = {"The Legend of Aru-Talis",{{46287},nil,nil},{{46287},nil},53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27521] = {"Storm, Earth, Wind, and Fire",nil,{{45143},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27520] = {"Storm, Earth, Wind, and Fire",{{45143},nil,nil},{{46288,45143},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27519] = {"Storm, Earth, Wind, and Fire",{{45143},nil,nil},{{45143},nil},53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27514] = {"Shizzle's Flyer Deluxe",{{9998},nil,nil},nil,54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27513] = {"Shizzle's Flyer Upgraded",{{9998},nil,nil},{{46288},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27512] = {"The Un'Goro Hunt",{{46278},nil,nil},nil,54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27511] = {"The Un'Goro Hunt",{{46278},nil,nil},nil,54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27504] = {"Kristy's Delivery Service",{{11826},nil,nil},{{4048,46276,2493},nil},30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27501] = {"The Sacred Flame",{{4048},nil,nil},nil,30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27495] = {"Serpent's Bite",{{10428},nil,nil},{{10428,4046},nil},26,26,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27493] = {"Podium Finish",{{4706},nil,nil},nil,31,31,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27490] = {"Crag Stalking",{{10428},nil,nil},{{10428,2393},nil},27,27,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27482] = {"Saber Riding",{{4753},nil,nil},{{4730},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1657,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27477] = {"Attack on the Gnarlpine",{{6781},nil,nil},{{6781},nil},8,8,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,141,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27470] = {"Water Co. Savior",{{46248},nil,nil},nil,44,44,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27469] = {"Tips Of Fire",{{46245},nil,nil},{{46236},nil},51,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27468] = {"Tips Of Fire",{{46245},nil,nil},{{46245},nil},51,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27467] = {"Tips Of Fire",{{46245},nil,nil},{{46245},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27466] = {"Tips Of Fire",{{46209},nil,nil},{{46245},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27463] = {"Desperate Measures",nil,nil,42,42,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27460] = {"They Mostly Come At Night... Mostly",{{46236},nil,nil},nil,50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27459] = {"The Search for the Tomb",{{46233},nil,nil},{{46231},nil},46,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27457] = {"The Search for the Tomb",{{46232},nil,nil},{{46233},nil},46,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27456] = {"The Search for the Tomb",nil,{{46232},nil},46,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27455] = {"The Search for the Tomb",{{46233},nil,nil},{{46245},nil},46,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27454] = {"The Search for the Tomb",{{46233},nil,nil},{{46233},nil},46,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27444] = {"The Perfect Fuel",{{46226},nil,nil},nil,41,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27440] = {"Hive Mind",{{46221},nil,nil},{{46221},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27439] = {"The Great Brain Robbery",{{46221},nil,nil},{{46221},nil},49,49,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27432] = {"A Chilly Stranger",{{46219},nil,nil},nil,50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27431] = {"Find Wuti",{{46218},nil,nil},{{46219},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27430] = {"Supplying Anje'Watha",{{46212},nil,nil},{{46209,7882,7771},nil},48,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27429] = {"Urulg's Report",{{46198},nil,nil},{{7876,46209},nil},49,49,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27428] = {"Bug Burnout",{{46198},nil,nil},{{46198},nil},49,49,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27426] = {"On Your Feet",{{46198},nil,nil},{{46198},nil},48,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27425] = {"Worker's Rebellion",{{46198},nil,nil},{{46198},nil},48,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27424] = {"A Party Fractured",{{46198},nil,nil},{{46198},nil},48,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27423] = {"Scout's Honor",{{46209},nil,nil},{{2497,7763,7771,46198,46219},nil},48,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27421] = {"Lightfoot's Rescue",{{46197},nil,nil},{{46198},nil},49,49,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27419] = {"Boom! Boom! Boom!",{{46195},nil,nil},{{3516,46195,7408,4453,7724},nil},44,44,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27418] = {"A Loa's Respect",{{46191},nil,nil},{{46191},nil},49,49,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27417] = {"A Loa's Respect",{{46191},nil,nil},{{4453,46191},nil},49,49,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27413] = {"Report to Kaela",nil,nil,23,23,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27412] = {"Attack on the Foulweald",{{4079},nil,nil},nil,23,23,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27408] = {"Tinkering in the Vale",nil,nil,27,27,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27405] = {"Rumbles Of The Earth",{{45995},nil,nil},{{4949},nil},28,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27402] = {"Ore for Sun Rock",{{4082},nil,nil},{{4082},nil},22,22,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,406,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27389] = {"Just One?",{{46173},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1377,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27388] = {"Recover the Lost",{{46163},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1377,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27387] = {"Stingers from Stingers",{{46168},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27386] = {"Egg Smash!",{{11805},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1377,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27385] = {"Oppress the Workers",{{46165},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1377,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27379] = {"Darai's Report",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1583,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27377] = {"The Wasp's Nest",{{12956},nil,nil},{{12956},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1377,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27376] = {"Starve Them",{{12956},nil,nil},{{46165},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1377,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27375] = {"Sister, Sister",{{46169},nil,nil},{{46169},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1377,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27350] = {"The Lost Calf",{{46159},nil,nil},{{5939},nil},9,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,215,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27347] = {"It's Never Too Coagu-late.",{{46156},nil,nil},nil,8,8,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,215,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27346] = {"Stonebull Pollution",{{46156},nil,nil},{{2988,46156},nil},8,8,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,215,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27345] = {"Sage Raintotem",nil,{{3055},nil},10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27344] = {"Kodo Riding",{{3690},nil,nil},nil,46,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,215,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27342] = {"Gnoll Rustlers",{{45497},nil,nil},{{45497},nil},6,6,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,215,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27341] = {"Finding Mone",{{46153},nil,nil},{{45503},nil},4,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,215,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27340] = {"Finding Mone",{{45503},nil,nil},{{46153,45503},nil},4,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,215,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27338] = {"The Stormrage Barrow Dens",{{11801},nil,nil},{{46147},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27337] = {"In Elune's Light",{{46147},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27336] = {"The Essence of Nightmares",{{46148},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27332] = {"Curious Groddoc",nil,nil,50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27311] = {"Wanted: Kal'alash",{{10306},nil,nil},nil,54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27310] = {"Wanted: Kal'alash",{{9465},nil,nil},nil,54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27308] = {"Mementos of the Third War",{{46127},nil,nil},{{10924},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27307] = {"The Shrine of the Deceiver",{{46127},nil,nil},nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27305] = {"Containing the Contamination",{{10924},nil,nil},{{10924},nil},53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27297] = {"Defibrillated",{{46121},nil,nil},{{46121},nil},41,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27296] = {"Grab The Goods",{{46121},nil,nil},{{46121},nil},41,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27295] = {"Where In The World Is Beezil Linkspanner?",{{46121},nil,nil},{{46121},nil},41,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27294] = {"The Downed Zeppelin",{{46123},nil,nil},nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27292] = {"Wanted: King Krool",{{4964,4331},nil,nil},{{5083,23579},nil},41,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27290] = {"Reinforcements From Afar",nil,{{4968},nil},42,42,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27289] = {"Reinforcements From Afar",nil,{{4791},nil},42,42,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27288] = {"Put Them Down",{{4964},nil,nil},{{4964},nil},42,42,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27287] = {"Put Them Down",{{4791},nil,nil},{{4791},nil},42,42,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27286] = {"Kill It With Fire",nil,nil,37,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27285] = {"Escaping Airheart",{{46115},nil,nil},nil,42,42,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27284] = {"Escaping Airheart",{{46111},nil,nil},nil,42,42,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27283] = {"Cast Away",{{46109},nil,nil},nil,37,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27281] = {"Airheart Must Go",{{4964},nil,nil},{{4964},nil},42,42,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27280] = {"Airheart Must Go",{{4791},nil,nil},{{4791},nil},42,42,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27277] = {"Scythemaw Standstill",{{46107},nil,nil},{{46107},nil},9,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27273] = {"Sha'gri",{{10578},nil,nil},{{10578},nil},9,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27272] = {"Wolf Riding",{{4752},nil,nil},nil,42,42,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27267] = {"A Village In Need",{{46100},nil,nil},{{46100},nil},4,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27265] = {"Wanted: Wilfiz Silverbit",{{45219},nil,nil},nil,38,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27264] = {"Wanted: Keiko",{{12031,46093},nil,nil},{{11317},nil},37,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27263] = {"The Kindest Act",{{46086},nil,nil},{{46086},nil},36,36,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27260] = {"Pleading To Return",{{46093},nil,nil},{{46093},nil},37,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27259] = {"Supplies for Squigglecord",{{8150},nil,nil},nil,35,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27258] = {"Remnants Of The Nether",{{46091},nil,nil},nil,38,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27257] = {"Reagants For The Undercity",{{46090},nil,nil},{{46000},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27253] = {"Massive Profits",{{11438},nil,nil},{{11438},nil},39,39,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27242] = {"Shadowbreak Ravine",{{46000},nil,nil},nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27241] = {"Shadowbreak Ravine",nil,{{46000},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27240] = {"An Imp's Bidding",{{46000},nil,nil},{{46907,1562,11624},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27239] = {"An Imp's Bidding",{{46000},nil,nil},{{46000},nil},38,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27236] = {"A Gnome in Need",{{46078},nil,nil},nil,32,32,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27235] = {"A Gnome in Need",{{45219},nil,nil},nil,32,32,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27234] = {"A Gnome in Need",{{46079},nil,nil},nil,32,32,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27233] = {"A Gnome in Need",{{46079},nil,nil},nil,32,32,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27232] = {"A Gnome in Need",{{46079},nil,nil},nil,32,32,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27231] = {"A Gnome in Need",{{45219},nil,nil},nil,31,31,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27229] = {"The Odd Relic",nil,{{3661,2912},nil},20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27228] = {"The Troesta Stone",{{2913},nil,nil},nil,23,23,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27221] = {"Auntie VanCleef",{{46071},nil,nil},{{46068},nil},25,25,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27218] = {"Auntie VanCleef",nil,{{1284,2094,2086},nil},23,23,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27216] = {"Auntie VanCleef",{{273},nil,nil},nil,20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27215] = {"Auntie VanCleef",{{46068},nil,nil},nil,18,18,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27214] = {"Auntie VanCleef",nil,nil,18,18,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27213] = {"Auntie VanCleef",nil,nil,18,18,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27212] = {"Auntie VanCleef",{{1646},nil,nil},nil,17,17,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27208] = {"My Sister Isabetta",nil,nil,15,15,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27207] = {"My Sister Isabetta",{{45038},nil,nil},{{45940,3691},nil},14,14,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27204] = {"WANTED: Deepskin",{{3338},nil,nil},{{3429,4949,3389},nil},14,14,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27202] = {"The Obsidian Relic",{{3376},nil,nil},nil,22,22,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27200] = {"The Missing Lorespeakers",{{46066},nil,nil},{{46066},nil},22,22,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27199] = {"The Missing Lorespeakers",{{250415},nil,nil},nil,22,22,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27198] = {"The Missing Lorespeakers",{{46066},nil,nil},{{3478,3441,3447,12863},nil},22,22,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27196] = {"The Kolkar Report",{{3432,3272},nil,nil},{{3429,3448},nil},15,15,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27164] = {"Wanted: Cliff Giants",{{12957},nil,nil},{{46018},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27163] = {"Wanted: Blue Dragons",{{46046,46018},nil,nil},{{46018},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27159] = {"Threats to Valormok",nil,nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27158] = {"Threats to Valormok",{{8586},nil,nil},nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27157] = {"Threats to Valormok",{{8586},nil,nil},{{8586},nil},51,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27156] = {"Threats to Valormok",{{8586},nil,nil},{{8586},nil},51,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27154] = {"The Hungry Gnome",nil,{{46046},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27153] = {"The Hungry Gnome",{{46046},nil,nil},nil,50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27152] = {"The Hungry Gnome",{{46046},nil,nil},{{46046},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27151] = {"The Hungry Gnome",{{46046},nil,nil},{{46046},nil},48,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27150] = {"The Winter Ahead",{{46045},nil,nil},{{46045},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27149] = {"The Winter Ahead",{{46045},nil,nil},{{46045},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27148] = {"The Winter Ahead",{{46045},nil,nil},nil,50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27147] = {"The Winter Ahead",nil,{{8405,46045},nil},48,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27146] = {"The Timbermaw Alliance",{{6651},nil,nil},{{46009},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27145] = {"The Timbermaw Alliance",{{46044},nil,nil},{{6651,10922},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27144] = {"The Timbermaw Alliance",{{6651},nil,nil},{{46044},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27143] = {"The Timbermaw Alliance",nil,{{6651},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27142] = {"The Shattered Strand Commander",nil,nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27141] = {"The Shattered Strand Commander",nil,nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27140] = {"The Leyline Compass",{{46875},nil,nil},{{46008},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27139] = {"The Horizon Scout",{{8478},nil,nil},{{8380},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27138] = {"Trying, But Not That Hard",nil,nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27136] = {"The Horizon Scout",{{8380},nil,nil},{{45206,8478},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27135] = {"On the Brink",{{46034},nil,nil},nil,51,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27134] = {"Just To Be Safe",{{8382},nil,nil},{{8382},nil},51,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27131] = {"The Furbolg -- Goblin Trade Network",{{45206},nil,nil},{{11757},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27129] = {"The Furbolg - Goblin Trade Network",nil,{{46025,3945,8496},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,440,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27127] = {"The Furbolg -- Goblin Trade Network",{{8420},nil,nil},{{46011,46032,7876},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27126] = {"The Furbolg -- Goblin Trade Network",{{46025},nil,nil},{{8420,8139},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27121] = {"Spoils of De Ancient Land",nil,nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27120] = {"Spoils of De Ancient Land",{{46006},nil,nil},nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27119] = {"Shipwreck on the Horizon",{{46026},nil,nil},{{8380},nil},53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27118] = {"Scouting the Temple of Arkkoran",{{46020},nil,nil},nil,54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27116] = {"Salvaging the Salvagers",{{46022},nil,nil},nil,54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27115] = {"Salvaging the Shore",{{46022},nil,nil},nil,53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27114] = {"Salvaging the Sea",{{5991,46022},nil,nil},{{46022},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27111] = {"Woven Defenses",nil,nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27108] = {"Spitelash Sorcery",nil,nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27102] = {"Report to High Executor Derrington",{{46021},nil,nil},{{10837},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27098] = {"Message to Scout Dura",{{10306},nil,nil},{{4949,46021,10922,8496,14757},nil},48,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,361,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27096] = {"Azshara's Legacy",nil,{{46008},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27095] = {"Azshara's Legacy",nil,{{8379},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27090] = {"Azshara's Legacy",{{8379},nil,nil},nil,54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27089] = {"Looting the Temple of Arkkoran",{{46008},nil,nil},nil,54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27088] = {"Looting the Temple of Arkkoran",{{46020},nil,nil},{{8379},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27087] = {"Looting the Temple of Arkkoran",{{46020},nil,nil},nil,54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27086] = {"Leader of the Spitelash",{{46018},nil,nil},nil,54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27085] = {"Threats to Wobble Hollow",{{46018},nil,nil},nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27084] = {"Threats to Wobble Hollow",{{46018},nil,nil},{{46018},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27083] = {"Threats to Wobble Hollow",{{46018},nil,nil},{{46018},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27080] = {"Foul Effigies",{{46009},nil,nil},nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27076] = {"Descendants of Exiles",{{46011},nil,nil},{{8380},nil},51,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27075] = {"Demonic Intruders",{{46009},nil,nil},{{46009},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27070] = {"A Piece of De Action",nil,nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27069] = {"A Piece of De Action",{{46006},nil,nil},{{46006},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27068] = {"A Piece of De Action",{{46006},nil,nil},nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27067] = {"Trip to Shadowprey",nil,nil,31,31,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27048] = {"Rumbles Of The Earth",{{45990},nil,nil},nil,23,23,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27047] = {"Rumbles of the Earth",{{45990},nil,nil},{{45990,773},nil},23,23,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27046] = {"Rumbles Of The Earth",{{45990},nil,nil},{{45990},nil},23,23,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27033] = {"Diabolical Plans",nil,{{45982},nil},30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27023] = {"The Whelp Wranglers",{{45943},nil,nil},{{45943},nil},29,29,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27020] = {"Let's Get Outta Here",{{45967},nil,nil},{{45966,45946},nil},28,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27019] = {"Finding Hero",{{45959},nil,nil},{{45959},nil},27,27,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27018] = {"Till The Work Is Done",{{45957},nil,nil},{{45957},nil},27,27,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27017] = {"Highlands Hightail",{{45953},nil,nil},{{45953},nil},28,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27016] = {"Drastic Measures",{{45963},nil,nil},{{45963},nil},27,27,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27014] = {"Ram Ranch Rescue",{{45953},nil,nil},{{45953},nil},28,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27012] = {"Golem Gyroscope",{{45954},nil,nil},{{45954},nil},27,27,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27010] = {"Evacuation Report",{{45942},nil,nil},{{45953,45942},nil},27,27,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27008] = {"Butchers of Burndural",{{45943},nil,nil},{{45943},nil},29,29,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27007] = {"Where It Hurts",{{45943},nil,nil},{{45943},nil},29,29,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27005] = {"Spoils of War",{{45946},nil,nil},{{45946},nil},27,27,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27004] = {"Push Them Back",{{45946},nil,nil},{{45946},nil},28,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27003] = {"Calm and Collected",{{45946},nil,nil},{{45946},nil},27,27,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[27001] = {"Guldar Gamble",{{2104},nil,nil},nil,28,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26999] = {"Nek'rosh Must Die",{{45943},nil,nil},{{45942},nil},31,31,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26998] = {"WANTED: Gnarfang the Marauder",{{489},nil,nil},nil,19,19,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26997] = {"The Killing Fields",{{233},nil,nil},{{1646},nil},17,17,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26996] = {"The Killing Fields",{{233},nil,nil},nil,14,14,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26993] = {"The Killing Fields",{{237},nil,nil},nil,10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26992] = {"Riverpaw Rampage",nil,nil,16,16,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26991] = {"Riverpaw Rampage",nil,nil,14,14,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26986] = {"Academic Enrollment",{{45924},nil,nil},{{7406},nil},53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1637,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26984] = {"Field Trip",{{45910},nil,nil},{{45745},nil},55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,28,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26983] = {"Invitation for Tirion Fordring",{{45920},nil,nil},{{1855},nil},55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,28,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26982] = {"Last Day of School",{{45910},nil,nil},{{45910},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,28,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26981] = {"Senior Prank",{{45922},nil,nil},{{45922},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,28,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26980] = {"Senior Prank",{{45922},nil,nil},{{45922},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,28,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26974] = {"Advanced Alchemy",{{45914},nil,nil},{{45914,45918},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,28,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26971] = {"Cooking with Carrion",nil,{{45917},nil},53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,28,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26969] = {"Scourge Botany",{{45914},nil,nil},{{45914},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,28,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26968] = {"Scourge Botany",{{45914},nil,nil},{{45914},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,28,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26958] = {"Hero Worship",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26952] = {"Timeways Diverge?",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26942] = {"Stillwater Eels",nil,{{45902,1499},nil},6,6,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26941] = {"Scarlet Intelligence",{{1746},nil,nil},nil,9,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26940] = {"Reclaim the Mine",nil,nil,10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26939] = {"Peace in Death",{{45898},nil,nil},{{45898},nil},5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26934] = {"Filling the Armory",{{2136},nil,nil},{{1495,2136},nil},9,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26927] = {"A Box of Relics",{{45887},nil,nil},{{45886,45885,1499},nil},9,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26925] = {"Message for the Historian",{{45885},nil,nil},{{45887,1515,1496},nil},8,8,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26923] = {"Wanted: Spinnaret",nil,{{45876},nil},38,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,8,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26922] = {"Swamp Reed",{{983},nil,nil},{{983},nil},41,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,8,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26920] = {"Skins of the Swamp",{{11874},nil,nil},nil,37,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,8,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26917] = {"Eight-Legged Fillets",{{45877},nil,nil},nil,41,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,8,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26916] = {"Karabor Stew",{{45877},nil,nil},{{45877},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,8,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26913] = {"Ocniir's Beloved Rods",{{45875},nil,nil},{{5476,45875},nil},37,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,8,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26911] = {"Wild Tulip",{{45869},nil,nil},{{45869},nil},41,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26910] = {"Wild Tulip",nil,{{45869},nil},41,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26909] = {"Wild Tulip",{{45869},nil,nil},{{2497},nil},41,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26906] = {"The Tablet of Zuul'daia",{{2498},nil,nil},{{2498,45869,2496},nil},36,36,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26900] = {"The Ring of Strength: The Final Challenge",{{45857},nil,nil},{{45861},nil},43,43,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26898] = {"The Ring of Strength: Winston",{{45857},nil,nil},{{45861},nil},43,43,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26896] = {"The Ring of Strength: The Twins",{{45857},nil,nil},{{45861},nil},43,43,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26895] = {"The Ring of Strength: Brokenhorn",{{45857},nil,nil},{{45861},nil},43,43,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26894] = {"Beastial Allies",{{45850},nil,nil},{{45850},nil},41,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26893] = {"Beastial Allies",{{45850},nil,nil},{{45850},nil},41,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26891] = {"Pilfering the Reef",{{1146},nil,nil},{{1146},nil},36,36,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26890] = {"My Friend, The Skullsplitter",{{46738},nil,nil},{{45846},nil},36,36,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26887] = {"My Friend, The Skullsplitter",{{45846},nil,nil},{{45846},nil},36,36,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26882] = {"A Salve for Samantha",{{2856},nil,nil},{{2856},nil},34,34,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26881] = {"A Salve for Samantha",{{2519},nil,nil},{{2519},nil},34,34,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26880] = {"A Salve for Samantha",{{2519},nil,nil},{{2519},nil},34,34,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26878] = {"Tomes of Interest",{{45841},nil,nil},{{45841},nil},20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26876] = {"Tomes of Interest",{{45841},nil,nil},{{2121},nil},18,18,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26874] = {"The Missing Initiate",{{45840},nil,nil},{{45840},nil},18,18,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,130,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26872] = {"Ravenclaw Ichor",{{1974},nil,nil},{{12863,3449,3439},nil},18,18,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,331,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26856] = {"Twilight Tactics",nil,nil,45,45,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,51,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26850] = {"Eye for an Eye",{{382},nil,nil},{{382},nil},25,25,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1581,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26848] = {"Clyde's Special Thread",{{777},nil,nil},nil,23,23,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,44,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26846] = {"One Of Each",{{45825},nil,nil},{{45825},nil},21,21,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,44,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26845] = {"WANTED: Mother Tessa",{{250335},nil,nil},{{1139},nil},20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,38,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26843] = {"Securing the Loch",{{2510},nil,nil},{{2510},nil},19,19,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26842] = {"Medicinal Restocking",{{1473},nil,nil},{{1473},nil},18,18,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,38,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26834] = {"Assistance to Jenna",{{2263},nil,nil},{{45818},nil},24,24,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26833] = {"Wildthorn Cure",{{45818},nil,nil},nil,24,24,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26831] = {"Syndicate Plans",{{2263},nil,nil},{{45800},nil},26,26,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26830] = {"WANTED: Beve Perenolde",{{2430},nil,nil},nil,26,26,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26829] = {"Venom to the Syndicate",{{2380},nil,nil},{{2380},nil},26,26,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26828] = {"Mudsnout Concoction",{{2380},nil,nil},nil,26,26,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26827] = {"Durnholde Extermination",{{2215},nil,nil},nil,24,24,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26826] = {"Syndicate Personnel",{{2215},nil,nil},nil,22,22,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26825] = {"Syndicate Magic",{{2711},nil,nil},nil,24,24,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26824] = {"WANTED: Archmage Zygor",{{2278},nil,nil},nil,25,25,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26823] = {"Hillsbrad Defense",{{2276},nil,nil},nil,29,29,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26822] = {"Hillsbrad Assault",{{2276},nil,nil},nil,29,29,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26821] = {"Hillsbrad Defense",{{2215},nil,nil},nil,29,29,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26820] = {"Hillsbrad Assault",{{2215},nil,nil},nil,29,29,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26819] = {"Purging the Land of Lions",{{2263},nil,nil},nil,24,24,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26818] = {"Oars O'er the Bay",{{3182},nil,nil},{{45814},nil},24,24,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26805] = {"Decorating the Inn",{{2352},nil,nil},{{2352},nil},22,22,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26804] = {"Burnt to a Crisp",{{2770},nil,nil},nil,24,24,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26803] = {"Breaking the Armory",{{2378},nil,nil},nil,23,23,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26800] = {"A Scout in Need",{{45801},nil,nil},nil,24,24,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26796] = {"A Lost Warrior",{{45799},nil,nil},nil,24,24,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26793] = {"The Lost Banners",nil,nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26792] = {"The Lost Banners",nil,nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26791] = {"The Lost Banners",nil,nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26790] = {"The Lost Banners",{{45789},nil,nil},nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26789] = {"Vandalism in Stormwind",nil,nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26788] = {"Vandalism in Stormwind",nil,nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26787] = {"Vandalism in Stormwind",nil,nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26786] = {"Vandalism in Stormwind",{{482},nil,nil},nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26783] = {"No Regrets! Well, Maybe Some",{{45783},nil,nil},{{45780},nil},6,6,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26773] = {"Horse Riding",{{4732},nil,nil},{{384},nil},44,44,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26765] = {"We Have the Technology",{{45769},nil,nil},{{45769},nil},55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26762] = {"The Plaguewood Cauldrons",{{11056},nil,nil},nil,58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,28,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26760] = {"The Plaguewood Cauldrons",{{11057},nil,nil},nil,58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26758] = {"The Nature of the Beast",{{45763},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26757] = {"Where No Shadows Fall",nil,nil,58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,139,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26756] = {"The Land Beyond the Forest",nil,nil,58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26751] = {"Door to Door Marketing",nil,{{12384},nil},55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,139,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26750] = {"Killing the Competition",nil,{{12384},nil},55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26741] = {"Memories of Eastweald",nil,nil,58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,139,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26740] = {"Memories of Eastweald",{{45749},nil,nil},nil,58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,139,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26739] = {"Memories of Eastweald",nil,{{45749},nil},58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,139,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26737] = {"Memories of Eastweald",nil,{{45749},nil},57,57,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,139,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26736] = {"Memories of Eastweald",nil,{{45749},nil},57,57,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,139,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26735] = {"Memories of Eastweald",{{45749},nil,nil},{{45749},nil},57,57,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,139,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26729] = {"Field Trip",{{45745},nil,nil},nil,55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26728] = {"Field Trip",{{45745},nil,nil},{{45745},nil},55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,28,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26725] = {"Black Magic",nil,nil,58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26724] = {"Black Magic",nil,nil,58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26723] = {"Wanted: Plagued Shambler",nil,nil,30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26722] = {"Until Death Do Us Part",nil,{{45733},nil},22,22,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26721] = {"Until Death Do Us Part",nil,{{45734},nil},22,22,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26720] = {"Until Death Do Us Part",nil,{{45734},nil},21,21,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26718] = {"Until Death Do Us Part",nil,{{45734,1416,663},nil},21,21,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,10,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26709] = {"Riders In The Night",nil,nil,28,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26705] = {"Riders In The Night",nil,{{45701},nil},28,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26704] = {"Riders In The Night",nil,{{264},nil},28,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26703] = {"Hand of Azora",nil,{{313},nil},15,15,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26701] = {"Hand of Azora",{{45712},nil,nil},nil,15,15,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26699] = {"Hand of Azora",{{45702},nil,nil},nil,14,14,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,40,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26695] = {"Barroom Blitz",nil,{{313,240},nil},12,12,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26690] = {"Barroom Blitz",{{45704},nil,nil},{{253},nil},12,12,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26688] = {"Recovering History",{{1354},nil,nil},{{1354},nil},5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26686] = {"Mechanostrider Piloting",{{7954},nil,nil},nil,41,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26683] = {"Undead Horsemanship",nil,nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26677] = {"Elemental Prisoners",nil,{{45690},nil},4,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26675] = {"Breaking the Ice",nil,{{1373},nil},9,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26670] = {"The Ironforge Airfield",{{45670},nil,nil},nil,17,17,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26668] = {"Assisting Wizzle",{{45677},nil,nil},{{45677},nil},17,17,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26667] = {"Assisting Topsy",{{45676},nil,nil},{{45676},nil},17,17,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26658] = {"The Caretaker's Behest",{{45660},nil,nil},nil,58,58,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,41,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26655] = {"Neverstill",nil,nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26654] = {"Fireguts",{{45658},nil,nil},{{45658},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26653] = {"The Art of Golemancy",{{45650},nil,nil},{{45650},nil},55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26652] = {"The Right Kind of Oil",{{45650},nil,nil},{{45650},nil},55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26651] = {"Charging the Core",{{45650},nil,nil},nil,55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26650] = {"Building Upon Giants",nil,nil,55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26649] = {"Golem Grabbing",{{45650},nil,nil},nil,55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26648] = {"Root of the Issue",nil,nil,55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26647] = {"Law of the Lawless",nil,nil,55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26646] = {"Spies Among Us",{{45646},nil,nil},{{45646},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26644] = {"The Cavern",nil,{{45645},nil},53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26643] = {"Is it Ogre?",{{46597},nil,nil},nil,53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26642] = {"Meeran's Missing",{{45644},nil,nil},{{46597},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26640] = {"Infernal Runes",nil,nil,53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26638] = {"Bracers that Bind",{{45069},nil,nil},nil,53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26637] = {"Absent Discourse",{{45642},nil,nil},{{45069},nil},53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26636] = {"Hitting Where it Hurts",{{45636},nil,nil},nil,57,57,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26635] = {"The Blazing Hydra",{{45636},nil,nil},{{45636},nil},56,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26634] = {"Tired o' them Orcs!",nil,nil,55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26633] = {"Arming Ashfall",nil,{{45636},nil},53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26632] = {"Glyph of the Warlord",{{45093},nil,nil},nil,53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26631] = {"The Thorn in My Side",nil,nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26630] = {"The Sting of Betrayal",nil,nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26629] = {"True Believers",{{45093},nil,nil},nil,51,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26628] = {"The Foundation Crumbles",{{45093},nil,nil},nil,51,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26627] = {"The Best of the Worst",{{45093},nil,nil},{{45093},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26622] = {"Sunken Treasure",{{5992},nil,nil},nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26621] = {"Resurgent Evil",nil,nil,53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26620] = {"Water for the Weary",{{45605},nil,nil},{{45613},nil},52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26619] = {"It Ain't the Worst",nil,nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26617] = {"Felstone Mines",nil,nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26613] = {"Aid for Nethergarde",{{45611},nil,nil},{{5393,5385},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26612] = {"Prayers Answered",{{45609},nil,nil},nil,53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26611] = {"Rest for the Wicked",nil,nil,53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26609] = {"Felstone Mines",nil,nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26602] = {"Ready for Distribution",nil,{{5393},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26601] = {"The Clay Cleanse",{{8178},nil,nil},{{8178,7505},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26594] = {"WANTED: Scorchmaw",{{250236,46574,46570},nil,nil},{{45604},nil},45,45,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26590] = {"Trapped Miners",{{45601},nil,nil},{{5394},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26589] = {"Trapped Miners",{{45601},nil,nil},{{45601,5394},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26584] = {"Binkle's Justice",{{45597},nil,nil},{{45597},nil},41,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26583] = {"Excavation Investigation",{{45598},nil,nil},{{45598},nil},41,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26581] = {"A Lost Treasure",{{45594},nil,nil},{{45594},nil},39,39,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26578] = {"A Fine Potion",{{45592},nil,nil},nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26577] = {"A Fine Potion",{{45592},nil,nil},{{45592},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26575] = {"The Dark Shamans",{{45587,45585},nil,nil},nil,39,39,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26574] = {"Bindings Of My Brethren",{{46559,250231},nil,nil},{{250231},nil},38,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26573] = {"Blazing Hills Berserkers",{{250231,46559},nil,nil},{{250231},nil},38,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26572] = {"Furious Flaying",{{46559,250231},nil,nil},{{250231},nil},38,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26571] = {"The Southern Hills",{{45548},nil,nil},{{250231,46559},nil},38,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26570] = {"Waterlogged Journal",{{2366,250230,2277,2255,2276},nil,nil},{{45567,2700,4453,4944,2439},nil},37,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26568] = {"Shadowberry Pie",{{9501},nil,nil},{{9501},nil},38,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26559] = {"Save The Animals",{{45567},nil,nil},nil,38,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26557] = {"Convening The Council",{{45548},nil,nil},{{45548},nil},38,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26556] = {"Return To Fire",{{45547},nil,nil},{{45548},nil},37,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26553] = {"An Audience With Air",{{45547},nil,nil},{{45555},nil},37,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26552] = {"Offering Of Feathers",{{45547},nil,nil},{{45547},nil},37,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26547] = {"To The Hills",{{45549},nil,nil},{{45548},nil},37,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26546] = {"To The Hills",{{2706},nil,nil},{{45548},nil},37,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26541] = {"Threats from Abroad",{{45546},nil,nil},{{45546},nil},32,32,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26539] = {"The Barony Mordis",{{2429},nil,nil},{{2429},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26535] = {"Letter to Stromgarde",{{46897},nil,nil},{{2771},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26525] = {"Felicity's Deciphering",{{6768},nil,nil},{{45526},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26523] = {"The Ensorcelled Parchment",nil,{{2229},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26520] = {"The Bloodstone Devices",nil,{{2276},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26518] = {"The Ensorcelled Parchment",{{2625},nil,nil},{{6768,45850},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26515] = {"The Perenolde Legacy",nil,{{45787},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26514] = {"The Perenolde Legacy",{{10782},nil,nil},{{45537},nil},38,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26510] = {"Lord Aliden Perenolde",{{6768},nil,nil},{{2317},nil},38,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26508] = {"Suspicious Activity in the Uplands",{{6768},nil,nil},{{6768},nil},38,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26507] = {"Suspicious Activity in the Uplands",nil,{{6768},nil},38,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26503] = {"Rare Books",nil,{{2277},nil},44,44,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26500] = {"A Strange Tome",{{2543},nil,nil},nil,35,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26494] = {"Call of Water",{{5895},nil,nil},nil,22,22,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26493] = {"Call of Water",{{250213},nil,nil},{{5895},nil},22,22,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26492] = {"Call of Water",nil,nil,22,22,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26491] = {"Call of Water",nil,nil,21,21,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26490] = {"Call of Water",{{45521},nil,nil},nil,21,21,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26489] = {"Call of Water",nil,{{45521},nil},21,21,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26488] = {"Call of Water",nil,nil,20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26487] = {"Call of Fire",nil,nil,11,11,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,38,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26486] = {"Call of Fire",{{45520},nil,nil},nil,11,11,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,38,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26482] = {"Call of Earth",nil,{{12738},nil},4,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26481] = {"Call of Earth",nil,{{836},nil},4,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26480] = {"Call of Earth",nil,{{45514},nil},5,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26477] = {"A Cloak of Shadows",nil,{{12939,2789},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,36,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26476] = {"A Cloak of Shadows",nil,{{2543},nil},38,38,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1537,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26467] = {"Those Unrecovered",{{45506},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26463] = {"The Bulwark",{{45242},nil,nil},nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26461] = {"Our Bodies Forsaken",{{45501},nil,nil},{{45242},nil},13,13,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26460] = {"Our Bodies Forsaken",{{45502},nil,nil},nil,13,13,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1497,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26459] = {"Our Bodies Forsaken",{{45242},nil,nil},{{45502},nil},13,13,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1497,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26456] = {"Our Bodies Forsaken",{{45242},nil,nil},{{5665},nil},12,12,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1497,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26455] = {"Seeking Redemption",{{45383},nil,nil},{{45888,45885},nil},12,12,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,85,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26441] = {"A Noble Steed",nil,nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26422] = {"Ritual of Refreshment",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26413] = {"Training the Beast",{{45475},nil,nil},{{963},nil},10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26412] = {"Taming the Beast",{{45475},nil,nil},nil,10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26411] = {"Taming the Beast",{{45475},nil,nil},nil,10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26407] = {"Call to Skirmish: Blasted Lands",nil,nil,57,57,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26406] = {"Call to Skirmish: Dustwallow Marsh",{{4884,4501},nil,nil},nil,44,44,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26405] = {"Call to Skirmish: Dustwallow Marsh",{{4456},nil,nil},nil,41,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1537,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26404] = {"Call to Skirmish: Winterspring",{{250188},nil,nil},nil,55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26403] = {"Call to Skirmish: Winterspring",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26402] = {"Call to Skirmish: Feralas",{{8115},nil,nil},nil,47,47,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26397] = {"Call to Skirmish: Eastern Plaguelands",nil,nil,55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26393] = {"Call to Skirmish: Western Plaguelands",nil,nil,55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26390] = {"Call to Skirmish: Un'Goro Crater",nil,nil,51,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26382] = {"Call to Skirmish: Stranglethorn Vale",nil,nil,47,47,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26381] = {"Call to Skirmish: Stranglethorn Vale",{{733},nil,nil},nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26380] = {"Call to Skirmish: The Hinterlands",{{250166,3011},nil,nil},nil,49,49,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26379] = {"Call to Skirmish: The Hinterlands",nil,nil,50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26378] = {"Call to Skirmish: Badlands",nil,nil,43,43,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26377] = {"Call to Skirmish: Badlands",nil,nil,43,43,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1537,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26375] = {"Call to Skirmish: Swamp of Sorrows",nil,nil,43,43,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,8,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26373] = {"Call to Skirmish: Arathi Highlands",nil,nil,39,39,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26372] = {"Call to Skirmish: Desolace",nil,nil,41,41,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1638,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26370] = {"Call to Skirmish: Alterac Mountains",nil,nil,36,36,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26369] = {"Call to Skirmish: Alterac Mountains",nil,nil,39,39,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26368] = {"Call to Skirmish: Thousand Needles",nil,nil,35,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26366] = {"Call to Skirmish: Hillsbrad Foothills",nil,nil,34,34,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26364] = {"Call to Skirmish: Ashenvale",nil,{{45799},nil},24,24,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26363] = {"Call to Skirmish: Ashenvale",nil,nil,22,22,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26362] = {"Call to Skirmish: Stonetalon Mountains",nil,nil,36,36,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26361] = {"Call to Skirmish: Stonetalon Mountains",nil,nil,22,22,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26352] = {"The Bad News Again",nil,{{2916},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,618,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26349] = {"The Bad News",nil,{{5387},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26347] = {"The Good News",nil,{{45345},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,17,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26343] = {"To All the Demons I Used to Love",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26340] = {"The Possible Fall of Baradin Hold",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26339] = {"The Possible Fall of Baradin Hold",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26338] = {"The Possible Fall of Baradin Hold",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26337] = {"The Necromancer and the Scion",{{4572},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1497,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26332] = {"Plundering Pirates",{{3453},nil,nil},{{11063,1284,9023},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,139,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26331] = {"Plundering Pirates",{{2769},nil,nil},{{2769},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26322] = {"An Unfinished Task",{{45327},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26319] = {"A Legacy of Knowledge",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26318] = {"Invocation of The Blood God",nil,nil,48,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1497,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26316] = {"Lorderon's Legal Legacy",{{45263},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26312] = {"Materials of the Light",nil,nil,22,22,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26310] = {"Trial of the Willing",nil,nil,25,25,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26306] = {"Attunement to the Core",{{13278},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26305] = {"Attunement to the Core",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,16,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26292] = {"Tunnel Monster",{{45208,677,46438},nil,nil},{{45208},nil},40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26280] = {"The Wayward Student",{{5516},nil,nil},{{5516},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26278] = {"The Firelord's Lieutenants",nil,nil,56,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26277] = {"Shaman of the Flame",{{45143},nil,nil},{{9536,45143,10267,45646},nil},54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,490,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26276] = {"Operation: Phalanx",{{8909},nil,nil},{{6579},nil},55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1584,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26273] = {"Falling Stars",nil,nil,56,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26269] = {"Soul Fuel",nil,nil,53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26268] = {"Rewriting Curses",nil,nil,52,52,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26247] = {"Searing Armaments",{{45069},nil,nil},nil,55,55,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26246] = {"Dragonfire",{{45069},nil,nil},nil,54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26244] = {"Obtaining Obsidian",{{45069},nil,nil},nil,54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26243] = {"Blazing Gemstone",{{7036},nil,nil},{{45069},nil},53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26216] = {"Howin's Favorite Fishing Hole",nil,nil,50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26215] = {"Howin's Favorite Fishing Hole",nil,nil,50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26214] = {"Howin's Favorite Fishing Hole",nil,nil,50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26213] = {"Howin's Favorite Fishing Hole",{{11810},nil,nil},{{5636},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26212] = {"The Voodoo They Do",{{45043},nil,nil},{{45043},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26211] = {"Tactical Strike",{{5635},nil,nil},{{5635},nil},51,51,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26208] = {"Wanted: Grizzletooth",nil,nil,18,18,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26206] = {"Shoalbeard",{{45038},nil,nil},nil,20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26205] = {"The Greymist Menace",{{45038},nil,nil},{{45038},nil},18,18,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26204] = {"The Greymist Menace",{{45038},nil,nil},{{45038},nil},15,15,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,148,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26199] = {"Wanted: Foulcrest",{{14738,14739},nil,nil},{{7825},nil},47,47,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26198] = {"Wanted: Foulcrest",{{2923,45019},nil,nil},nil,47,47,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26194] = {"Owlkin Leadership",{{11812},nil,nil},{{11812},nil},48,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26193] = {"Savage Slam",{{11812},nil,nil},nil,47,47,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26192] = {"Primitive Pummeling",{{11812},nil,nil},{{11812},nil},45,45,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26191] = {"A Vicious Vocation",{{11812},nil,nil},{{11812},nil},43,43,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26189] = {"Prime Slime",{{45031},nil,nil},nil,48,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26180] = {"Snapjaw Snacks",{{45023},nil,nil},nil,45,45,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26177] = {"Razorbeak Friends",{{45026},nil,nil},nil,46,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26176] = {"Falling Up To Grace",{{45021},nil,nil},{{5635},nil},48,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26173] = {"Falling Up To Grace",{{2688},nil,nil},{{2688},nil},48,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26172] = {"Falling Up To Grace",{{45021},nil,nil},{{2688},nil},48,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,47,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26160] = {"Stormwind Farthing",nil,{{45018},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26153] = {"Dalaran Shilling",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,8,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26150] = {"Lordaeron Crown",nil,nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1537,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26143] = {"Kaldorei Lune",nil,{{663,45018},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1581,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26140] = {"Gnomish Guinea",{{31035},nil,nil},{{45018},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,721,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26139] = {"Defias Ducat",nil,{{6169,2917},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1581,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26138] = {"Dark Iron Stater",{{7035,1275},nil,nil},{{45018},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,46,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26133] = {"Kezan Dollar",{{2625},nil,nil},{{45018},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26131] = {"Azsharan Shekel",nil,{{45018},nil},60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[26107] = {"Eau de Parfish",{{25580},nil,nil},nil,60,60,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[24857] = {"Attack on Camp Narache",{{3229},nil,nil},{{2981},nil},4,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[16227] = {"Batch Submission (0 quests)",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,45,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[14089] = {"Learn to Ride in Tirisfal Glades",nil,nil,40,40,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[14079] = {"Learn to Ride in Elwynn Forest",nil,nil,20,20,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[13887] = {"Venomhide Eggs",{{11701},nil,nil},nil,53,53,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[11123] = {"Inspecting the Ruins",{{4944},nil,nil},nil,35,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[9476] = {"In Pursuit of Featherbeard",nil,nil,46,46,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[9471] = {"Preying on the Predators",{{5636},nil,nil},{{5636},nil},44,44,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[6241] = {"Winterfall Activity",nil,nil,56,56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[6131] = {"Timbermaw Ally",{{11554},nil,nil},nil,48,48,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[5762] = {"Hemet Nesingwary Jr.",{{4452},nil,nil},nil,31,31,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[5411] = {"NPC: Krinkle Goodsteel",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[4551] = {"Batch Submission (0 quests)",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[4186] = {"The True Masters",nil,nil,54,54,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[4131] = {"The Woodpaw Gnolls",{{7880},nil,nil},nil,44,44,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[4130] = {"Psychometric Reading",{{7879},nil,nil},{{7880},nil},44,44,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[4129] = {"The Knife Revealed",{{7880},nil,nil},{{7879},nil},44,44,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[3762] = {"Assisting Arch Druid Runetotem",nil,{{5769},nil},50,50,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1638,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[3539] = {"Batch Submission (0 quests)",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[3310] = {"locations",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[2995] = {"Batch Submission (0 quests)",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,406,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[2871] = {"Delivering the Relic",{{7877},nil,nil},{{7878},nil},45,45,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,357,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[2203] = {"Badlands Reagent Run II",nil,nil,44,44,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1465] = {"Vahlarriel's Search",{{50961},nil,nil},nil,33,33,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1459] = {"Reagents for Reclaimers Inc.",{{5638},nil,nil},nil,35,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1458] = {"Reagents for Reclaimers Inc.",{{5638},nil,nil},nil,33,33,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1454] = {"The Karnitol Shipwreck",{{5638},nil,nil},nil,39,39,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1448] = {"In Search of The Temple",{{5384},nil,nil},nil,43,43,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1519,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1438] = {"Vahlarriel's Search",{{5642},nil,nil},nil,33,33,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1437] = {"Vahlarriel's Search",{{5642},nil,nil},{{5642},nil},33,33,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1387] = {"Centaur Bounty",{{5752},nil,nil},nil,31,31,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1385] = {"Brutal Politics",{{5396},nil,nil},nil,35,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1382] = {"Strange Alliance",{{5396},nil,nil},nil,35,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1361] = {"Regthar Deathgate",{{2229},nil,nil},nil,32,32,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1178] = {"Goblin Sponsorship",{{4630},nil,nil},nil,37,37,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1176] = {"Load Lightening",{{4630},nil,nil},nil,30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1175] = {"A Bump in the Road",{{4629},nil,nil},nil,33,33,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1111] = {"Wharfmaster Dizzywig",{{4452},nil,nil},nil,36,36,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1110] = {"Rocket Car Parts",{{4452},nil,nil},nil,31,31,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1107] = {"Encrusted Tail Fins",{{4453},nil,nil},nil,35,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1106] = {"Martek the Exiled",{{4454},nil,nil},nil,35,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1105] = {"Hardened Shells",{{4453},nil,nil},nil,30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[1104] = {"Salt Flat Venom",{{4454},nil,nil},nil,30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[712] = {"Study of the Elements: Rock",{{2921},nil,nil},{{2921},nil},42,42,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,3,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[557] = {"Bracers of Binding",{{2437},nil,nil},nil,34,34,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[556] = {"Stone Tokens",{{2437},nil,nil},nil,32,32,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[553] = {"Helcular's Revenge",{{2429},nil,nil},nil,33,33,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[550] = {"Battle of Hillsbrad",{{2215},nil,nil},nil,32,32,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[545] = {"Dalaran Patrols",{{2410},nil,nil},nil,35,35,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[544] = {"Prison Break In",{{2410},nil,nil},nil,34,34,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[541] = {"Battle of Hillsbrad",{{2215},nil,nil},nil,30,30,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[539] = {"Battle of Hillsbrad",{{2215},nil,nil},{{2215},nil},28,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[513] = {"Elixir of Agony",{{2216},nil,nil},nil,28,28,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[503] = {"Gol'dir",{{2229},nil,nil},nil,36,36,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,267,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[261] = {"Down the Scarlet Path",{{1182},nil,nil},nil,39,39,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,405,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+[76] = {"The Jasperlode Mine",nil,{{240},nil},10,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
+}
+
+-- Stage the Epoch questData for later merge during compilation
+QuestieDB._epochQuestData = epochQuestData
