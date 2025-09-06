@@ -83,6 +83,12 @@
   - Previously only objectives with 2+ required items showed progress counts
   - Now all countable objectives display their progress consistently
 
+- **Fixed ExportBatchPart Frame Creation Issue** - Fixes follow-up to issue #1277
+  - ExportBatchPart was failing to create the export window frame
+  - Calling ShowExportWindow(0) failed because 0 is truthy in Lua
+  - Now directly creates the frame inline instead of relying on ShowExportWindow
+  - Resolves error: "attempt to index global 'QuestieDataCollectorExportFrame' (a nil value)"
+
 ### Changed
 - **Data Collection Now Always Captures All Quests** - Simplified data collection to always gather complete data
   - When data collection is enabled, ALL quests are tracked (not just missing ones)

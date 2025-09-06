@@ -5365,13 +5365,83 @@ function QuestieDataCollector:ExportBatchPart(partNumber)
         end
     end
     
-    -- Show export window (create frame if needed)
+    -- Create export window frame if it doesn't exist
     if not QuestieDataCollectorExportFrame then
-        self:ShowExportWindow(0) -- Create the frame
+        local f = CreateFrame("Frame", "QuestieDataCollectorExportFrame", UIParent)
+        f:SetFrameStrata("DIALOG")
+        f:SetWidth(600)
+        f:SetHeight(400)
+        f:SetPoint("CENTER")
+        
+        -- Use Questie's frame style
+        f:SetBackdrop({
+            bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
+            edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
+            tile = true, tileSize = 32, edgeSize = 32,
+            insets = { left = 11, right = 12, top = 12, bottom = 11 }
+        })
+        
+        -- Title
+        local title = f:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+        title:SetPoint("TOP", 0, -20)
+        title:SetText("|cFF00FF00Quest Data Ready for Export|r")
+        f.title = title
+        
+        -- Scroll frame for data
+        local scrollFrame = CreateFrame("ScrollFrame", "QuestieDataCollectorScrollFrame", f, "UIPanelScrollFrameTemplate")
+        scrollFrame:SetPoint("TOPLEFT", 20, -45)
+        scrollFrame:SetPoint("BOTTOMRIGHT", -40, 55)
+        
+        local editBox = CreateFrame("EditBox", "QuestieDataCollectorEditBox", scrollFrame)
+        editBox:SetMultiLine(true)
+        editBox:SetFontObject(ChatFontNormal)
+        editBox:SetWidth(540)
+        editBox:SetAutoFocus(false)
+        editBox:EnableMouse(true)
+        editBox:SetScript("OnEditFocusGained", function(self) 
+            self:HighlightText()
+        end)
+        editBox:SetScript("OnEscapePressed", function() f:Hide() end)
+        editBox:SetScript("OnTextChanged", function(self, userInput)
+            if userInput then
+                self:SetText(self.originalText or "")
+                self:HighlightText()
+            end
+        end)
+        
+        editBox:SetHeight(2000)
+        
+        scrollFrame:EnableMouseWheel(true)
+        scrollFrame:SetScript("OnMouseWheel", function(self, delta)
+            local current = self:GetVerticalScroll()
+            local maxScroll = self:GetVerticalScrollRange()
+            local scrollStep = 30
+            
+            if delta > 0 then
+                self:SetVerticalScroll(math.max(0, current - scrollStep))
+            else
+                self:SetVerticalScroll(math.min(maxScroll, current + scrollStep))
+            end
+        end)
+        
+        scrollFrame:SetScrollChild(editBox)
+        f.editBox = editBox
+        f.scrollFrame = scrollFrame
+        
+        -- Close button
+        local closeButton = CreateFrame("Button", nil, f, "UIPanelCloseButton")
+        closeButton:SetPoint("TOPRIGHT", -5, -5)
+        
+        -- Instructions
+        local instructions = f:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+        instructions:SetPoint("BOTTOM", 0, 20)
+        instructions:SetText("Ctrl+A to select all, Ctrl+C to copy")
+        f.instructions = instructions
     end
     
     -- Set the export text and show
     QuestieDataCollectorExportFrame.editBox:SetText(exportText)
+    QuestieDataCollectorExportFrame.editBox.originalText = exportText
     QuestieDataCollectorExportFrame.editBox:HighlightText()
     QuestieDataCollectorExportFrame:Show()
     
