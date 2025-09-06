@@ -83,6 +83,12 @@
   - Previously only objectives with 2+ required items showed progress counts
   - Now all countable objectives display their progress consistently
 
+- **Fixed Export Window Nil Comparison Error** - Fixes follow-up export issues
+  - Removed undefined variable comparison on line 3125
+  - Variable `maxQuestsPerSubmission` was not defined in ShowExportWindow scope
+  - Simplified export title to just show quest count without comparison
+  - Resolves error: "attempt to compare nil with number"
+
 ### Changed
 - **Data Collection Now Always Captures All Quests** - Simplified data collection to always gather complete data
   - When data collection is enabled, ALL quests are tracked (not just missing ones)

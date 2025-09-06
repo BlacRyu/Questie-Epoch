@@ -3122,11 +3122,7 @@ function QuestieDataCollector:ShowExportWindow(questId)
         exportText = exportText .. "1. Copy all text below (Ctrl+C to copy)\n"
         exportText = exportText .. "2. Go to: https://github.com/trav346/Questie/issues\n"
         exportText = exportText .. "3. Click 'New Issue'\n"
-        if eligibleQuests > maxQuestsPerSubmission then
-            exportText = exportText .. "4. Title: Large Batch Submission (" .. eligibleQuests .. " quests - MAY BE TOO BIG)\n"
-        else
-            exportText = exportText .. "4. Title: Batch Submission (" .. eligibleQuests .. " quests)\n"
-        end
+        exportText = exportText .. "4. Title: Batch Submission (" .. eligibleQuests .. " quests)\n"
         exportText = exportText .. "5. Paste this entire report in the description\n"
         exportText = exportText .. "6. Click 'Submit new issue'\n\n"
         exportText = exportText .. "════════════════════════════════════════════════════════════════\n"
