@@ -55,7 +55,7 @@ If you find this version of Questie with data collection helpful, consider [buyi
 ## 📦 Installation
 
 ### **Automatic Installation (Recommended)**
-1. **Download**: Get the latest release from [GitHub Releases](https://github.com/trav346/Questie/releases)
+1. **Download**: Get the latest release from [GitHub Releases](https://github.com/trav346/Questie-Epoch/releases)
 2. **Extract**: Unzip the downloaded file
 3. **Install**: Copy the `Questie` folder to your WoW AddOns directory:
    ```
@@ -91,7 +91,7 @@ If you find this version of Questie with data collection helpful, consider [buyi
 ### **How to Contribute**
 1. **Play Normally**: Accept and complete quests as usual
 2. **Export Data**: Use `/qdc export` when quest is complete
-3. **Submit to GitHub**: Create issue at [GitHub Issues](https://github.com/trav346/Questie/issues)
+3. **Submit to GitHub**: Create issue at [GitHub Issues](https://github.com/trav346/Questie-Epoch/issues)
 4. **Help the Community**: Your data helps everyone get better quest information
 
 ### **Known Compatibility**
@@ -125,5 +125,6 @@ If you find this version of Questie with data collection helpful, consider [buyi
 
 ### **Support Development**
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support%20Development-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/trav346)
+
 
 If you find this enhanced version of Questie helpful, consider [buying me a coffee](https://buymeacoffee.com/trav346) to support continued development and maintenance!
