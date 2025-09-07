@@ -1900,8 +1900,23 @@ function QuestieDataCollector:IsObjectRelevantToObjectives(questId, objectName)
     local questData = QuestieDataCollection.quests[questId]
     if not questData or not questData.objectives then return false end
     
+    -- Ignore generic containers that are just junk data
+    local lowerObjectName = objectName:lower()
+    local genericContainers = {
+        "solid chest", "battered chest", "worn chest", "small chest", "large chest",
+        "treasure chest", "wooden chest", "metal chest", "iron chest", "steel chest",
+        "barrel", "crate", "box", "sack", "bag", "container", "supply box",
+        "damaged crate", "supply chest", "footlocker", "strongbox"
+    }
+    
+    for _, generic in ipairs(genericContainers) do
+        if lowerObjectName:find(generic, 1, true) then
+            return false -- Ignore generic containers
+        end
+    end
+    
     -- Normalize object name for comparison
-    local normalizedObjectName = objectName:lower()
+    local normalizedObjectName = lowerObjectName
     
     for _, objective in ipairs(questData.objectives) do
         -- Check both item and object types
@@ -1910,12 +1925,14 @@ function QuestieDataCollector:IsObjectRelevantToObjectives(questId, objectName)
             
             if targetName then
                 local normalizedTarget = targetName:lower()
+                -- Only match if there's a SPECIFIC named objective, not generic loot
                 if normalizedObjectName == normalizedTarget then
                     return true
                 end
                 
-                -- Check if object name contains the target (partial match)
-                if normalizedObjectName:find(normalizedTarget, 1, true) or normalizedTarget:find(normalizedObjectName, 1, true) then
+                -- More restrictive partial matching - object must contain specific target name
+                -- and the target name must be reasonably specific (> 4 characters)
+                if normalizedObjectName:find(normalizedTarget, 1, true) and string.len(normalizedTarget) > 4 then
                     return true
                 end
             end
