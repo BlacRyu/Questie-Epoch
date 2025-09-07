@@ -11,8 +11,8 @@ If you find this version of Questie with data collection helpful, consider [buyi
 
 ## 🎯 Major Database Expansion
 **1,346 Epoch Quests!**
-- The Epoch quest database has grown from 560 quests with broken/missing data to 1,346 quests (140% increase!)
-- Processed 1,153 community submissions from GitHub. Thank you to everyone who has and is continuing to submit!
+- The Epoch quest database has grown to 1,346 custom epoch quests!
+- Processed well over a thousand community submissions from GitHub. Thank you to everyone who has and is continuing to submit!
 - **Top Contributors:**
   1. BluePiru - 68 submissions 🥇
   2. Lightshard86 - 63 submissions 🥈
@@ -20,12 +20,20 @@ If you find this version of Questie with data collection helpful, consider [buyi
   4. MikeDelta95 - 41 submissions
   5. mijagaming08-png - 40 submissions
 
+## ⚠️ Important: Ongoing Database Maintenance
+**This is a living project with continuous improvements!**
+- **Database maintenance is ongoing** - We're constantly updating and improving quest data
+- **Bugs may still exist** - Some quests may display incorrectly or have missing information
+- **Your reports matter** - Please submit bug reports via [GitHub Issues](https://github.com/trav346/Questie-Epoch/issues)
+- **Be patient** - Project Epoch has modified thousands of vanilla quests, and we're working through them systematically
+- **Help us imporove!** - Enable data collection (`/qdc enable`) to automatically contribute to database improvements
+
 ## 🗺️ New Features
 
 ### Level-Appropriate Quest Filtering
-- Map now only shows quests you can realistically obtain and complete
-- Most erroneous quests should no longer appear in wrong locations or for inappropriate levels
-- Cleaner map with only relevant quests for your level
+- **Fixed bug** Map now only shows quests you can realistically obtain and complete
+- **FIxed Bug** Most erroneous quests should no longer appear in wrong locations or for inappropriate levels
+- **Fixed Bug** Cleaner map with only relevant quests for your level
 
 ### Smart Quest Data Export
 - **Automatic Pagination**: Large submissions automatically split into multiple pages
@@ -33,12 +41,16 @@ If you find this version of Questie with data collection helpful, consider [buyi
 - **Smart Slicing**: Respects GitHub's 65,536 character limit
 - **Unified Interface**: All exports use the same modern staged window
 
-### Quest Completeness Indicators
-**Categories shown as prefixes in quest tracker:**
-- **[EpochDB Missing]**: Quest not in database, created runtime stub for tracking
-- **[EpochDB Minimal]**: Bare minimum data (name only), needs significant collection
-- **[EpochDB Partial]**: Has some data (NPCs or objectives) but incomplete
-- **No prefix**: Complete quest with all necessary data to function properly
+### Quest Completeness Indicators (What Those [Brackets] Mean)
+**You might see these labels in front of quest names in your tracker. Here's what they mean:**
+
+- **[EpochDB Missing]**: This quest doesn't exist in our database yet. Questie is doing its best to track it for you, but we don't have information about where to go or what to do. The quest will still work in-game, but Questie can't show you map markers or objectives.
+
+- **[EpochDB Minimal]**: We know this quest exists and its name, but that's about it. We don't know where the quest giver is or what you need to do. You can still complete the quest normally, but Questie can't guide you.
+
+- **[EpochDB Partial]**: We have some information about this quest (like who gives it or some objectives), but we're missing important details. You might see some map markers, but they could be incomplete or incorrect.
+
+**Why do these exist?** Project Epoch has thousands of custom quests that aren't in the original WoW database. When you pick up a quest we don't know about, Questie creates a temporary placeholder (called a "runtime stub") so it can at least track your progress. As players submit data, these quests get upgraded from Missing → Minimal → Partial → Complete.
 
 ## 📦 Installation
 
@@ -91,7 +103,9 @@ If you find this version of Questie with data collection helpful, consider [buyi
 
 ### **Common Issues**
 - **Quest Markers Missing**: Some Project Epoch quests have incomplete data - enable data collection to help fix this
-- **Quests show up that don't exist** Project Epoch has modified lots of vanilla quests that exists in Questie's Vanilla database. This is on ongoing process of cleanup. Please bear with me through updates.
+- **Quests show up that don't exist**: Project Epoch has modified lots of vanilla quests that exist in Questie's Vanilla database. This is an ongoing process of cleanup. Please bear with me through updates
+- **Incorrect quest information**: Database validation is ongoing - please report specific issues via GitHub
+- **NPCs in wrong locations**: Some NPCs may show outdated positions - your reports help us fix these
 
 ### **Getting Help**
 1. **Check Issues**: Browse [GitHub Issues](https://github.com/trav346/Questie/issues) for known problems
@@ -99,43 +113,15 @@ If you find this version of Questie with data collection helpful, consider [buyi
 3. **Report Bugs**: Create detailed issue reports with steps to reproduce
 4. **Discord Support**: Join Project Epoch Discord for community help
 
-## 📈 Version History
-
-### **Latest: v1.2.0** *(Current)*
-- 🎯 Added 786 new quests from 1,153 community submissions
-- 🗺️ Smarter level-appropriate quest filtering
-- 📤 Smart pagination for large quest data exports
-- 📊 Quest completeness indicators in tracker
-- 🐛 Fixed 513 quests missing level requirements
-- 🐛 Fixed export window nil errors and crashes
-
-### **Previous Releases**
-- **v1.1.1**: Fixed coordinate crashes, enhanced objective tracking
-- **v1.1.0**: Data collection overhaul, completed quest sync
-- **v1.0.68**: Enhanced objective tracking, turn-in NPC fixes
-- **v1.0.63**: Initial Project Epoch compatibility
-
-[View Full Changelog](CHANGELOG.md)
-
-## 📊 Database Statistics
-
-**Current Epoch Quest Coverage**: **1,346 quests** and growing!
-- 🎉 **Recent Achievement**: Added 786 new quests from community submissions
-- 📈 **140% Database Growth**: From 560 to 1,346 quests thanks to 1,153 GitHub submissions
-- 🌟 **Community Success**: 158 unique contributors with 100% validation before application
-- 📊 **Total Database**: 14,673 quests across Epoch, Classic, and WotLK
-
-*Special thanks to every player who took time to submit quest data - you've made Questie significantly better for everyone!*
 
 ## 🙏 Credits & Support
 
 ### **Special Thanks**
-- **@esurm**: Original Questie author and data collection system
-- **@desizt**: Data collection enhancements and testing
-- **@Bennylavaa**: Extensive testing and bug reporting
+- **@esurm**
+- **@desizt**
+- **@Bennylavaa**
 - **Top Quest Contributors**: BluePiru, Lightshard86, fleekx, MikeDelta95, mijagaming08-png
-- **Project Epoch Community**: 1,153 quest data submissions from 158 unique contributors!
-- **All GitHub Contributors**: Every quest submission helped build our database of 1,346 quests
+- **All GitHub Contributors**: Every quest submission helped build our database
 
 ### **Support Development**
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support%20Development-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/trav346)
