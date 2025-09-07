@@ -45,10 +45,10 @@ Database\Wotlk\wotlkNpcDB.lua
 Database\Wotlk\wotlkObjectDB.lua
 Database\Wotlk\wotlkQuestDB.lua
 Database\QuestieDB.lua
-#Database\Epoch\epochQuestDB.lua -- Disabled: Merged into WotLK
-#Database\Epoch\epochNpcDB.lua -- Disabled: Merged into WotLK
-#Database\Epoch\epochObjectDB.lua -- Disabled: Merged into WotLK
-#Database\Epoch\epochItemDB.lua -- Disabled: Merged into WotLK
+Database\Epoch\epochQuestDB.lua -- Empty stub for compatibility
+Database\Epoch\epochNpcDB.lua -- Empty stub for compatibility
+Database\Epoch\epochObjectDB.lua -- Empty stub for compatibility
+Database\Epoch\epochItemDB.lua -- Empty stub for compatibility
 Database\questDB.lua
 Database\objectDB.lua
 Database\npcDB.lua
