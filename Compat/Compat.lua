@@ -219,7 +219,8 @@ end
 
 function QuestieCompat.TomTom_AddWaypoint(title, zone, x, y)
     local CZ = mapIdToCZ[QuestieCompat.UiMapData[zone].mapID]
-    return TomTom:AddZWaypoint(QuestieCompat.Round(CZ%1 * 10), math.floor(CZ), x, y, title)
+    -- Convert coordinates from 0-100 scale to 0-1 scale for WoW 3.3.5 TomTom
+    return TomTom:AddZWaypoint(QuestieCompat.Round(CZ%1 * 10), math.floor(CZ), x / 100, y / 100, title)
 end
 
 -- This function will do its utmost to retrieve some sort of valid position

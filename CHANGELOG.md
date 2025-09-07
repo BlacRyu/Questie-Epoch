@@ -55,6 +55,12 @@
 
 ### Fixed
 
+- **Fixed TomTom Waypoints Appearing in Ocean** - Corrected coordinate conversion for WoW 3.3.5
+  - TomTom waypoints were appearing far off-coast (e.g., panthers at 27,7 instead of 42,13)
+  - Added missing coordinate scaling (/100) for WoW 3.3.5 TomTom integration
+  - Waypoints now appear at correct locations after database switch to WotLK format
+  - Affects all quest objectives and manual waypoint setting
+
 - **Fixed Data Collector Version Reporting** - Now uses addon version from TOC file
   - Data collector was reporting outdated version "1.1.3" in exports
   - Now correctly reports actual addon version (e.g., "1.2.0-prerelease2") from TOC file
