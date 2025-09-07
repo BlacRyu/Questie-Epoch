@@ -34,6 +34,12 @@
   - Reduced quest count from 10,172 to 4,363 (matches expected ~5,000 range)
   - Significantly faster database compilation and reduced memory usage
 
+- **Fixed Database Filtering Side Effects** - Added nil checks for removed content
+  - Fixed DeleteGatheringNodes crash when expansion mining/herb nodes don't exist
+  - Fixed Townsfolk vendor population crash when vendor NPCs are missing
+  - Fixed Epoch validator to recognize empty databases as expected (not error)
+  - Cleaned up scary error messages during startup
+
 ## [1.2.0] - 2025-09-07
 
 ### Added
