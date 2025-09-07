@@ -86,7 +86,7 @@ Validation/
 validators/
 Validation_Scripts/
 
-# Database Backups - Keep local only
+# Database Backups and Development Files - Keep local only
 Database/Backups/
 Database/*/Backups/
 Database/*/*.backup*
@@ -102,6 +102,16 @@ Database/*/*_CAREFUL_*
 Database/*/*_FINAL_*
 Database/*/*_FULLY_*
 Database/*/FIX_SUMMARY.md
+Database/*/*_MERGE_*.lua
+Database/*/*_PIPELINE_*.lua
+Database/*/*_LINKAGE_*.lua
+Database/*/*_INTELLIGENT_*.lua
+Database/WotLK/*_merged.lua
+Database/WotLK/*_retail.lua
+Database/WotLK/*.json
+Database/*.py
+Database/database_backups/
+Database/merged_database_*.lua
 
 # Python scripts - Development only
 *.py
