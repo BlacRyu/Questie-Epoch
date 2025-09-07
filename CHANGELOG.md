@@ -27,6 +27,13 @@
   - Added nil check before inserting into professionTrainers table
   - Prevents crash when profession IDs don't exist in initial table
 
+- **Optimized Database for Project Epoch** - Removed unnecessary expansion content
+  - Filtered out 5,809 TBC/WotLK quests (IDs 8000-24999) not available on vanilla server
+  - Removed 20,583 expansion NPCs, 22,816 items, 11,320 objects
+  - Database now contains only vanilla (1-7999) and Epoch custom (25000+) content
+  - Reduced quest count from 10,172 to 4,363 (matches expected ~5,000 range)
+  - Significantly faster database compilation and reduced memory usage
+
 ## [1.2.0] - 2025-09-07
 
 ### Added
