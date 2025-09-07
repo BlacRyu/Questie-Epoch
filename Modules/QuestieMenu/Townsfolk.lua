@@ -153,7 +153,9 @@ function Townsfolk.Initialize()
                 else
                     for k, professionId in pairs(QuestieProfessions.professionTable) do
                         if string.match(subName, k) then
+                        if professionTrainers[professionId] then
                             tinsert(professionTrainers[professionId], id)
+                        end
                         end
                     end
                 end

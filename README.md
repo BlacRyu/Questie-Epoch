@@ -24,7 +24,7 @@ If you find this version of Questie with data collection helpful, consider [buyi
 **This is a living project with continuous improvements!**
 - **Database maintenance is ongoing** - We're constantly updating and improving quest data
 - **Bugs may still exist** - Some quests may display incorrectly or have missing information
-- **Your reports matter** - Please submit bug reports via [GitHub Issues](https://github.com/trav346/Questie-Epoch/issues)
+- **Your reports matter** - Please submit bug reports via [GitHub Issues](https://github.com/trav346/Questie-Epoch/releases/latest)
 - **Be patient** - Project Epoch has modified thousands of vanilla quests, and we're working through them systematically
 - **Help us imporove!** - Enable data collection (`/qdc enable`) to automatically contribute to database improvements
 
@@ -55,7 +55,7 @@ If you find this version of Questie with data collection helpful, consider [buyi
 ## 📦 Installation
 
 ### **Automatic Installation (Recommended)**
-1. **Download**: Get the latest release from [GitHub Releases](https://github.com/trav346/Questie/releases)
+1. **Download**: Get the latest release from [GitHub Releases](https://github.com/trav346/Questie-Epoch/releases)
 2. **Extract**: Unzip the downloaded file
 3. **Install**: Copy the `Questie` folder to your WoW AddOns directory:
    ```

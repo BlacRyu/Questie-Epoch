@@ -13,7 +13,7 @@ QuestieDB.objectKeys = {
 }
 
 -- Store WotLK data separately for selective merging
-QuestieDB._wotlkObjectData = [[return {
+QuestieDB.objectData = [[return {
 [31] = {"Old Lion Statue",{248,249},{94},{[44]={{84.49,46.83}}},44},
 [32] = {"Sunken Chest",nil,nil,{[44]={{41.52,54.66}}},44},
 [33] = {"Locked Chest",nil,{140},{[40]={{25.97,16.91}}},40},

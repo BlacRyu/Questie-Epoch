@@ -2,6 +2,33 @@
 
 ## [Unreleased]
 
+## [1.2.1] - 2025-09-07
+
+### Fixed
+
+- **Critical Database Architecture Fix** - Fixed quest availability issues
+  - Merged all Epoch custom content (1,121 quests, 754 NPCs) into WotLK database
+  - Disabled Epoch databases that were incorrectly taking precedence over vanilla content
+  - Fixed database variable names (changed from _wotlkData to standard names)
+  - Restored proper database hierarchy: WotLK > Classic (Epoch disabled)
+  - Vanilla quests like "Delivery to Gnomeregan" (445) now properly available
+
+- **Fixed 331+ Corrupted Quest Objectives** - Cleaned Phase 2 pipeline data corruption
+  - Removed raw data collection output from quest objectives
+  - Restored clean objective descriptions for affected quests
+  - Quest "Shark Fin Stew" (26901) and others now display proper objectives
+
+- **Restored 50 Vanilla Quest Objectives** - Fixed missing objective names
+  - Vanilla quests had objectives showing ": 0/10" without item names
+  - Restored proper objective text from WotLK reference database
+  - Quest "Singing Blue Shards" (605) now correctly shows "Singing Crystal Shards"
+
+- **Fixed Townsfolk.lua Nil Table Error** - Added safety check for profession trainers
+  - Added nil check before inserting into professionTrainers table
+  - Prevents crash when profession IDs don't exist in initial table
+
+## [1.2.0] - 2025-09-07
+
 ### Added
 
 - **Added 786 New Quests from GitHub Submissions** - Major database expansion
