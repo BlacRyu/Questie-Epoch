@@ -262,9 +262,7 @@ function QuestieDataCollector:Initialize()
     if not QuestieDataCollection.flightMasters then
         QuestieDataCollection.flightMasters = {}
     end
-    if not QuestieDataCollection.version then
-        QuestieDataCollection.version = CURRENT_VERSION
-    end
+    -- Version is always read from TOC, no need to store
     if not QuestieDataCollection.sessionStart then
         QuestieDataCollection.sessionStart = date("%Y-%m-%d %H:%M:%S")
     end
@@ -275,8 +273,7 @@ function QuestieDataCollector:Initialize()
     QuestieDataCollection.characterClass = UnitClass("player")
     QuestieDataCollection.characterRace = UnitRace("player")
     
-    -- Update version for existing data
-    QuestieDataCollection.version = CURRENT_VERSION
+    -- Version is always read from TOC at export time, not stored
     
     
     -- Count tracked quests (only missing ones)
@@ -3585,7 +3582,7 @@ function QuestieDataCollector:GenerateStagedPageContent(pageNum, maxPerPage)
     exportText = exportText .. "7. Use Next button for remaining pages\n\n"
     
     -- Export metadata
-    exportText = exportText .. "Version: " .. (QuestieDataCollection.version or CURRENT_VERSION) .. "\n"
+    exportText = exportText .. "Version: " .. CURRENT_VERSION .. "\n"
     exportText = exportText .. "Date: " .. date("%Y-%m-%d %H:%M:%S") .. "\n"
     
     local playerClass = UnitClass("player")
@@ -4000,7 +3997,7 @@ function QuestieDataCollector:ExportQuest(questId)
         export = export .. "Required Skill: " .. (questData.requiredSkill[1] or "Unknown") .. " (" .. (questData.requiredSkill[2] or "0") .. ")\n"
     end
     
-    export = export .. "Version: " .. (QuestieDataCollection.version or "Unknown") .. "\n"
+    export = export .. "Version: " .. CURRENT_VERSION .. "\n"
     export = export .. "────────────────────────────────────────────────────────────────\n\n"
     
     if questData.wasAlreadyAccepted then
@@ -5039,7 +5036,7 @@ function QuestieDataCollector:ExportBatchPart(partNumber)
     exportText = exportText .. "════════════════════════════════════════════════════════════════\n"
     exportText = exportText .. "         QUESTIE DATA COLLECTION EXPORT - PART " .. partNumber .. " of " .. totalParts .. "         \n"
     exportText = exportText .. "════════════════════════════════════════════════════════════════\n\n"
-    exportText = exportText .. "Version: " .. (QuestieDataCollection.version or CURRENT_VERSION) .. "\n"
+    exportText = exportText .. "Version: " .. CURRENT_VERSION .. "\n"
     exportText = exportText .. "Date: " .. date("%Y-%m-%d %H:%M:%S") .. "\n"
     exportText = exportText .. "Part: " .. partNumber .. " of " .. totalParts .. " (" .. questsInThisPart .. " quests in this part)\n"
     exportText = exportText .. "Total Quests: " .. questCount .. " across all parts\n\n"
@@ -5092,7 +5089,7 @@ function QuestieDataCollector:ExportAreaData(zoneName)
     end
     
     local export = "=== AREA DATA EXPORT ===\n"
-    export = export .. "Version: " .. (QuestieDataCollection.version or "Unknown") .. "\n"
+    export = export .. "Version: " .. CURRENT_VERSION .. "\n"
     export = export .. "Zone: " .. zoneName .. "\n"
     export = export .. "Export Date: " .. date("%Y-%m-%d %H:%M:%S") .. "\n\n"
     

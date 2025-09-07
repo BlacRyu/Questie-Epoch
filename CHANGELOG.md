@@ -15,6 +15,12 @@
 
 ### Fixed
 
+- **Fixed Data Collector Version Reporting** - Now uses addon version from TOC file
+  - Data collector was reporting outdated version "1.1.3" in exports
+  - Now correctly reports actual addon version (e.g., "1.2.0-prerelease2") from TOC file
+  - Removed version caching in SavedVariables that caused stale version numbers
+  - TOC file is now the single source of truth for all version reporting
+
 - **Fixed Level Filter Breaking High-Level Quest Display** - Resolved issue where low-level players saw unacceptable quests
   - Fixed loophole in `IsLevelRequirementsFulfilled` that allowed level 11 quests to show for level 1 players
   - Quests with low required levels but high quest levels (like Hogger) now properly filtered
