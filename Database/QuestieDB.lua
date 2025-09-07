@@ -1960,7 +1960,9 @@ function _QuestieDB:DeleteGatheringNodes()
     local objectSpawnsKey = QuestieDB.objectKeys.spawns
     for i=1, #prune do
         local id = prune[i]
-        QuestieDB.objectData[id][objectSpawnsKey] = nil
+        if QuestieDB.objectData[id] then
+            QuestieDB.objectData[id][objectSpawnsKey] = nil
+        end
     end
 end
 
