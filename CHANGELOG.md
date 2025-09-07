@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+### Changed
+
+- **Enhanced Data Collector with Objective-Aware Filtering** - Significantly reduced noise in data collection
+  - Now only captures mobs that match quest kill objectives (e.g., "Stranglethorn Tiger: 0/10")
+  - Only tracks objects/items that match quest loot objectives (e.g., "Solid Chest: 0/1")
+  - Ignores irrelevant mobs and objects not related to quest objectives
+  - Added smart pattern matching to extract mob/item names from objective text
+  - Handles singular/plural name variations ("Tiger" vs "Tigers")
+  - Shows green messages for captured objective-relevant data
+  - Gray debug messages (debug mode only) for ignored non-objective entities
+  - Dramatically reduces collected data size and improves submission quality
+
 ## [1.2.1] - 2025-09-07
 
 ### Fixed
