@@ -4313,7 +4313,7 @@ function QuestieDataCollector:GenerateDatabaseEntries(questId, questData)
     output = output .. "================\n\n"
     
     -- Generate quest entry with EXACT field order and format
-    output = output .. "-- Add to epochQuestDB.lua:\n"
+    output = output .. "-- Add to Database/Wotlk/wotlkQuestDB.lua:\n"
     
     -- Add zone information comment if we have subzone data
     if questData.acceptAreaId and questData.acceptParentZoneId and questData.acceptAreaId ~= questData.acceptParentZoneId then
@@ -4641,7 +4641,7 @@ function QuestieDataCollector:GenerateDatabaseEntries(questId, questData)
     
     -- Output NPC entries (sorted for consistency)
     if next(npcEntries) then
-        output = output .. "-- Add to epochNpcDB.lua:\n"
+        output = output .. "-- Add to Database/Wotlk/wotlkNpcDB.lua:\n"
         output = output .. "-- Note: NPC flags are automatically calculated based on detected services\n"
         
         -- Add zone information for NPCs if we have subzone data
