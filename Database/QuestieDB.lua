@@ -1711,7 +1711,8 @@ function QuestieDB:GetCreatureLevels(quest)
     local function _CollectCreatureLevels(npcIds)
         for _, npcId in pairs(npcIds) do
             local npc = QuestieDB:GetNPC(npcId)
-            if npc and not creatureLevels[npc.name] then
+            -- Check that npc exists AND has a name before using it as a table index
+            if npc and npc.name and not creatureLevels[npc.name] then
                 creatureLevels[npc.name] = {npc.minLevel, npc.maxLevel, npc.rank}
             end
         end
