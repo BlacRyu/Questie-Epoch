@@ -35,6 +35,12 @@
   - Questie database now focuses only on quest-related objects
   - Created cleanup scripts for future junk data removal
 
+- **Improved TomTom Waypoint Accuracy** - Fixed waypoints appearing in ocean instead of correct locations
+  - Corrected parameter order in TomTom:AddZWaypoint() function (zone and continent were swapped)
+  - Waypoints now appear at correct locations when viewing zone maps
+  - Added debug logging for coordinate troubleshooting when debug mode is enabled
+  - Note: World map view may still show incorrect positions due to WoW 3.3.5 coordinate scaling limitations
+
 ## [1.2.1] - 2025-09-07
 
 ### Fixed
