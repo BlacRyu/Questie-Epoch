@@ -5,7 +5,7 @@ If you find this version of Questie with data collection helpful, consider [buyi
 
 ---
 
-# Questie for Project Epoch v1.2.1
+# Questie for Project Epoch v1.2.2
 
 **An actively maintained version of Questie for Project Epoch with enhanced data collection capabilities.**
 
