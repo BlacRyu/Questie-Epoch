@@ -7,8 +7,6 @@ If you find this version of Questie with data collection helpful, consider [buyi
 
 # Questie for Project Epoch v1.2.1
 
-**NOTE: We are aware of a bug causing junk data to appear in some quests. Please continue to update the addon to the latest release as they become available.**
-
 **An actively maintained version of Questie for Project Epoch with enhanced data collection capabilities.**
 
 ## 🎯 Major Database Expansion

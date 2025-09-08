@@ -17,6 +17,13 @@
 
 ### Fixed
 
+- **Comprehensive Database Cleanup** - Eliminated all remaining corrupted quest objective data
+  - Fixed 145+ quests with data collection artifacts (patterns like "1. ObjectiveName: 0/10 (type)")
+  - Removed malformed objectives with missing names (": 0/X" patterns)
+  - Quest 26560 "When Life Gives You... Berries?" now shows clean objective: "Bushel of Shadowberry: 0/8"
+  - All corrupted data from previous data collection issues completely resolved
+  - Database verified clean of all junk data patterns
+
 - **Fixed Database Initialization Error** - Resolved "attempt to call field '?' (a nil value)" crash
   - Corrected Epoch database stub format from direct table assignment to string format
   - Added graceful error handling for corrupted database files
