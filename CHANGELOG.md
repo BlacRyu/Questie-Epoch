@@ -41,6 +41,11 @@
   - Added debug logging for coordinate troubleshooting when debug mode is enabled
   - Note: World map view may still show incorrect positions due to WoW 3.3.5 coordinate scaling limitations
 
+- **Fixed Lua Error When Shift-Hovering Quest Objectives** - Resolved tooltip crash on world map (#1599)
+  - Added nil check for NPC names in GetCreatureLevels function
+  - Prevents "table index is nil" error when NPCs have incomplete data
+  - Tooltips now work properly even with missing NPC names in database
+
 ## [1.2.1] - 2025-09-07
 
 ### Fixed
