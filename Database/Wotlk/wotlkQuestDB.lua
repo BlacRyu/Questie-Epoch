@@ -4416,4 +4416,5 @@ QuestieDB.questData = [[return {
 [99003] = {"Complex Quest",{{400}},{{500}},nil,10,nil,nil,{"Kill 10 wolves","Collect 5 items"},nil,{{{1001,10,"Wolf"}},nil,{{2001,5}}},nil,nil,nil,nil,nil,nil,14,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
 [11160] = {"Banner of the Stonemaul",{{23579}},{{23579}},35,39,0,nil,{"Retrieve the Stonemaul Banner and bring it to Brogg at Mudsprocket."},nil,{nil,nil,{{33086}}},nil,nil,{11158},nil,nil,nil,15,nil,nil,nil,nil,nil,8},
 [11161] = {"The Essence of Enmity",{{23579}},{{23579}},35,39,0,nil,{"Bring 10 Black Dragonkin Essences to Brogg at Mudsprocket."},nil,{nil,nil,{{33087}}},33088,nil,{11158},nil,nil,nil,15},
+[26570] = {"Waterlogged Journal",{{2276},nil,nil},{{2276},nil},37,37,nil,nil,{"Locate the owner of the Waterlogged Journal on the coast of the Blazing Hills in the Arathi Highlands."},nil,nil,nil,nil,nil,nil,nil,nil,271,nil,nil,nil,nil,nil,0,0,nil,nil,nil,nil,nil,nil},
 }]]
