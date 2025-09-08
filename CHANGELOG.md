@@ -46,6 +46,14 @@
   - Prevents "table index is nil" error when NPCs have incomplete data
   - Tooltips now work properly even with missing NPC names in database
 
+- **Fixed Multiple Tooltip Crashes** - Added comprehensive nil checks in MapIconTooltip
+  - Fixed crashes when hovering over map icons with missing Name fields
+  - Added safety checks for CustomTooltipData and ManualTooltipData titles
+  - Prevents "table index is nil" errors with incomplete icon data
+
+- **Quest Database Fixes**
+  - Quest 27489 "Canyon Patrol" - Fixed incorrect turn-in NPC (now only turns in to Motega Firemane, removed Cliffwatcher Longhorn)
+
 ## [1.2.1] - 2025-09-07
 
 ### Fixed
