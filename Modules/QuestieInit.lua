@@ -443,9 +443,16 @@ end
 function QuestieInit:LoadDatabase(key)
     if QuestieDB[key] then
         coYield()
+        print("[DEBUG] Loading database: " .. key .. " (type: " .. type(QuestieDB[key]) .. ")")
         QuestieDB[key] = loadstring(QuestieDB[key]) -- load the table from string (returns a function)
+        if not QuestieDB[key] then
+            print("[ERROR] loadstring failed for database: " .. key)
+            return
+        end
         coYield()
+        print("[DEBUG] Executing database function for: " .. key)
         QuestieDB[key] = QuestieDB[key]()           -- execute the function (returns the table)
+        print("[DEBUG] Successfully loaded database: " .. key)
     else
         Questie:Debug(Questie.DEBUG_DEVELOP, "Database is missing, this is likely do to era vs tbc: ", key)
     end
