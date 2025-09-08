@@ -6,4 +6,4 @@
 local QuestieDB = QuestieLoader:ImportModule("QuestieDB")
 
 -- Provide empty table for compatibility with validator and merge logic
-QuestieDB._epochQuestData = {}
+QuestieDB._epochQuestData = [[return {}]]
