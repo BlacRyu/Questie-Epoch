@@ -13,6 +13,20 @@
   - Shows green messages for captured objective-relevant data
   - Gray debug messages (debug mode only) for ignored non-objective entities
   - Dramatically reduces collected data size and improves submission quality
+  - Fixed pattern matching to properly ignore generic containers like "Solid Chest"
+
+### Fixed
+
+- **Fixed Database Initialization Error** - Resolved "attempt to call field '?' (a nil value)" crash
+  - Corrected Epoch database stub format from direct table assignment to string format
+  - Added graceful error handling for corrupted database files
+  - LoadDatabase function now safely handles syntax errors without crashing
+
+- **Cleaned Up Junk Container Data Pollution** - Removed 18 irrelevant treasure container entries
+  - Removed generic containers: Solid Chest, Battered Chest, Damaged Crate, Large chests
+  - Eliminated hundreds of coordinate locations for non-quest objects
+  - Questie database now focuses only on quest-related objects
+  - Created cleanup scripts for future junk data removal
 
 ## [1.2.1] - 2025-09-07
 
