@@ -53,6 +53,7 @@
 
 - **Quest Database Fixes**
   - Quest 27489 "Canyon Patrol" - Fixed incorrect turn-in NPC (now only turns in to Motega Firemane, removed Cliffwatcher Longhorn)
+  - Quest 27486 "Amber Memento" - Fixed incorrect zone (was Desolace, now correctly Tanaris where quest giver is located)
 
 ## [1.2.1] - 2025-09-07
 
