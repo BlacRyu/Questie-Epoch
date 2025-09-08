@@ -1,8 +1,6 @@
 -- AUTO GENERATED FILE! DO NOT EDIT!
-
 ---@type QuestieDB
 local QuestieDB = QuestieLoader:ImportModule("QuestieDB");
-
 QuestieDB.objectKeys = {
     ['name'] = 1, -- string
     ['questStarts'] = 2, -- table {questID(int),...}
@@ -11,7 +9,6 @@ QuestieDB.objectKeys = {
     ['zoneID'] = 5, -- guess as to where this object is most common
     ['factionID'] = 6, -- faction restriction mask (same as spawndb factionid)
 }
-
 -- Store WotLK data separately for selective merging
 QuestieDB.objectData = [[return {
 [31] = {"Old Lion Statue",{248,249},{94},{[44]={{84.49,46.83}}},44},
@@ -85,6 +82,7 @@ QuestieDB.objectData = [[return {
 [256] = {"WANTED",{256},nil,{[38]={{37.3,46.52}}},38},
 [257] = {"Suspicious Barrel",{199},{250},{[38]={{56.05,13.24}}},38},
 [259] = {"Half-buried Barrel",{286},{285},{[11]={{13.94,34.81}}},11},
+[261] = {"Damaged Crate",{284},{281},{[11]={{13.52,41.38}}},11},
 [263] = {"Kurzen Supplies",nil,nil,{[33]={{44.1,9.54}}},33},
 [264] = {"Kurzen Supplies",nil,nil,{[33]={{44.49,9.72}}},33},
 [269] = {"Guarded Thunder Ale Barrel",nil,nil,{[1]={{47.72,52.7}}},1},
@@ -1538,11 +1536,20 @@ QuestieDB.objectData = [[return {
 [74444] = {"Brazier",nil,nil,{[215]={{45.88,58.53}}},215},
 [74445] = {"Smoked Meat Rack",nil,nil,{[215]={{47.6,62.16}}},215},
 [74446] = {"Smoked Meat Rack",nil,nil,{[215]={{45.21,76.62}}},215},
+[74447] = {"Large Iron Bound Chest",nil,nil,{[721]={{-1,-1}},[491]={{-1,-1}}},721},
+[74448] = {"Large Solid Chest",nil,nil,{[721]={{-1,-1}},[491]={{-1,-1}}},721},
 [74727] = {"Bonfire",nil,nil,{[1638]={{77.15,29.27}}},1638},
 [74728] = {"Smoked Meat Rack",nil,nil,{[1638]={{79.27,29.04}}},1638},
 [74729] = {"Brazier",nil,nil,{[1638]={{79.08,27.8}}},1638},
 [74730] = {"Brazier",nil,nil,{[1638]={{75.98,31.79}}},1638},
 [74731] = {"Noggle's Satchel",nil,nil,nil,0},
+[75293] = {"Large Battered Chest",nil,nil,{[3433]={{32.28,90.66}},[3525]={{20.12,52.96}},[718]={{-1,-1}},[1581]={{-1,-1}},[209]={{-1,-1}}},3433},
+[75295] = {"Large Iron Bound Chest",nil,nil,{[719]={{-1,-1}},[717]={{-1,-1}},[209]={{-1,-1}}},719},
+[75296] = {"Large Iron Bound Chest",nil,nil,{[796]={{-1,-1}}},796},
+[75297] = {"Large Iron Bound Chest",nil,nil,{[796]={{-1,-1}},[722]={{-1,-1}}},796},
+[75298] = {"Large Solid Chest",nil,nil,{[719]={{-1,-1}},[717]={{-1,-1}},[209]={{-1,-1}}},719},
+[75299] = {"Large Solid Chest",nil,nil,{[796]={{-1,-1}}},796},
+[75300] = {"Large Solid Chest",nil,nil,{[796]={{-1,-1}},[722]={{-1,-1}}},796},
 [77813] = {"Anvil",nil,nil,{[85]={{60.78,71.56}}},85},
 [82136] = {"Lamppost",nil,nil,{[400]={{44.52,51.53}}},400},
 [82137] = {"Lamppost",nil,nil,{[400]={{46.17,52.89}}},400},
