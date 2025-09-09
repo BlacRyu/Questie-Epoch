@@ -231,8 +231,8 @@ function QuestieCompat.TomTom_AddWaypoint(title, zone, x, y)
     -- But it appears TomTom:AddZWaypoint might expect (zone, continent, ...) not (continent, zone, ...)
     local continent = QuestieCompat.Round(CZ%1 * 10)
     local zoneIndex = math.floor(CZ)
-    -- Try swapping the parameters to see if that fixes the ocean waypoints
-    return TomTom:AddZWaypoint(zoneIndex, continent, x / 100, y / 100, title)
+    -- TomTom 3.3.5 expects (continent, zone, x, y, desc)
+    return TomTom:AddZWaypoint(continent, zoneIndex, x / 100, y / 100, title)
 end
 
 -- This function will do its utmost to retrieve some sort of valid position
